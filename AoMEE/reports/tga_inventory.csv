@@ -7338,6 +7338,41 @@ textures\ui\ko\campmap_greece7.tga,campmap_greece7.tga,256,256,65536,RGBA,True,0
 textures\ui\ko\campmap_new_atlantis6.tga,campmap_new_atlantis6.tga,256,256,65536,RGBA,True,0,0,65536,1,256.0
 textures\ui\ko\campmap_new_atlantis7.tga,campmap_new_atlantis7.tga,256,256,65536,RGBA,True,0,0,65536,1,256.0
 textures\ui\ko\campmap_norselands3.tga,campmap_norselands3.tga,256,256,65536,RGBA,True,0,0,65536,1,256.0
+patched_to_verify\textures\animal dog a map.tga,animal dog a map.tga,64,64,4096,RGBA,True,3944,69,83,15,12.6
+patched_to_verify\textures\animal dog b map.tga,animal dog b map.tga,,,,,,,,,,12.5
+patched_to_verify\textures\animal elephant indian.tga,animal elephant indian.tga,,,,,,,,,,49.6
+patched_to_verify\textures\animal parrot map.tga,animal parrot map.tga,,,,,,,,,,10.8
+patched_to_verify\textures\archer c crossbow.tga,archer c crossbow.tga,64,64,4096,RGBA,True,4096,0,0,1,11.3
+patched_to_verify\textures\special c qilin.tga,special c qilin.tga,256,128,32768,RGBA,True,28374,148,4246,16,73.6
+patched_to_verify\textures\special g griffon map.tga,special g griffon map.tga,128,128,16384,RGBA,True,3395,1750,11239,197,64.0
+patched_to_verify\textures\world c jungle palm burnt.tga,world c jungle palm burnt.tga,256,256,65536,RGBA,True,53003,0,12533,2,220.0
+patched_to_verify\textures\world c jungle palm.tga,world c jungle palm.tga,256,256,65536,RGBA,True,47797,0,17739,2,91.0
+patched_to_verify\textures\world c jungle tree burnt.tga,world c jungle tree burnt.tga,256,256,65536,RGBA,True,44855,0,20681,2,237.3
+patched_to_verify\textures\world c jungle tree.tga,world c jungle tree.tga,256,256,65536,RGBA,True,44855,0,20681,2,248.0
+patched_to_verify\textures\icons\boat c fire ship chinese icon.tga,boat c fire ship chinese icon.tga,64,64,4096,RGBA,True,0,0,4096,1,19.2
+patched_to_verify\textures\icons\boat c fishing boat icon.tga,boat c fishing boat icon.tga,64,64,4096,RGBA,True,0,0,4096,1,19.4
+patched_to_verify\textures\icons\boat c junk icon.tga,boat c junk icon.tga,64,64,4096,RGBA,True,0,0,4096,1,19.4
+patched_to_verify\textures\icons\boat c siege ship chinese icon.tga,boat c siege ship chinese icon.tga,64,64,4096,RGBA,True,0,0,4096,1,19.5
+patched_to_verify\textures\icons\boat c transport icon.tga,boat c transport icon.tga,64,64,4096,RGBA,True,0,0,4096,1,19.5
+patched_to_verify\textures\icons\god power barrage icon.tga,god power barrage icon.tga,,,,,,,,,,12.6
+patched_to_verify\textures\icons\god power earth dragon icon.tga,god power earth dragon icon.tga,,,,,,,,,,10.5
+patched_to_verify\textures\icons\god power flood icon.tga,god power flood icon.tga,,,,,,,,,,16.7
+patched_to_verify\textures\icons\god power geyser icon.tga,god power geyser icon.tga,,,,,,,,,,12.0
+patched_to_verify\textures\icons\god power journey icon.tga,god power journey icon.tga,,,,,,,,,,54.0
+patched_to_verify\textures\icons\god power recreation icon.tga,god power recreation icon.tga,,,,,,,,,,7.2
+patched_to_verify\textures\icons\siege c fire lance icon.tga,siege c fire lance icon.tga,,,,,,,,,,8.3
+patched_to_verify\textures\icons\special c azure dragon icon.tga,special c azure dragon icon.tga,,,,,,,,,,7.7
+patched_to_verify\textures\icons\special c black tortoise icon.tga,special c black tortoise icon.tga,,,,,,,,,,3.7
+patched_to_verify\textures\icons\special c earth dragon icon.tga,special c earth dragon icon.tga,,,,,,,,,,10.5
+patched_to_verify\textures\icons\special c jiangshi icon.tga,special c jiangshi icon.tga,,,,,,,,,,10.0
+patched_to_verify\textures\icons\special c monkey king icon.tga,special c monkey king icon.tga,,,,,,,,,,13.2
+patched_to_verify\textures\icons\special c pixiu icon.tga,special c pixiu icon.tga,,,,,,,,,,13.0
+patched_to_verify\textures\icons\special c qilin icon.tga,special c qilin icon.tga,,,,,,,,,,10.5
+patched_to_verify\textures\icons\special c terracotta soldier icon.tga,special c terracotta soldier icon.tga,,,,,,,,,,11.3
+patched_to_verify\textures\icons\special c vermilion bird icon.tga,special c vermilion bird icon.tga,,,,,,,,,,8.6
+patched_to_verify\textures\icons\special c war salamander icon.tga,special c war salamander icon.tga,64,64,4096,RGBA,True,0,0,4096,1,19.9
+patched_to_verify\textures\icons\special c white tiger icon.tga,special c white tiger icon.tga,,,,,,,,,,12.6
+patched_to_verify\textures\icons\trade c caravan icon.tga,trade c caravan icon.tga,,,,,,,,,,13.3
 dlc-frontend\textures\ui\screen shot a_01.tga,screen shot a_01.tga,256,256,65536,RGBA,True,0,0,65536,1,256.0
 dlc-frontend\textures\ui\screen shot a_02.tga,screen shot a_02.tga,256,256,65536,RGBA,True,0,0,65536,1,256.0
 dlc-frontend\textures\ui\screen shot a_03.tga,screen shot a_03.tga,256,256,65536,RGBA,True,0,0,65536,1,256.0

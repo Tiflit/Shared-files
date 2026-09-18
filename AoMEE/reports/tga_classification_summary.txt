@@ -1,44 +1,44 @@
 ﻿AoM:EE TGA Classification
 ==========================
 
-Total textures: 7452
+Total textures: 7487
 
 CATEGORY COUNTS
 ---------------
-Other                  2090
-Icon                   1760
+Other                  2093
+Icon                   1784
 UI                     1368
-World/Terrain          1158
+World/Terrain          1162
 Shadow                  436
 Building                309
 Character/Unit          130
-Animal                  121
+Animal                  125
 Effect                   80
 
 SUGGESTED GROUP COUNTS
 ----------------------
-General AI Upscale          2650
-UI/Icon AI Upscale          1760
+General AI Upscale          2657
+UI/Icon AI Upscale          1784
 UI AI Upscale               1368
-World/Terrain Review        1158
+World/Terrain Review        1162
 Shadow Review                436
 Effect Review                 80
 
 RESOLUTION COUNTS
 -----------------
-64x64             2441
-256x256           1750
+64x64             2449
+256x256           1754
 32x32             1170
-128x128            692
+128x128            693
 16x16              194
-256x128            139
+256x128            140
 128x64             110
 64x32              107
 256x32             105
 8x8                 71
 32x16               63
-32x64               60
 512x64              60
+32x64               60
 512x128             52
 128x32              49
 64x128              44
@@ -46,60 +46,60 @@ RESOLUTION COUNTS
 64x16               33
 640x256             30
 256x64              28
+0x0                 28
 16x32               21
 256x16              21
 128x16              18
+64x8                13
 4x4                 13
 128x256             13
-64x8                13
 481x360             12
 512x32              11
 8x16                10
-32x128               9
 32x256               9
-0x0                  7
+32x128               9
 64x256               7
 512x512              6
 16x8                 5
 8x32                 4
 1024x768             3
-67x67                2
-16x64                2
 684x512              2
+16x64                2
+67x67                2
 1920x1080            2
 368x430              2
-16x128               2
 128x8                2
 60x60                2
+16x128               2
 156x146              1
 205x175              1
-103x99               1
 122x37               1
+103x99               1
 162x64               1
 256x8                1
-70x70                1
+71x73                1
 8x256                1
 200x200              1
 32x8                 1
 182x89               1
-32x4                 1
-71x73                1
 66x67                1
-69x70                1
+1024x512             1
 73x72                1
+70x70                1
+69x70                1
 70x69                1
 1280x720             1
 57x52                1
-1024x512             1
+32x4                 1
 66x66                1
 2x2                  1
 
 SPECIAL FLAGS
 -------------
-PartialAlpha                2492
-MapNamed                     788
-SparseAlpha                  619
-Specular                     581
+PartialAlpha                2495
+MapNamed                     792
+SparseAlpha                  621
+Specular                     594
 Shadow                       438
 Variant                      324
 Gloss                        186

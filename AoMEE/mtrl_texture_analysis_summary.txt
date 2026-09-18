@@ -1,0 +1,652 @@
+﻿AoM:EE MTRL Texture Usage Analysis
+==================================
+
+XML files scanned: 20842
+Files that could not be read: 469
+Materials with texture field: 20199
+Materials with ColorTransform 4: 5490
+Materials with PixelXForm: 19
+
+Unique texture names: 1304
+Candidate texture/material matches: 2829
+
+TEXTURES USED WITH COLOR_TRANSFORM 4
+------------------------------------
+Unique textures: 518
+
+_missingtexture                                         Total=    1 CT0=    0 CT4=    1 Other=    0
+Agamemnon Map                                           Total=    3 CT0=    2 CT4=    1 Other=    0
+alfred_crown                                            Total=    7 CT0=    0 CT4=    7 Other=    0
+Animal Cow A map                                        Total=   45 CT0=   31 CT4=   14 Other=    0
+animal dog a map                                        Total=    8 CT0=    2 CT4=    6 Other=    0
+Animal Flying Purple Hippo                              Total=   22 CT0=   11 CT4=   11 Other=    0
+Animal Goat map                                         Total=   56 CT0=   35 CT4=   21 Other=    0
+Animal GoatNubian map                                   Total=   58 CT0=   35 CT4=   23 Other=    0
+Animal Pig map                                          Total=   27 CT0=   18 CT4=    9 Other=    0
+animal white tiger map                                  Total=    9 CT0=    0 CT4=    9 Other=    0
+Animal William Walrus Map                               Total=    1 CT0=    0 CT4=    1 Other=    0
+Animal Yak                                              Total=    8 CT0=    0 CT4=    8 Other=    0
+archer c crossbowman head copper                        Total=    1 CT0=    0 CT4=    1 Other=    0
+archer c crossbowman head standard                      Total=    1 CT0=    0 CT4=    1 Other=    0
+archer c crossbowman standard                           Total=    7 CT0=    0 CT4=    7 Other=    0
+archer c mounted archer head standard                   Total=    1 CT0=    0 CT4=    1 Other=    0
+archer c mounted archer horse standard                  Total=    7 CT0=    0 CT4=    7 Other=    0
+archer c mounted archer standard                        Total=    7 CT0=    0 CT4=    7 Other=    0
+Archer E Slinger Head Standard                          Total=   20 CT0=   10 CT4=    8 Other=    2
+archer e slinger standard                               Total=   18 CT0=    9 CT4=    7 Other=    2
+Archer G Crossbowman                                    Total=   16 CT0=    8 CT4=    7 Other=    1
+Archer G Peltast Cape Standard                          Total=    6 CT0=    0 CT4=    6 Other=    0
+Archer G Peltast Head Standard                          Total=   14 CT0=    7 CT4=    7 Other=    0
+Archer G Peltast Standard                               Total=   12 CT0=    6 CT4=    6 Other=    0
+Archer G Toxotes Head Bronze                            Total=    2 CT0=    1 CT4=    1 Other=    0
+Archer G Toxotes Head Copper                            Total=    2 CT0=    1 CT4=    1 Other=    0
+Archer G Toxotes Head Iron                              Total=    4 CT0=    2 CT4=    2 Other=    0
+Archer G Toxotes Iron                                   Total=    2 CT0=    1 CT4=    1 Other=    0
+Archer G Toxotes Standard                               Total=   16 CT0=    8 CT4=    8 Other=    0
+Archer N Normal Head Standard                           Total=    1 CT0=    0 CT4=    1 Other=    0
+Archer N Normal Standard                                Total=    6 CT0=    0 CT4=    6 Other=    0
+Archer N Throwing Axeman Standard                       Total=   14 CT0=    7 CT4=    7 Other=    0
+Archer X Iron                                           Total=   36 CT0=   19 CT4=   17 Other=    0
+Attachments A Arrow map                                 Total=   18 CT0=   14 CT4=    4 Other=    0
+Attachments A Shields map                               Total=    6 CT0=    0 CT4=    6 Other=    0
+attachments c flag naval                                Total=    2 CT0=    0 CT4=    2 Other=    0
+Attachments E Shield Copper                             Total=    6 CT0=    0 CT4=    6 Other=    0
+Attachments G Shield Copper                             Total=    6 CT0=    0 CT4=    6 Other=    0
+Attachments MU X Automaton                              Total=   58 CT0=   44 CT4=   14 Other=    0
+Attachments N Shield Cav Bronze map                     Total=    1 CT0=    0 CT4=    1 Other=    0
+Attachments N Shield Cav Copper map                     Total=    1 CT0=    0 CT4=    1 Other=    0
+Attachments N Shield Cav Iron map                       Total=    1 CT0=    0 CT4=    1 Other=    0
+Attachments N Shield Copper                             Total=    6 CT0=    0 CT4=    6 Other=    0
+Attachments N Shield Iron                               Total=    4 CT0=    2 CT4=    2 Other=    0
+Attachments X Shield Medium                             Total=    6 CT0=    0 CT4=    6 Other=    0
+Building Attachments                                    Total=  227 CT0=  222 CT4=    5 Other=    0
+building c accessories                                  Total=   42 CT0=   34 CT4=    8 Other=    0
+building c earthen wall                                 Total=   17 CT0=    0 CT4=   17 Other=    0
+building c fortified wall                               Total=   18 CT0=    1 CT4=   17 Other=    0
+building c fortress age 3                               Total=    1 CT0=    0 CT4=    1 Other=    0
+building c great wall                                   Total=   17 CT0=    0 CT4=   17 Other=    0
+building c roofage1                                     Total=   47 CT0=    1 CT4=   46 Other=    0
+building c special                                      Total=   22 CT0=   10 CT4=   12 Other=    0
+building c stone wall                                   Total=   17 CT0=    0 CT4=   17 Other=    0
+building c titan gate door map                          Total=    6 CT0=    0 CT4=    6 Other=    0
+building c titan gate map                               Total=   12 CT0=    6 CT4=    6 Other=    0
+building c tower age2                                   Total=    8 CT0=    0 CT4=    8 Other=    0
+building c towers                                       Total=    4 CT0=    0 CT4=    4 Other=    0
+building c wallsage1                                    Total=   43 CT0=    0 CT4=   43 Other=    0
+building c wonder city roof                             Total=    2 CT0=    0 CT4=    2 Other=    0
+building c wonder city walls                            Total=    1 CT0=    0 CT4=    1 Other=    0
+building c wonder palace roof                           Total=    2 CT0=    0 CT4=    2 Other=    0
+building c wonder palace walls                          Total=    2 CT0=    0 CT4=    2 Other=    0
+building c wonder temple                                Total=    4 CT0=    0 CT4=    4 Other=    0
+Building E Age1                                         Total=   78 CT0=   42 CT4=   36 Other=    0
+Building E Age2                                         Total=  100 CT0=   53 CT4=   47 Other=    0
+building E Age2 wall                                    Total=   60 CT0=   28 CT4=   32 Other=    0
+Building E Age3                                         Total=  197 CT0=  101 CT4=   96 Other=    0
+building E Age4                                         Total=  121 CT0=   61 CT4=   60 Other=    0
+building E Fortress Accessories                         Total=   10 CT0=    6 CT4=    4 Other=    0
+building E Isis Wonder01                                Total=    7 CT0=    4 CT4=    3 Other=    0
+building E Isis Wonder02                                Total=    7 CT0=    4 CT4=    3 Other=    0
+Building E Lighthouse                                   Total=    9 CT0=    4 CT4=    5 Other=    0
+building E Monument platforms                           Total=   29 CT0=   16 CT4=   13 Other=    0
+Building E Obelisk                                      Total=   16 CT0=    8 CT4=    8 Other=    0
+building E Outpost                                      Total=   10 CT0=    5 CT4=    5 Other=    0
+building E Ra Wonder02                                  Total=   10 CT0=    5 CT4=    5 Other=    0
+building E Set Wonder02                                 Total=    6 CT0=    4 CT4=    2 Other=    0
+building E Settlement Age1                              Total=    8 CT0=    4 CT4=    4 Other=    0
+building E Settlement Age2                              Total=    8 CT0=    4 CT4=    4 Other=    0
+building E Settlement Age3                              Total=   16 CT0=    8 CT4=    8 Other=    0
+building E Settlement Age4                              Total=   14 CT0=    7 CT4=    7 Other=    0
+Building E shared02 2 map                               Total=    2 CT0=    1 CT4=    1 Other=    0
+Building E Titan Gate Map                               Total=   12 CT0=    6 CT4=    6 Other=    0
+Building E Wall4                                        Total=   56 CT0=   28 CT4=   28 Other=    0
+Building G Age0                                         Total=   62 CT0=   36 CT4=   26 Other=    0
+Building G Fortifiedwall                                Total=   36 CT0=    3 CT4=   33 Other=    0
+Building G FortressWall                                 Total=   18 CT0=   10 CT4=    8 Other=    0
+Building G Hades Wonder                                 Total=   11 CT0=    6 CT4=    5 Other=    0
+Building G RoofAge1                                     Total=   60 CT0=   56 CT4=    4 Other=    0
+Building G SettlementAge1                               Total=   29 CT0=   21 CT4=    8 Other=    0
+Building G SettlementAge2                               Total=   33 CT0=   22 CT4=   11 Other=    0
+Building G SettlementAge3                               Total=   31 CT0=   19 CT4=   12 Other=    0
+Building G Shared04 2 map                               Total=    2 CT0=    1 CT4=    1 Other=    0
+Building G Shared05 2 map                               Total=   56 CT0=   28 CT4=   28 Other=    0
+Building G Shrine                                       Total=    4 CT0=    2 CT4=    2 Other=    0
+Building G Temple                                       Total=    8 CT0=    4 CT4=    4 Other=    0
+Building G Temple02 2 map                               Total=    2 CT0=    1 CT4=    1 Other=    0
+Building G TempleAge1                                   Total=   13 CT0=    7 CT4=    6 Other=    0
+Building G TempleAge2                                   Total=    8 CT0=    4 CT4=    4 Other=    0
+Building G Titan Gate Door Map                          Total=   10 CT0=    4 CT4=    6 Other=    0
+Building G Towers                                       Total=   40 CT0=   20 CT4=   20 Other=    0
+Building G WallsAge1                                    Total=   70 CT0=   37 CT4=   33 Other=    0
+Building G WallsAge2                                    Total=  101 CT0=   51 CT4=   50 Other=    0
+Building G WallsAge3                                    Total=   62 CT0=   35 CT4=   27 Other=    0
+Building G Wonder                                       Total=   12 CT0=    6 CT4=    6 Other=    0
+Building G Zues Wonder01                                Total=   16 CT0=    8 CT4=    8 Other=    0
+Building N Hillfort                                     Total=   18 CT0=   10 CT4=    8 Other=    0
+Building N Loki Wonder02                                Total=    8 CT0=    4 CT4=    4 Other=    0
+Building N Odin Wonder01                                Total=   10 CT0=    4 CT4=    6 Other=    0
+Building N SettlementAge1                               Total=   14 CT0=   11 CT4=    3 Other=    0
+Building N SettlementAge2                               Total=   14 CT0=   10 CT4=    4 Other=    0
+Building N SettlementAge3                               Total=   25 CT0=   17 CT4=    8 Other=    0
+Building N SettlementAge4                               Total=   21 CT0=   14 CT4=    7 Other=    0
+Building N Shared01 1 map                               Total=   36 CT0=   18 CT4=   18 Other=    0
+Building N Shared01 2 map                               Total=   56 CT0=   34 CT4=   22 Other=    0
+Building N Shared01 3 map                               Total=   61 CT0=   36 CT4=   25 Other=    0
+Building N Shared02 2 map                               Total=    8 CT0=    5 CT4=    3 Other=    0
+Building N Shared04 2 map                               Total=   37 CT0=   25 CT4=   12 Other=    0
+Building N Shared06 2 map                               Total=   71 CT0=   31 CT4=   40 Other=    0
+Building N Shrine                                       Total=    2 CT0=    1 CT4=    1 Other=    0
+Building N TempleAge1                                   Total=    7 CT0=    3 CT4=    4 Other=    0
+Building N TempleAge2                                   Total=    7 CT0=    4 CT4=    3 Other=    0
+Building N TempleAge3                                   Total=   16 CT0=    8 CT4=    8 Other=    0
+Building N ThorArmory                                   Total=   11 CT0=    7 CT4=    4 Other=    0
+Building N Titan Gate Map                               Total=   12 CT0=    6 CT4=    6 Other=    0
+Building N Tower                                        Total=   22 CT0=   12 CT4=   10 Other=    0
+Building N WallAge4                                     Total=   63 CT0=   36 CT4=   27 Other=    0
+Building N Wonder                                       Total=   11 CT0=    6 CT4=    5 Other=    0
+Building X Mirror Tower                                 Total=   14 CT0=    7 CT4=    7 Other=    0
+Building X Palace Age2                                  Total=    4 CT0=    1 CT4=    3 Other=    0
+Building X Palace Age3                                  Total=    5 CT0=    1 CT4=    4 Other=    0
+Building X Roof Age0                                    Total=   69 CT0=   41 CT4=   28 Other=    0
+Building X Roof Age1                                    Total=  100 CT0=   46 CT4=   54 Other=    0
+Building X Sky Temple                                   Total=   10 CT0=    5 CT4=    5 Other=    0
+Building X Temple age0                                  Total=    4 CT0=    0 CT4=    4 Other=    0
+Building x TitanGate                                    Total=   12 CT0=    6 CT4=    6 Other=    0
+Building X Tower Watch                                  Total=    2 CT0=    1 CT4=    1 Other=    0
+building x tower watch2                                 Total=   17 CT0=    9 CT4=    8 Other=    0
+Building X Tower Watch3                                 Total=    4 CT0=    2 CT4=    2 Other=    0
+Building X Wall Age2                                    Total=  110 CT0=   57 CT4=   53 Other=    0
+Building X Wall Age3                                    Total=   56 CT0=    5 CT4=   51 Other=    0
+Building X Wall Bronze                                  Total=   45 CT0=   20 CT4=   20 Other=    5
+Building X Wall Iron                                    Total=   40 CT0=   20 CT4=   20 Other=    0
+Building X Wall Oreichalkos                             Total=   40 CT0=   21 CT4=   19 Other=    0
+building x wall stone                                   Total=   44 CT0=   20 CT4=   20 Other=    4
+Building_E_MonumentBase_Map                             Total=    2 CT0=    1 CT4=    1 Other=    0
+cavalry c cataphract head copper                        Total=    1 CT0=    0 CT4=    1 Other=    0
+cavalry c cataphract head iron                          Total=    1 CT0=    0 CT4=    1 Other=    0
+cavalry c cataphract head standard                      Total=    1 CT0=    0 CT4=    1 Other=    0
+cavalry c cataphract horse standard                     Total=    7 CT0=    0 CT4=    7 Other=    0
+cavalry c cataphract standard                           Total=    7 CT0=    0 CT4=    7 Other=    0
+cavalry c chariot horse standard                        Total=    5 CT0=    0 CT4=    5 Other=    0
+cavalry c chariot standard                              Total=    5 CT0=    0 CT4=    5 Other=    0
+cavalry c charioteer standard                           Total=    5 CT0=    0 CT4=    5 Other=    0
+cavalry c scout head copper                             Total=    1 CT0=    0 CT4=    1 Other=    0
+cavalry c scout head standard                           Total=    1 CT0=    0 CT4=    1 Other=    0
+cavalry c scout horse standard                          Total=   16 CT0=    0 CT4=   16 Other=    0
+cavalry c scout standard                                Total=   17 CT0=    0 CT4=   17 Other=    0
+Cavalry E Camelry Camel Copper                          Total=   14 CT0=    7 CT4=    7 Other=    0
+Cavalry E Camelry Copper                                Total=   13 CT0=    6 CT4=    7 Other=    0
+cavalry e chariot archer copper                         Total=   11 CT0=    5 CT4=    6 Other=    0
+Cavalry E Chariot Chariot Map                           Total=   17 CT0=   12 CT4=    5 Other=    0
+Cavalry E Chariot Horse Map                             Total=    9 CT0=    4 CT4=    5 Other=    0
+Cavalry E Chariot Map                                   Total=    5 CT0=    0 CT4=    5 Other=    0
+Cavalry E Mercenary Horse Standard                      Total=   16 CT0=    8 CT4=    8 Other=    0
+Cavalry E War Elephant Copper                           Total=   18 CT0=   12 CT4=    6 Other=    0
+Cavalry G Cataphract Head Iron                          Total=   44 CT0=   22 CT4=   11 Other=   11
+Cavalry G Cataphract Horse Iron                         Total=   20 CT0=    9 CT4=   11 Other=    0
+Cavalry G Cataphract Iron                               Total=   44 CT0=   22 CT4=   11 Other=   11
+Cavalry G Hetairoi Cape                                 Total=    9 CT0=    0 CT4=    9 Other=    0
+Cavalry G Hetairoi Horse Iron                           Total=   17 CT0=    8 CT4=    9 Other=    0
+Cavalry G Hetairoi Iron                                 Total=   18 CT0=    9 CT4=    9 Other=    0
+Cavalry G Hippikon Cape                                 Total=    9 CT0=    0 CT4=    9 Other=    0
+Cavalry G Hippikon Head Bronze                          Total=    1 CT0=    0 CT4=    1 Other=    0
+Cavalry G Hippikon Head Copper                          Total=    1 CT0=    0 CT4=    1 Other=    0
+Cavalry G Hippikon Head Iron                            Total=    1 CT0=    0 CT4=    1 Other=    0
+Cavalry G Hippikon Horse Standard                       Total=   17 CT0=    9 CT4=    8 Other=    0
+Cavalry G Hippikon Standard                             Total=   18 CT0=    9 CT4=    9 Other=    0
+Cavalry G Prodromos Horse Standard                      Total=   18 CT0=    9 CT4=    9 Other=    0
+Cavalry G Prodromos Standard                            Total=   17 CT0=    9 CT4=    8 Other=    0
+Cavalry G Scout Horse                                   Total=   24 CT0=   12 CT4=   12 Other=    0
+Cavalry N Jarl Horse Standard                           Total=   25 CT0=   12 CT4=   13 Other=    0
+Cavalry N Jarl Standard                                 Total=   26 CT0=   13 CT4=   13 Other=    0
+Cavalry N Raiding Cavalry Horse Standard                Total=   15 CT0=    9 CT4=    6 Other=    0
+Cavalry N Raiding Cavalry Standard                      Total=   18 CT0=    9 CT4=    9 Other=    0
+Cavalry X Javelin Bronze                                Total=    2 CT0=    1 CT4=    1 Other=    0
+Cavalry X Javelin Copper                                Total=    2 CT0=    1 CT4=    1 Other=    0
+Cavalry X Javelin Hero                                  Total=    2 CT0=    1 CT4=    1 Other=    0
+Cavalry X Javelin Horse Iron                            Total=   31 CT0=   16 CT4=   15 Other=    0
+Cavalry X Javelin Iron                                  Total=   38 CT0=   21 CT4=   17 Other=    0
+Cavalry X Lancer Cape Iron                              Total=   14 CT0=    0 CT4=   14 Other=    0
+Cavalry X Lancer Horse Iron                             Total=   29 CT0=   14 CT4=   15 Other=    0
+Cavalry X Lancer Iron                                   Total=   31 CT0=   16 CT4=   15 Other=    0
+Cine A Arkantos Map                                     Total=    9 CT0=    5 CT4=    4 Other=    0
+Cine G Ajax Map                                         Total=    1 CT0=    0 CT4=    1 Other=    0
+Cine G Gargarensis Map                                  Total=    6 CT0=    3 CT4=    3 Other=    0
+Cine G Poseidon Stone                                   Total=    9 CT0=    5 CT4=    4 Other=    0
+Cine N Huskarl                                          Total=    2 CT0=    1 CT4=    1 Other=    0
+Cine X Kastor Adult                                     Total=   28 CT0=   14 CT4=   14 Other=    0
+Cine X Kastor Adult(pixelxform1)                        Total=    2 CT0=    0 CT4=    2 Other=    0
+Cine X Krios                                            Total=   12 CT0=    4 CT4=    8 Other=    0
+construction_boards_e                                   Total=    6 CT0=    0 CT4=    6 Other=    0
+Construction_flag                                       Total=    6 CT0=    0 CT4=    6 Other=    0
+forkboy map                                             Total=   18 CT0=    9 CT4=    9 Other=    0
+Gaia Wonder Map2                                        Total=   10 CT0=    6 CT4=    4 Other=    0
+GaiaCreepFlowersAop                                     Total=    2 CT0=    0 CT4=    2 Other=    0
+Gine G Kamos Map                                        Total=    6 CT0=    3 CT4=    3 Other=    0
+hero c general                                          Total=    7 CT0=    0 CT4=    7 Other=    0
+hero c general cape                                     Total=    7 CT0=    0 CT4=    7 Other=    0
+hero c general flag                                     Total=    7 CT0=    0 CT4=    7 Other=    0
+hero c general head                                     Total=    1 CT0=    0 CT4=    1 Other=    0
+hero c general horse                                    Total=    7 CT0=    0 CT4=    7 Other=    0
+hero c immortal                                         Total=   10 CT0=    0 CT4=   10 Other=    0
+hero c monk                                             Total=    9 CT0=    0 CT4=    9 Other=    0
+hero c monk head                                        Total=    1 CT0=    0 CT4=    1 Other=    0
+hero c monk weapon                                      Total=    1 CT0=    0 CT4=    1 Other=    0
+Hero G Achilles                                         Total=   18 CT0=    9 CT4=    9 Other=    0
+Hero G Achilles Cape                                    Total=   10 CT0=    1 CT4=    9 Other=    0
+Hero G Ajax                                             Total=   45 CT0=   23 CT4=   11 Other=   11
+Hero G Atalanta                                         Total=   34 CT0=   17 CT4=    8 Other=    9
+Hero G Atalanta Shield                                  Total=   34 CT0=   17 CT4=   17 Other=    0
+Hero G Belerophon                                       Total=   41 CT0=   19 CT4=   22 Other=    0
+Hero G Belerophon Shield                                Total=   43 CT0=   21 CT4=   22 Other=    0
+Hero G Heracles                                         Total=   31 CT0=   16 CT4=   15 Other=    0
+Hero G Heracles Shield                                  Total=   36 CT0=   18 CT4=   18 Other=    0
+Hero G Hippolyta                                        Total=   36 CT0=   18 CT4=    9 Other=    9
+Hero G Hippolyta Head Standard                          Total=   34 CT0=   18 CT4=   16 Other=    0
+Hero G Jason Shield                                     Total=   32 CT0=   15 CT4=   17 Other=    0
+Hero G Jason Standard                                   Total=   34 CT0=   17 CT4=   15 Other=    2
+Hero G Perseus Head Standard                            Total=   36 CT0=   18 CT4=   18 Other=    0
+Hero G Perseus Standard                                 Total=   35 CT0=   18 CT4=    8 Other=    9
+hero g physician                                        Total=    6 CT0=    0 CT4=    6 Other=    0
+hero g physician head                                   Total=    1 CT0=    0 CT4=    1 Other=    0
+Hero G Polyphemus Shield                                Total=   47 CT0=   23 CT4=   24 Other=    0
+Hero G Theseus                                          Total=   35 CT0=   18 CT4=    7 Other=   10
+Hero G Theseus Shield                                   Total=   35 CT0=   17 CT4=   18 Other=    0
+Hero N Hero                                             Total=   19 CT0=    9 CT4=   10 Other=    0
+Hero N Ragnorok Female                                  Total=   19 CT0=   10 CT4=    8 Other=    1
+Hero N Ragnorok Male                                    Total=   39 CT0=   19 CT4=   18 Other=    2
+Hero X Ajax                                             Total=   44 CT0=   22 CT4=    9 Other=   13
+Hero X Kastor                                           Total=   43 CT0=   28 CT4=    2 Other=   13
+Hero X Kastor(pixelxform1)                              Total=   13 CT0=    0 CT4=   13 Other=    0
+infantry c halberdier head bronze                       Total=    1 CT0=    0 CT4=    1 Other=    0
+infantry c halberdier head copper                       Total=    1 CT0=    0 CT4=    1 Other=    0
+infantry c halberdier head iron                         Total=    1 CT0=    0 CT4=    1 Other=    0
+infantry c halberdier head standard                     Total=    1 CT0=    0 CT4=    1 Other=    0
+infantry c halberdier standard                          Total=    6 CT0=    0 CT4=    6 Other=    0
+Infantry E Axeman Standard                              Total=   16 CT0=    8 CT4=    8 Other=    0
+infantry e khopesh head standard                        Total=    1 CT0=    0 CT4=    1 Other=    0
+infantry e khopesh standard                             Total=    6 CT0=    0 CT4=    6 Other=    0
+Infantry E Mercenary                                    Total=   29 CT0=   15 CT4=   14 Other=    0
+Infantry E Spearman Standard                            Total=   12 CT0=    6 CT4=    5 Other=    1
+Infantry G Hoplite Bronze                               Total=   47 CT0=   23 CT4=   13 Other=   11
+Infantry G Hoplite Head Bronze                          Total=    2 CT0=    1 CT4=    1 Other=    0
+Infantry G Hoplite Head Iron                            Total=    2 CT0=    1 CT4=    1 Other=    0
+Infantry G Hoplite Standard                             Total=   27 CT0=    7 CT4=   20 Other=    0
+Infantry G Hypaspist Cape                               Total=   10 CT0=    0 CT4=   10 Other=    0
+Infantry G Hypaspist Head Iron                          Total=    2 CT0=    1 CT4=    1 Other=    0
+Infantry G Hypaspist Standard                           Total=   21 CT0=   10 CT4=    8 Other=    3
+Infantry G Militia                                      Total=   12 CT0=    6 CT4=    5 Other=    1
+Infantry G Myrmidon Head Iron                           Total=   11 CT0=    1 CT4=    9 Other=    1
+Infantry G Myrmidon Iron                                Total=   18 CT0=    9 CT4=    8 Other=    1
+Infantry N Huskarl Bronze                               Total=   19 CT0=    9 CT4=   10 Other=    0
+Infantry N Huskarl Cape                                 Total=   15 CT0=    0 CT4=   15 Other=    0
+infantry n huskarl iron                                 Total=    3 CT0=    1 CT4=    2 Other=    0
+Infantry N Huskarl Standard                             Total=   18 CT0=    9 CT4=    8 Other=    1
+infantry n ulfsark scout                                Total=   15 CT0=    0 CT4=   15 Other=    0
+Infantry N Ulfsark Standard                             Total=   18 CT0=    9 CT4=    8 Other=    1
+Infantry X 2 Sword Fighter Iron                         Total=   37 CT0=   19 CT4=   18 Other=    0
+Infantry X Maceman Iron                                 Total=   37 CT0=   19 CT4=   18 Other=    0
+Infantry X Swordsman Iron                               Total=   40 CT0=   14 CT4=   26 Other=    0
+Infantry X Trident Soldier Cape Iron                    Total=   21 CT0=    0 CT4=   21 Other=    0
+Infantry X Trident Soldier Hero                         Total=    4 CT0=    2 CT4=    2 Other=    0
+Infantry X Trident Soldier Iron                         Total=   38 CT0=   19 CT4=   19 Other=    0
+Infantry X Trident Soldier Shield Hero                  Total=    2 CT0=    0 CT4=    2 Other=    0
+Infantry X Trident Soldier Shield Iron                  Total=   21 CT0=    0 CT4=   21 Other=    0
+Kronos Wonder Map2                                      Total=   12 CT0=    6 CT4=    6 Other=    0
+LP Cine X Krios                                         Total=   12 CT0=    6 CT4=    6 Other=    0
+LP E Cavalry                                            Total=   30 CT0=   18 CT4=    6 Other=    6
+LP MU X Argus Map                                       Total=   15 CT0=    7 CT4=    8 Other=    0
+LP MU X Stymphalian Bird Map                            Total=   14 CT0=    9 CT4=    5 Other=    0
+MU X Argus Map                                          Total=   15 CT0=    7 CT4=    8 Other=    0
+MU X Atlantean Flying Medic Map                         Total=   46 CT0=   31 CT4=    7 Other=    8
+MU X Atlantean Hundred Giant Map                        Total=   40 CT0=   20 CT4=   20 Other=    0
+MU X Atlantean Lampedes map                             Total=   48 CT0=   32 CT4=   16 Other=    0
+MU X Atlantean ManOWar Map                              Total=   31 CT0=   15 CT4=   12 Other=    4
+MU X Atlantean Satyr Map                                Total=   32 CT0=   16 CT4=    8 Other=    8
+MU X Automation Map                                     Total=   45 CT0=   23 CT4=   22 Other=    0
+MU X Behemoth Map                                       Total=   24 CT0=   12 CT4=   12 Other=    0
+MU X Dryad                                              Total=   26 CT0=   12 CT4=   14 Other=    0
+MU X Nereid Rider Map                                   Total=   24 CT0=   13 CT4=   11 Other=    0
+MU X Promethean Map                                     Total=   76 CT0=   38 CT4=   38 Other=    0
+MU X Servant of Oceanus Map                             Total=   21 CT0=    7 CT4=   14 Other=    0
+MU X Stymphalian Bird Map                               Total=   15 CT0=   10 CT4=    5 Other=    0
+Naval C All                                             Total=   23 CT0=    0 CT4=   23 Other=    0
+Naval E All                                             Total=  121 CT0=   71 CT4=   45 Other=    5
+Naval E Pirate Ship                                     Total=   44 CT0=   22 CT4=   12 Other=   10
+Naval G All                                             Total=  193 CT0=   92 CT4=   95 Other=    6
+naval g all wrecked                                     Total=    6 CT0=    2 CT4=    4 Other=    0
+Naval N All                                             Total=  126 CT0=   74 CT4=   49 Other=    3
+Naval N Kraken                                          Total=   62 CT0=   52 CT4=   10 Other=    0
+Naval N Longship map                                    Total=    4 CT0=    2 CT4=    2 Other=    0
+Naval X All                                             Total=  110 CT0=   55 CT4=   55 Other=    0
+Oranos Wonder Map                                       Total=   12 CT0=    8 CT4=    4 Other=    0
+Oranos Wonder Map1                                      Total=   11 CT0=    6 CT4=    5 Other=    0
+Platform Map                                            Total=   12 CT0=    6 CT4=    6 Other=    0
+Projectile A Ballista Arrow                             Total=    4 CT0=    0 CT4=    4 Other=    0
+Scenario B Amanra map                                   Total=   39 CT0=   19 CT4=   20 Other=    0
+scenario c danzhu                                       Total=    6 CT0=    0 CT4=    6 Other=    0
+scenario c danzhu head                                  Total=    1 CT0=    0 CT4=    1 Other=    0
+Scenario C Gargarensis map                              Total=   50 CT0=   25 CT4=   25 Other=    0
+scenario c jiaolong                                     Total=   19 CT0=    8 CT4=   11 Other=    0
+scenario c jiaolong head                                Total=    1 CT0=    0 CT4=    1 Other=    0
+Scenario C Kamos                                        Total=   97 CT0=   49 CT4=   48 Other=    0
+scenario c shun                                         Total=   30 CT0=    0 CT4=   30 Other=    0
+scenario c shun head                                    Total=   11 CT0=    0 CT4=   11 Other=    0
+Scenario E Great Box                                    Total=    6 CT0=    0 CT4=    6 Other=    0
+Scenario E Great Box map                                Total=    5 CT0=    4 CT4=    1 Other=    0
+Scenario E Guardian                                     Total=   78 CT0=   39 CT4=   39 Other=    0
+Scenario E Setna map                                    Total=   38 CT0=   20 CT4=   18 Other=    0
+Scenario G Arkantos Man map                             Total=   24 CT0=   12 CT4=   12 Other=    0
+Scenario G Arkantos map                                 Total=   59 CT0=   29 CT4=   30 Other=    0
+Scenario G Chiron Map                                   Total=   60 CT0=   30 CT4=   26 Other=    4
+Scenario G Circe                                        Total=   64 CT0=   43 CT4=   21 Other=    0
+Scenario G Kastor map                                   Total=   16 CT0=    6 CT4=   10 Other=    0
+Scenario G Odysseus map                                 Total=   41 CT0=   20 CT4=   10 Other=   11
+Scenario G Old Man Map                                  Total=    4 CT0=    2 CT4=    2 Other=    0
+Scenario G Skult Map                                    Total=   18 CT0=    9 CT4=    9 Other=    0
+Scenario N Brokk Standard                               Total=   72 CT0=   36 CT4=   36 Other=    0
+Scenario N Eitri Standard                               Total=   73 CT0=   36 CT4=   37 Other=    0
+Scenario N Folstag Flag                                 Total=   17 CT0=   10 CT4=    7 Other=    0
+scenario n pirate ship                                  Total=   16 CT0=    8 CT4=    8 Other=    0
+Scenario N Reginleif map                                Total=   47 CT0=   24 CT4=   23 Other=    0
+Scenario N Reginleif Weapons map                        Total=   47 CT0=   24 CT4=   23 Other=    0
+Scenario T Shared                                       Total=    2 CT0=    1 CT4=    1 Other=    0
+scenario t troy wall long                               Total=   18 CT0=    9 CT4=    9 Other=    0
+scenario t troy wall long dead                          Total=    8 CT0=    4 CT4=    4 Other=    0
+Scenario Theocrat                                       Total=   23 CT0=   12 CT4=   11 Other=    0
+Scenario Theocrat Staff                                 Total=   30 CT0=   16 CT4=   14 Other=    0
+Scenario Theocrat Staff(pixelxform1)                    Total=    2 CT0=    0 CT4=    2 Other=    0
+Scenario Theocrat(pixelxform1)                          Total=    1 CT0=    0 CT4=    1 Other=    0
+scenario x amanra map                                   Total=   44 CT0=   22 CT4=   11 Other=   11
+SFX A Carnivora                                         Total=   24 CT0=   12 CT4=   12 Other=    0
+SFX A Carnivora Water                                   Total=   18 CT0=    9 CT4=    9 Other=    0
+SFX A Healing Spring Stone                              Total=    2 CT0=    1 CT4=    1 Other=    0
+SFX A Serpent                                           Total=   24 CT0=   11 CT4=    7 Other=    6
+SFX A Walking Woods                                     Total=   23 CT0=   12 CT4=   11 Other=    0
+SFX E Ancestors Water                                   Total=   32 CT0=   21 CT4=   11 Other=    0
+SFX E Citadel                                           Total=    6 CT0=    3 CT4=    3 Other=    0
+SFX E Citadel Age4                                      Total=    6 CT0=    3 CT4=    3 Other=    0
+SFX E Serpents Water                                    Total=   23 CT0=   12 CT4=   11 Other=    0
+SFX E Son of Osiris                                     Total=   46 CT0=   23 CT4=   11 Other=   12
+SFX G Animal Magnetism                                  Total=    6 CT0=    3 CT4=    3 Other=    0
+SFX G Plenty                                            Total=   14 CT0=   10 CT4=    4 Other=    0
+SFX G Sentinel                                          Total=   12 CT0=    7 CT4=    5 Other=    0
+SFX N Nidhogg                                           Total=   36 CT0=   24 CT4=   12 Other=    0
+siege c fire lance                                      Total=    5 CT0=    0 CT4=    5 Other=    0
+siege c fire lance head                                 Total=    1 CT0=    0 CT4=    1 Other=    0
+Siege C Sitting Tiger                                   Total=    6 CT0=    0 CT4=    6 Other=    0
+Siege E Catapult                                        Total=   22 CT0=   12 CT4=    6 Other=    4
+Siege E Tower                                           Total=   14 CT0=    7 CT4=    7 Other=    0
+Siege G Helepolis                                       Total=   24 CT0=   16 CT4=    3 Other=    5
+Siege G Petrobolos                                      Total=   13 CT0=    6 CT4=    7 Other=    0
+Siege G Petrobolos Iron                                 Total=    2 CT0=    1 CT4=    1 Other=    0
+Siege N Ballista                                        Total=   17 CT0=    9 CT4=    5 Other=    3
+Siege N Ballista Bolt                                   Total=   34 CT0=   17 CT4=   13 Other=    4
+Siege N Ballista Bolt Iron                              Total=    2 CT0=    1 CT4=    1 Other=    0
+Siege N Ram                                             Total=   31 CT0=   17 CT4=    7 Other=    7
+Siege N Ram Carrier Shield                              Total=    1 CT0=    0 CT4=    1 Other=    0
+Siege N Ram Iron                                        Total=   26 CT0=   13 CT4=    8 Other=    5
+Siege X Chieroballista                                  Total=   35 CT0=   18 CT4=   17 Other=    0
+Siege X Chieroballista Man                              Total=   24 CT0=   12 CT4=   12 Other=    0
+Siege X Fire Siphon                                     Total=   22 CT0=   11 CT4=   11 Other=    0
+Siege X Onager                                          Total=    4 CT0=    0 CT4=    4 Other=    0
+special c azure dragon                                  Total=    5 CT0=    0 CT4=    5 Other=    0
+special c dragon turtle                                 Total=    6 CT0=    0 CT4=    6 Other=    0
+special c earth dragon                                  Total=    4 CT0=    0 CT4=    4 Other=    0
+special c jiangshi                                      Total=    5 CT0=    0 CT4=    5 Other=    0
+special c jiangshi head                                 Total=    1 CT0=    0 CT4=    1 Other=    0
+special c monkey king                                   Total=    6 CT0=    0 CT4=    6 Other=    0
+Special C Pixiu                                         Total=    7 CT0=    0 CT4=    7 Other=    0
+special c qilin                                         Total=   18 CT0=    9 CT4=    9 Other=    0
+special c salamander                                    Total=   11 CT0=    0 CT4=   11 Other=    0
+special c terracotta soldier                            Total=    6 CT0=    0 CT4=    6 Other=    0
+special c vermillion bird                               Total=    5 CT0=    0 CT4=    5 Other=    0
+special c vermillion bird wing                          Total=    5 CT0=    0 CT4=    5 Other=    0
+Special E Anubite                                       Total=    7 CT0=    3 CT4=    4 Other=    0
+Special E Apep map                                      Total=   10 CT0=    5 CT4=    5 Other=    0
+Special E Avenger                                       Total=   56 CT0=   38 CT4=    8 Other=   10
+Special E Leviathan map                                 Total=   48 CT0=   32 CT4=   13 Other=    3
+Special E Minion map                                    Total=   43 CT0=   22 CT4=   21 Other=    0
+Special E Mummy map                                     Total=   60 CT0=   40 CT4=    8 Other=   12
+Special E Petesuchos                                    Total=   32 CT0=   16 CT4=   14 Other=    2
+Special E Pharaoh                                       Total=   53 CT0=   26 CT4=   27 Other=    0
+Special E Pharaoh Head                                  Total=   52 CT0=   26 CT4=   26 Other=    0
+Special E Phoenix                                       Total=   12 CT0=    8 CT4=    4 Other=    0
+Special E Phoenix Egg                                   Total=    6 CT0=    3 CT4=    3 Other=    0
+Special E Priest                                        Total=   38 CT0=   19 CT4=   17 Other=    2
+Special E Roc                                           Total=   42 CT0=   28 CT4=    9 Other=    5
+Special E Roc Basket                                    Total=   23 CT0=   12 CT4=   11 Other=    0
+Special E Scarab map                                    Total=   27 CT0=   14 CT4=   12 Other=    1
+Special E Scorpion Man                                  Total=   35 CT0=   18 CT4=    8 Other=    9
+Special E Sphinx                                        Total=   40 CT0=   20 CT4=    9 Other=   11
+Special E Vulture map                                   Total=   12 CT0=    8 CT4=    4 Other=    0
+Special E Wadjet                                        Total=   42 CT0=   28 CT4=   12 Other=    2
+Special G Agamemnon                                     Total=   39 CT0=   19 CT4=    9 Other=   11
+Special G Athena                                        Total=   16 CT0=    8 CT4=    8 Other=    0
+Special G Carcinos                                      Total=   32 CT0=   16 CT4=   14 Other=    2
+Special G Centaur                                       Total=   20 CT0=   10 CT4=    9 Other=    1
+Special G Chimera                                       Total=   32 CT0=   16 CT4=    7 Other=    9
+Special G Chimera map                                   Total=    2 CT0=    1 CT4=    1 Other=    0
+Special G Chimera Tail                                  Total=   15 CT0=    8 CT4=    6 Other=    1
+Special G Colossus map                                  Total=   41 CT0=   20 CT4=   10 Other=   11
+Special G Cyclops                                       Total=   40 CT0=   20 CT4=    9 Other=   11
+Special G Cyclops map                                   Total=    5 CT0=    2 CT4=    3 Other=    0
+Special G Giant Turtle                                  Total=    2 CT0=    1 CT4=    1 Other=    0
+Special G Golem map                                     Total=    6 CT0=    0 CT4=    6 Other=    0
+Special G Griffon map                                   Total=   13 CT0=    7 CT4=    6 Other=    0
+Special G Harpy map                                     Total=   16 CT0=    8 CT4=    8 Other=    0
+Special G Hippocampus                                   Total=   18 CT0=    6 CT4=    5 Other=    7
+Special G Hydra Land                                    Total=  124 CT0=   62 CT4=   62 Other=    0
+Special G Manticore                                     Total=   28 CT0=   14 CT4=   12 Other=    2
+Special G Medusa                                        Total=   39 CT0=   21 CT4=   16 Other=    2
+Special G Minotaur                                      Total=   51 CT0=   26 CT4=   11 Other=   14
+Special G Nemean Lion                                   Total=   39 CT0=   20 CT4=   19 Other=    0
+Special G Pegasus Wings                                 Total=   52 CT0=   27 CT4=   25 Other=    0
+Special G Polyphemus map                                Total=   47 CT0=   24 CT4=   11 Other=   12
+Special G Scylla                                        Total=  124 CT0=   62 CT4=   26 Other=   36
+Special G Sea Turtle                                    Total=   32 CT0=   16 CT4=   15 Other=    1
+Special G Shade                                         Total=   33 CT0=   20 CT4=    5 Other=    8
+Special N Battle Boar                                   Total=   56 CT0=   28 CT4=   27 Other=    1
+Special N Einheriar                                     Total=   16 CT0=    9 CT4=    7 Other=    0
+Special N Fenris                                        Total=   40 CT0=   20 CT4=   18 Other=    2
+Special N Fire Giant                                    Total=   34 CT0=   17 CT4=    8 Other=    9
+Special N Fire Giant map                                Total=    5 CT0=    4 CT4=    1 Other=    0
+Special N Frost Giant                                   Total=   46 CT0=   23 CT4=   12 Other=   11
+Special N Giant                                         Total=   49 CT0=   25 CT4=   13 Other=   11
+Special N Jarl Cape map                                 Total=   23 CT0=   11 CT4=   12 Other=    0
+Special N Jormund Brood                                 Total=    8 CT0=    4 CT4=    4 Other=    0
+Special N King Folstag Upgrade                          Total=   30 CT0=   15 CT4=   15 Other=    0
+Special N Raven                                         Total=   23 CT0=   16 CT4=    4 Other=    3
+Special N Troll                                         Total=   41 CT0=   21 CT4=   10 Other=   10
+Special N Troll Bag                                     Total=   18 CT0=    0 CT4=   18 Other=    0
+Special N Valkyrie map                                  Total=   22 CT0=   11 CT4=   10 Other=    1
+Special X Oracle                                        Total=   40 CT0=   20 CT4=   20 Other=    0
+Special X Oracle Hero                                   Total=   47 CT0=   23 CT4=   24 Other=    0
+Statue X Gaia Map                                       Total=    4 CT0=    2 CT4=    2 Other=    0
+Statue X Oranos Map                                     Total=    4 CT0=    2 CT4=    2 Other=    0
+Temp Santa Body                                         Total=    2 CT0=    1 CT4=    1 Other=    0
+Test Flags                                              Total=   15 CT0=    0 CT4=   15 Other=    0
+Theocrat Map                                            Total=    2 CT0=    1 CT4=    1 Other=    0
+Theocrat Map(pixelxform1)                               Total=    1 CT0=    0 CT4=    1 Other=    0
+Titan E Ra Pads Map                                     Total=    2 CT0=    0 CT4=    2 Other=    0
+Titan E Ra Skirt Map                                    Total=    4 CT0=    2 CT4=    2 Other=    0
+Titan G Cerebus Map1                                    Total=    2 CT0=    1 CT4=    1 Other=    0
+Titan G Cerebus Map2                                    Total=    2 CT0=    1 CT4=    1 Other=    0
+Titan N Troll Map2                                      Total=    2 CT0=    1 CT4=    1 Other=    0
+Titan X Gaia                                            Total=    6 CT0=    4 CT4=    2 Other=    0
+Titan X Golem Map1                                      Total=    2 CT0=    1 CT4=    1 Other=    0
+Titan X Kronos                                          Total=    1 CT0=    0 CT4=    1 Other=    0
+Titan X Promethean 1                                    Total=    5 CT0=    2 CT4=    3 Other=    0
+trade c caravan                                         Total=    8 CT0=    0 CT4=    8 Other=    0
+trade c caravan cargo                                   Total=    4 CT0=    0 CT4=    4 Other=    0
+Trade E Caravan Basket                                  Total=   44 CT0=   22 CT4=   22 Other=    0
+Trade E Caravan Camel                                   Total=   43 CT0=   22 CT4=   21 Other=    0
+Trade E Caravan Cargo                                   Total=   16 CT0=    5 CT4=   11 Other=    0
+Trade G Caravan Cargo                                   Total=   20 CT0=   10 CT4=   10 Other=    0
+Trade G Caravan Donkey                                  Total=   20 CT0=   10 CT4=   10 Other=    0
+Trade N Caravan Cargo                                   Total=   20 CT0=   10 CT4=    8 Other=    2
+Trade N Caravan Ox                                      Total=   52 CT0=   26 CT4=   22 Other=    4
+Trade X Caravan                                         Total=   19 CT0=    9 CT4=   10 Other=    0
+Trade X Caravan Cargo                                   Total=   10 CT0=    5 CT4=    5 Other=    0
+villager c female                                       Total=   17 CT0=    0 CT4=   17 Other=    0
+villager c male standard                                Total=   17 CT0=    0 CT4=   17 Other=    0
+Villager E Female                                       Total=   43 CT0=   21 CT4=   20 Other=    2
+Villager E Male Standard                                Total=   52 CT0=   26 CT4=   25 Other=    1
+Villager G Atlantean Male                               Total=   41 CT0=   21 CT4=   20 Other=    0
+Villager G Female                                       Total=   55 CT0=   28 CT4=   25 Other=    2
+Villager G Male Head                                    Total=   53 CT0=   52 CT4=    1 Other=    0
+Villager G Male Standard                                Total=   86 CT0=   43 CT4=   41 Other=    2
+Villager N Dwarf Standard                               Total=   43 CT0=   22 CT4=   19 Other=    2
+Villager N Female                                       Total=   40 CT0=   21 CT4=   17 Other=    2
+Villager N Male Standard                                Total=   44 CT0=   22 CT4=   21 Other=    1
+Villager N Oxcart                                       Total=   20 CT0=   10 CT4=   10 Other=    0
+Villager X Female                                       Total=   68 CT0=   35 CT4=   33 Other=    0
+Villager X Male                                         Total=   67 CT0=   33 CT4=   34 Other=    0
+Villager X Pony                                         Total=  202 CT0=  135 CT4=   67 Other=    0
+Waypoint                                                Total=    2 CT0=    1 CT4=    1 Other=    0
+World A Bouy                                            Total=    2 CT0=    0 CT4=    2 Other=    0
+World A Underworld Passage Color Transform              Total=    3 CT0=    0 CT4=    3 Other=    0
+World A Waypoint Flag                                   Total=    1 CT0=    0 CT4=    1 Other=    0
+world c flag                                            Total=    1 CT0=    0 CT4=    1 Other=    0
+world c statue fuxi                                     Total=    1 CT0=    0 CT4=    1 Other=    0
+world c statue fuxi head                                Total=    1 CT0=    0 CT4=    1 Other=    0
+world c statue nuwa                                     Total=    1 CT0=    0 CT4=    1 Other=    0
+world c statue nuwa stand                               Total=    3 CT0=    0 CT4=    3 Other=    0
+world c statue shennong                                 Total=    1 CT0=    0 CT4=    1 Other=    0
+world c statue shennong head                            Total=    1 CT0=    0 CT4=    1 Other=    0
+World E Flag                                            Total=    6 CT0=    3 CT4=    3 Other=    0
+World E Garrison Flag                                   Total=    2 CT0=    1 CT4=    1 Other=    0
+World E Statue Isis                                     Total=   17 CT0=   10 CT4=    7 Other=    0
+World E Statue Ra                                       Total=    6 CT0=    3 CT4=    3 Other=    0
+World E Statue Set                                      Total=    6 CT0=    3 CT4=    3 Other=    0
+World G Flag                                            Total=    6 CT0=    3 CT4=    3 Other=    0
+World G Garrison Flag                                   Total=    2 CT0=    1 CT4=    1 Other=    0
+World G Hades Temple                                    Total=    4 CT0=    2 CT4=    2 Other=    0
+World G Statue Hades                                    Total=    6 CT0=    3 CT4=    3 Other=    0
+World G Statue Poseidon                                 Total=   23 CT0=   11 CT4=   12 Other=    0
+World G Statue Poseidon Base                            Total=   10 CT0=    9 CT4=    1 Other=    0
+World G Statue Zeus                                     Total=    6 CT0=    3 CT4=    3 Other=    0
+World G Tent                                            Total=    4 CT0=    2 CT4=    2 Other=    0
+World N Flag                                            Total=    8 CT0=    5 CT4=    3 Other=    0
+World N Garrison Flag                                   Total=    2 CT0=    1 CT4=    1 Other=    0
+World N Statue Loki                                     Total=    6 CT0=    3 CT4=    3 Other=    0
+World N Statue Odin                                     Total=   12 CT0=    6 CT4=    6 Other=    0
+World N Statue Thor                                     Total=    6 CT0=    3 CT4=    3 Other=    0
+World N Tent                                            Total=    2 CT0=    1 CT4=    1 Other=    0
+
+PLAYER-COLOR CANDIDATES WITH CT4 USAGE
+---------------------------------------
+Animal Cow A map                                        Total=   45 CT0=   31 CT4=   14
+Animal GoatNubian map                                   Total=   58 CT0=   35 CT4=   23
+building c earthen wall                                 Total=   17 CT0=    0 CT4=   17
+building c fortified wall                               Total=   18 CT0=    1 CT4=   17
+building c great wall                                   Total=   17 CT0=    0 CT4=   17
+building c stone wall                                   Total=   17 CT0=    0 CT4=   17
+building c tower age2                                   Total=    8 CT0=    0 CT4=    8
+building c wonder temple                                Total=    4 CT0=    0 CT4=    4
+Building E Age2                                         Total=  100 CT0=   53 CT4=   47
+building E Age4                                         Total=  121 CT0=   61 CT4=   60
+building E Isis Wonder01                                Total=    7 CT0=    4 CT4=    3
+building E Isis Wonder02                                Total=    7 CT0=    4 CT4=    3
+Building E Lighthouse                                   Total=    9 CT0=    4 CT4=    5
+building E Monument platforms                           Total=   29 CT0=   16 CT4=   13
+building E Outpost                                      Total=   10 CT0=    5 CT4=    5
+building E Ra Wonder02                                  Total=   10 CT0=    5 CT4=    5
+building E Set Wonder02                                 Total=    6 CT0=    4 CT4=    2
+building E Settlement Age2                              Total=    8 CT0=    4 CT4=    4
+building E Settlement Age4                              Total=   14 CT0=    7 CT4=    7
+Building E shared02 2 map                               Total=    2 CT0=    1 CT4=    1
+Building E Titan Gate Map                               Total=   12 CT0=    6 CT4=    6
+Building E Wall4                                        Total=   56 CT0=   28 CT4=   28
+Building G Age0                                         Total=   62 CT0=   36 CT4=   26
+Building G Fortifiedwall                                Total=   36 CT0=    3 CT4=   33
+Building G FortressWall                                 Total=   18 CT0=   10 CT4=    8
+Building G Hades Wonder                                 Total=   11 CT0=    6 CT4=    5
+Building G RoofAge1                                     Total=   60 CT0=   56 CT4=    4
+Building G SettlementAge1                               Total=   29 CT0=   21 CT4=    8
+Building G SettlementAge2                               Total=   33 CT0=   22 CT4=   11
+Building G SettlementAge3                               Total=   31 CT0=   19 CT4=   12
+Building G Shared05 2 map                               Total=   56 CT0=   28 CT4=   28
+Building G Shrine                                       Total=    4 CT0=    2 CT4=    2
+Building G Temple                                       Total=    8 CT0=    4 CT4=    4
+Building G TempleAge1                                   Total=   13 CT0=    7 CT4=    6
+Building G TempleAge2                                   Total=    8 CT0=    4 CT4=    4
+Building G Towers                                       Total=   40 CT0=   20 CT4=   20
+Building G WallsAge1                                    Total=   70 CT0=   37 CT4=   33
+Building G WallsAge2                                    Total=  101 CT0=   51 CT4=   50
+Building G WallsAge3                                    Total=   62 CT0=   35 CT4=   27
+Building G Wonder                                       Total=   12 CT0=    6 CT4=    6
+Building G Zues Wonder01                                Total=   16 CT0=    8 CT4=    8
+Building N SettlementAge1                               Total=   14 CT0=   11 CT4=    3
+Building N SettlementAge2                               Total=   14 CT0=   10 CT4=    4
+Building N SettlementAge3                               Total=   25 CT0=   17 CT4=    8
+Building N Shared01 1 map                               Total=   36 CT0=   18 CT4=   18
+Building N Shared01 3 map                               Total=   61 CT0=   36 CT4=   25
+Building N Shared06 2 map                               Total=   71 CT0=   31 CT4=   40
+Building N TempleAge1                                   Total=    7 CT0=    3 CT4=    4
+Building N TempleAge2                                   Total=    7 CT0=    4 CT4=    3
+Building N TempleAge3                                   Total=   16 CT0=    8 CT4=    8
+Building N ThorArmory                                   Total=   11 CT0=    7 CT4=    4
+Building X Palace Age2                                  Total=    4 CT0=    1 CT4=    3
+Building X Palace Age3                                  Total=    5 CT0=    1 CT4=    4
+Building X Roof Age0                                    Total=   69 CT0=   41 CT4=   28
+Building X Roof Age1                                    Total=  100 CT0=   46 CT4=   54
+Building x TitanGate                                    Total=   12 CT0=    6 CT4=    6
+building x tower watch2                                 Total=   17 CT0=    9 CT4=    8
+Building X Tower Watch3                                 Total=    4 CT0=    2 CT4=    2
+Building X Wall Age3                                    Total=   56 CT0=    5 CT4=   51
+Building X Wall Bronze                                  Total=   45 CT0=   20 CT4=   20
+Building X Wall Iron                                    Total=   40 CT0=   20 CT4=   20
+Building X Wall Oreichalkos                             Total=   40 CT0=   21 CT4=   19
+building x wall stone                                   Total=   44 CT0=   20 CT4=   20
+Building_E_MonumentBase_Map                             Total=    2 CT0=    1 CT4=    1
+Cavalry G Hippikon Head Bronze                          Total=    1 CT0=    0 CT4=    1
+Cavalry G Hippikon Head Copper                          Total=    1 CT0=    0 CT4=    1
+Cavalry G Hippikon Head Iron                            Total=    1 CT0=    0 CT4=    1
+Cavalry G Hippikon Horse Standard                       Total=   17 CT0=    9 CT4=    8
+Cavalry G Prodromos Horse Standard                      Total=   18 CT0=    9 CT4=    9
+Cine G Poseidon Stone                                   Total=    9 CT0=    5 CT4=    4
+Hero G Theseus Shield                                   Total=   35 CT0=   17 CT4=   18
+Infantry G Hoplite Head Iron                            Total=    2 CT0=    1 CT4=    1
+Infantry G Myrmidon Head Iron                           Total=   11 CT0=    1 CT4=    9
+Kronos Wonder Map2                                      Total=   12 CT0=    6 CT4=    6
+Oranos Wonder Map                                       Total=   12 CT0=    8 CT4=    4
+Oranos Wonder Map1                                      Total=   11 CT0=    6 CT4=    5
+Platform Map                                            Total=   12 CT0=    6 CT4=    6
+Projectile A Ballista Arrow                             Total=    4 CT0=    0 CT4=    4
+Scenario G Circe                                        Total=   64 CT0=   43 CT4=   21
+Scenario N Reginleif map                                Total=   47 CT0=   24 CT4=   23
+scenario t troy wall long                               Total=   18 CT0=    9 CT4=    9
+scenario t troy wall long dead                          Total=    8 CT0=    4 CT4=    4
+SFX E Citadel                                           Total=    6 CT0=    3 CT4=    3
+SFX E Citadel Age4                                      Total=    6 CT0=    3 CT4=    3
+SFX G Plenty                                            Total=   14 CT0=   10 CT4=    4
+Siege C Sitting Tiger                                   Total=    6 CT0=    0 CT4=    6
+Siege E Catapult                                        Total=   22 CT0=   12 CT4=    6
+Siege G Petrobolos                                      Total=   13 CT0=    6 CT4=    7
+Siege G Petrobolos Iron                                 Total=    2 CT0=    1 CT4=    1
+Siege N Ballista                                        Total=   17 CT0=    9 CT4=    5
+Siege N Ballista Bolt                                   Total=   34 CT0=   17 CT4=   13
+Siege N Ballista Bolt Iron                              Total=    2 CT0=    1 CT4=    1
+Special E Petesuchos                                    Total=   32 CT0=   16 CT4=   14
+Special E Roc Basket                                    Total=   23 CT0=   12 CT4=   11
+Special G Centaur                                       Total=   20 CT0=   10 CT4=    9
+Special G Cyclops                                       Total=   40 CT0=   20 CT4=    9
+Statue X Oranos Map                                     Total=    4 CT0=    2 CT4=    2
+Trade E Caravan Basket                                  Total=   44 CT0=   22 CT4=   22
+Trade G Caravan Cargo                                   Total=   20 CT0=   10 CT4=   10
+Villager N Oxcart                                       Total=   20 CT0=   10 CT4=   10
+world c statue nuwa stand                               Total=    3 CT0=    0 CT4=    3
+World E Statue Isis                                     Total=   17 CT0=   10 CT4=    7
+World G Hades Temple                                    Total=    4 CT0=    2 CT4=    2
+World G Statue Hades                                    Total=    6 CT0=    3 CT4=    3
+World G Statue Zeus                                     Total=    6 CT0=    3 CT4=    3
+
+PLAYER-COLOR CANDIDATES WITH NO CT4 USAGE
+------------------------------------------
+
+OUTPUT
+------
+D:\AI_upscaling\AoMEE\reports\mtrl_texture_usage.csv
+D:\AI_upscaling\AoMEE\reports\mtrl_texture_summary.csv
+D:\AI_upscaling\AoMEE\reports\mtrl_player_color_candidates_v2.csv
+D:\AI_upscaling\AoMEE\reports\mtrl_texture_analysis_summary.txt

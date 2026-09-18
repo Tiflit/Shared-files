@@ -1,0 +1,19 @@
+﻿AoM:EE Player-Color MTRL Binary Search
+=======================================
+
+Candidate textures: 134
+MTRL files scanned: 20842
+Texture/MTRL matches: 0
+Unique candidate textures matched: 0
+Unique MTRL files matched: 0
+
+MATCHES BY CATEGORY
+-------------------
+
+MATCHED CANDIDATE TEXTURES
+--------------------------
+
+OUTPUT
+------
+D:\AI_upscaling\AoMEE\reports\player_color_mtrl_matches.csv
+D:\AI_upscaling\AoMEE\reports\player_color_mtrl_matches_summary.txt

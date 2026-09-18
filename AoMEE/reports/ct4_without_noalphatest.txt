@@ -1,0 +1,80 @@
+﻿AoM:EE CT4 Textures Without noalphatest
+======================================
+
+Count: 71
+
+_missingtexture                                         AlphaBits=0  Alpha=           Coverage=
+alfred_crown                                            AlphaBits=   Alpha=           Coverage=
+animal dog a map                                        AlphaBits=   Alpha=           Coverage=
+Attachments A Arrow map                                 AlphaBits=1  Alpha=           Coverage=
+Attachments N Shield Cav Bronze map                     AlphaBits=   Alpha=           Coverage=
+Attachments N Shield Cav Copper map                     AlphaBits=   Alpha=           Coverage=
+Attachments N Shield Cav Iron map                       AlphaBits=   Alpha=           Coverage=
+Building Attachments                                    AlphaBits=1  Alpha=           Coverage=
+building c fortress age 3                               AlphaBits=   Alpha=           Coverage=
+building c titan gate map                               AlphaBits=1  Alpha=           Coverage=
+building c towers                                       AlphaBits=   Alpha=           Coverage=
+Building G Shared04 2 map                               AlphaBits=   Alpha=           Coverage=
+Building G Temple02 2 map                               AlphaBits=   Alpha=           Coverage=
+Building X Tower Watch                                  AlphaBits=1  Alpha=           Coverage=
+Building X Wall Age3                                    AlphaBits=1  Alpha=           Coverage=
+Cavalry E Chariot Chariot Map                           AlphaBits=1  Alpha=           Coverage=
+Cavalry E Chariot Map                                   AlphaBits=1  Alpha=           Coverage=
+Cavalry G Hetairoi Cape                                 AlphaBits=0  Alpha=           Coverage=
+Cavalry G Hippikon Cape                                 AlphaBits=0  Alpha=           Coverage=
+Cine X Kastor Adult(pixelxform1)                        AlphaBits=   Alpha=           Coverage=
+construction_boards_e                                   AlphaBits=   Alpha=           Coverage=
+Construction_flag                                       AlphaBits=   Alpha=           Coverage=
+GaiaCreepFlowersAop                                     AlphaBits=4  Alpha=           Coverage=
+Hero G Achilles                                         AlphaBits=0  Alpha=Binary     Coverage=100
+Hero G Ajax                                             AlphaBits=0  Alpha=Binary     Coverage=100
+Hero G Atalanta                                         AlphaBits=0  Alpha=Binary     Coverage=100
+Hero G Heracles                                         AlphaBits=0  Alpha=Binary     Coverage=100
+Hero G Hippolyta                                        AlphaBits=0  Alpha=Binary     Coverage=100
+Hero G Hippolyta Head Standard                          AlphaBits=0  Alpha=           Coverage=
+Hero G Perseus Head Standard                            AlphaBits=0  Alpha=           Coverage=
+Hero G Theseus                                          AlphaBits=0  Alpha=Binary     Coverage=100
+Hero X Kastor(pixelxform1)                              AlphaBits=   Alpha=           Coverage=
+Infantry G Hoplite Head Bronze                          AlphaBits=0  Alpha=           Coverage=
+Infantry G Hypaspist Cape                               AlphaBits=0  Alpha=           Coverage=
+Infantry N Huskarl Cape                                 AlphaBits=1  Alpha=           Coverage=
+LP E Cavalry                                            AlphaBits=1  Alpha=           Coverage=
+Naval N All                                             AlphaBits=1  Alpha=           Coverage=
+Naval N Longship map                                    AlphaBits=   Alpha=           Coverage=
+Scenario E Great Box map                                AlphaBits=1  Alpha=           Coverage=
+Scenario N Folstag Flag                                 AlphaBits=1  Alpha=           Coverage=
+scenario n pirate ship                                  AlphaBits=1  Alpha=           Coverage=
+Scenario T Shared                                       AlphaBits=   Alpha=           Coverage=
+Scenario Theocrat Staff(pixelxform1)                    AlphaBits=   Alpha=           Coverage=
+Scenario Theocrat(pixelxform1)                          AlphaBits=   Alpha=           Coverage=
+SFX A Carnivora                                         AlphaBits=1  Alpha=           Coverage=
+SFX A Carnivora Water                                   AlphaBits=1  Alpha=           Coverage=
+SFX E Ancestors Water                                   AlphaBits=1  Alpha=           Coverage=
+SFX E Serpents Water                                    AlphaBits=0  Alpha=           Coverage=
+SFX N Nidhogg                                           AlphaBits=1  Alpha=           Coverage=
+Siege E Tower                                           AlphaBits=1  Alpha=           Coverage=
+Siege N Ram Carrier Shield                              AlphaBits=   Alpha=           Coverage=
+special c qilin                                         AlphaBits=   Alpha=           Coverage=
+Special E Avenger                                       AlphaBits=0  Alpha=           Coverage=
+Special E Leviathan map                                 AlphaBits=1  Alpha=           Coverage=
+Special E Minion map                                    AlphaBits=1  Alpha=           Coverage=
+Special E Vulture map                                   AlphaBits=1  Alpha=           Coverage=
+Special G Griffon map                                   AlphaBits=   Alpha=           Coverage=
+Special G Harpy map                                     AlphaBits=1  Alpha=           Coverage=
+Special G Polyphemus map                                AlphaBits=0  Alpha=           Coverage=
+Special N Fire Giant map                                AlphaBits=   Alpha=           Coverage=
+Theocrat Map(pixelxform1)                               AlphaBits=   Alpha=           Coverage=
+trade c caravan                                         AlphaBits=0  Alpha=Binary     Coverage=0
+Trade X Caravan Cargo                                   AlphaBits=0  Alpha=           Coverage=
+Villager G Male Head                                    AlphaBits=0  Alpha=           Coverage=
+Villager N Dwarf Standard                               AlphaBits=0  Alpha=           Coverage=
+world c flag                                            AlphaBits=0  Alpha=           Coverage=
+world c statue fuxi                                     AlphaBits=0  Alpha=           Coverage=
+world c statue fuxi head                                AlphaBits=0  Alpha=           Coverage=
+World E Flag                                            AlphaBits=1  Alpha=           Coverage=
+World G Flag                                            AlphaBits=1  Alpha=           Coverage=
+World N Flag                                            AlphaBits=1  Alpha=           Coverage=
+
+OUTPUT
+------
+D:\AI_upscaling\AoMEE\reports\ct4_without_noalphatest.txt

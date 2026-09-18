@@ -1,0 +1,22 @@
+﻿AoM:EE Player-Color Material Evidence
+=====================================
+
+Candidate textures: 134
+Material references found: 0
+
+CANDIDATES WITH MATERIAL REFERENCES
+-----------------------------------
+Matched textures: 0
+Unmatched textures: 134
+
+COLOR TRANSFORM COUNTS
+----------------------
+
+CANDIDATES REFERENCED WITH COLOR_TRANSFORM 4
+--------------------------------------------
+Textures: 0
+
+
+CANDIDATES WITHOUT COLOR_TRANSFORM 4
+-------------------------------------
+(Detailed per-texture evidence is in the CSV.)

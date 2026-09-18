@@ -1,0 +1,152 @@
+﻿AoM:EE File Converter Recovery
+==============================
+
+Files tested: 35
+
+Failed                     1
+RecoveredTGAandBTI        34
+
+CLEAN RECOVERED OUTPUT
+----------------------
+
+textures\animal dog a map.DDT
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\animal dog a map.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\animal dog a map.bti
+
+textures\animal dog b map.DDT
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\animal dog b map.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\animal dog b map.bti
+
+textures\animal elephant indian.DDT
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\animal elephant indian.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\animal elephant indian.bti
+
+textures\animal parrot map.DDT
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\animal parrot map.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\animal parrot map.bti
+
+textures\archer c crossbow.ddt
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\archer c crossbow.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\archer c crossbow.bti
+
+textures\icons\boat c fire ship chinese icon.DDT
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\boat c fire ship chinese icon.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\boat c fire ship chinese icon.bti
+
+textures\icons\boat c fishing boat icon.DDT
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\boat c fishing boat icon.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\boat c fishing boat icon.bti
+
+textures\icons\boat c junk icon.DDT
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\boat c junk icon.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\boat c junk icon.bti
+
+textures\icons\boat c siege ship chinese icon.DDT
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\boat c siege ship chinese icon.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\boat c siege ship chinese icon.bti
+
+textures\icons\boat c transport icon.DDT
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\boat c transport icon.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\boat c transport icon.bti
+
+textures\icons\god power barrage icon.DDT
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\god power barrage icon.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\god power barrage icon.bti
+
+textures\icons\god power earth dragon icon.DDT
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\god power earth dragon icon.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\god power earth dragon icon.bti
+
+textures\icons\god power flood icon.DDT
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\god power flood icon.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\god power flood icon.bti
+
+textures\icons\god power geyser icon.DDT
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\god power geyser icon.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\god power geyser icon.bti
+
+textures\icons\god power journey icon.DDT
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\god power journey icon.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\god power journey icon.bti
+
+textures\icons\god power recreation icon.DDT
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\god power recreation icon.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\god power recreation icon.bti
+
+textures\icons\siege c fire lance icon.DDT
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\siege c fire lance icon.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\siege c fire lance icon.bti
+
+textures\icons\special c azure dragon icon.DDT
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\special c azure dragon icon.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\special c azure dragon icon.bti
+
+textures\icons\special c black tortoise icon.DDT
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\special c black tortoise icon.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\special c black tortoise icon.bti
+
+textures\icons\special c earth dragon icon.DDT
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\special c earth dragon icon.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\special c earth dragon icon.bti
+
+textures\icons\special c jiangshi icon.DDT
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\special c jiangshi icon.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\special c jiangshi icon.bti
+
+textures\icons\special c monkey king icon.DDT
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\special c monkey king icon.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\special c monkey king icon.bti
+
+textures\icons\special c pixiu icon.DDT
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\special c pixiu icon.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\special c pixiu icon.bti
+
+textures\icons\special c qilin icon.DDT
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\special c qilin icon.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\special c qilin icon.bti
+
+textures\icons\special c terracotta soldier icon.DDT
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\special c terracotta soldier icon.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\special c terracotta soldier icon.bti
+
+textures\icons\special c vermilion bird icon.DDT
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\special c vermilion bird icon.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\special c vermilion bird icon.bti
+
+textures\icons\special c war salamander icon.DDT
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\special c war salamander icon.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\special c war salamander icon.bti
+
+textures\icons\special c white tiger icon.DDT
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\special c white tiger icon.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\special c white tiger icon.bti
+
+textures\icons\trade c caravan icon.DDT
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\trade c caravan icon.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\trade c caravan icon.bti
+
+textures\special c qilin.ddt
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\special c qilin.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\special c qilin.bti
+
+textures\world c jungle palm burnt.ddt
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\world c jungle palm burnt.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\world c jungle palm burnt.bti
+
+textures\world c jungle palm.ddt
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\world c jungle palm.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\world c jungle palm.bti
+
+textures\world c jungle tree burnt.ddt
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\world c jungle tree burnt.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\world c jungle tree burnt.bti
+
+textures\world c jungle tree.ddt
+  TGA: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\world c jungle tree.tga
+  BTI: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean\world c jungle tree.bti
+
+OUTPUT
+------
+Raw recovery:   D:\AI_upscaling\AoMEE\tests\file_converter_recovery
+Clean recovery: D:\AI_upscaling\AoMEE\tests\file_converter_recovered_clean
+CSV:            D:\AI_upscaling\AoMEE\reports\file_converter_recovery.csv

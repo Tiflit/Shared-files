@@ -1,0 +1,5 @@
+﻿AoM:EE MTRL conversion errors
+TIMEOUT	D:\AI_upscaling\AoMEE\Age of Mythology\materials\agamemn_aomsp07pivotwalk_0.mtrl
+TIMEOUT	D:\AI_upscaling\AoMEE\Age of Mythology\materials\agamemn_aomsp07pivotwalk_1.mtrl
+TIMEOUT	D:\AI_upscaling\AoMEE\Age of Mythology\materials\agamemn_aomsp07pivotwalk_2.mtrl
+TIMEOUT	D:\AI_upscaling\AoMEE\Age of Mythology\materials\agamemn_aomsp07pivotwalk_3.mtrl

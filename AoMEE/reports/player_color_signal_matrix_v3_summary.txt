@@ -1,0 +1,51 @@
+﻿AoM:EE Player-Color Signal Matrix v3
+====================================
+
+noalphatest metadata entries: 948
+Exact BTI -> alpha-analysis matches: 947
+
+BTI ALPHA BITS
+--------------
+0                        50
+1                       705
+4                       192
+
+BTI ALPHA BITS x TGA ALPHA TYPE
+--------------------------------
+0, Binary                               48
+0, MultiValue                            2
+1, Binary                              263
+1, MultiValue                          442
+4, Binary                               66
+4, MultiValue                          126
+
+ALPHA=1: TGA ALPHA TYPE
+------------------------
+Binary                  263
+MultiValue              442
+
+ALPHA=1: OPAQUE COVERAGE
+------------------------
+0-10%                   357
+10-25%                  187
+25-50%                   76
+50-75%                   21
+75-100%                  64
+
+ALPHA=4: TGA ALPHA TYPE
+------------------------
+Binary                   66
+MultiValue              126
+
+ALPHA=4: OPAQUE COVERAGE
+------------------------
+0-10%                   113
+10-25%                   28
+25-50%                   27
+50-75%                    5
+75-100%                  19
+
+OUTPUT
+------
+D:\AI_upscaling\AoMEE\reports\player_color_signal_matrix_v3.csv
+D:\AI_upscaling\AoMEE\reports\player_color_signal_matrix_v3_summary.txt

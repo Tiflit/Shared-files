@@ -1,0 +1,992 @@
+﻿AoM:EE noalphatest Texture Groups
+=================================
+
+
+=================================
+Binary_0-10%
+=================================
+
+                        128x128      2.686%  animal cow a map.tga
+                        128x128      2.686%  animal cow b map.tga
+                        128x128      2.686%  animal cow c map.tga
+                        256x128          0%  animal flying purple hippo.tga
+                         64x64       1.807%  animal goatnubian map.tga
+                        128x128          0%  animal prmonkey.tga
+                         32x32           0%  archer c crossbowman head standard.tga
+                         32x32           0%  archer c mounted archer head bronze.tga
+                         32x32           0%  archer c mounted archer head copper.tga
+                         32x32           0%  archer c mounted archer head iron.tga
+                         32x32           0%  archer c mounted archer head standard.tga
+                         32x32           0%  archer n normal head bronze.tga
+                         32x32           0%  archer n normal head copper.tga
+                         32x32           0%  archer n normal head iron.tga
+                         32x32           0%  archer n normal head standard.tga
+                        256x256       1.91%  building c earthen wall.tga
+                        256x256       1.91%  building c fortified wall.tga
+                        256x256       1.91%  building c great wall.tga
+                        256x256          0%  building c roofage1.tga
+                        256x256          0%  building c roofage2.tga
+                        256x256          0%  building c roofage3.tga
+                        256x256          0%  building c roofage4.tga
+                        256x256          0%  building c special.tga
+                        256x256       1.91%  building c stone wall.tga
+                        128x128          0%  building c titan gate rocks.tga
+                        256x256      2.094%  building c tower age2.tga
+                        256x256      2.094%  building c tower age3.tga
+                        256x256      2.094%  building c tower age4.tga
+                        256x256          0%  building c wonder city floor.tga
+                        256x256          0%  building c wonder city roof.tga
+                        256x256          0%  building c wonder city walls.tga
+                        256x256          0%  building c wonder palace floor.tga
+                        256x256          0%  building c wonder palace roof.tga
+                        256x256      0.873%  building c wonder temple.tga
+                        256x256      1.526%  building e age2 accessories burnt.tga
+                        256x256       3.07%  building e age2 burnt.tga
+                        256x256       3.07%  building e age2.tga
+                        256x256      1.614%  building e age3 accessories.tga
+                        256x256          0%  building e age3a accessories.tga
+                        256x256          0%  building e age4 accessories.tga
+                        256x256      5.151%  building e age4.tga
+                        256x256          0%  building e age4roof.tga
+                        256x256          0%  building e fortress accessories02.tga
+                        256x256          0%  building e fortress.tga
+                        256x256      2.051%  building e isis wonder01.tga
+                        256x256       2.04%  building e isis wonder02.tga
+                        256x256      1.595%  building e lighthouse.tga
+                        256x256      2.251%  building e monument platforms.tga
+                        128x128          0%  building e monument2.tga
+                        256x256          0%  building e monument4.tga
+                        256x256      0.262%  building e outpost.tga
+                        256x256          0%  building e ra wonder01.tga
+                        256x256      2.097%  building e ra wonder02.tga
+                        256x256          0%  building e set wonder01.tga
+                        256x256      2.142%  building e set wonder02.tga
+                        256x256          0%  building e set wonder03.tga
+                        256x256       3.07%  building e settlement age2.tga
+                        256x256      5.151%  building e settlement age4.tga
+                        256x256       3.07%  building e shared01 2 map.tga
+                        256x256      1.614%  building e shared02 2 map.tga
+                        256x256      2.826%  building e titan gate map.tga
+                        128x128          0%  building e titan gate rocks.tga
+                        256x256      1.892%  building e wall4.tga
+                        256x256      1.408%  building g age0.tga
+                        256x256      1.804%  building g fortifiedwall.tga
+                        256x256      0.989%  building g fortress.tga
+                        256x256      3.583%  building g fortressroof.tga
+                        256x256      2.464%  building g fortresswall.tga
+                        256x256          0%  building g fortresswall2.tga
+                        256x256      2.344%  building g hades wonder.tga
+                        256x256      0.412%  building g roofage1.tga
+                        256x256      1.424%  building g settlementage1.tga
+                        256x256      1.645%  building g settlementage2.tga
+                        256x256      1.424%  building g settlementage3.tga
+                        256x256      3.461%  building g shared05 2 map.tga
+                        256x256      0.317%  building g shrine.tga
+                        256x256      1.996%  building g temple.tga
+                        256x256      1.515%  building g templeage1.tga
+                        256x256      1.479%  building g templeage2.tga
+                        128x128          0%  building g titan gate rocks.tga
+                        256x256      1.712%  building g towers.tga
+                        256x256      3.145%  building g wallsage1.tga
+                        256x256      2.435%  building g wallsage2.tga
+                        256x256      3.355%  building g wallsage3.tga
+                        256x256      1.598%  building g wonder.tga
+                        256x256      2.766%  building g zues wonder01.tga
+                        256x256      1.434%  building n settlementage1.tga
+                        256x256       1.45%  building n settlementage2.tga
+                        256x256      1.642%  building n settlementage3.tga
+                        256x256      1.698%  building n shared01 1 map.tga
+                        256x256      1.996%  building n shared01 3 map.tga
+                        256x256       1.37%  building n shared06 2 map.tga
+                        256x256      1.341%  building n templeage1.tga
+                        256x256      1.341%  building n templeage2.tga
+                        256x256      1.341%  building n templeage3.tga
+                        256x256      0.861%  building n thorarmory.tga
+                        256x256          0%  building n thorarmory1.tga
+                        128x128          0%  building n titan gate rocks.tga
+                        256x256      0.586%  building x palace age2.tga
+                        256x256      1.678%  building x palace age3.tga
+                        256x256      1.324%  building x roof age0.tga
+                        256x256      2.081%  building x roof age1.tga
+                        256x256      0.415%  building x titangate.tga
+                        256x256      1.517%  building x tower watch2.tga
+                        256x256      1.517%  building x tower watch3.tga
+                        256x256       1.41%  building x tower watch4.tga
+                        256x256      1.428%  building x wall bronze.tga
+                        256x256       1.32%  building x wall iron.tga
+                        256x256      2.283%  building x wall oreichalkos.tga
+                        256x256      1.337%  building x wall stone.tga
+                        256x256      1.562%  building_e_monumentbase_map.tga
+                         64x64       4.126%  cavalry e war elephant basket standard.tga
+                         32x32           0%  cavalry g hetairoi head iron.tga
+                         32x32       3.418%  cavalry g hippikon head bronze.tga
+                         32x32       3.418%  cavalry g hippikon head copper.tga
+                         32x32       3.418%  cavalry g hippikon head iron.tga
+                        128x128      8.521%  cavalry g hippikon horse standard.tga
+                        128x128      8.521%  cavalry g prodromos horse standard.tga
+                        512x512          0%  cine c emperor.tga
+                        256x256      4.282%  cine g poseidon stone.tga
+                         32x32           0%  hero c monk head.tga
+                         16x128          0%  hero c monk weapon.tga
+                         32x32           0%  hero g athena head low map.tga
+                         64x32       0.391%  hero g heracles head.tga
+                         32x32           0%  hero g physician head.tga
+                         64x32       9.961%  hero g theseus shield.tga
+                         64x64       6.445%  infantry e chariot archer iron map.tga
+                         32x32           0%  infantry e spearman shield map.tga
+                         32x32       9.961%  infantry g hoplite head iron.tga
+                         64x32        8.74%  infantry g myrmidon head iron.tga
+                         64x16       1.465%  infantry x trident soldier head hero.tga
+                        256x256      2.304%  kronos wonder map2.tga
+                         64x32           0%  lp g militia.tga
+                        256x256      0.397%  oranos wonder map.tga
+                        256x256      1.953%  oranos wonder map1.tga
+                        128x32       1.367%  platform map.tga
+                         64x16       8.594%  projectile a ballista arrow iron.tga
+                         64x16       8.594%  projectile a ballista arrow.tga
+                        256x256          0%  scenario a gate ram.tga
+                         32x32           0%  scenario c danzhu head.tga
+                         32x32           0%  scenario c shun head.tga
+                         64x64           0%  scenario c zhi head.tga
+                        128x128          0%  scenario e great box cart.tga
+                        128x128          0%  scenario g arkantos god map.tga
+                         32x32        2.93%  scenario g circe head.tga
+                         64x64       6.616%  scenario g circe.tga
+                        256x128          0%  scenario n dwarven mine inside.tga
+                        256x256          0%  scenario n dwarven mine opening.tga
+                        256x128          0%  scenario n dwarven mine outside.tga
+                         64x64       6.055%  scenario n reginleif map.tga
+                        128x128          0%  scenario n thors hammer.tga
+                        256x256      3.516%  scenario t troy wall long dead.tga
+                        256x256      3.516%  scenario t troy wall long deadb.tga
+                        256x256      3.516%  scenario t troy wall long.tga
+                         64x64           0%  sfx c growth vines.tga
+                        256x256      4.276%  sfx e citadel age4.tga
+                        256x256      4.276%  sfx e citadel.tga
+                         64x32           0%  sfx g lightning bolt.tga
+                        256x256      2.107%  sfx g plenty.tga
+                        256x256          0%  sfx n dwarven mine.tga
+                         64x64       5.981%  siege c sitting tiger iron.tga
+                         64x64       5.981%  siege c sitting tiger.tga
+                         64x64       6.616%  siege e catapult iron.tga
+                         32x32           0%  siege e catapult projectile.tga
+                         64x64       6.616%  siege e catapult.tga
+                         64x64       5.615%  siege g petrobolos iron.tga
+                         64x64       5.615%  siege g petrobolos.tga
+                         64x16       8.594%  siege n ballista bolt iron.tga
+                         64x16       8.594%  siege n ballista bolt.tga
+                         64x64       4.126%  siege n ballista iron.tga
+                         64x64       4.126%  siege n ballista.tga
+                        128x128       4.37%  special e petesuchos.tga
+                        128x128      3.754%  special e roc basket.tga
+                        128x128          0%  special e roc.tga
+                         32x32           0%  special e scorpion man head.tga
+                        128x64       2.246%  special g centaur low.tga
+                         64x64       4.639%  special g centaur upgrade.tga
+                         64x64       4.639%  special g centaur.tga
+                        128x128      4.785%  special g cyclops upgrade.tga
+                        128x128      4.785%  special g cyclops.tga
+                        128x128      8.521%  special g pegasus.tga
+                         64x64           0%  special n king folstag.tga
+                        128x64           0%  special n valkyrie low.tga
+                        128x128          0%  statue x kronos map.tga
+                        128x128      2.863%  statue x oranos map.tga
+                        256x256          0%  titan x golem map2.tga
+                         64x64           0%  trade c caravan.tga
+                        128x128      9.015%  trade e caravan basket.tga
+                         64x64           0%  trade e caravan cargo.tga
+                         64x64       5.908%  trade g caravan cargo.tga
+                        128x128      1.794%  villager n oxcart.tga
+                        256x256          0%  world a gold map.tga
+                        128x64           0%  world a relic armor of achilles.tga
+                        128x64           0%  world a relic eye of horus.tga
+                        128x64           0%  world a relic fetters of fenrir.tga
+                        128x64           0%  world a relic golden bridle of pegasus.tga
+                        128x64           0%  world a relic head of orpheus.tga
+                        128x64           0%  world a relic ring of the nibelung.tga
+                        128x64           0%  world a relic ship of fingernails.tga
+                        128x64           0%  world a relic the wedjat eye.tga
+                        128x128          0%  world c dam.tga
+                         32x64       3.125%  world c statue nuwa stand.tga
+                         64x64           0%  world c statue shennong head.tga
+                        128x128      1.752%  world e statue isis.tga
+                        128x128      6.384%  world e tent.tga
+                        256x256      1.672%  world g hades temple.tga
+                        128x128      5.585%  world g shrine map.tga
+                        128x128      1.941%  world g statue hades.tga
+                         64x32           0%  world g statue poseidon base.tga
+                        128x128      3.381%  world g statue zeus.tga
+                        256x256          0%  world g zues uwpassage.tga
+                        128x128          0%  world g zuesstairs.tga
+
+COUNT: 212
+
+=================================
+Binary_10-25%
+=================================
+
+                         32x32      10.059%  archer g toxotes head bronze.tga
+                         32x32      10.059%  archer g toxotes head copper.tga
+                         32x32      10.059%  archer g toxotes head iron.tga
+                         32x32      10.059%  archer g toxotes head standard.tga
+                         32x32      10.547%  archer n throwing axeman low bronze.tga
+                         32x32      10.547%  archer n throwing axeman low copper.tga
+                         32x32      10.547%  archer n throwing axeman low iron.tga
+                         32x32      10.547%  archer n throwing axeman low standard.tga
+                         32x32      10.645%  cavalry g cataphract head iron.tga
+                         64x64      21.924%  cavalry g hippikon copper.tga
+                        128x128     10.004%  cavalry g hippikon horse copper.tga
+                         64x64      18.872%  cavalry g hippikon standard.tga
+                        128x128     10.004%  cavalry g prodromos horse copper.tga
+                        256x256     17.076%  cine g ajax old map.tga
+                         16x16      10.156%  cine x mp melagius head.tga
+                        128x64      15.808%  hero c general flag.tga
+                         64x64      23.071%  hero g belerophon.tga
+                         64x64      13.062%  infantry e spearman iron.tga
+                         32x32      10.059%  infantry g hypaspist head bronze.tga
+                         32x32      10.059%  infantry g hypaspist head copper.tga
+                         32x32      10.059%  infantry g hypaspist head iron.tga
+                         32x32      10.059%  infantry g hypaspist head standard.tga
+                         64x64      19.312%  infantry x swordsman bronze.tga
+                         64x64      19.312%  infantry x swordsman copper.tga
+                         64x64      19.312%  infantry x swordsman hero.tga
+                         64x64      19.312%  infantry x swordsman iron.tga
+                         64x64      19.312%  infantry x swordsman standard.tga
+                         32x8       15.625%  scenario theocrat staff.tga
+                        128x128     10.535%  sfx g sentinel.tga
+                         64x64        12.5%  special e phoenix egg.tga
+                         32x16      16.406%  special e priest head.tga
+                         32x32      10.059%  special g centaur head upgrade.tga
+                         64x64      13.428%  special n einheriar upgrade.tga
+                         64x64      13.428%  special n einheriar.tga
+                         64x128     10.938%  special n jormund brood hump.tga
+                         64x64      13.672%  special n raven.tga
+                         32x32      22.656%  world a bouy.tga
+                        128x64          25%  world a waypoint flag.tga
+                        128x128     15.906%  world e statue ra.tga
+
+COUNT: 39
+
+=================================
+Binary_25-50%
+=================================
+
+                         32x32      31.348%  archer g peltast low copper.tga
+                        128x128     28.888%  cavalry e chariot horse map.tga
+                         64x64      31.104%  cavalry x javelin copper.tga
+                         64x64      31.104%  cavalry x javelin standard.tga
+                         64x64      28.076%  hero n hero low.tga
+                         64x32      49.658%  infantry e khopesh head bronze.tga
+                         64x32      49.658%  infantry e khopesh head copper.tga
+                         64x32      49.658%  infantry e khopesh head iron.tga
+                         64x32      49.658%  infantry e khopesh head standard.tga
+                         32x16          50%  low infantry g normal head bronze.tga
+                         32x16          50%  low infantry g normal head copper.tga
+                         32x16          50%  low infantry g normal head iron.tga
+                         32x16          50%  low infantry g normal head standard.tga
+                         64x32      47.461%  world g garrison flag.tga
+
+COUNT: 14
+
+=================================
+Binary_50-75%
+=================================
+
+                         16x16      70.703%  siege g petrobolos tire low.tga
+
+COUNT: 
+
+=================================
+Binary_75-100%
+=================================
+
+                         64x64         100%  animal caribou map.tga
+                         32x32         100%  animal chicken.tga
+                         64x64         100%  animal duck map.tga
+                         32x16         100%  animal fish anchovy.tga
+                         32x16         100%  animal fish herring.tga
+                         32x16         100%  animal fish mahi.tga
+                         32x16         100%  animal fish perch.tga
+                         32x16         100%  animal fish salmon.tga
+                         64x64         100%  animal lizard map.tga
+                         32x32         100%  animal rooster.tga
+                        128x128        100%  animal tiger map.tga
+                         64x64      80.908%  archer g peltast cape bronze.tga
+                         64x64      80.908%  archer g peltast cape copper.tga
+                         64x64      80.908%  archer g peltast cape iron.tga
+                         64x64      80.908%  archer g peltast cape standard.tga
+                         32x32         100%  attachment c halberd head bronze.tga
+                         32x32         100%  attachment c halberd head copper.tga
+                         32x32         100%  attachment c halberd head iron.tga
+                         32x32         100%  attachment c halberd head standard.tga
+                         32x32         100%  attachments a axe map.tga
+                         32x16         100%  attachments a club.tga
+                         64x8          100%  attachments a shovel.tga
+                         64x64         100%  attachments a skeleton.tga
+                         64x32         100%  attachments a sling.tga
+                         64x128        100%  attachments c fire lance.tga
+                        128x16         100%  attachments c halberd bronze.tga
+                        128x16         100%  attachments c halberd copper.tga
+                        128x16         100%  attachments c halberd iron.tga
+                        128x16         100%  attachments c halberd standard.tga
+                         32x16         100%  attachments c sword jiaolong.tga
+                         32x32         100%  attachments g polyphemus club.tga
+                         64x64         100%  attachments n shield cinepirateship map.tga
+                         32x32         100%  background chinese opaque.tga
+                         32x32         100%  background egypt opaque.tga
+                        256x16         100%  background fade blue.tga
+                        256x16         100%  background fade green.tga
+                        256x16         100%  background fade red.tga
+                        256x16         100%  background fade yellow.tga
+                         32x32         100%  background greek opaque.tga
+                         32x32         100%  background norse opaque.tga
+                        256x256        100%  building e isis wonder03.tga
+                        128x128        100%  building e monument1.tga
+                        128x128        100%  building e monument3.tga
+                        256x256        100%  building g temple statues map.tga
+                        256x256        100%  building g wonder destructed.tga
+                        128x128        100%  building x sky temple roof.tga
+                        128x128        100%  cine a kemsyt head bag.tga
+                        128x256        100%  cine c shun spear.tga
+                        128x256        100%  cine spear map.tga
+                        128x128        100%  cine x trident soldier helmet.tga
+                         32x32      79.492%  command time shift icons 32.tga
+                        128x128        100%  hero c general cape.tga
+                         64x64         100%  hero g achilles.tga
+                         64x64         100%  hero g ajax.tga
+                         32x32         100%  hero g atalanta.tga
+                         64x64         100%  hero g chiron.tga
+                         64x64         100%  hero g heracles.tga
+                         64x64         100%  hero g hippolyta.tga
+                         64x64         100%  hero g theseus.tga
+                         32x32         100%  hero n ragnorok female head.tga
+                         32x32         100%  hero n ragnorok male head.tga
+                         32x32         100%  infantry e mercenary head.tga
+                         64x64      94.067%  infantry g hypaspist map.tga
+                         64x16         100%  infantry x trident soldier head iron.tga
+                         64x64         100%  projectile a siege rock map.tga
+                         64x16         100%  scenario a dwarven forge belt.tga
+                        256x256        100%  scenario a dwarven forge shared a.tga
+                        256x256        100%  scenario a dwarven forge shared b.tga
+                        256x256        100%  scenario u chronos hand.tga
+                        128x64         100%  sfx a ip glow.tga
+                         32x16         100%  sfx a lighthouse glow.tga
+                         32x64         100%  sfx a rain sunlight.tga
+                        128x64         100%  sfx a rainbow.tga
+                         64x64         100%  sfx b lighthouse glow.tga
+                        128x64         100%  sfx c ip glow.tga
+                        128x128        100%  sfx g lightning skyflash.tga
+                        256x256        100%  sfx g plenty decal.tga
+                        256x256        100%  sfx g plenty shadow.tga
+                        128x128        100%  sfx n frost ice block unit.tga
+                         32x32         100%  siege c sitting tiger projectile.tga
+                         32x32         100%  siege g petrobolos projectile.tga
+                        256x256        100%  siege g trojan horse.tga
+                         64x64         100%  special e phoenix.tga
+                         64x64         100%  special g agamemnon head.tga
+                        128x64         100%  special g athena head.tga
+                         64x64         100%  special g underworld shade.tga
+                         64x64         100%  special n frost giant head upgrade.tga
+                         64x64         100%  special n frost giant head.tga
+                         64x64         100%  temp santa hat.tga
+                         64x64         100%  temp santa head.tga
+                        128x128        100%  titan n troll hammer map.tga
+                        256x256        100%  titan n troll map1.tga
+                         32x32         100%  ui background blue opaque.tga
+                         32x32         100%  ui background dark blue opaque.tga
+                          8x8          100%  ui background yellow opaque.tga
+                         32x128        100%  ui progress bar flair.tga
+                         32x32         100%  ui text chat box grey.tga
+                         32x32         100%  ui text chat box.tga
+                         32x32         100%  ui text chat box.tga
+                         32x32         100%  villager e female head.tga
+                         32x32         100%  villager g atlantean male head.tga
+                         32x32         100%  villager g female head.tga
+                         32x32         100%  villager n female head.tga
+                         64x64         100%  world a fountain.tga
+                        256x256        100%  world a jade map.tga
+                        128x64         100%  world a relic monkey.tga
+                         64x64      82.812%  world a relic standard.tga
+                         64x64         100%  world e brazier map.tga
+                         64x64         100%  world g brazier map.tga
+                         64x32         100%  world g statue base.tga
+                         64x64         100%  world n brazier map.tga
+
+COUNT: 111
+
+=================================
+MultiValue
+=================================
+
+                        256x256      5.562%  agamemnon map.tga
+                         64x64       2.612%  animal goat map.tga
+                         64x64       1.685%  animal pig map.tga
+                        128x128      1.031%  animal white tiger map.tga
+                        256x256      4.701%  Animal William Walrus Map.tga
+                        128x128      1.025%  animal yak.tga
+                         32x4         37.5%  archer c crossbowman bowstring.tga
+                         64x64       11.23%  archer c crossbowman bronze.tga
+                         64x64       11.23%  archer c crossbowman copper.tga
+                         32x32       9.668%  archer c crossbowman head bronze.tga
+                         32x32       9.668%  archer c crossbowman head copper.tga
+                         32x32       9.668%  archer c crossbowman head iron.tga
+                         64x64       11.23%  archer c crossbowman iron.tga
+                         64x64      10.498%  archer c crossbowman standard.tga
+                         64x64       9.521%  archer c mounted archer bronze.tga
+                         64x64       9.521%  archer c mounted archer copper.tga
+                        128x128      0.391%  archer c mounted archer horse bronze.tga
+                        128x128      0.391%  archer c mounted archer horse copper.tga
+                        128x128      0.391%  archer c mounted archer horse iron.tga
+                        128x128      0.391%  archer c mounted archer horse standard.tga
+                         64x64       9.521%  archer c mounted archer iron.tga
+                         64x64       9.521%  archer c mounted archer standard.tga
+                         64x64      21.582%  archer e slinger bronze.tga
+                         64x64      21.973%  archer e slinger copper.tga
+                         32x32       9.961%  archer e slinger head bronze.tga
+                         32x32       9.961%  archer e slinger head copper.tga
+                         32x32       9.961%  archer e slinger head iron.tga
+                         32x32       9.961%  archer e slinger head standard.tga
+                         64x64      16.943%  archer e slinger iron.tga
+                         64x64      75.879%  archer e slinger map.tga
+                         64x64       31.86%  archer e slinger standard.tga
+                         64x64      13.794%  archer g crossbowman.tga
+                         64x64      28.003%  archer g peltast bronze.tga
+                         64x64      40.186%  archer g peltast copper.tga
+                         32x32      34.082%  archer g peltast head bronze.tga
+                         32x32      34.082%  archer g peltast head copper.tga
+                         32x32      34.082%  archer g peltast head iron.tga
+                         32x32      34.082%  archer g peltast head standard.tga
+                         64x64      15.747%  archer g peltast iron.tga
+                         32x32      25.977%  archer g peltast low bronze.tga
+                         32x32      25.977%  archer g peltast low iron.tga
+                         32x32      16.309%  archer g peltast low standard.tga
+                         64x64      53.735%  archer g peltast standard.tga
+                         64x64      21.533%  archer g toxotes bronze.tga
+                         64x64      29.395%  archer g toxotes copper.tga
+                         64x64      24.292%  archer g toxotes iron.tga
+                         64x64      34.961%  archer g toxotes standard.tga
+                         64x64      10.767%  archer n normal bronze.tga
+                         64x64      10.767%  archer n normal copper.tga
+                         64x64      10.767%  archer n normal iron.tga
+                         64x64      14.526%  archer n normal standard.tga
+                         64x64      29.053%  archer n throwing axeman bronze.tga
+                         64x64      32.202%  archer n throwing axeman copper.tga
+                         64x64      19.653%  archer n throwing axeman iron.tga
+                         64x64       52.93%  archer n throwing axeman standard.tga
+                         64x64      14.673%  archer x bronze.tga
+                         64x64      14.673%  archer x copper.tga
+                         64x64      14.673%  archer x hero.tga
+                         64x64      14.673%  archer x iron.tga
+                         64x64      14.673%  archer x standard.tga
+                        256x256      6.381%  athenamap.tga
+                        128x128     13.391%  attachments a shields map.tga
+                         64x32      35.498%  attachments c flag naval.tga
+                        128x64      13.904%  attachments e shield bronze.tga
+                        128x64      16.052%  attachments e shield copper.tga
+                        128x64      13.477%  attachments e shield iron.tga
+                        128x64       11.56%  attachments g shield bronze.tga
+                        128x64      13.977%  attachments g shield copper.tga
+                        128x64      13.928%  attachments g shield iron.tga
+                         64x64       7.373%  attachments mu x automaton.tga
+                        128x64      17.346%  attachments n shield bronze.tga
+                        128x64      16.162%  attachments n shield copper.tga
+                        128x64      12.915%  attachments n shield iron.tga
+                        128x64      10.266%  attachments x shield champion.tga
+                        128x64      12.122%  attachments x shield heavy.tga
+                        128x64      10.266%  attachments x shield hero.tga
+                        128x64      12.476%  attachments x shield medium.tga
+                        256x256      2.884%  building c accessories.tga
+                        256x256     99.255%  building c props.tga
+                        128x128     10.266%  building c titan gate door map.tga
+                        256x256      0.476%  building c wallsage1.tga
+                        256x256      0.476%  building c wallsage2.tga
+                        256x256      0.476%  building c wallsage3.tga
+                        256x256      0.476%  building c wallsage4.tga
+                        256x256      0.024%  building c wonder palace walls.tga
+                        256x256      2.762%  building e age1.tga
+                        256x256      1.955%  building e age2 wall.tga
+                        256x256      4.213%  building e age3.tga
+                        256x256          0%  building e fortress accessories.tga
+                        256x128      5.164%  building e obelisk.tga
+                        256x256      2.762%  building e settlement age1.tga
+                        256x256      4.213%  building e settlement age3.tga
+                        256x256      4.213%  building e shared01 3 map.tga
+                        256x256     98.882%  building e shrine.tga
+                        256x256          0%  building e wonder accessories.tga
+                        128x128      4.584%  building g titan gate door map.tga
+                        256x256     57.895%  building g titan gate map.tga
+                        256x256      1.683%  building n hillfort.tga
+                        256x256      4.692%  building n loki wonder02.tga
+                        256x256      3.384%  building n odin wonder01.tga
+                        256x256      1.868%  building n settlementage4.tga
+                        256x256      2.858%  building n shared01 2 map.tga
+                        256x256      1.054%  building n shared02 2 map.tga
+                        256x256      2.417%  building n shared03 2 map.tga
+                        256x256       2.66%  building n shared04 2 map.tga
+                        128x128      1.782%  building n shrine.tga
+                        256x256      0.876%  building n temple.tga
+                        256x256      3.496%  building n titan gate map.tga
+                        256x128      1.596%  building n tower.tga
+                        256x256      1.428%  building n wallage4.tga
+                        256x256      0.536%  building n wonder.tga
+                        256x128      3.943%  building x mirror tower.tga
+                        256x256      2.344%  building x sky temple.tga
+                        256x256      0.946%  building x temple age0.tga
+                        256x256       8.45%  building x wall age2.tga
+                         32x32      24.609%  butterfly.tga
+                         64x64       8.667%  cavalry c cataphract bronze.tga
+                         64x64      16.895%  cavalry c cataphract copper.tga
+                         32x32       7.812%  cavalry c cataphract head bronze.tga
+                         32x32       7.812%  cavalry c cataphract head copper.tga
+                         32x32       7.812%  cavalry c cataphract head iron.tga
+                         32x32       7.812%  cavalry c cataphract head standard.tga
+                        128x128     15.607%  cavalry c cataphract horse bronze.tga
+                        128x128     15.607%  cavalry c cataphract horse copper.tga
+                        128x128     15.607%  cavalry c cataphract horse iron.tga
+                        128x128     15.607%  cavalry c cataphract horse standard.tga
+                         64x64       8.667%  cavalry c cataphract iron.tga
+                         64x64      33.545%  cavalry c cataphract standard.tga
+                        128x128     10.681%  cavalry c chariot bronze.tga
+                        128x128     10.681%  cavalry c chariot copper.tga
+                        256x256      2.373%  cavalry c chariot horse bronze.tga
+                        256x256      2.373%  cavalry c chariot horse iron.tga
+                        128x128      1.617%  cavalry c chariot horse standard.tga
+                        128x128     10.681%  cavalry c chariot iron.tga
+                        128x128     10.681%  cavalry c chariot standard.tga
+                        256x256     38.922%  cavalry c charioteer bronze.tga
+                        256x256     37.169%  cavalry c charioteer iron.tga
+                        256x256     50.594%  cavalry c charioteer standard.tga
+                         64x64      21.753%  cavalry c scout bronze.tga
+                         64x64      28.418%  cavalry c scout copper.tga
+                         32x32      26.758%  cavalry c scout head bronze.tga
+                         32x32      26.758%  cavalry c scout head copper.tga
+                         32x32      26.758%  cavalry c scout head iron.tga
+                         32x32      26.758%  cavalry c scout head standard.tga
+                        128x128      8.337%  cavalry c scout horse bronze.tga
+                        128x128      8.337%  cavalry c scout horse copper.tga
+                        128x128      8.337%  cavalry c scout horse iron.tga
+                        128x128       7.69%  cavalry c scout horse standard.tga
+                         64x64      13.428%  cavalry c scout iron.tga
+                         64x64      43.506%  cavalry c scout standard.tga
+                         64x64       29.81%  cavalry e camelry bronze.tga
+                        128x128      3.577%  cavalry e camelry camel bronze.tga
+                        128x128      3.571%  cavalry e camelry camel copper.tga
+                        128x128      3.589%  cavalry e camelry camel iron.tga
+                        128x128       4.01%  cavalry e camelry camel standard.tga
+                         64x64      43.872%  cavalry e camelry copper.tga
+                         64x64      30.005%  cavalry e camelry iron.tga
+                         64x64      18.213%  cavalry e camelry map.tga
+                         64x64        35.4%  cavalry e camelry standard.tga
+                        256x256     29.842%  cavalry e chariot archer bronze.tga
+                        256x256     34.428%  cavalry e chariot archer copper.tga
+                        256x256     29.555%  cavalry e chariot archer iron.tga
+                        128x128      4.175%  cavalry e mercenary horse standard.tga
+                         64x64       8.032%  cavalry e war elephant basket bronze.tga
+                         64x64       6.299%  cavalry e war elephant basket copper.tga
+                         64x64       7.446%  cavalry e war elephant basket iron.tga
+                        256x128      5.804%  cavalry e war elephant bronze.tga
+                        256x128      4.401%  cavalry e war elephant copper.tga
+                        256x128      5.728%  cavalry e war elephant iron.tga
+                         64x64      12.915%  cavalry e war elephant rider bronze.tga
+                         64x64       8.643%  cavalry e war elephant rider copper.tga
+                         64x64      12.915%  cavalry e war elephant rider iron.tga
+                         64x64      10.059%  cavalry e war elephant rider standard.tga
+                        128x128      4.279%  cavalry g cataphract horse iron.tga
+                         64x64      15.479%  cavalry g cataphract iron.tga
+                         64x64      13.672%  cavalry g hetairoi bronze.tga
+                         64x64      13.672%  cavalry g hetairoi copper.tga
+                        128x128      2.557%  cavalry g hetairoi horse iron.tga
+                         64x64      23.584%  cavalry g hetairoi iron.tga
+                         64x64      21.411%  cavalry g hippikon bronze.tga
+                        128x128     10.583%  cavalry g hippikon horse bronze.tga
+                        128x128     10.583%  cavalry g hippikon horse iron.tga
+                         64x64      21.191%  cavalry g hippikon iron.tga
+                         64x64      29.443%  cavalry g prodromos bronze.tga
+                         64x64      29.443%  cavalry g prodromos copper.tga
+                        128x128     10.583%  cavalry g prodromos horse bronze.tga
+                        128x128     10.583%  cavalry g prodromos horse iron.tga
+                         64x64      29.443%  cavalry g prodromos iron.tga
+                         64x64       63.11%  cavalry g prodromos standard.tga
+                        128x128      5.328%  cavalry g scout horse.tga
+                         64x64       7.202%  cavalry n jarl bronze.tga
+                         64x64       5.518%  cavalry n jarl copper.tga
+                        128x128      4.193%  cavalry n jarl horse bronze.tga
+                        128x128      4.828%  cavalry n jarl horse copper.tga
+                        128x128      4.633%  cavalry n jarl horse iron.tga
+                        128x128      5.438%  cavalry n jarl horse standard.tga
+                         64x64       7.202%  cavalry n jarl iron.tga
+                         64x64      21.777%  cavalry n jarl standard.tga
+                         64x64      26.904%  cavalry n raiding cavalry bronze.tga
+                         64x64      26.904%  cavalry n raiding cavalry copper.tga
+                        128x128      1.416%  cavalry n raiding cavalry horse bronze.tga
+                        128x128      1.416%  cavalry n raiding cavalry horse copper.tga
+                        128x128      1.416%  cavalry n raiding cavalry horse iron.tga
+                        128x128      1.416%  cavalry n raiding cavalry horse standard.tga
+                         64x64      26.904%  cavalry n raiding cavalry iron.tga
+                         64x64      26.904%  cavalry n raiding cavalry standard.tga
+                         64x64      12.695%  cavalry x javelin bronze.tga
+                         64x64      12.695%  cavalry x javelin hero.tga
+                        128x128      3.949%  cavalry x javelin horse bronze.tga
+                        128x128      5.225%  cavalry x javelin horse copper.tga
+                        128x128      2.466%  cavalry x javelin horse hero.tga
+                        128x128      2.466%  cavalry x javelin horse iron.tga
+                        128x128      5.225%  cavalry x javelin horse standard.tga
+                         64x64      12.695%  cavalry x javelin iron.tga
+                         64x64      20.874%  cavalry x lancer bronze.tga
+                         32x64      82.227%  cavalry x lancer cape iron.tga
+                         64x64      20.874%  cavalry x lancer copper.tga
+                        128x128      4.401%  cavalry x lancer horse bronze.tga
+                        128x128      6.677%  cavalry x lancer horse copper.tga
+                        128x128      4.401%  cavalry x lancer horse hero.tga
+                        128x128      4.401%  cavalry x lancer horse iron.tga
+                        128x128      6.677%  cavalry x lancer horse standard.tga
+                         64x64      20.874%  cavalry x lancer iron.tga
+                         64x64      20.874%  cavalry x lancer standard.tga
+                        256x256     17.513%  cine a arkantos map.tga
+                        256x256     15.912%  cine a arkantosman map.tga
+                        256x256     13.564%  cine a brokk map.tga
+                        256x256     13.564%  cine a eitri map.tga
+                        128x128       6.03%  cine a jarl helmet map.tga
+                        256x256      4.124%  cine a jarl horse map.tga
+                        256x256       3.97%  cine a jarl map.tga
+                        256x256      8.997%  cine a skult map.tga
+                        256x256      1.178%  cine c danzhu.tga
+                        256x256     14.388%  cine c jiaolong.tga
+                        128x128      96.68%  cine c shun shoulder.tga
+                        512x512     20.051%  cine c shun.tga
+                        256x256      44.72%  cine c zhi.tga
+                        256x256     15.874%  cine e axeman.tga
+                        256x256     18.271%  cine e infantry map.tga
+                        256x256     14.374%  cine e setna.tga
+                        256x256     11.865%  cine g ajax map.tga
+                        256x256     14.149%  cine g amanra map.tga
+                        256x256     15.768%  cine g amanra old map.tga
+                        256x256     14.078%  cine g chiron map.tga
+                        256x256      9.419%  cine g gargarensis map.tga
+                        128x64       4.736%  cine g hoplite shield.tga
+                        256x256      7.161%  cine g kastor map.tga
+                        256x256     35.826%  cine g old man map.tga
+                        256x256     24.651%  cine n hersir.tga
+                        128x128     11.963%  cine n huskarl cape.tga
+                        256x256      8.035%  cine n huskarl.tga
+                        256x256      9.198%  cine n reginleif map.tga
+                        256x256     10.048%  cine n reginleif weapons map.tga
+                        256x256     24.792%  cine n ulfsark.tga
+                        256x256     16.083%  cine x hp arcusmap.tga
+                        128x128      3.125%  cine x hp arcusweaponsmap.tga
+                        256x256     10.007%  cine x hp automatonmap.tga
+                        256x256      8.017%  cine x hp fanaticmap.tga
+                        256x256     13.495%  cine x hp melagiusmap.tga
+                        256x256     10.884%  cine x kastor adult.tga
+                        256x256      1.544%  cine x krios.tga
+                        128x256     91.968%  cine x trident soldier cape.tga
+                        256x256      6.628%  cine x trident soldier shield.tga
+                        256x256      8.099%  cine x trident soldier.tga
+                        256x256       3.36%  cinematic naval g trireme.tga
+                        256x256      2.855%  cyclops high.tga
+                        128x128     29.346%  forkboy map.tga
+                        256x256     17.122%  g hypaspist highmodelmap.tga
+                        256x256      1.176%  gaia wonder map2.tga
+                        256x256      9.174%  gine g kamos map.tga
+                        256x256     16.008%  greekheromap.tga
+                         32x32      65.723%  hero c general flag alpha.tga
+                         32x32       0.879%  hero c general head.tga
+                        128x128      2.228%  hero c general horse.tga
+                        128x128      9.735%  hero c general.tga
+                         64x64       29.98%  hero c immortal.tga
+                         64x64       2.295%  hero c monk.tga
+                         64x32      17.627%  hero g achilles cape.tga
+                         64x32       6.982%  hero g atalanta shield.tga
+                         64x64       8.057%  hero g athena low map.tga
+                         64x32      12.109%  hero g belerophon shield.tga
+                         64x32      12.109%  hero g bellerophon shield.tga
+                         64x32       8.301%  hero g chiron shield.tga
+                         64x32       2.832%  hero g heracles shield.tga
+                         64x64      29.077%  hero g hercules.tga
+                         64x32      28.906%  hero g jason shield.tga
+                         64x64      34.985%  hero g jason standard.tga
+                         64x64       18.53%  hero g perseus standard.tga
+                         64x64       1.733%  hero g physician.tga
+                         64x32       3.467%  hero g polyphemus shield.tga
+                        128x128     26.245%  hero n hero.tga
+                        128x128     26.245%  hero n hersir.tga
+                         64x64      15.186%  hero n ragnorok female.tga
+                         64x64      27.832%  hero n ragnorok male.tga
+                         64x64      23.047%  hero x ajax.tga
+                         64x64        12.5%  hero x kastor.tga
+                        256x256     16.264%  hoplitemap.tga
+                         64x64      27.539%  infantry c halberdier bronze.tga
+                         64x64      33.691%  infantry c halberdier copper.tga
+                         32x32       7.812%  infantry c halberdier head bronze.tga
+                         32x32       7.812%  infantry c halberdier head copper.tga
+                         32x32       7.812%  infantry c halberdier head iron.tga
+                         32x32       7.812%  infantry c halberdier head standard.tga
+                         64x64      15.527%  infantry c halberdier iron.tga
+                         64x64      41.553%  infantry c halberdier standard.tga
+                         64x64      24.829%  infantry e axeman bronze.tga
+                         64x64      24.976%  infantry e axeman copper.tga
+                         64x64      24.854%  infantry e axeman iron.tga
+                         64x64      74.585%  infantry e axeman map.tga
+                         64x64      45.605%  infantry e axeman standard.tga
+                         64x64      28.394%  infantry e khopesh bronze.tga
+                         64x64      37.183%  infantry e khopesh copper.tga
+                         64x64      27.808%  infantry e khopesh iron.tga
+                         64x64      26.343%  infantry e khopesh standard.tga
+                         64x64       10.84%  infantry e mercenary.tga
+                         64x64      31.128%  infantry e spearman bronze.tga
+                         64x64      31.079%  infantry e spearman copper.tga
+                         64x64      69.775%  infantry e spearman map.tga
+                         64x64      30.566%  infantry e spearman standard.tga
+                         64x64      20.923%  infantry g hoplite bronze.tga
+                         64x64      17.285%  infantry g hoplite copper.tga
+                         64x64      21.484%  infantry g hoplite iron.tga
+                         64x64      76.611%  infantry g hoplite map_01.tga
+                         64x64      76.611%  infantry g hoplite map_02.tga
+                         64x64      76.611%  infantry g hoplite map_03.tga
+                         64x64      76.611%  infantry g hoplite map_04.tga
+                         64x64      19.189%  infantry g hoplite standard.tga
+                         64x64      32.837%  infantry g hypaspist bronze.tga
+                         64x64      32.642%  infantry g hypaspist copper.tga
+                         64x64      32.837%  infantry g hypaspist iron.tga
+                         64x64       41.65%  infantry g hypaspist standard.tga
+                         64x64      52.148%  infantry g militia.tga
+                         64x64      28.809%  infantry g myrmidon iron.tga
+                         64x64      10.767%  infantry n bondi bronze.tga
+                         64x64      10.767%  infantry n bondi copper.tga
+                         32x32      87.891%  infantry n bondi head bronze.tga
+                         32x32      87.891%  infantry n bondi head copper.tga
+                         32x32      87.891%  infantry n bondi head iron.tga
+                         32x32      87.891%  infantry n bondi head standard.tga
+                         64x64      10.767%  infantry n bondi iron.tga
+                         64x64       8.838%  infantry n bondi standard.tga
+                         64x64       7.104%  infantry n huskarl bronze.tga
+                         64x64       7.104%  infantry n huskarl copper.tga
+                         64x64       7.104%  infantry n huskarl iron.tga
+                         64x64       7.104%  infantry n huskarl standard.tga
+                         64x64      36.475%  infantry n ulfsark bronze.tga
+                         64x64      36.475%  infantry n ulfsark copper.tga
+                         64x64      36.475%  infantry n ulfsark iron.tga
+                         64x64       8.643%  infantry n ulfsark map.tga
+                         64x64      22.803%  infantry n ulfsark scout.tga
+                         64x64      36.475%  infantry n ulfsark standard.tga
+                         64x64      11.182%  infantry x 2 sword fighter hero.tga
+                         64x64      11.182%  infantry x 2 sword fighter iron.tga
+                         64x64      14.282%  infantry x maceman bronze.tga
+                         64x64      14.282%  infantry x maceman copper.tga
+                         64x64      14.282%  infantry x maceman hero.tga
+                         64x64      14.282%  infantry x maceman iron.tga
+                         64x64      14.282%  infantry x maceman standard.tga
+                         32x64      83.496%  infantry x trident soldier cape iron.tga
+                         64x64      13.721%  infantry x trident soldier hero.tga
+                         64x64      13.721%  infantry x trident soldier iron.tga
+                         32x64       21.68%  infantry x trident soldier shield hero.tga
+                         32x64       21.68%  infantry x trident soldier shield iron.tga
+                        128x128      1.208%  lp cine x krios.tga
+                        128x128      9.265%  lp mu x argus map.tga
+                        128x128      4.871%  lp mu x stymphalian bird map.tga
+                        256x256      9.903%  mu x argus map.tga
+                        128x128     13.733%  mu x atlantean flying medic map.tga
+                        128x128     12.238%  mu x atlantean hundred giant map.tga
+                        128x128     19.464%  mu x atlantean lampedes map.tga
+                        128x128     28.186%  mu x atlantean manowar map.tga
+                        128x128       8.82%  mu x atlantean satyr map.tga
+                         64x64      15.845%  mu x automation map.tga
+                        256x256      2.277%  mu x behemoth map.tga
+                        128x128      3.748%  mu x dryad.tga
+                        128x128     13.733%  mu x nereid rider map.tga
+                         64x64      31.445%  mu x oracle.tga
+                         64x64       5.371%  mu x promethean map.tga
+                        128x128     28.058%  mu x servant of oceanus map.tga
+                        256x256      5.052%  mu x stymphalian bird map.tga
+                        256x256      3.027%  naval c all.tga
+                        256x256     75.522%  naval e all.tga
+                        256x256       5.92%  naval e pirate ship.tga
+                        256x256     74.352%  naval g all wrecked.tga
+                        256x256     74.352%  naval g all.tga
+                        256x256          0%  naval g giant turtle.tga
+                        128x64       8.838%  naval n kraken upgrade.tga
+                        128x64       8.838%  naval n kraken.tga
+                        256x256     68.674%  naval n utility map.tga
+                        256x256     75.914%  naval x all.tga
+                         64x64      16.895%  scenario b amanra map.tga
+                        128x128      1.691%  scenario c danzhu.tga
+                        128x128      7.611%  scenario c gargarensis map.tga
+                         64x64       8.838%  scenario c jiaolong head.tga
+                        256x256     17.172%  scenario c jiaolong.tga
+                        128x128      8.551%  scenario c kamos.tga
+                        128x128     18.701%  scenario c shun.tga
+                        128x128     65.656%  scenario c zhi.tga
+                        256x256     52.751%  scenario e great box camel.tga
+                        256x256      3.893%  scenario e great box.tga
+                        128x128      5.963%  scenario e guardian.tga
+                         64x64      16.797%  scenario e setna map.tga
+                        128x128      25.61%  scenario g arkantos man map.tga
+                        128x128     27.655%  scenario g arkantos map.tga
+                         64x64      24.756%  scenario g chiron map.tga
+                         64x64      14.355%  scenario g kastor map.tga
+                         64x64      65.063%  scenario g odysseus map.tga
+                         64x64      65.674%  scenario g old man map.tga
+                         64x64      29.663%  scenario g skult map.tga
+                         64x64      20.874%  scenario n brokk standard.tga
+                         64x64      22.217%  scenario n eitri standard.tga
+                         64x64       9.912%  scenario n reginleif weapons map.tga
+                        128x64      74.438%  scenario n thors hammer cart.tga
+                         64x64       6.519%  scenario theocrat.tga
+                         64x64      97.314%  scenario u ferryman map.tga
+                         64x64       4.614%  scenario u shade.tga
+                         64x64       20.63%  scenario x amanra map.tga
+                        256x256      6.729%  sfx a healing spring stone.tga
+                         64x64       6.372%  sfx a serpent.tga
+                        128x128      3.967%  sfx a walking woods.tga
+                        256x256     43.079%  sfx c earth dragon hole.tga
+                         32x32      28.223%  sfx e son of osiris head.tga
+                         64x64      31.714%  sfx e son of osiris.tga
+                        128x128      2.344%  sfx g animal magnetism.tga
+                        128x128      11.09%  sfx meteorite splat decal.tga
+                         64x64      24.243%  siege c fire lance bronze.tga
+                         64x32       3.906%  siege c fire lance head bronze.tga
+                         64x32       3.906%  siege c fire lance head iron.tga
+                         64x32       3.906%  siege c fire lance head.tga
+                         64x64      14.453%  siege c fire lance iron.tga
+                         64x64      24.243%  siege c fire lance.tga
+                        256x128      3.366%  siege g helepolis iron.tga
+                        256x128      3.366%  siege g helepolis.tga
+                         64x64       1.514%  siege g petrobolos low.tga
+                        256x256      2.707%  siege n ballista map.tga
+                        256x256     75.826%  siege n catapult map.tga
+                        128x128      5.548%  siege n ram iron.tga
+                        128x128      5.548%  siege n ram.tga
+                        128x128      4.297%  siege x chieroballista downgrade.tga
+                         64x64      18.042%  siege x chieroballista man upgrade.tga
+                         64x64      18.042%  siege x chieroballista man.tga
+                        128x128      4.297%  siege x chieroballista.tga
+                        128x128      2.417%  siege x fire siphon upgrade.tga
+                        128x128      2.417%  siege x fire siphon.tga
+                         64x64       2.979%  siege x onager iron.tga
+                         64x64       2.979%  siege x onager.tga
+                        256x128     14.825%  special c azure dragon.tga
+                        256x256      5.861%  special c dragon turtle.tga
+                        256x256     33.531%  special c earth dragon.tga
+                         32x32      21.484%  special c jiangshi head.tga
+                        128x128      57.91%  special c jiangshi.tga
+                        128x256     16.342%  special c monkey king.tga
+                        512x256      6.004%  Special C Pixiu.tga
+                        128x128      2.606%  special c salamander.tga
+                         32x32       7.812%  special c terracotta soldier head.tga
+                        128x128     11.621%  special c terracotta soldier.tga
+                        256x128      7.178%  special c vermillion bird wing.tga
+                        256x256      1.988%  special c vermillion bird.tga
+                        128x128     28.094%  special e anubite iron.tga
+                        128x128     28.827%  special e anubite.tga
+                        128x128      9.174%  special e apep map.tga
+                        128x128      21.24%  special e avenger map.tga
+                         64x64       1.099%  special e mummy map.tga
+                         64x32      25.293%  special e pharaoh head.tga
+                         64x64       6.323%  special e pharaoh.tga
+                         64x64      20.068%  special e priest.tga
+                        128x128      2.057%  special e scarab map.tga
+                        128x128      9.241%  special e scorpion man upgrade.tga
+                        128x128      9.241%  special e scorpion man.tga
+                        128x128      5.499%  special e sphinx.tga
+                        128x128     69.495%  special e wadjet.tga
+                        128x128      11.45%  special g agamemnon.tga
+                        128x128      7.007%  special g athena.tga
+                        128x128      3.424%  special g carcinos.tga
+                         64x64       7.129%  special g chimera map.tga
+                         64x64        14.6%  special g chimera tail.tga
+                        128x128      1.099%  special g chimera.tga
+                        128x128     14.728%  special g colossus map.tga
+                        128x128      4.138%  special g cyclops map.tga
+                        256x256          0%  special g giant turtle.tga
+                        256x256      4.024%  special g golem map.tga
+                        128x128     36.346%  special g hippocampus.tga
+                        256x256      2.126%  special g hydra land.tga
+                        128x128      1.202%  special g hydra map.tga
+                        128x128      3.955%  special g manticore.tga
+                         64x64       9.326%  special g medusa low map.tga
+                         64x64      65.796%  special g medusa map.tga
+                        128x128     67.932%  special g medusa.tga
+                        128x128       9.07%  special g minotaur.tga
+                        128x128      1.361%  special g nemean lion.tga
+                         64x64           0%  special g pegasus wings.tga
+                        128x128      3.308%  special g scylla map.tga
+                        256x256     16.261%  special g scylla.tga
+                        256x256        1.1%  special g sea turtle.tga
+                         64x64      10.278%  special g shade.tga
+                        128x128      5.548%  special n battle boar.tga
+                        128x128      4.108%  special n fenris.tga
+                        128x128      7.648%  special n fire giant.tga
+                        128x128      5.255%  special n frost giant upgrade.tga
+                        128x128      5.255%  special n frost giant.tga
+                         64x64       3.638%  special n giant map.tga
+                        128x128      3.497%  special n giant.tga
+                         32x32      10.547%  special n jarl cape map.tga
+                        128x128     14.044%  special n jormund brood.tga
+                        128x128      5.255%  special n king folstag upgrade.tga
+                         64x32       9.912%  special n troll bag.tga
+                        128x128      6.592%  special n troll.tga
+                        128x128     21.033%  special n valkyrie map.tga
+                         64x64      19.824%  special n valkyrie upgrade.tga
+                         64x64      20.679%  special x oracle hero.tga
+                         64x64      20.679%  special x oracle.tga
+                        128x128      5.255%  statue x gaia map.tga
+                        128x128      3.497%  temp santa body.tga
+                        128x128      78.54%  test flags.tga
+                        256x256      7.521%  theocrat map.tga
+                       1024x512      4.809%  titan c pangu.tga
+                         64x64           0%  titan e ra pads map.tga
+                        256x256          0%  titan e ra skirt map.tga
+                        256x256      4.501%  titan g cerebus map1.tga
+                        256x256      1.604%  titan g cerebus map2.tga
+                        256x256      4.941%  titan n troll map2.tga
+                        256x256          0%  titan x gaia.tga
+                        256x256          0%  titan x golem map1.tga
+                        256x256       0.89%  titan x kronos.tga
+                        256x256      7.755%  titan x promethean 1.tga
+                        256x256     11.765%  toxotemap.tga
+                         64x64       3.955%  trade c caravan cargo.tga
+                        128x128      6.042%  trade e caravan camel.tga
+                         64x64      10.718%  trade g caravan donkey.tga
+                        128x128      6.238%  trade n caravan cargo.tga
+                        128x128      8.246%  trade n caravan ox.tga
+                         64x64      13.184%  trade x caravan.tga
+                        128x64      10.559%  trash weapon.tga
+                        256x256     15.477%  trash.tga
+                          8x256      0.391%  ui line yellow vertical.tga
+                        256x8        0.391%  ui line yellow.tga
+                        256x256     50.017%  villager c female.tga
+                         64x64      39.185%  villager c male standard.tga
+                         64x64      48.999%  villager e female.tga
+                         64x64      12.085%  villager e male standard.tga
+                         64x64      31.616%  villager g atlantean male.tga
+                         64x64      52.832%  villager g female.tga
+                         64x64      42.725%  villager g male standard.tga
+                         64x64      15.186%  villager n female.tga
+                         64x64      27.832%  villager n male standard.tga
+                         64x64       5.029%  villager n ox.tga
+                         64x64      22.803%  villager x female hero.tga
+                         64x64      22.803%  villager x female.tga
+                         64x64      21.582%  villager x male hero.tga
+                         64x64      21.582%  villager x male.tga
+                         64x64       10.62%  villager x pony.tga
+                         64x64      44.409%  waypoint.tga
+                        256x256      4.895%  world a tents map.tga
+                        256x256     44.983%  world a underworld crator.tga
+                         64x64      13.965%  world a underworld passage color transform.tga
+                        128x128      5.658%  world c statue nuwa.tga
+                        128x128      4.443%  world c statue shennong.tga
+                         64x32      67.236%  world e garrison flag.tga
+                        128x128      1.599%  world e statue set.tga
+                        128x128      4.333%  world g statue poseidon.tga
+                        128x128      5.273%  world g tent.tga
+                         64x32      66.504%  world n garrison flag.tga
+                        128x128      3.564%  world n loki statue map.tga
+                        128x128      4.901%  world n odin statue map.tga
+                        128x128      2.814%  world n statue loki.tga
+                        128x128      1.971%  world n statue odin.tga
+                        128x128      2.643%  world n statue thor.tga
+                        128x128      1.007%  world n tent.tga
+                        128x128      3.564%  world n thor statue map.tga
+                        128x128      4.535%  world x gaia  statue map.tga
+
+COUNT: 570

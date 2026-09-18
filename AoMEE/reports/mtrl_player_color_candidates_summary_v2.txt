@@ -1,0 +1,38 @@
+﻿AoM:EE Player-Color Candidate Material Analysis
+================================================
+
+Candidate/material references: 0
+Unique candidate textures matched: 0
+Unique material files involved: 0
+
+MATCHES BY CATEGORY
+-------------------
+
+UNIQUE CANDIDATES WITH COLOR_TRANSFORM 4
+----------------------------------------
+Count: 0
+
+
+UNIQUE CANDIDATES WITH COLOR_TRANSFORM 0
+----------------------------------------
+Count: 0
+
+
+UNIQUE CANDIDATES WITH BOTH CT0 AND CT4
+---------------------------------------
+Count: 0
+
+
+UNIQUE CANDIDATES WITH NO CT0 OR CT4
+------------------------------------
+Count: 0
+
+
+REFERENCE COUNTS PER CANDIDATE
+------------------------------
+                                                        Total=    0 CT0=    0 CT4=    0
+
+OUTPUT
+------
+D:\AI_upscaling\AoMEE\reports\mtrl_player_color_candidates.csv
+D:\AI_upscaling\AoMEE\reports\mtrl_player_color_candidates_summary_v2.txt

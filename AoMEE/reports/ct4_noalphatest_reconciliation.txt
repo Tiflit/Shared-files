@@ -1,0 +1,27 @@
+﻿AoM:EE CT4 + noalphatest reconciliation
+======================================
+
+Unique CT4 textures:             518
+Unique noalphatest textures:     947
+Exact CT4 + noalphatest:          454
+Earlier candidate set:            447
+Missing from earlier 447 set:    7
+Extra in earlier 447 set:         0
+
+MISSING FROM EARLIER 447
+------------------------
+Hero G Achilles
+Hero G Ajax
+Hero G Atalanta
+Hero G Heracles
+Hero G Hippolyta
+Hero G Theseus
+trade c caravan
+
+EXTRA IN EARLIER 447
+--------------------
+(none)
+
+OUTPUT
+------
+D:\AI_upscaling\AoMEE\reports\ct4_noalphatest_exact_intersection.csv

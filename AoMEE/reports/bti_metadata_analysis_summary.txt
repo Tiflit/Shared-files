@@ -1,0 +1,35 @@
+﻿AoM:EE BTI Metadata Analysis
+============================
+
+BTI files scanned: 7452
+
+NOALPHATEST
+-----------
+False                  6504
+True                    948
+
+NOALPHATEST + ALPHA BITS
+------------------------
+0                        51
+1                       705
+4                       192
+
+NOALPHATEST + FORMAT
+--------------------
+BC2                       1
+BC3                     928
+DeflatedRGBA8            19
+
+NOALPHATEST + ALPHA BITS + FORMAT
+---------------------------------
+0, BC3                                  33
+0, DeflatedRGBA8                        18
+1, BC2                                   1
+1, BC3                                 703
+1, DeflatedRGBA8                         1
+4, BC3                                 192
+
+OUTPUT
+------
+D:\AI_upscaling\AoMEE\reports\bti_metadata_analysis.csv
+D:\AI_upscaling\AoMEE\reports\bti_metadata_analysis_summary.txt

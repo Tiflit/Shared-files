@@ -1,0 +1,287 @@
+﻿AoM:EE Player-Color Candidate Alpha Analysis
+============================================
+
+Candidate textures: 447
+Matched TGAs:       447
+Missing TGAs:       0
+Duplicate names:    0
+
+MASK CLASS DISTRIBUTION
+-----------------------
+BinaryBroad                4
+BinaryModerate            35
+BinarySparse              78
+BinaryVeryBroad            1
+BinaryVerySparse           8
+FullyOpaque                2
+FullyTransparent          18
+GradedBroad               65
+GradedModerate           153
+GradedSparse              78
+GradedVeryBroad            5
+
+NON-TRANSPARENT COVERAGE
+------------------------
+0%              18
+0-1%            10
+1-5%           154
+5-10%           72
+10-25%         116
+25-50%          50
+50-75%          19
+75-90%           6
+90-100%          2
+
+ALPHA VALUE COUNTS
+------------------
+1               20
+2              126
+3              230
+4                1
+8                2
+9                1
+11               2
+12               1
+14               2
+18               9
+22               1
+24               1
+25               1
+31               3
+33               1
+35               1
+36               1
+40               1
+42               1
+45               1
+48               1
+55               1
+60               1
+68               1
+70               2
+77               1
+78               1
+79               1
+81               1
+83               1
+88               1
+95               1
+96               1
+98               1
+100              1
+104              1
+106              1
+111              2
+120              1
+131              1
+135              1
+139              1
+140              1
+143              1
+145              1
+153              1
+158              1
+165              1
+172              1
+175              1
+180              1
+189              1
+190              1
+232              1
+239              1
+242              1
+243              1
+244              2
+
+FULLY OPAQUE TEXTURES
+----------------------
+hero c general cape
+Special E Phoenix
+
+FULLY TRANSPARENT TEXTURES
+--------------------------
+Animal Flying Purple Hippo
+archer c crossbowman head standard
+archer c mounted archer head standard
+Archer N Normal Head Standard
+building c roofage1
+building c special
+building c wonder city roof
+building c wonder city walls
+building c wonder palace roof
+hero c monk head
+hero c monk weapon
+hero g physician head
+scenario c danzhu head
+scenario c shun head
+Special E Roc
+Trade E Caravan Cargo
+world c statue shennong head
+World G Statue Poseidon Base
+
+VERY SPARSE MASKS (<=5% NON-TRANSPARENT)
+----------------------------------------
+   0.263%  building E Outpost
+   0.317%  Building G Shrine
+   0.397%  Oranos Wonder Map
+   0.412%  Building G RoofAge1
+   0.415%  Building x TitanGate
+   0.574%  Building N Wonder
+   0.586%  Building X Palace Age2
+   0.861%  Building N ThorArmory
+   0.873%  building c wonder temple
+   0.996%  Titan X Kronos
+   1.103%  Building N Shared02 2 map
+   1.129%  World N Tent
+   1.173%  Building X Temple age0
+   1.291%  Gaia Wonder Map2
+   1.320%  Building X Wall Iron
+   1.325%  Building X Roof Age0
+   1.325%  Special G Chimera
+   1.337%  building x wall stone
+   1.337%  LP Cine X Krios
+   1.341%  Building N TempleAge1
+   1.341%  Building N TempleAge2
+   1.341%  Building N TempleAge3
+   1.343%  Special E Mummy map
+   1.367%  Platform Map
+   1.370%  Building N Shared06 2 map
+   1.370%  Special G Sea Turtle
+   1.408%  Building G Age0
+   1.424%  Building G SettlementAge1
+   1.424%  Building G SettlementAge3
+   1.428%  Building X Wall Bronze
+   1.434%  Building N SettlementAge1
+   1.439%  building E Fortress Accessories
+   1.444%  Building N WallAge4
+   1.450%  Building N SettlementAge2
+   1.479%  Building G TempleAge2
+   1.514%  Cavalry N Raiding Cavalry Horse Standard
+   1.515%  Building G TempleAge1
+   1.517%  building x tower watch2
+   1.517%  Building X Tower Watch3
+   1.563%  Building_E_MonumentBase_Map
+   1.595%  Building E Lighthouse
+   1.598%  Building G Wonder
+   1.601%  Cine X Krios
+   1.611%  Titan G Cerebus Map2
+   1.614%  Building E shared02 2 map
+   1.630%  Building N Tower
+   1.642%  Building N SettlementAge3
+   1.642%  Special G Nemean Lion
+   1.645%  Building G SettlementAge2
+   1.672%  World G Hades Temple
+   1.679%  Building X Palace Age3
+   1.698%  Building N Shared01 1 map
+   1.712%  Building G Towers
+   1.750%  Building N Hillfort
+   1.752%  World E Statue Isis
+   1.788%  World E Statue Set
+   1.794%  Villager N Oxcart
+   1.804%  Building G Fortifiedwall
+   1.807%  Animal GoatNubian map
+   1.807%  Animal Pig map
+   1.883%  Building N SettlementAge4
+   1.892%  Building E Wall4
+   1.910%  building c earthen wall
+   1.910%  building c fortified wall
+   1.910%  building c great wall
+   1.910%  building c stone wall
+   1.941%  World G Statue Hades
+   1.947%  Building N Shrine
+   1.953%  Oranos Wonder Map1
+   1.971%  building E Age2 wall
+   1.996%  Building G Temple
+   1.996%  Building N Shared01 3 map
+   2.040%  building E Isis Wonder02
+   2.051%  building E Isis Wonder01
+   2.081%  Building X Roof Age1
+   2.094%  building c tower age2
+   2.097%  building E Ra Wonder02
+   2.107%  SFX G Plenty
+   2.142%  building E Set Wonder02
+   2.191%  Special E Scarab map
+   2.197%  Special G Hydra Land
+   2.251%  building E Monument platforms
+   2.283%  Building X Wall Oreichalkos
+   2.295%  World N Statue Odin
+   2.304%  Kronos Wonder Map2
+   2.319%  archer c mounted archer horse standard
+   2.333%  building c wonder palace walls
+   2.344%  Building G Hades Wonder
+   2.431%  MU X Behemoth Map
+   2.435%  Building G WallsAge2
+   2.448%  Building X Sky Temple
+   2.464%  Building G FortressWall
+   2.576%  Siege X Fire Siphon
+   2.643%  animal white tiger map
+   2.686%  Animal Cow A map
+   2.707%  Building N Shared04 2 map
+   2.716%  Cavalry G Hetairoi Horse Iron
+   2.718%  Titan X Gaia
+   2.728%  Cavalry X Javelin Horse Iron
+   2.766%  Building G Zues Wonder01
+   2.826%  Building E Titan Gate Map
+   2.863%  Statue X Oranos Map
+   2.869%  SFX G Animal Magnetism
+   2.881%  Animal Goat map
+   2.945%  special c vermillion bird
+   2.995%  Building N Shared01 2 map
+   2.997%  World N Statue Thor
+   3.070%  Building E Age2
+   3.070%  building E Settlement Age2
+   3.076%  Siege X Onager
+   3.107%  World N Statue Loki
+   3.125%  world c statue nuwa stand
+   3.145%  Building G WallsAge1
+   3.149%  Special G Pegasus Wings
+   3.204%  Building E Age1
+   3.204%  building E Settlement Age1
+   3.355%  Building G WallsAge3
+   3.381%  World G Statue Zeus
+   3.409%  Building N Odin Wonder01
+   3.418%  Cavalry G Hippikon Head Bronze
+   3.418%  Cavalry G Hippikon Head Copper
+   3.418%  Cavalry G Hippikon Head Iron
+   3.461%  Building G Shared05 2 map
+   3.497%  Animal Yak
+   3.516%  scenario t troy wall long
+   3.516%  scenario t troy wall long dead
+   3.589%  Special N Giant
+   3.589%  Temp Santa Body
+   3.604%  Siege G Helepolis
+   3.723%  Cavalry E Camelry Camel Copper
+   3.754%  Special E Roc Basket
+   3.857%  scenario c danzhu
+   3.943%  MU X Dryad
+   3.975%  Scenario E Great Box
+   3.992%  Building X Mirror Tower
+   4.060%  Building N Titan Gate Map
+   4.126%  Siege N Ballista
+   4.146%  Special G Golem map
+   4.221%  Building E Age3
+   4.221%  building E Settlement Age3
+   4.254%  Special G Carcinos
+   4.266%  Special G Manticore
+   4.276%  SFX E Citadel
+   4.276%  SFX E Citadel Age4
+   4.282%  Cine G Poseidon Stone
+   4.309%  Special N Fenris
+   4.340%  SFX A Walking Woods
+   4.340%  Special G Cyclops map
+   4.370%  Special E Petesuchos
+   4.425%  Siege X Chieroballista
+   4.480%  Cavalry G Cataphract Horse Iron
+   4.517%  Cavalry E Mercenary Horse Standard
+   4.535%  World G Statue Poseidon
+   4.633%  Cavalry X Lancer Horse Iron
+   4.639%  Special G Centaur
+   4.648%  building c accessories
+   4.686%  Titan G Cerebus Map1
+   4.688%  Hero G Heracles Shield
+   4.688%  Hero G Polyphemus Shield
+   4.785%  Special G Cyclops
+   4.865%  cavalry c chariot horse standard
+   4.868%  Cavalry E War Elephant Copper
+   4.938%  world c statue shennong
+   4.948%  Titan N Troll Map2

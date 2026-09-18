@@ -1,0 +1,266 @@
+﻿AoM:EE patched_to_verify integrity check
+========================================
+
+TGA files checked: 35
+
+STATUS
+------
+OK                            34
+OK_PROVISIONAL_GRIFFON         1
+
+TGA IMAGE TYPE
+--------------
+Type 10 - RLE true-color             34
+Type 2 - uncompressed true-color      1
+
+FILES
+-----
+
+textures\animal dog a map.tga
+  DDT: 64x64, 5512 bytes
+  TGA: type=10, 64x64, 32-bit, alpha=8, 12898 bytes
+  Pixels: 4096 / expected 4096
+  BTI: True, 30 bytes
+  Status: OK
+
+textures\animal dog b map.tga
+  DDT: 64x64, 5512 bytes
+  TGA: type=10, 64x64, 32-bit, alpha=8, 12818 bytes
+  Pixels: 4096 / expected 4096
+  BTI: True, 30 bytes
+  Status: OK
+
+textures\animal elephant indian.tga
+  DDT: 128x128, 11016 bytes
+  TGA: type=10, 128x128, 32-bit, alpha=8, 50763 bytes
+  Pixels: 16384 / expected 16384
+  BTI: True, 18 bytes
+  Status: OK
+
+textures\animal parrot map.tga
+  DDT: 64x64, 3502 bytes
+  TGA: type=10, 64x64, 32-bit, alpha=8, 11053 bytes
+  Pixels: 4096 / expected 4096
+  BTI: True, 18 bytes
+  Status: OK
+
+textures\archer c crossbow.tga
+  DDT: 64x64, 5512 bytes
+  TGA: type=10, 64x64, 32-bit, alpha=8, 11603 bytes
+  Pixels: 4096 / expected 4096
+  BTI: True, 30 bytes
+  Status: OK
+
+textures\icons\boat c fire ship chinese icon.tga
+  DDT: 64x64, 12192 bytes
+  TGA: type=10, 64x64, 32-bit, alpha=8, 19648 bytes
+  Pixels: 4096 / expected 4096
+  BTI: True, 34 bytes
+  Status: OK
+
+textures\icons\boat c fishing boat icon.tga
+  DDT: 64x64, 12320 bytes
+  TGA: type=10, 64x64, 32-bit, alpha=8, 19843 bytes
+  Pixels: 4096 / expected 4096
+  BTI: True, 34 bytes
+  Status: OK
+
+textures\icons\boat c junk icon.tga
+  DDT: 64x64, 12655 bytes
+  TGA: type=10, 64x64, 32-bit, alpha=8, 19833 bytes
+  Pixels: 4096 / expected 4096
+  BTI: True, 34 bytes
+  Status: OK
+
+textures\icons\boat c siege ship chinese icon.tga
+  DDT: 64x64, 12688 bytes
+  TGA: type=10, 64x64, 32-bit, alpha=8, 19933 bytes
+  Pixels: 4096 / expected 4096
+  BTI: True, 34 bytes
+  Status: OK
+
+textures\icons\boat c transport icon.tga
+  DDT: 64x64, 12607 bytes
+  TGA: type=10, 64x64, 32-bit, alpha=8, 19978 bytes
+  Pixels: 4096 / expected 4096
+  BTI: True, 34 bytes
+  Status: OK
+
+textures\icons\god power barrage icon.tga
+  DDT: 64x64, 5860 bytes
+  TGA: type=10, 64x64, 32-bit, alpha=8, 12873 bytes
+  Pixels: 4096 / expected 4096
+  BTI: True, 34 bytes
+  Status: OK
+
+textures\icons\god power earth dragon icon.tga
+  DDT: 64x64, 6524 bytes
+  TGA: type=10, 64x64, 32-bit, alpha=8, 10798 bytes
+  Pixels: 4096 / expected 4096
+  BTI: True, 34 bytes
+  Status: OK
+
+textures\icons\god power flood icon.tga
+  DDT: 64x64, 11200 bytes
+  TGA: type=10, 64x64, 32-bit, alpha=8, 17088 bytes
+  Pixels: 4096 / expected 4096
+  BTI: True, 34 bytes
+  Status: OK
+
+textures\icons\god power geyser icon.tga
+  DDT: 64x64, 6827 bytes
+  TGA: type=10, 64x64, 32-bit, alpha=8, 12308 bytes
+  Pixels: 4096 / expected 4096
+  BTI: True, 34 bytes
+  Status: OK
+
+textures\icons\god power journey icon.tga
+  DDT: 128x128, 30550 bytes
+  TGA: type=10, 128x128, 32-bit, alpha=8, 55333 bytes
+  Pixels: 16384 / expected 16384
+  BTI: True, 34 bytes
+  Status: OK
+
+textures\icons\god power recreation icon.tga
+  DDT: 64x64, 4956 bytes
+  TGA: type=10, 64x64, 32-bit, alpha=8, 7418 bytes
+  Pixels: 4096 / expected 4096
+  BTI: True, 34 bytes
+  Status: OK
+
+textures\icons\siege c fire lance icon.tga
+  DDT: 64x64, 5588 bytes
+  TGA: type=10, 64x64, 32-bit, alpha=8, 8488 bytes
+  Pixels: 4096 / expected 4096
+  BTI: True, 34 bytes
+  Status: OK
+
+textures\icons\special c azure dragon icon.tga
+  DDT: 64x64, 5178 bytes
+  TGA: type=10, 64x64, 32-bit, alpha=8, 7883 bytes
+  Pixels: 4096 / expected 4096
+  BTI: True, 34 bytes
+  Status: OK
+
+textures\icons\special c black tortoise icon.tga
+  DDT: 64x64, 2072 bytes
+  TGA: type=10, 64x64, 32-bit, alpha=8, 3778 bytes
+  Pixels: 4096 / expected 4096
+  BTI: True, 24 bytes
+  Status: OK
+
+textures\icons\special c earth dragon icon.tga
+  DDT: 64x64, 6524 bytes
+  TGA: type=10, 64x64, 32-bit, alpha=8, 10798 bytes
+  Pixels: 4096 / expected 4096
+  BTI: True, 34 bytes
+  Status: OK
+
+textures\icons\special c jiangshi icon.tga
+  DDT: 64x64, 6536 bytes
+  TGA: type=10, 64x64, 32-bit, alpha=8, 10258 bytes
+  Pixels: 4096 / expected 4096
+  BTI: True, 34 bytes
+  Status: OK
+
+textures\icons\special c monkey king icon.tga
+  DDT: 64x64, 8100 bytes
+  TGA: type=10, 64x64, 32-bit, alpha=8, 13503 bytes
+  Pixels: 4096 / expected 4096
+  BTI: True, 34 bytes
+  Status: OK
+
+textures\icons\special c pixiu icon.tga
+  DDT: 64x64, 8639 bytes
+  TGA: type=10, 64x64, 32-bit, alpha=8, 13323 bytes
+  Pixels: 4096 / expected 4096
+  BTI: True, 34 bytes
+  Status: OK
+
+textures\icons\special c qilin icon.tga
+  DDT: 64x64, 6982 bytes
+  TGA: type=10, 64x64, 32-bit, alpha=8, 10723 bytes
+  Pixels: 4096 / expected 4096
+  BTI: True, 34 bytes
+  Status: OK
+
+textures\icons\special c terracotta soldier icon.tga
+  DDT: 64x64, 6866 bytes
+  TGA: type=10, 64x64, 32-bit, alpha=8, 11573 bytes
+  Pixels: 4096 / expected 4096
+  BTI: True, 34 bytes
+  Status: OK
+
+textures\icons\special c vermilion bird icon.tga
+  DDT: 64x64, 5811 bytes
+  TGA: type=10, 64x64, 32-bit, alpha=8, 8783 bytes
+  Pixels: 4096 / expected 4096
+  BTI: True, 34 bytes
+  Status: OK
+
+textures\icons\special c war salamander icon.tga
+  DDT: 64x64, 11975 bytes
+  TGA: type=10, 64x64, 32-bit, alpha=8, 20398 bytes
+  Pixels: 4096 / expected 4096
+  BTI: True, 34 bytes
+  Status: OK
+
+textures\icons\special c white tiger icon.tga
+  DDT: 64x64, 7333 bytes
+  TGA: type=10, 64x64, 32-bit, alpha=8, 12933 bytes
+  Pixels: 4096 / expected 4096
+  BTI: True, 34 bytes
+  Status: OK
+
+textures\icons\trade c caravan icon.tga
+  DDT: 64x64, 8259 bytes
+  TGA: type=10, 64x64, 32-bit, alpha=8, 13618 bytes
+  Pixels: 4096 / expected 4096
+  BTI: True, 34 bytes
+  Status: OK
+
+textures\special c qilin.tga
+  DDT: 256x128, 43704 bytes
+  TGA: type=10, 256x128, 32-bit, alpha=8, 75363 bytes
+  Pixels: 32768 / expected 32768
+  BTI: True, 18 bytes
+  Status: OK
+
+textures\special g griffon map.tga
+  DDT: 128x128, 21952 bytes
+  TGA: type=2, 128x128, 32-bit, alpha=8, 65554 bytes
+  Pixels: 16384 / expected 16384
+  BTI: True, 27 bytes
+  Status: OK_PROVISIONAL_GRIFFON
+
+textures\world c jungle palm burnt.tga
+  DDT: 256x256, 81952 bytes
+  TGA: type=10, 256x256, 32-bit, alpha=8, 225308 bytes
+  Pixels: 65536 / expected 65536
+  BTI: True, 18 bytes
+  Status: OK
+
+textures\world c jungle palm.tga
+  DDT: 256x256, 81952 bytes
+  TGA: type=10, 256x256, 32-bit, alpha=8, 93223 bytes
+  Pixels: 65536 / expected 65536
+  BTI: True, 18 bytes
+  Status: OK
+
+textures\world c jungle tree burnt.tga
+  DDT: 256x256, 81952 bytes
+  TGA: type=10, 256x256, 32-bit, alpha=8, 243018 bytes
+  Pixels: 65536 / expected 65536
+  BTI: True, 18 bytes
+  Status: OK
+
+textures\world c jungle tree.tga
+  DDT: 256x256, 81952 bytes
+  TGA: type=10, 256x256, 32-bit, alpha=8, 253993 bytes
+  Pixels: 65536 / expected 65536
+  BTI: True, 18 bytes
+  Status: OK
+
+OUTPUT
+------
+D:\AI_upscaling\AoMEE\reports\patched_to_verify_integrity.csv

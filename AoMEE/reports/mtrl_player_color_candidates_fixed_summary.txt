@@ -1,0 +1,229 @@
+﻿AoM:EE Player-Color Candidate Material Analysis
+================================================
+
+Candidate textures: 134
+Material/texture references: 2829
+Unique candidate textures matched: 116
+Unique material files involved: 2829
+
+Unique candidates with CT0: 105
+Unique candidates with CT4: 105
+Unique candidates with BOTH CT0 and CT4: 94
+
+BY CATEGORY
+-----------
+Animal                    103
+Building                 2037
+Character/Unit             71
+Other                     581
+World/Terrain              37
+
+CANDIDATES WITH CT4
+------------------
+animal cow a map.tga
+animal goatnubian map.tga
+building c earthen wall.tga
+building c fortified wall.tga
+building c great wall.tga
+building c stone wall.tga
+building c tower age2.tga
+building c wonder temple.tga
+building e age2.tga
+building e age4.tga
+building e isis wonder01.tga
+building e isis wonder02.tga
+building e lighthouse.tga
+building e monument platforms.tga
+building e outpost.tga
+building e ra wonder02.tga
+building e set wonder02.tga
+building e settlement age2.tga
+building e settlement age4.tga
+building e shared02 2 map.tga
+building e titan gate map.tga
+building e wall4.tga
+building g age0.tga
+building g fortifiedwall.tga
+building g fortresswall.tga
+building g hades wonder.tga
+building g roofage1.tga
+building g settlementage1.tga
+building g settlementage2.tga
+building g settlementage3.tga
+building g shared05 2 map.tga
+building g shrine.tga
+building g temple.tga
+building g templeage1.tga
+building g templeage2.tga
+building g towers.tga
+building g wallsage1.tga
+building g wallsage2.tga
+building g wallsage3.tga
+building g wonder.tga
+building g zues wonder01.tga
+building n settlementage1.tga
+building n settlementage2.tga
+building n settlementage3.tga
+building n shared01 1 map.tga
+building n shared01 3 map.tga
+building n shared06 2 map.tga
+building n templeage1.tga
+building n templeage2.tga
+building n templeage3.tga
+building n thorarmory.tga
+building x palace age2.tga
+building x palace age3.tga
+building x roof age0.tga
+building x roof age1.tga
+building x titangate.tga
+building x tower watch2.tga
+building x tower watch3.tga
+building x wall age3.tga
+building x wall bronze.tga
+building x wall iron.tga
+building x wall oreichalkos.tga
+building x wall stone.tga
+building_e_monumentbase_map.tga
+cavalry g hippikon head bronze.tga
+cavalry g hippikon head copper.tga
+cavalry g hippikon head iron.tga
+cavalry g hippikon horse standard.tga
+cavalry g prodromos horse standard.tga
+cine g poseidon stone.tga
+hero g theseus shield.tga
+infantry g hoplite head iron.tga
+infantry g myrmidon head iron.tga
+kronos wonder map2.tga
+oranos wonder map.tga
+oranos wonder map1.tga
+platform map.tga
+projectile a ballista arrow.tga
+scenario g circe.tga
+scenario n reginleif map.tga
+scenario t troy wall long dead.tga
+scenario t troy wall long.tga
+sfx e citadel age4.tga
+sfx e citadel.tga
+sfx g plenty.tga
+siege c sitting tiger.tga
+siege e catapult.tga
+siege g petrobolos iron.tga
+siege g petrobolos.tga
+siege n ballista bolt iron.tga
+siege n ballista bolt.tga
+siege n ballista.tga
+special e petesuchos.tga
+special e roc basket.tga
+special g centaur.tga
+special g cyclops.tga
+statue x oranos map.tga
+trade e caravan basket.tga
+trade g caravan cargo.tga
+villager n oxcart.tga
+world c statue nuwa stand.tga
+world e statue isis.tga
+world g hades temple.tga
+world g statue hades.tga
+world g statue zeus.tga
+
+CANDIDATES WITH BOTH CT0 AND CT4
+--------------------------------
+animal cow a map.tga
+animal goatnubian map.tga
+building c fortified wall.tga
+building e age2.tga
+building e age4.tga
+building e isis wonder01.tga
+building e isis wonder02.tga
+building e lighthouse.tga
+building e monument platforms.tga
+building e outpost.tga
+building e ra wonder02.tga
+building e set wonder02.tga
+building e settlement age2.tga
+building e settlement age4.tga
+building e shared02 2 map.tga
+building e titan gate map.tga
+building e wall4.tga
+building g age0.tga
+building g fortifiedwall.tga
+building g fortresswall.tga
+building g hades wonder.tga
+building g roofage1.tga
+building g settlementage1.tga
+building g settlementage2.tga
+building g settlementage3.tga
+building g shared05 2 map.tga
+building g shrine.tga
+building g temple.tga
+building g templeage1.tga
+building g templeage2.tga
+building g towers.tga
+building g wallsage1.tga
+building g wallsage2.tga
+building g wallsage3.tga
+building g wonder.tga
+building g zues wonder01.tga
+building n settlementage1.tga
+building n settlementage2.tga
+building n settlementage3.tga
+building n shared01 1 map.tga
+building n shared01 3 map.tga
+building n shared06 2 map.tga
+building n templeage1.tga
+building n templeage2.tga
+building n templeage3.tga
+building n thorarmory.tga
+building x palace age2.tga
+building x palace age3.tga
+building x roof age0.tga
+building x roof age1.tga
+building x titangate.tga
+building x tower watch2.tga
+building x tower watch3.tga
+building x wall age3.tga
+building x wall bronze.tga
+building x wall iron.tga
+building x wall oreichalkos.tga
+building x wall stone.tga
+building_e_monumentbase_map.tga
+cavalry g hippikon horse standard.tga
+cavalry g prodromos horse standard.tga
+cine g poseidon stone.tga
+hero g theseus shield.tga
+infantry g hoplite head iron.tga
+infantry g myrmidon head iron.tga
+kronos wonder map2.tga
+oranos wonder map.tga
+oranos wonder map1.tga
+platform map.tga
+scenario g circe.tga
+scenario n reginleif map.tga
+scenario t troy wall long dead.tga
+scenario t troy wall long.tga
+sfx e citadel age4.tga
+sfx e citadel.tga
+sfx g plenty.tga
+siege e catapult.tga
+siege g petrobolos iron.tga
+siege g petrobolos.tga
+siege n ballista bolt iron.tga
+siege n ballista bolt.tga
+siege n ballista.tga
+special e petesuchos.tga
+special e roc basket.tga
+special g centaur.tga
+special g cyclops.tga
+statue x oranos map.tga
+trade e caravan basket.tga
+trade g caravan cargo.tga
+villager n oxcart.tga
+world e statue isis.tga
+world g hades temple.tga
+world g statue hades.tga
+world g statue zeus.tga
+
+OUTPUT
+------
+D:\AI_upscaling\AoMEE\reports\mtrl_player_color_candidates_fixed.csv
+D:\AI_upscaling\AoMEE\reports\mtrl_player_color_candidates_fixed_summary.txt

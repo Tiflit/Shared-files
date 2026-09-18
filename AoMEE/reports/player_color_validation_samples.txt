@@ -1,0 +1,132 @@
+﻿AoM:EE Player-Color Validation Samples
+======================================
+
+Suggested samples are selected deterministically from each
+mask-size/category group. No files are modified.
+
+TIER COUNTS
+-----------
+Exclude - empty             18
+Exclude - opaque             2
+High - sparse              164
+Low - broad                 75
+Medium - moderate          188
+
+CATEGORY COUNTS
+----------------
+Animal                     9
+Building                 100
+Character/Unit            34
+Effect                     4
+Other                    277
+World/Terrain             23
+
+SUGGESTED VALIDATION SAMPLES
+=============================
+
+Use these for the operation-D test before any large batch.
+
+
+[High - sparse]
+---------------
+
+Category: Animal
+     2.686%  Animal Cow A map
+     2.881%  Animal Goat map
+     1.807%  Animal GoatNubian map
+
+Category: Building
+     4.648%  building c accessories
+     1.910%  building c earthen wall
+     1.910%  building c fortified wall
+
+Category: Character/Unit
+     4.688%  Hero G Heracles Shield
+     4.688%  Hero G Polyphemus Shield
+
+Category: Effect
+     2.576%  Siege X Fire Siphon
+
+Category: Other
+     2.319%  archer c mounted archer horse standard
+     4.865%  cavalry c chariot horse standard
+     3.723%  Cavalry E Camelry Camel Copper
+
+Category: World/Terrain
+     3.125%  world c statue nuwa stand
+     4.938%  world c statue shennong
+     1.752%  World E Statue Isis
+
+[Medium - moderate]
+-------------------
+
+Category: Animal
+     5.150%  Animal William Walrus Map
+
+Category: Building
+    18.402%  building c titan gate door map
+    13.330%  building c wallsage1
+     5.151%  building E Age4
+
+Category: Character/Unit
+    13.477%  Cavalry X Javelin Hero
+    15.399%  hero c general
+    15.808%  hero c general flag
+
+Category: Effect
+     5.713%  siege c fire lance head
+     7.715%  Special N Fire Giant
+
+Category: Other
+     5.678%  Agamemnon Map
+    23.511%  archer c crossbowman standard
+    12.183%  archer c mounted archer standard
+
+Category: World/Terrain
+    22.656%  World A Bouy
+    14.624%  World A Underworld Passage Color Transform
+    25.000%  World A Waypoint Flag
+
+[Low - broad]
+-------------
+
+Category: Character/Unit
+    40.454%  hero c immortal
+    29.688%  Hero G Achilles Cape
+    29.883%  Hero G Jason Shield
+
+Category: Effect
+    35.742%  siege c fire lance
+
+Category: Other
+    30.859%  archer c crossbowman head copper
+    33.032%  archer e slinger standard
+    80.908%  Archer G Peltast Cape Standard
+
+Category: World/Terrain
+    68.262%  World E Garrison Flag
+    47.461%  World G Garrison Flag
+    67.041%  World N Garrison Flag
+
+[EXCLUDED]
+----------
+  Exclude - empty         0.000%  Animal Flying Purple Hippo
+  Exclude - empty         0.000%  archer c crossbowman head standard
+  Exclude - empty         0.000%  archer c mounted archer head standard
+  Exclude - empty         0.000%  Archer N Normal Head Standard
+  Exclude - empty         0.000%  building c roofage1
+  Exclude - empty         0.000%  building c special
+  Exclude - empty         0.000%  building c wonder city roof
+  Exclude - empty         0.000%  building c wonder city walls
+  Exclude - empty         0.000%  building c wonder palace roof
+  Exclude - empty         0.000%  hero c monk head
+  Exclude - empty         0.000%  hero c monk weapon
+  Exclude - empty         0.000%  hero g physician head
+  Exclude - empty         0.000%  scenario c danzhu head
+  Exclude - empty         0.000%  scenario c shun head
+  Exclude - empty         0.000%  Special E Roc
+  Exclude - empty         0.000%  Trade E Caravan Cargo
+  Exclude - empty         0.000%  world c statue shennong head
+  Exclude - empty         0.000%  World G Statue Poseidon Base
+  Exclude - opaque      100.000%  hero c general cape
+  Exclude - opaque      100.000%  Special E Phoenix

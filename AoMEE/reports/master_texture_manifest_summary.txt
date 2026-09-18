@@ -1,0 +1,47 @@
+﻿AoMEE MASTER TEXTURE MANIFEST
+Generated: 2026-09-18 16:53:16
+
+SOURCE POPULATIONS
+Original DDTs scanned:           7487
+Normal extracted TGAs:           7452
+Recovered exception TGAs:        35
+Combined TGA records:             7487
+
+INTEGRITY
+Unique processing-eligible TGAs:  7487
+Duplicate logical paths:          0
+TGAs missing BTI:                 1
+Original DDTs without TGA:        0
+
+TGA FORMAT
+32-bit TGAs:                      7487
+RLE true-color (type 10):         34
+Uncompressed true-color (type 2): 7453
+
+MOST COMMON DIMENSIONS
+  64 x  64        2468
+  256 x  256      1754
+  32 x  32        1170
+  128 x  128      695
+  16 x  16        194
+  256 x  128      140
+  128 x  64       110
+  64 x  32        107
+  256 x  32       105
+  8 x  8          71
+  32 x  16        63
+  32 x  64        60
+  512 x  64       60
+  512 x  128      52
+  128 x  32       49
+  64 x  128       44
+  512 x  256      34
+  64 x  16        33
+  640 x  256      30
+  256 x  64       28
+
+OUTPUT
+Master manifest:
+  D:\AI_upscaling\AoMEE\reports\master_texture_manifest.csv
+Original DDTs with no extracted TGA:
+  D:\AI_upscaling\AoMEE\reports\master_texture_manifest_missing_ddt.csv

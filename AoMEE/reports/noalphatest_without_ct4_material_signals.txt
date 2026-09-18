@@ -1,0 +1,33 @@
+﻿AoM:EE noalphatest WITHOUT CT4 - Material Signals
+=================================================
+
+Target textures:        493
+Textures with materials: 159
+
+COLOR TRANSFORM DISTRIBUTION
+----------------------------
+0           159
+1             4
+3             2
+5             1
+6             1
+
+PIXELXFORM DISTRIBUTION
+-----------------------
+0           159
+
+TEXTURES WITH PIXELXFORM != 0
+-----------------------------
+
+TEXTURES WITH UNUSUAL COLOR TRANSFORM
+------------------------------------
+hero g athena low map	CT=0,1	PixelXForm=0
+hero n hersir	CT=0,6	PixelXForm=0
+lp g militia	CT=0,1,3	PixelXForm=0
+special g centaur low	CT=0,1	PixelXForm=0
+special n valkyrie low	CT=0,1,3	PixelXForm=0
+villager n ox	CT=0,5	PixelXForm=0
+
+OUTPUT
+------
+D:\AI_upscaling\AoMEE\reports\noalphatest_without_ct4_material_signals.csv

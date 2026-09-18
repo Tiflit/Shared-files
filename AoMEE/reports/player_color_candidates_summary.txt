@@ -1,0 +1,29 @@
+﻿AoM:EE Player-Color Candidate Report
+====================================
+
+Total classified textures: 7452
+Strong player-color candidates: 134
+
+BY CATEGORY
+-----------
+Animal                      4
+Building                   77
+Character/Unit              3
+Icon                        1
+Other                      42
+World/Terrain               7
+
+BY ALPHA VALUE COUNT
+--------------------
+AlphaValueCount 2       134
+
+NOTES
+-----
+These are candidates only.
+They meet all of the following:
+  * transparency exists
+  * AlphaValueCount <= 2
+  * some opaque pixels exist
+  * opaque coverage <= 10%
+
+Do NOT automatically apply the player-color preservation rule to every candidate yet.

@@ -1,0 +1,39 @@
+﻿AoM:EE Player-Color Signal Matrix v2
+====================================
+
+TGA inventory entries: 7452
+BTI metadata entries: 7452
+TGA duplicate relative paths: 0
+BTI duplicate relative paths: 0
+
+noalphatest BTIs: 948
+Exact BTI -> TGA matches: 948
+
+BTI ALPHA BITS
+--------------
+0                        51
+1                       705
+4                       192
+
+BTI ALPHA BITS x TGA ALPHA TYPE
+--------------------------------
+0                                       51
+1                                      705
+4                                      192
+
+ALPHA=1: TGA ALPHA TYPE
+------------------------
+                        705
+
+ALPHA=1: COVERAGE
+-----------------
+                        705
+
+ALPHA=4: TGA ALPHA TYPE
+------------------------
+                        192
+
+OUTPUT
+------
+D:\AI_upscaling\AoMEE\reports\player_color_signal_matrix_v2.csv
+D:\AI_upscaling\AoMEE\reports\player_color_signal_matrix_v2_summary.txt

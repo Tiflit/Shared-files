@@ -1,0 +1,249 @@
+﻿AoM:EE noalphatest Alpha Analysis
+=================================
+
+noalphatest BTIs: 948
+Matched TGA inventory entries: 947
+
+ALPHA TYPE
+----------
+Binary                  377
+MultiValue              570
+
+OPAQUE COVERAGE
+---------------
+0-10%                   472
+10-25%                  215
+25-50%                  103
+50-75%                   26
+75-100%                 131
+
+BY CATEGORY
+-----------
+                          947
+
+BINARY ALPHA + <=10% OPAQUE
+----------------------------
+animal flying purple hippo.tga
+animal prmonkey.tga
+archer c crossbowman head standard.tga
+archer c mounted archer head bronze.tga
+archer c mounted archer head copper.tga
+archer c mounted archer head iron.tga
+archer c mounted archer head standard.tga
+archer n normal head bronze.tga
+archer n normal head copper.tga
+archer n normal head iron.tga
+archer n normal head standard.tga
+building c roofage1.tga
+building c roofage2.tga
+building c roofage3.tga
+building c roofage4.tga
+building c special.tga
+building c titan gate rocks.tga
+building c wonder city floor.tga
+building c wonder city roof.tga
+building c wonder city walls.tga
+building c wonder palace floor.tga
+building c wonder palace roof.tga
+building e age3a accessories.tga
+building e age4 accessories.tga
+building e age4roof.tga
+building e fortress accessories02.tga
+building e fortress.tga
+building e monument2.tga
+building e monument4.tga
+building e ra wonder01.tga
+building e set wonder01.tga
+building e set wonder03.tga
+building e titan gate rocks.tga
+building g fortresswall2.tga
+building g titan gate rocks.tga
+building n thorarmory1.tga
+building n titan gate rocks.tga
+cavalry g hetairoi head iron.tga
+cine c emperor.tga
+hero c monk head.tga
+hero c monk weapon.tga
+hero g athena head low map.tga
+hero g physician head.tga
+infantry e spearman shield map.tga
+lp g militia.tga
+scenario a gate ram.tga
+scenario c danzhu head.tga
+scenario c shun head.tga
+scenario c zhi head.tga
+scenario e great box cart.tga
+scenario g arkantos god map.tga
+scenario n dwarven mine inside.tga
+scenario n dwarven mine opening.tga
+scenario n dwarven mine outside.tga
+scenario n thors hammer.tga
+sfx c growth vines.tga
+sfx g lightning bolt.tga
+sfx n dwarven mine.tga
+siege e catapult projectile.tga
+special e roc.tga
+special e scorpion man head.tga
+special n king folstag.tga
+special n valkyrie low.tga
+statue x kronos map.tga
+titan x golem map2.tga
+trade c caravan.tga
+trade e caravan cargo.tga
+world a gold map.tga
+world a relic armor of achilles.tga
+world a relic eye of horus.tga
+world a relic fetters of fenrir.tga
+world a relic golden bridle of pegasus.tga
+world a relic head of orpheus.tga
+world a relic ring of the nibelung.tga
+world a relic ship of fingernails.tga
+world a relic the wedjat eye.tga
+world c dam.tga
+world c statue shennong head.tga
+world g statue poseidon base.tga
+world g zues uwpassage.tga
+world g zuesstairs.tga
+building e outpost.tga
+building g shrine.tga
+hero g heracles head.tga
+oranos wonder map.tga
+building g roofage1.tga
+building x titangate.tga
+building x palace age2.tga
+building n thorarmory.tga
+building c wonder temple.tga
+building g fortress.tga
+building x wall iron.tga
+building x roof age0.tga
+building x wall stone.tga
+building n templeage1.tga
+building n templeage2.tga
+building n templeage3.tga
+platform map.tga
+building n shared06 2 map.tga
+building g age0.tga
+building x tower watch4.tga
+building g settlementage1.tga
+building g settlementage3.tga
+building x wall bronze.tga
+building n settlementage1.tga
+building n settlementage2.tga
+infantry x trident soldier head hero.tga
+building g templeage2.tga
+building g templeage1.tga
+building x tower watch2.tga
+building x tower watch3.tga
+building e age2 accessories burnt.tga
+building_e_monumentbase_map.tga
+building e lighthouse.tga
+building g wonder.tga
+building e age3 accessories.tga
+building e shared02 2 map.tga
+building n settlementage3.tga
+building g settlementage2.tga
+world g hades temple.tga
+building x palace age3.tga
+building n shared01 1 map.tga
+building g towers.tga
+world e statue isis.tga
+villager n oxcart.tga
+building g fortifiedwall.tga
+animal goatnubian map.tga
+building e wall4.tga
+building c earthen wall.tga
+building c fortified wall.tga
+building c great wall.tga
+building c stone wall.tga
+world g statue hades.tga
+oranos wonder map1.tga
+building g temple.tga
+building n shared01 3 map.tga
+building e isis wonder02.tga
+building e isis wonder01.tga
+building x roof age1.tga
+building c tower age2.tga
+building c tower age3.tga
+building c tower age4.tga
+building e ra wonder02.tga
+sfx g plenty.tga
+building e set wonder02.tga
+special g centaur low.tga
+building e monument platforms.tga
+building x wall oreichalkos.tga
+kronos wonder map2.tga
+building g hades wonder.tga
+building g wallsage2.tga
+building g fortresswall.tga
+animal cow a map.tga
+animal cow b map.tga
+animal cow c map.tga
+building g zues wonder01.tga
+building e titan gate map.tga
+statue x oranos map.tga
+scenario g circe head.tga
+building e age2 burnt.tga
+building e age2.tga
+building e settlement age2.tga
+building e shared01 2 map.tga
+world c statue nuwa stand.tga
+building g wallsage1.tga
+building g wallsage3.tga
+world g statue zeus.tga
+cavalry g hippikon head bronze.tga
+cavalry g hippikon head copper.tga
+cavalry g hippikon head iron.tga
+building g shared05 2 map.tga
+scenario t troy wall long dead.tga
+scenario t troy wall long deadb.tga
+scenario t troy wall long.tga
+building g fortressroof.tga
+special e roc basket.tga
+cavalry e war elephant basket standard.tga
+siege n ballista iron.tga
+siege n ballista.tga
+sfx e citadel age4.tga
+sfx e citadel.tga
+cine g poseidon stone.tga
+special e petesuchos.tga
+special g centaur upgrade.tga
+special g centaur.tga
+special g cyclops upgrade.tga
+special g cyclops.tga
+building e age4.tga
+building e settlement age4.tga
+world g shrine map.tga
+siege g petrobolos iron.tga
+siege g petrobolos.tga
+trade g caravan cargo.tga
+siege c sitting tiger iron.tga
+siege c sitting tiger.tga
+scenario n reginleif map.tga
+world e tent.tga
+infantry e chariot archer iron map.tga
+scenario g circe.tga
+siege e catapult iron.tga
+siege e catapult.tga
+cavalry g hippikon horse standard.tga
+cavalry g prodromos horse standard.tga
+special g pegasus.tga
+projectile a ballista arrow iron.tga
+projectile a ballista arrow.tga
+siege n ballista bolt iron.tga
+siege n ballista bolt.tga
+infantry g myrmidon head iron.tga
+trade e caravan basket.tga
+hero g theseus shield.tga
+infantry g hoplite head iron.tga
+
+BINARY ALPHA + >10% OPAQUE
+---------------------------
+10-25%                   39
+25-50%                   14
+50-75%                    1
+75-100%                 111
+
+OUTPUT
+------
+D:\AI_upscaling\AoMEE\reports\noalphatest_alpha_analysis.csv
+D:\AI_upscaling\AoMEE\reports\noalphatest_alpha_analysis_summary.txt

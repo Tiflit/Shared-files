@@ -1,0 +1,24 @@
+﻿AoM:EE MTRL Secondary Texture Analysis
+=======================================
+
+MTRL XML files found:           20842
+Successfully processed:         20842
+Parse errors:                   0
+
+Materials with secondary_texture: 80
+Materials where texture == secondary_texture: 0
+Materials where they differ:    80
+
+Unique secondary textures:       3
+Unique textures used as both texture + secondary_texture: 0
+
+TEXTURES USED AS BOTH MAIN AND SECONDARY
+-----------------------------------------
+(none)
+
+SAMPLE MATERIAL REFERENCES
+---------------------------
+
+OUTPUT
+------
+D:\AI_upscaling\AoMEE\reports\mtrl_secondary_texture_analysis.csv

@@ -1,0 +1,63 @@
+﻿AoM:EE DDT Usage 08 -> 09 Recovery Test
+========================================
+
+Files tested: 9
+
+RecoveredTGA           9
+
+RESULTS
+-------
+
+File:            textures\animal dog a map.DDT
+Original usage:  01 01 08 05
+Patched usage:   01 01 09 05
+Status:          RecoveredTGA
+Output:          .bti [27 bytes]; .tga [16402 bytes]
+
+File:            textures\animal dog b map.DDT
+Original usage:  01 01 08 05
+Patched usage:   01 01 09 05
+Status:          RecoveredTGA
+Output:          .bti [27 bytes]; .tga [16402 bytes]
+
+File:            textures\archer c crossbow.ddt
+Original usage:  01 01 08 05
+Patched usage:   01 01 09 05
+Status:          RecoveredTGA
+Output:          .bti [27 bytes]; .tga [16402 bytes]
+
+File:            textures\special c qilin.ddt
+Original usage:  00 01 08 05
+Patched usage:   00 01 09 05
+Status:          RecoveredTGA
+Output:          .bti [15 bytes]; .tga [131090 bytes]
+
+File:            textures\special g griffon map.ddt
+Original usage:  01 01 08 08
+Patched usage:   01 01 09 08
+Status:          RecoveredTGA
+Output:          .bti [27 bytes]; .tga [65554 bytes]
+
+File:            textures\world c jungle palm burnt.ddt
+Original usage:  00 01 08 02
+Patched usage:   00 01 09 02
+Status:          RecoveredTGA
+Output:          .bti [15 bytes]; .tga [262162 bytes]
+
+File:            textures\world c jungle palm.ddt
+Original usage:  00 01 08 02
+Patched usage:   00 01 09 02
+Status:          RecoveredTGA
+Output:          .bti [15 bytes]; .tga [262162 bytes]
+
+File:            textures\world c jungle tree burnt.ddt
+Original usage:  00 01 08 02
+Patched usage:   00 01 09 02
+Status:          RecoveredTGA
+Output:          .bti [15 bytes]; .tga [262162 bytes]
+
+File:            textures\world c jungle tree.ddt
+Original usage:  00 01 08 02
+Patched usage:   00 01 09 02
+Status:          RecoveredTGA
+Output:          .bti [15 bytes]; .tga [262162 bytes]

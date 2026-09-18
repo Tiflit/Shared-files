@@ -1,0 +1,47 @@
+﻿AoM:EE Player-Color Signal Matrix
+=================================
+
+noalphatest textures: 947
+
+BTI ALPHA BITS
+--------------
+0                        50
+1                       705
+4                       192
+
+BTI ALPHA BITS x TGA ALPHA TYPE
+--------------------------------
+0, Binary                               48
+0, MultiValue                            2
+1, Binary                              263
+1, MultiValue                          442
+4, Binary                               66
+4, MultiValue                          126
+
+ALPHA=1: TGA ALPHA TYPE
+------------------------
+Binary                  263
+MultiValue              442
+
+ALPHA=1: TGA COVERAGE
+---------------------
+0-10%                   357
+10-25%                  187
+25-50%                   76
+50-75%                   21
+75-100%                  64
+
+ALPHA=4: TGA ALPHA TYPE
+------------------------
+Binary                   66
+MultiValue              126
+
+ALPHA=0
+-------
+Binary                   48
+MultiValue                2
+
+OUTPUT
+------
+D:\AI_upscaling\AoMEE\reports\player_color_signal_matrix.csv
+D:\AI_upscaling\AoMEE\reports\player_color_signal_matrix_summary.txt

@@ -1,0 +1,18 @@
+﻿AoM:EE MTRL Material Index
+==========================
+
+XML files scanned: 20842
+Materials with texture field: 74
+Candidate texture/material matches: 0
+Materials containing PixelXForm: 0
+
+COLOR TRANSFORM COUNTS
+----------------------
+0                          68
+4                           8
+
+OUTPUT
+------
+D:\AI_upscaling\AoMEE\reports\mtrl_material_index.csv
+D:\AI_upscaling\AoMEE\reports\mtrl_player_color_candidates.csv
+D:\AI_upscaling\AoMEE\reports\mtrl_material_index_summary.txt

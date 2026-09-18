@@ -1,0 +1,475 @@
+﻿AoM:EE Player-Color Texture Set
+===============================
+
+Unique CT4 textures: 518
+CT4 + noalphatest textures: 447
+
+BTI ALPHA BITS
+--------------
+0                         1
+1                       356
+4                        90
+
+BTI FORMAT
+----------
+BC3                     447
+
+CT0 / CT4 USAGE
+---------------
+Both CT0 + CT4          340
+CT4 only                107
+
+PLAYER-COLOR TEXTURES
+---------------------
+Agamemnon Map                                           Alpha=1  Format=BC3             CT0=   2 CT4=   1
+Animal Cow A map                                        Alpha=1  Format=BC3             CT0=  31 CT4=  14
+Animal Flying Purple Hippo                              Alpha=1  Format=BC3             CT0=  11 CT4=  11
+Animal Goat map                                         Alpha=1  Format=BC3             CT0=  35 CT4=  21
+Animal GoatNubian map                                   Alpha=1  Format=BC3             CT0=  35 CT4=  23
+Animal Pig map                                          Alpha=1  Format=BC3             CT0=  18 CT4=   9
+animal white tiger map                                  Alpha=4  Format=BC3             CT0=   0 CT4=   9
+Animal William Walrus Map                               Alpha=4  Format=BC3             CT0=   0 CT4=   1
+Animal Yak                                              Alpha=4  Format=BC3             CT0=   0 CT4=   8
+archer c crossbowman head copper                        Alpha=4  Format=BC3             CT0=   0 CT4=   1
+archer c crossbowman head standard                      Alpha=4  Format=BC3             CT0=   0 CT4=   1
+archer c crossbowman standard                           Alpha=4  Format=BC3             CT0=   0 CT4=   7
+archer c mounted archer head standard                   Alpha=4  Format=BC3             CT0=   0 CT4=   1
+archer c mounted archer horse standard                  Alpha=4  Format=BC3             CT0=   0 CT4=   7
+archer c mounted archer standard                        Alpha=4  Format=BC3             CT0=   0 CT4=   7
+Archer E Slinger Head Standard                          Alpha=1  Format=BC3             CT0=  10 CT4=   8
+archer e slinger standard                               Alpha=1  Format=BC3             CT0=   9 CT4=   7
+Archer G Crossbowman                                    Alpha=1  Format=BC3             CT0=   8 CT4=   7
+Archer G Peltast Cape Standard                          Alpha=1  Format=BC3             CT0=   0 CT4=   6
+Archer G Peltast Head Standard                          Alpha=1  Format=BC3             CT0=   7 CT4=   7
+Archer G Peltast Standard                               Alpha=1  Format=BC3             CT0=   6 CT4=   6
+Archer G Toxotes Head Bronze                            Alpha=1  Format=BC3             CT0=   1 CT4=   1
+Archer G Toxotes Head Copper                            Alpha=1  Format=BC3             CT0=   1 CT4=   1
+Archer G Toxotes Head Iron                              Alpha=1  Format=BC3             CT0=   2 CT4=   2
+Archer G Toxotes Iron                                   Alpha=1  Format=BC3             CT0=   1 CT4=   1
+Archer G Toxotes Standard                               Alpha=1  Format=BC3             CT0=   8 CT4=   8
+Archer N Normal Head Standard                           Alpha=4  Format=BC3             CT0=   0 CT4=   1
+Archer N Normal Standard                                Alpha=4  Format=BC3             CT0=   0 CT4=   6
+Archer N Throwing Axeman Standard                       Alpha=1  Format=BC3             CT0=   7 CT4=   7
+Archer X Iron                                           Alpha=1  Format=BC3             CT0=  19 CT4=  17
+Attachments A Shields map                               Alpha=1  Format=BC3             CT0=   0 CT4=   6
+attachments c flag naval                                Alpha=4  Format=BC3             CT0=   0 CT4=   2
+Attachments E Shield Copper                             Alpha=1  Format=BC3             CT0=   0 CT4=   6
+Attachments G Shield Copper                             Alpha=1  Format=BC3             CT0=   0 CT4=   6
+Attachments MU X Automaton                              Alpha=1  Format=BC3             CT0=  44 CT4=  14
+Attachments N Shield Copper                             Alpha=1  Format=BC3             CT0=   0 CT4=   6
+Attachments N Shield Iron                               Alpha=1  Format=BC3             CT0=   2 CT4=   2
+Attachments X Shield Medium                             Alpha=1  Format=BC3             CT0=   0 CT4=   6
+building c accessories                                  Alpha=1  Format=BC3             CT0=  34 CT4=   8
+building c earthen wall                                 Alpha=4  Format=BC3             CT0=   0 CT4=  17
+building c fortified wall                               Alpha=4  Format=BC3             CT0=   1 CT4=  17
+building c great wall                                   Alpha=4  Format=BC3             CT0=   0 CT4=  17
+building c roofage1                                     Alpha=4  Format=BC3             CT0=   1 CT4=  46
+building c special                                      Alpha=4  Format=BC3             CT0=  10 CT4=  12
+building c stone wall                                   Alpha=4  Format=BC3             CT0=   0 CT4=  17
+building c titan gate door map                          Alpha=1  Format=BC3             CT0=   0 CT4=   6
+building c tower age2                                   Alpha=4  Format=BC3             CT0=   0 CT4=   8
+building c wallsage1                                    Alpha=4  Format=BC3             CT0=   0 CT4=  43
+building c wonder city roof                             Alpha=4  Format=BC3             CT0=   0 CT4=   2
+building c wonder city walls                            Alpha=4  Format=BC3             CT0=   0 CT4=   1
+building c wonder palace roof                           Alpha=4  Format=BC3             CT0=   0 CT4=   2
+building c wonder palace walls                          Alpha=4  Format=BC3             CT0=   0 CT4=   2
+building c wonder temple                                Alpha=4  Format=BC3             CT0=   0 CT4=   4
+Building E Age1                                         Alpha=1  Format=BC3             CT0=  42 CT4=  36
+Building E Age2                                         Alpha=1  Format=BC3             CT0=  53 CT4=  47
+building E Age2 wall                                    Alpha=1  Format=BC3             CT0=  28 CT4=  32
+Building E Age3                                         Alpha=1  Format=BC3             CT0= 101 CT4=  96
+building E Age4                                         Alpha=1  Format=BC3             CT0=  61 CT4=  60
+building E Fortress Accessories                         Alpha=4  Format=BC3             CT0=   6 CT4=   4
+building E Isis Wonder01                                Alpha=1  Format=BC3             CT0=   4 CT4=   3
+building E Isis Wonder02                                Alpha=1  Format=BC3             CT0=   4 CT4=   3
+Building E Lighthouse                                   Alpha=1  Format=BC3             CT0=   4 CT4=   5
+building E Monument platforms                           Alpha=1  Format=BC3             CT0=  16 CT4=  13
+Building E Obelisk                                      Alpha=1  Format=BC3             CT0=   8 CT4=   8
+building E Outpost                                      Alpha=1  Format=BC3             CT0=   5 CT4=   5
+building E Ra Wonder02                                  Alpha=1  Format=BC3             CT0=   5 CT4=   5
+building E Set Wonder02                                 Alpha=1  Format=BC3             CT0=   4 CT4=   2
+building E Settlement Age1                              Alpha=1  Format=BC3             CT0=   4 CT4=   4
+building E Settlement Age2                              Alpha=1  Format=BC3             CT0=   4 CT4=   4
+building E Settlement Age3                              Alpha=1  Format=BC3             CT0=   8 CT4=   8
+building E Settlement Age4                              Alpha=1  Format=BC3             CT0=   7 CT4=   7
+Building E shared02 2 map                               Alpha=1  Format=BC3             CT0=   1 CT4=   1
+Building E Titan Gate Map                               Alpha=1  Format=BC3             CT0=   6 CT4=   6
+Building E Wall4                                        Alpha=1  Format=BC3             CT0=  28 CT4=  28
+Building G Age0                                         Alpha=1  Format=BC3             CT0=  36 CT4=  26
+Building G Fortifiedwall                                Alpha=1  Format=BC3             CT0=   3 CT4=  33
+Building G FortressWall                                 Alpha=1  Format=BC3             CT0=  10 CT4=   8
+Building G Hades Wonder                                 Alpha=1  Format=BC3             CT0=   6 CT4=   5
+Building G RoofAge1                                     Alpha=1  Format=BC3             CT0=  56 CT4=   4
+Building G SettlementAge1                               Alpha=1  Format=BC3             CT0=  21 CT4=   8
+Building G SettlementAge2                               Alpha=1  Format=BC3             CT0=  22 CT4=  11
+Building G SettlementAge3                               Alpha=1  Format=BC3             CT0=  19 CT4=  12
+Building G Shared05 2 map                               Alpha=1  Format=BC3             CT0=  28 CT4=  28
+Building G Shrine                                       Alpha=1  Format=BC3             CT0=   2 CT4=   2
+Building G Temple                                       Alpha=1  Format=BC3             CT0=   4 CT4=   4
+Building G TempleAge1                                   Alpha=1  Format=BC3             CT0=   7 CT4=   6
+Building G TempleAge2                                   Alpha=1  Format=BC3             CT0=   4 CT4=   4
+Building G Titan Gate Door Map                          Alpha=1  Format=BC3             CT0=   4 CT4=   6
+Building G Towers                                       Alpha=1  Format=BC3             CT0=  20 CT4=  20
+Building G WallsAge1                                    Alpha=1  Format=BC3             CT0=  37 CT4=  33
+Building G WallsAge2                                    Alpha=1  Format=BC3             CT0=  51 CT4=  50
+Building G WallsAge3                                    Alpha=1  Format=BC3             CT0=  35 CT4=  27
+Building G Wonder                                       Alpha=1  Format=BC3             CT0=   6 CT4=   6
+Building G Zues Wonder01                                Alpha=1  Format=BC3             CT0=   8 CT4=   8
+Building N Hillfort                                     Alpha=1  Format=BC3             CT0=  10 CT4=   8
+Building N Loki Wonder02                                Alpha=1  Format=BC3             CT0=   4 CT4=   4
+Building N Odin Wonder01                                Alpha=1  Format=BC3             CT0=   4 CT4=   6
+Building N SettlementAge1                               Alpha=1  Format=BC3             CT0=  11 CT4=   3
+Building N SettlementAge2                               Alpha=1  Format=BC3             CT0=  10 CT4=   4
+Building N SettlementAge3                               Alpha=1  Format=BC3             CT0=  17 CT4=   8
+Building N SettlementAge4                               Alpha=1  Format=BC3             CT0=  14 CT4=   7
+Building N Shared01 1 map                               Alpha=1  Format=BC3             CT0=  18 CT4=  18
+Building N Shared01 2 map                               Alpha=1  Format=BC3             CT0=  34 CT4=  22
+Building N Shared01 3 map                               Alpha=1  Format=BC3             CT0=  36 CT4=  25
+Building N Shared02 2 map                               Alpha=1  Format=BC3             CT0=   5 CT4=   3
+Building N Shared04 2 map                               Alpha=1  Format=BC3             CT0=  25 CT4=  12
+Building N Shared06 2 map                               Alpha=1  Format=BC3             CT0=  31 CT4=  40
+Building N Shrine                                       Alpha=1  Format=BC3             CT0=   1 CT4=   1
+Building N TempleAge1                                   Alpha=1  Format=BC3             CT0=   3 CT4=   4
+Building N TempleAge2                                   Alpha=1  Format=BC3             CT0=   4 CT4=   3
+Building N TempleAge3                                   Alpha=1  Format=BC3             CT0=   8 CT4=   8
+Building N ThorArmory                                   Alpha=1  Format=BC3             CT0=   7 CT4=   4
+Building N Titan Gate Map                               Alpha=1  Format=BC3             CT0=   6 CT4=   6
+Building N Tower                                        Alpha=1  Format=BC3             CT0=  12 CT4=  10
+Building N WallAge4                                     Alpha=1  Format=BC3             CT0=  36 CT4=  27
+Building N Wonder                                       Alpha=1  Format=BC3             CT0=   6 CT4=   5
+Building X Mirror Tower                                 Alpha=1  Format=BC3             CT0=   7 CT4=   7
+Building X Palace Age2                                  Alpha=1  Format=BC3             CT0=   1 CT4=   3
+Building X Palace Age3                                  Alpha=1  Format=BC3             CT0=   1 CT4=   4
+Building X Roof Age0                                    Alpha=1  Format=BC3             CT0=  41 CT4=  28
+Building X Roof Age1                                    Alpha=1  Format=BC3             CT0=  46 CT4=  54
+Building X Sky Temple                                   Alpha=1  Format=BC3             CT0=   5 CT4=   5
+Building X Temple age0                                  Alpha=1  Format=BC3             CT0=   0 CT4=   4
+Building x TitanGate                                    Alpha=1  Format=BC3             CT0=   6 CT4=   6
+building x tower watch2                                 Alpha=1  Format=BC3             CT0=   9 CT4=   8
+Building X Tower Watch3                                 Alpha=1  Format=BC3             CT0=   2 CT4=   2
+Building X Wall Age2                                    Alpha=1  Format=BC3             CT0=  57 CT4=  53
+Building X Wall Bronze                                  Alpha=1  Format=BC3             CT0=  20 CT4=  20
+Building X Wall Iron                                    Alpha=1  Format=BC3             CT0=  20 CT4=  20
+Building X Wall Oreichalkos                             Alpha=1  Format=BC3             CT0=  21 CT4=  19
+building x wall stone                                   Alpha=1  Format=BC3             CT0=  20 CT4=  20
+Building_E_MonumentBase_Map                             Alpha=1  Format=BC3             CT0=   1 CT4=   1
+cavalry c cataphract head copper                        Alpha=4  Format=BC3             CT0=   0 CT4=   1
+cavalry c cataphract head iron                          Alpha=4  Format=BC3             CT0=   0 CT4=   1
+cavalry c cataphract head standard                      Alpha=4  Format=BC3             CT0=   0 CT4=   1
+cavalry c cataphract horse standard                     Alpha=4  Format=BC3             CT0=   0 CT4=   7
+cavalry c cataphract standard                           Alpha=4  Format=BC3             CT0=   0 CT4=   7
+cavalry c chariot horse standard                        Alpha=4  Format=BC3             CT0=   0 CT4=   5
+cavalry c chariot standard                              Alpha=4  Format=BC3             CT0=   0 CT4=   5
+cavalry c charioteer standard                           Alpha=4  Format=BC3             CT0=   0 CT4=   5
+cavalry c scout head copper                             Alpha=4  Format=BC3             CT0=   0 CT4=   1
+cavalry c scout head standard                           Alpha=4  Format=BC3             CT0=   0 CT4=   1
+cavalry c scout horse standard                          Alpha=4  Format=BC3             CT0=   0 CT4=  16
+cavalry c scout standard                                Alpha=4  Format=BC3             CT0=   0 CT4=  17
+Cavalry E Camelry Camel Copper                          Alpha=1  Format=BC3             CT0=   7 CT4=   7
+Cavalry E Camelry Copper                                Alpha=1  Format=BC3             CT0=   6 CT4=   7
+cavalry e chariot archer copper                         Alpha=1  Format=BC3             CT0=   5 CT4=   6
+Cavalry E Chariot Horse Map                             Alpha=1  Format=BC3             CT0=   4 CT4=   5
+Cavalry E Mercenary Horse Standard                      Alpha=1  Format=BC3             CT0=   8 CT4=   8
+Cavalry E War Elephant Copper                           Alpha=1  Format=BC3             CT0=  12 CT4=   6
+Cavalry G Cataphract Head Iron                          Alpha=1  Format=BC3             CT0=  22 CT4=  11
+Cavalry G Cataphract Horse Iron                         Alpha=1  Format=BC3             CT0=   9 CT4=  11
+Cavalry G Cataphract Iron                               Alpha=1  Format=BC3             CT0=  22 CT4=  11
+Cavalry G Hetairoi Horse Iron                           Alpha=1  Format=BC3             CT0=   8 CT4=   9
+Cavalry G Hetairoi Iron                                 Alpha=1  Format=BC3             CT0=   9 CT4=   9
+Cavalry G Hippikon Head Bronze                          Alpha=1  Format=BC3             CT0=   0 CT4=   1
+Cavalry G Hippikon Head Copper                          Alpha=1  Format=BC3             CT0=   0 CT4=   1
+Cavalry G Hippikon Head Iron                            Alpha=1  Format=BC3             CT0=   0 CT4=   1
+Cavalry G Hippikon Horse Standard                       Alpha=1  Format=BC3             CT0=   9 CT4=   8
+Cavalry G Hippikon Standard                             Alpha=1  Format=BC3             CT0=   9 CT4=   9
+Cavalry G Prodromos Horse Standard                      Alpha=1  Format=BC3             CT0=   9 CT4=   9
+Cavalry G Prodromos Standard                            Alpha=1  Format=BC3             CT0=   9 CT4=   8
+Cavalry G Scout Horse                                   Alpha=1  Format=BC3             CT0=  12 CT4=  12
+Cavalry N Jarl Horse Standard                           Alpha=1  Format=BC3             CT0=  12 CT4=  13
+Cavalry N Jarl Standard                                 Alpha=1  Format=BC3             CT0=  13 CT4=  13
+Cavalry N Raiding Cavalry Horse Standard                Alpha=1  Format=BC3             CT0=   9 CT4=   6
+Cavalry N Raiding Cavalry Standard                      Alpha=1  Format=BC3             CT0=   9 CT4=   9
+Cavalry X Javelin Bronze                                Alpha=1  Format=BC3             CT0=   1 CT4=   1
+Cavalry X Javelin Copper                                Alpha=1  Format=BC3             CT0=   1 CT4=   1
+Cavalry X Javelin Hero                                  Alpha=1  Format=BC3             CT0=   1 CT4=   1
+Cavalry X Javelin Horse Iron                            Alpha=1  Format=BC3             CT0=  16 CT4=  15
+Cavalry X Javelin Iron                                  Alpha=1  Format=BC3             CT0=  21 CT4=  17
+Cavalry X Lancer Cape Iron                              Alpha=1  Format=BC3             CT0=   0 CT4=  14
+Cavalry X Lancer Horse Iron                             Alpha=1  Format=BC3             CT0=  14 CT4=  15
+Cavalry X Lancer Iron                                   Alpha=1  Format=BC3             CT0=  16 CT4=  15
+Cine A Arkantos Map                                     Alpha=1  Format=BC3             CT0=   5 CT4=   4
+Cine G Ajax Map                                         Alpha=1  Format=BC3             CT0=   0 CT4=   1
+Cine G Gargarensis Map                                  Alpha=1  Format=BC3             CT0=   3 CT4=   3
+Cine G Poseidon Stone                                   Alpha=1  Format=BC3             CT0=   5 CT4=   4
+Cine N Huskarl                                          Alpha=1  Format=BC3             CT0=   1 CT4=   1
+Cine X Kastor Adult                                     Alpha=1  Format=BC3             CT0=  14 CT4=  14
+Cine X Krios                                            Alpha=1  Format=BC3             CT0=   4 CT4=   8
+forkboy map                                             Alpha=1  Format=BC3             CT0=   9 CT4=   9
+Gaia Wonder Map2                                        Alpha=1  Format=BC3             CT0=   6 CT4=   4
+Gine G Kamos Map                                        Alpha=1  Format=BC3             CT0=   3 CT4=   3
+hero c general                                          Alpha=4  Format=BC3             CT0=   0 CT4=   7
+hero c general cape                                     Alpha=4  Format=BC3             CT0=   0 CT4=   7
+hero c general flag                                     Alpha=4  Format=BC3             CT0=   0 CT4=   7
+hero c general head                                     Alpha=4  Format=BC3             CT0=   0 CT4=   1
+hero c general horse                                    Alpha=4  Format=BC3             CT0=   0 CT4=   7
+hero c immortal                                         Alpha=4  Format=BC3             CT0=   0 CT4=  10
+hero c monk                                             Alpha=4  Format=BC3             CT0=   0 CT4=   9
+hero c monk head                                        Alpha=4  Format=BC3             CT0=   0 CT4=   1
+hero c monk weapon                                      Alpha=4  Format=BC3             CT0=   0 CT4=   1
+Hero G Achilles Cape                                    Alpha=1  Format=BC3             CT0=   1 CT4=   9
+Hero G Atalanta Shield                                  Alpha=1  Format=BC3             CT0=  17 CT4=  17
+Hero G Belerophon                                       Alpha=1  Format=BC3             CT0=  19 CT4=  22
+Hero G Belerophon Shield                                Alpha=1  Format=BC3             CT0=  21 CT4=  22
+Hero G Heracles Shield                                  Alpha=1  Format=BC3             CT0=  18 CT4=  18
+Hero G Jason Shield                                     Alpha=1  Format=BC3             CT0=  15 CT4=  17
+Hero G Jason Standard                                   Alpha=1  Format=BC3             CT0=  17 CT4=  15
+Hero G Perseus Standard                                 Alpha=1  Format=BC3             CT0=  18 CT4=   8
+hero g physician                                        Alpha=4  Format=BC3             CT0=   0 CT4=   6
+hero g physician head                                   Alpha=4  Format=BC3             CT0=   0 CT4=   1
+Hero G Polyphemus Shield                                Alpha=1  Format=BC3             CT0=  23 CT4=  24
+Hero G Theseus Shield                                   Alpha=1  Format=BC3             CT0=  17 CT4=  18
+Hero N Hero                                             Alpha=1  Format=BC3             CT0=   9 CT4=  10
+Hero N Ragnorok Female                                  Alpha=1  Format=BC3             CT0=  10 CT4=   8
+Hero N Ragnorok Male                                    Alpha=1  Format=BC3             CT0=  19 CT4=  18
+Hero X Ajax                                             Alpha=1  Format=BC3             CT0=  22 CT4=   9
+Hero X Kastor                                           Alpha=1  Format=BC3             CT0=  28 CT4=   2
+infantry c halberdier head bronze                       Alpha=4  Format=BC3             CT0=   0 CT4=   1
+infantry c halberdier head copper                       Alpha=4  Format=BC3             CT0=   0 CT4=   1
+infantry c halberdier head iron                         Alpha=4  Format=BC3             CT0=   0 CT4=   1
+infantry c halberdier head standard                     Alpha=4  Format=BC3             CT0=   0 CT4=   1
+infantry c halberdier standard                          Alpha=4  Format=BC3             CT0=   0 CT4=   6
+Infantry E Axeman Standard                              Alpha=1  Format=BC3             CT0=   8 CT4=   8
+infantry e khopesh head standard                        Alpha=4  Format=BC3             CT0=   0 CT4=   1
+infantry e khopesh standard                             Alpha=4  Format=BC3             CT0=   0 CT4=   6
+Infantry E Mercenary                                    Alpha=1  Format=BC3             CT0=  15 CT4=  14
+Infantry E Spearman Standard                            Alpha=1  Format=BC3             CT0=   6 CT4=   5
+Infantry G Hoplite Bronze                               Alpha=1  Format=BC3             CT0=  23 CT4=  13
+Infantry G Hoplite Head Iron                            Alpha=1  Format=BC3             CT0=   1 CT4=   1
+Infantry G Hoplite Standard                             Alpha=1  Format=BC3             CT0=   7 CT4=  20
+Infantry G Hypaspist Head Iron                          Alpha=1  Format=BC3             CT0=   1 CT4=   1
+Infantry G Hypaspist Standard                           Alpha=1  Format=BC3             CT0=  10 CT4=   8
+Infantry G Militia                                      Alpha=1  Format=BC3             CT0=   6 CT4=   5
+Infantry G Myrmidon Head Iron                           Alpha=1  Format=BC3             CT0=   1 CT4=   9
+Infantry G Myrmidon Iron                                Alpha=1  Format=BC3             CT0=   9 CT4=   8
+Infantry N Huskarl Bronze                               Alpha=1  Format=BC3             CT0=   9 CT4=  10
+infantry n huskarl iron                                 Alpha=1  Format=BC3             CT0=   1 CT4=   2
+Infantry N Huskarl Standard                             Alpha=1  Format=BC3             CT0=   9 CT4=   8
+infantry n ulfsark scout                                Alpha=1  Format=BC3             CT0=   0 CT4=  15
+Infantry N Ulfsark Standard                             Alpha=1  Format=BC3             CT0=   9 CT4=   8
+Infantry X 2 Sword Fighter Iron                         Alpha=1  Format=BC3             CT0=  19 CT4=  18
+Infantry X Maceman Iron                                 Alpha=1  Format=BC3             CT0=  19 CT4=  18
+Infantry X Swordsman Iron                               Alpha=1  Format=BC3             CT0=  14 CT4=  26
+Infantry X Trident Soldier Cape Iron                    Alpha=1  Format=BC3             CT0=   0 CT4=  21
+Infantry X Trident Soldier Hero                         Alpha=1  Format=BC3             CT0=   2 CT4=   2
+Infantry X Trident Soldier Iron                         Alpha=1  Format=BC3             CT0=  19 CT4=  19
+Infantry X Trident Soldier Shield Hero                  Alpha=1  Format=BC3             CT0=   0 CT4=   2
+Infantry X Trident Soldier Shield Iron                  Alpha=1  Format=BC3             CT0=   0 CT4=  21
+Kronos Wonder Map2                                      Alpha=1  Format=BC3             CT0=   6 CT4=   6
+LP Cine X Krios                                         Alpha=1  Format=BC3             CT0=   6 CT4=   6
+LP MU X Argus Map                                       Alpha=1  Format=BC3             CT0=   7 CT4=   8
+LP MU X Stymphalian Bird Map                            Alpha=1  Format=BC3             CT0=   9 CT4=   5
+MU X Argus Map                                          Alpha=1  Format=BC3             CT0=   7 CT4=   8
+MU X Atlantean Flying Medic Map                         Alpha=1  Format=BC3             CT0=  31 CT4=   7
+MU X Atlantean Hundred Giant Map                        Alpha=1  Format=BC3             CT0=  20 CT4=  20
+MU X Atlantean Lampedes map                             Alpha=1  Format=BC3             CT0=  32 CT4=  16
+MU X Atlantean ManOWar Map                              Alpha=1  Format=BC3             CT0=  15 CT4=  12
+MU X Atlantean Satyr Map                                Alpha=1  Format=BC3             CT0=  16 CT4=   8
+MU X Automation Map                                     Alpha=1  Format=BC3             CT0=  23 CT4=  22
+MU X Behemoth Map                                       Alpha=1  Format=BC3             CT0=  12 CT4=  12
+MU X Dryad                                              Alpha=1  Format=BC3             CT0=  12 CT4=  14
+MU X Nereid Rider Map                                   Alpha=1  Format=BC3             CT0=  13 CT4=  11
+MU X Promethean Map                                     Alpha=1  Format=BC3             CT0=  38 CT4=  38
+MU X Servant of Oceanus Map                             Alpha=1  Format=BC3             CT0=   7 CT4=  14
+MU X Stymphalian Bird Map                               Alpha=1  Format=BC3             CT0=  10 CT4=   5
+Naval C All                                             Alpha=4  Format=BC3             CT0=   0 CT4=  23
+Naval E All                                             Alpha=1  Format=BC3             CT0=  71 CT4=  45
+Naval E Pirate Ship                                     Alpha=1  Format=BC3             CT0=  22 CT4=  12
+Naval G All                                             Alpha=1  Format=BC3             CT0=  92 CT4=  95
+naval g all wrecked                                     Alpha=1  Format=BC3             CT0=   2 CT4=   4
+Naval N Kraken                                          Alpha=1  Format=BC3             CT0=  52 CT4=  10
+Naval X All                                             Alpha=1  Format=BC3             CT0=  55 CT4=  55
+Oranos Wonder Map                                       Alpha=1  Format=BC3             CT0=   8 CT4=   4
+Oranos Wonder Map1                                      Alpha=1  Format=BC3             CT0=   6 CT4=   5
+Platform Map                                            Alpha=1  Format=BC3             CT0=   6 CT4=   6
+Projectile A Ballista Arrow                             Alpha=1  Format=BC3             CT0=   0 CT4=   4
+Scenario B Amanra map                                   Alpha=1  Format=BC3             CT0=  19 CT4=  20
+scenario c danzhu                                       Alpha=4  Format=BC3             CT0=   0 CT4=   6
+scenario c danzhu head                                  Alpha=4  Format=BC3             CT0=   0 CT4=   1
+Scenario C Gargarensis map                              Alpha=1  Format=BC3             CT0=  25 CT4=  25
+scenario c jiaolong                                     Alpha=4  Format=BC3             CT0=   8 CT4=  11
+scenario c jiaolong head                                Alpha=4  Format=BC3             CT0=   0 CT4=   1
+Scenario C Kamos                                        Alpha=1  Format=BC3             CT0=  49 CT4=  48
+scenario c shun                                         Alpha=1  Format=BC3             CT0=   0 CT4=  30
+scenario c shun head                                    Alpha=4  Format=BC3             CT0=   0 CT4=  11
+Scenario E Great Box                                    Alpha=1  Format=BC3             CT0=   0 CT4=   6
+Scenario E Guardian                                     Alpha=1  Format=BC3             CT0=  39 CT4=  39
+Scenario E Setna map                                    Alpha=1  Format=BC3             CT0=  20 CT4=  18
+Scenario G Arkantos Man map                             Alpha=1  Format=BC3             CT0=  12 CT4=  12
+Scenario G Arkantos map                                 Alpha=1  Format=BC3             CT0=  29 CT4=  30
+Scenario G Chiron Map                                   Alpha=1  Format=BC3             CT0=  30 CT4=  26
+Scenario G Circe                                        Alpha=1  Format=BC3             CT0=  43 CT4=  21
+Scenario G Kastor map                                   Alpha=1  Format=BC3             CT0=   6 CT4=  10
+Scenario G Odysseus map                                 Alpha=1  Format=BC3             CT0=  20 CT4=  10
+Scenario G Old Man Map                                  Alpha=1  Format=BC3             CT0=   2 CT4=   2
+Scenario G Skult Map                                    Alpha=1  Format=BC3             CT0=   9 CT4=   9
+Scenario N Brokk Standard                               Alpha=1  Format=BC3             CT0=  36 CT4=  36
+Scenario N Eitri Standard                               Alpha=1  Format=BC3             CT0=  36 CT4=  37
+Scenario N Reginleif map                                Alpha=1  Format=BC3             CT0=  24 CT4=  23
+Scenario N Reginleif Weapons map                        Alpha=1  Format=BC3             CT0=  24 CT4=  23
+scenario t troy wall long                               Alpha=1  Format=BC3             CT0=   9 CT4=   9
+scenario t troy wall long dead                          Alpha=1  Format=BC3             CT0=   4 CT4=   4
+Scenario Theocrat                                       Alpha=1  Format=BC3             CT0=  12 CT4=  11
+Scenario Theocrat Staff                                 Alpha=1  Format=BC3             CT0=  16 CT4=  14
+scenario x amanra map                                   Alpha=1  Format=BC3             CT0=  22 CT4=  11
+SFX A Healing Spring Stone                              Alpha=1  Format=BC3             CT0=   1 CT4=   1
+SFX A Serpent                                           Alpha=1  Format=BC3             CT0=  11 CT4=   7
+SFX A Walking Woods                                     Alpha=1  Format=BC3             CT0=  12 CT4=  11
+SFX E Citadel                                           Alpha=1  Format=BC3             CT0=   3 CT4=   3
+SFX E Citadel Age4                                      Alpha=1  Format=BC3             CT0=   3 CT4=   3
+SFX E Son of Osiris                                     Alpha=1  Format=BC3             CT0=  23 CT4=  11
+SFX G Animal Magnetism                                  Alpha=1  Format=BC3             CT0=   3 CT4=   3
+SFX G Plenty                                            Alpha=1  Format=BC3             CT0=  10 CT4=   4
+SFX G Sentinel                                          Alpha=1  Format=BC3             CT0=   7 CT4=   5
+siege c fire lance                                      Alpha=4  Format=BC3             CT0=   0 CT4=   5
+siege c fire lance head                                 Alpha=4  Format=BC3             CT0=   0 CT4=   1
+Siege C Sitting Tiger                                   Alpha=4  Format=BC3             CT0=   0 CT4=   6
+Siege E Catapult                                        Alpha=1  Format=BC3             CT0=  12 CT4=   6
+Siege G Helepolis                                       Alpha=1  Format=BC3             CT0=  16 CT4=   3
+Siege G Petrobolos                                      Alpha=1  Format=BC3             CT0=   6 CT4=   7
+Siege G Petrobolos Iron                                 Alpha=1  Format=BC3             CT0=   1 CT4=   1
+Siege N Ballista                                        Alpha=1  Format=BC3             CT0=   9 CT4=   5
+Siege N Ballista Bolt                                   Alpha=1  Format=BC3             CT0=  17 CT4=  13
+Siege N Ballista Bolt Iron                              Alpha=1  Format=BC3             CT0=   1 CT4=   1
+Siege N Ram                                             Alpha=1  Format=BC3             CT0=  17 CT4=   7
+Siege N Ram Iron                                        Alpha=1  Format=BC3             CT0=  13 CT4=   8
+Siege X Chieroballista                                  Alpha=1  Format=BC3             CT0=  18 CT4=  17
+Siege X Chieroballista Man                              Alpha=1  Format=BC3             CT0=  12 CT4=  12
+Siege X Fire Siphon                                     Alpha=1  Format=BC3             CT0=  11 CT4=  11
+Siege X Onager                                          Alpha=4  Format=BC3             CT0=   0 CT4=   4
+special c azure dragon                                  Alpha=4  Format=BC3             CT0=   0 CT4=   5
+special c dragon turtle                                 Alpha=4  Format=BC3             CT0=   0 CT4=   6
+special c earth dragon                                  Alpha=4  Format=BC3             CT0=   0 CT4=   4
+special c jiangshi                                      Alpha=4  Format=BC3             CT0=   0 CT4=   5
+special c jiangshi head                                 Alpha=4  Format=BC3             CT0=   0 CT4=   1
+special c monkey king                                   Alpha=4  Format=BC3             CT0=   0 CT4=   6
+Special C Pixiu                                         Alpha=4  Format=BC3             CT0=   0 CT4=   7
+special c salamander                                    Alpha=4  Format=BC3             CT0=   0 CT4=  11
+special c terracotta soldier                            Alpha=4  Format=BC3             CT0=   0 CT4=   6
+special c vermillion bird                               Alpha=4  Format=BC3             CT0=   0 CT4=   5
+special c vermillion bird wing                          Alpha=4  Format=BC3             CT0=   0 CT4=   5
+Special E Anubite                                       Alpha=1  Format=BC3             CT0=   3 CT4=   4
+Special E Apep map                                      Alpha=1  Format=BC3             CT0=   5 CT4=   5
+Special E Mummy map                                     Alpha=1  Format=BC3             CT0=  40 CT4=   8
+Special E Petesuchos                                    Alpha=1  Format=BC3             CT0=  16 CT4=  14
+Special E Pharaoh                                       Alpha=1  Format=BC3             CT0=  26 CT4=  27
+Special E Pharaoh Head                                  Alpha=1  Format=BC3             CT0=  26 CT4=  26
+Special E Phoenix                                       Alpha=0  Format=BC3             CT0=   8 CT4=   4
+Special E Phoenix Egg                                   Alpha=1  Format=BC3             CT0=   3 CT4=   3
+Special E Priest                                        Alpha=1  Format=BC3             CT0=  19 CT4=  17
+Special E Roc                                           Alpha=1  Format=BC3             CT0=  28 CT4=   9
+Special E Roc Basket                                    Alpha=1  Format=BC3             CT0=  12 CT4=  11
+Special E Scarab map                                    Alpha=1  Format=BC3             CT0=  14 CT4=  12
+Special E Scorpion Man                                  Alpha=1  Format=BC3             CT0=  18 CT4=   8
+Special E Sphinx                                        Alpha=1  Format=BC3             CT0=  20 CT4=   9
+Special E Wadjet                                        Alpha=1  Format=BC3             CT0=  28 CT4=  12
+Special G Agamemnon                                     Alpha=1  Format=BC3             CT0=  19 CT4=   9
+Special G Athena                                        Alpha=1  Format=BC3             CT0=   8 CT4=   8
+Special G Carcinos                                      Alpha=1  Format=BC3             CT0=  16 CT4=  14
+Special G Centaur                                       Alpha=1  Format=BC3             CT0=  10 CT4=   9
+Special G Chimera                                       Alpha=1  Format=BC3             CT0=  16 CT4=   7
+Special G Chimera map                                   Alpha=1  Format=BC3             CT0=   1 CT4=   1
+Special G Chimera Tail                                  Alpha=1  Format=BC3             CT0=   8 CT4=   6
+Special G Colossus map                                  Alpha=1  Format=BC3             CT0=  20 CT4=  10
+Special G Cyclops                                       Alpha=1  Format=BC3             CT0=  20 CT4=   9
+Special G Cyclops map                                   Alpha=1  Format=BC3             CT0=   2 CT4=   3
+Special G Giant Turtle                                  Alpha=4  Format=BC3             CT0=   1 CT4=   1
+Special G Golem map                                     Alpha=1  Format=BC3             CT0=   0 CT4=   6
+Special G Hippocampus                                   Alpha=1  Format=BC3             CT0=   6 CT4=   5
+Special G Hydra Land                                    Alpha=1  Format=BC3             CT0=  62 CT4=  62
+Special G Manticore                                     Alpha=1  Format=BC3             CT0=  14 CT4=  12
+Special G Medusa                                        Alpha=1  Format=BC3             CT0=  21 CT4=  16
+Special G Minotaur                                      Alpha=1  Format=BC3             CT0=  26 CT4=  11
+Special G Nemean Lion                                   Alpha=1  Format=BC3             CT0=  20 CT4=  19
+Special G Pegasus Wings                                 Alpha=4  Format=BC3             CT0=  27 CT4=  25
+Special G Scylla                                        Alpha=1  Format=BC3             CT0=  62 CT4=  26
+Special G Sea Turtle                                    Alpha=1  Format=BC3             CT0=  16 CT4=  15
+Special G Shade                                         Alpha=1  Format=BC3             CT0=  20 CT4=   5
+Special N Battle Boar                                   Alpha=1  Format=BC3             CT0=  28 CT4=  27
+Special N Einheriar                                     Alpha=1  Format=BC3             CT0=   9 CT4=   7
+Special N Fenris                                        Alpha=1  Format=BC3             CT0=  20 CT4=  18
+Special N Fire Giant                                    Alpha=1  Format=BC3             CT0=  17 CT4=   8
+Special N Frost Giant                                   Alpha=1  Format=BC3             CT0=  23 CT4=  12
+Special N Giant                                         Alpha=1  Format=BC3             CT0=  25 CT4=  13
+Special N Jarl Cape map                                 Alpha=1  Format=BC3             CT0=  11 CT4=  12
+Special N Jormund Brood                                 Alpha=1  Format=BC3             CT0=   4 CT4=   4
+Special N King Folstag Upgrade                          Alpha=1  Format=BC3             CT0=  15 CT4=  15
+Special N Raven                                         Alpha=1  Format=BC3             CT0=  16 CT4=   4
+Special N Troll                                         Alpha=1  Format=BC3             CT0=  21 CT4=  10
+Special N Troll Bag                                     Alpha=1  Format=BC3             CT0=   0 CT4=  18
+Special N Valkyrie map                                  Alpha=1  Format=BC3             CT0=  11 CT4=  10
+Special X Oracle                                        Alpha=1  Format=BC3             CT0=  20 CT4=  20
+Special X Oracle Hero                                   Alpha=1  Format=BC3             CT0=  23 CT4=  24
+Statue X Gaia Map                                       Alpha=1  Format=BC3             CT0=   2 CT4=   2
+Statue X Oranos Map                                     Alpha=1  Format=BC3             CT0=   2 CT4=   2
+Temp Santa Body                                         Alpha=1  Format=BC3             CT0=   1 CT4=   1
+Test Flags                                              Alpha=1  Format=BC3             CT0=   0 CT4=  15
+Theocrat Map                                            Alpha=1  Format=BC3             CT0=   1 CT4=   1
+Titan E Ra Pads Map                                     Alpha=4  Format=BC3             CT0=   0 CT4=   2
+Titan E Ra Skirt Map                                    Alpha=4  Format=BC3             CT0=   2 CT4=   2
+Titan G Cerebus Map1                                    Alpha=1  Format=BC3             CT0=   1 CT4=   1
+Titan G Cerebus Map2                                    Alpha=1  Format=BC3             CT0=   1 CT4=   1
+Titan N Troll Map2                                      Alpha=1  Format=BC3             CT0=   1 CT4=   1
+Titan X Gaia                                            Alpha=4  Format=BC3             CT0=   4 CT4=   2
+Titan X Golem Map1                                      Alpha=4  Format=BC3             CT0=   1 CT4=   1
+Titan X Kronos                                          Alpha=1  Format=BC3             CT0=   0 CT4=   1
+Titan X Promethean 1                                    Alpha=1  Format=BC3             CT0=   2 CT4=   3
+trade c caravan cargo                                   Alpha=4  Format=BC3             CT0=   0 CT4=   4
+Trade E Caravan Basket                                  Alpha=1  Format=BC3             CT0=  22 CT4=  22
+Trade E Caravan Camel                                   Alpha=1  Format=BC3             CT0=  22 CT4=  21
+Trade E Caravan Cargo                                   Alpha=1  Format=BC3             CT0=   5 CT4=  11
+Trade G Caravan Cargo                                   Alpha=1  Format=BC3             CT0=  10 CT4=  10
+Trade G Caravan Donkey                                  Alpha=1  Format=BC3             CT0=  10 CT4=  10
+Trade N Caravan Cargo                                   Alpha=1  Format=BC3             CT0=  10 CT4=   8
+Trade N Caravan Ox                                      Alpha=1  Format=BC3             CT0=  26 CT4=  22
+Trade X Caravan                                         Alpha=1  Format=BC3             CT0=   9 CT4=  10
+villager c female                                       Alpha=4  Format=BC3             CT0=   0 CT4=  17
+villager c male standard                                Alpha=4  Format=BC3             CT0=   0 CT4=  17
+Villager E Female                                       Alpha=1  Format=BC3             CT0=  21 CT4=  20
+Villager E Male Standard                                Alpha=1  Format=BC3             CT0=  26 CT4=  25
+Villager G Atlantean Male                               Alpha=1  Format=BC3             CT0=  21 CT4=  20
+Villager G Female                                       Alpha=1  Format=BC3             CT0=  28 CT4=  25
+Villager G Male Standard                                Alpha=1  Format=BC3             CT0=  43 CT4=  41
+Villager N Female                                       Alpha=1  Format=BC3             CT0=  21 CT4=  17
+Villager N Male Standard                                Alpha=1  Format=BC3             CT0=  22 CT4=  21
+Villager N Oxcart                                       Alpha=1  Format=BC3             CT0=  10 CT4=  10
+Villager X Female                                       Alpha=1  Format=BC3             CT0=  35 CT4=  33
+Villager X Male                                         Alpha=1  Format=BC3             CT0=  33 CT4=  34
+Villager X Pony                                         Alpha=1  Format=BC3             CT0= 135 CT4=  67
+Waypoint                                                Alpha=1  Format=BC3             CT0=   1 CT4=   1
+World A Bouy                                            Alpha=1  Format=BC3             CT0=   0 CT4=   2
+World A Underworld Passage Color Transform              Alpha=1  Format=BC3             CT0=   0 CT4=   3
+World A Waypoint Flag                                   Alpha=1  Format=BC3             CT0=   0 CT4=   1
+world c statue nuwa                                     Alpha=4  Format=BC3             CT0=   0 CT4=   1
+world c statue nuwa stand                               Alpha=4  Format=BC3             CT0=   0 CT4=   3
+world c statue shennong                                 Alpha=4  Format=BC3             CT0=   0 CT4=   1
+world c statue shennong head                            Alpha=4  Format=BC3             CT0=   0 CT4=   1
+World E Garrison Flag                                   Alpha=1  Format=BC3             CT0=   1 CT4=   1
+World E Statue Isis                                     Alpha=1  Format=BC3             CT0=  10 CT4=   7
+World E Statue Ra                                       Alpha=1  Format=BC3             CT0=   3 CT4=   3
+World E Statue Set                                      Alpha=1  Format=BC3             CT0=   3 CT4=   3
+World G Garrison Flag                                   Alpha=1  Format=BC3             CT0=   1 CT4=   1
+World G Hades Temple                                    Alpha=1  Format=BC3             CT0=   2 CT4=   2
+World G Statue Hades                                    Alpha=1  Format=BC3             CT0=   3 CT4=   3
+World G Statue Poseidon                                 Alpha=1  Format=BC3             CT0=  11 CT4=  12
+World G Statue Poseidon Base                            Alpha=1  Format=BC3             CT0=   9 CT4=   1
+World G Statue Zeus                                     Alpha=1  Format=BC3             CT0=   3 CT4=   3
+World G Tent                                            Alpha=1  Format=BC3             CT0=   2 CT4=   2
+World N Garrison Flag                                   Alpha=1  Format=BC3             CT0=   1 CT4=   1
+World N Statue Loki                                     Alpha=1  Format=BC3             CT0=   3 CT4=   3
+World N Statue Odin                                     Alpha=1  Format=BC3             CT0=   6 CT4=   6
+World N Statue Thor                                     Alpha=1  Format=BC3             CT0=   3 CT4=   3
+World N Tent                                            Alpha=1  Format=BC3             CT0=   1 CT4=   1
+
+OUTPUT
+------
+D:\AI_upscaling\AoMEE\reports\player_color_texture_set.csv
+D:\AI_upscaling\AoMEE\reports\player_color_texture_set_summary.txt

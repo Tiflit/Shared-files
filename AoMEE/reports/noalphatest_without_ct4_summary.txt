@@ -1,0 +1,507 @@
+﻿AoM:EE noalphatest Without CT4
+===============================
+
+Unique CT4 textures:             518
+Unique noalphatest textures:     947
+noalphatest WITHOUT CT4:         493
+
+TEXTURES WITH NOALPHATEST BUT NO CT4
+------------------------------------
+
+animal caribou map
+animal chicken
+animal cow b map
+animal cow c map
+animal duck map
+animal fish anchovy
+animal fish herring
+animal fish mahi
+animal fish perch
+animal fish salmon
+animal lizard map
+animal prmonkey
+animal rooster
+animal tiger map
+archer c crossbowman bowstring
+archer c crossbowman bronze
+archer c crossbowman copper
+archer c crossbowman head bronze
+archer c crossbowman head iron
+archer c crossbowman iron
+archer c mounted archer bronze
+archer c mounted archer copper
+archer c mounted archer head bronze
+archer c mounted archer head copper
+archer c mounted archer head iron
+archer c mounted archer horse bronze
+archer c mounted archer horse copper
+archer c mounted archer horse iron
+archer c mounted archer iron
+archer e slinger bronze
+archer e slinger copper
+archer e slinger head bronze
+archer e slinger head copper
+archer e slinger head iron
+archer e slinger iron
+archer e slinger map
+archer g peltast bronze
+archer g peltast cape bronze
+archer g peltast cape copper
+archer g peltast cape iron
+archer g peltast copper
+archer g peltast head bronze
+archer g peltast head copper
+archer g peltast head iron
+archer g peltast iron
+archer g peltast low bronze
+archer g peltast low copper
+archer g peltast low iron
+archer g peltast low standard
+archer g toxotes bronze
+archer g toxotes copper
+archer g toxotes head standard
+archer n normal bronze
+archer n normal copper
+archer n normal head bronze
+archer n normal head copper
+archer n normal head iron
+archer n normal iron
+archer n throwing axeman bronze
+archer n throwing axeman copper
+archer n throwing axeman iron
+archer n throwing axeman low bronze
+archer n throwing axeman low copper
+archer n throwing axeman low iron
+archer n throwing axeman low standard
+archer x bronze
+archer x copper
+archer x hero
+archer x standard
+athenamap
+attachment c halberd head bronze
+attachment c halberd head copper
+attachment c halberd head iron
+attachment c halberd head standard
+attachments a axe map
+attachments a club
+attachments a shovel
+attachments a skeleton
+attachments a sling
+attachments c fire lance
+attachments c halberd bronze
+attachments c halberd copper
+attachments c halberd iron
+attachments c halberd standard
+attachments c sword jiaolong
+attachments e shield bronze
+attachments e shield iron
+attachments g polyphemus club
+attachments g shield bronze
+attachments g shield iron
+attachments n shield bronze
+attachments n shield cinepirateship map
+attachments x shield champion
+attachments x shield heavy
+attachments x shield hero
+background chinese opaque
+background egypt opaque
+background fade blue
+background fade green
+background fade red
+background fade yellow
+background greek opaque
+background norse opaque
+building c props
+building c roofage2
+building c roofage3
+building c roofage4
+building c titan gate rocks
+building c tower age3
+building c tower age4
+building c wallsage2
+building c wallsage3
+building c wallsage4
+building c wonder city floor
+building c wonder palace floor
+building e age2 accessories burnt
+building e age2 burnt
+building e age3 accessories
+building e age3a accessories
+building e age4 accessories
+building e age4roof
+building e fortress
+building e fortress accessories02
+building e isis wonder03
+building e monument1
+building e monument2
+building e monument3
+building e monument4
+building e ra wonder01
+building e set wonder01
+building e set wonder03
+building e shared01 2 map
+building e shared01 3 map
+building e shrine
+building e titan gate rocks
+building e wonder accessories
+building g fortress
+building g fortressroof
+building g fortresswall2
+building g temple statues map
+building g titan gate map
+building g titan gate rocks
+building g wonder destructed
+building n shared03 2 map
+building n temple
+building n thorarmory1
+building n titan gate rocks
+building x sky temple roof
+building x tower watch4
+butterfly
+cavalry c cataphract bronze
+cavalry c cataphract copper
+cavalry c cataphract head bronze
+cavalry c cataphract horse bronze
+cavalry c cataphract horse copper
+cavalry c cataphract horse iron
+cavalry c cataphract iron
+cavalry c chariot bronze
+cavalry c chariot copper
+cavalry c chariot horse bronze
+cavalry c chariot horse iron
+cavalry c chariot iron
+cavalry c charioteer bronze
+cavalry c charioteer iron
+cavalry c scout bronze
+cavalry c scout copper
+cavalry c scout head bronze
+cavalry c scout head iron
+cavalry c scout horse bronze
+cavalry c scout horse copper
+cavalry c scout horse iron
+cavalry c scout iron
+cavalry e camelry bronze
+cavalry e camelry camel bronze
+cavalry e camelry camel iron
+cavalry e camelry camel standard
+cavalry e camelry iron
+cavalry e camelry map
+cavalry e camelry standard
+cavalry e chariot archer bronze
+cavalry e chariot archer iron
+cavalry e war elephant basket bronze
+cavalry e war elephant basket copper
+cavalry e war elephant basket iron
+cavalry e war elephant basket standard
+cavalry e war elephant bronze
+cavalry e war elephant iron
+cavalry e war elephant rider bronze
+cavalry e war elephant rider copper
+cavalry e war elephant rider iron
+cavalry e war elephant rider standard
+cavalry g hetairoi bronze
+cavalry g hetairoi copper
+cavalry g hetairoi head iron
+cavalry g hippikon bronze
+cavalry g hippikon copper
+cavalry g hippikon horse bronze
+cavalry g hippikon horse copper
+cavalry g hippikon horse iron
+cavalry g hippikon iron
+cavalry g prodromos bronze
+cavalry g prodromos copper
+cavalry g prodromos horse bronze
+cavalry g prodromos horse copper
+cavalry g prodromos horse iron
+cavalry g prodromos iron
+cavalry n jarl bronze
+cavalry n jarl copper
+cavalry n jarl horse bronze
+cavalry n jarl horse copper
+cavalry n jarl horse iron
+cavalry n jarl iron
+cavalry n raiding cavalry bronze
+cavalry n raiding cavalry copper
+cavalry n raiding cavalry horse bronze
+cavalry n raiding cavalry horse copper
+cavalry n raiding cavalry horse iron
+cavalry n raiding cavalry iron
+cavalry x javelin horse bronze
+cavalry x javelin horse copper
+cavalry x javelin horse hero
+cavalry x javelin horse standard
+cavalry x javelin standard
+cavalry x lancer bronze
+cavalry x lancer copper
+cavalry x lancer horse bronze
+cavalry x lancer horse copper
+cavalry x lancer horse hero
+cavalry x lancer horse standard
+cavalry x lancer standard
+cine a arkantosman map
+cine a brokk map
+cine a eitri map
+cine a jarl helmet map
+cine a jarl horse map
+cine a jarl map
+cine a kemsyt head bag
+cine a skult map
+cine c danzhu
+cine c emperor
+cine c jiaolong
+cine c shun
+cine c shun shoulder
+cine c shun spear
+cine c zhi
+cine e axeman
+cine e infantry map
+cine e setna
+cine g ajax old map
+cine g amanra map
+cine g amanra old map
+cine g chiron map
+cine g hoplite shield
+cine g kastor map
+cine g old man map
+cine n hersir
+cine n huskarl cape
+cine n reginleif map
+cine n reginleif weapons map
+cine n ulfsark
+cine spear map
+cine x hp arcusmap
+cine x hp arcusweaponsmap
+cine x hp automatonmap
+cine x hp fanaticmap
+cine x hp melagiusmap
+cine x mp melagius head
+cine x trident soldier
+cine x trident soldier cape
+cine x trident soldier helmet
+cine x trident soldier shield
+cinematic naval g trireme
+command time shift icons 32
+cyclops high
+g hypaspist highmodelmap
+greekheromap
+hero c general flag alpha
+hero g athena head low map
+hero g athena low map
+hero g bellerophon shield
+hero g chiron
+hero g chiron shield
+hero g heracles head
+hero g hercules
+hero n hero low
+hero n hersir
+hero n ragnorok female head
+hero n ragnorok male head
+hoplitemap
+infantry c halberdier bronze
+infantry c halberdier copper
+infantry c halberdier iron
+infantry e axeman bronze
+infantry e axeman copper
+infantry e axeman iron
+infantry e axeman map
+infantry e chariot archer iron map
+infantry e khopesh bronze
+infantry e khopesh copper
+infantry e khopesh head bronze
+infantry e khopesh head copper
+infantry e khopesh head iron
+infantry e khopesh iron
+infantry e mercenary head
+infantry e spearman bronze
+infantry e spearman copper
+infantry e spearman iron
+infantry e spearman map
+infantry e spearman shield map
+infantry g hoplite copper
+infantry g hoplite iron
+infantry g hoplite map_01
+infantry g hoplite map_02
+infantry g hoplite map_03
+infantry g hoplite map_04
+infantry g hypaspist bronze
+infantry g hypaspist copper
+infantry g hypaspist head bronze
+infantry g hypaspist head copper
+infantry g hypaspist head standard
+infantry g hypaspist iron
+infantry g hypaspist map
+infantry n bondi bronze
+infantry n bondi copper
+infantry n bondi head bronze
+infantry n bondi head copper
+infantry n bondi head iron
+infantry n bondi head standard
+infantry n bondi iron
+infantry n bondi standard
+infantry n huskarl copper
+infantry n ulfsark bronze
+infantry n ulfsark copper
+infantry n ulfsark iron
+infantry n ulfsark map
+infantry x 2 sword fighter hero
+infantry x maceman bronze
+infantry x maceman copper
+infantry x maceman hero
+infantry x maceman standard
+infantry x swordsman bronze
+infantry x swordsman copper
+infantry x swordsman hero
+infantry x swordsman standard
+infantry x trident soldier head hero
+infantry x trident soldier head iron
+low infantry g normal head bronze
+low infantry g normal head copper
+low infantry g normal head iron
+low infantry g normal head standard
+lp g militia
+mu x oracle
+naval g giant turtle
+naval n kraken upgrade
+naval n utility map
+projectile a ballista arrow iron
+projectile a siege rock map
+scenario a dwarven forge belt
+scenario a dwarven forge shared a
+scenario a dwarven forge shared b
+scenario a gate ram
+scenario c zhi
+scenario c zhi head
+scenario e great box camel
+scenario e great box cart
+scenario g arkantos god map
+scenario g circe head
+scenario n dwarven mine inside
+scenario n dwarven mine opening
+scenario n dwarven mine outside
+scenario n thors hammer
+scenario n thors hammer cart
+scenario t troy wall long deadb
+scenario u chronos hand
+scenario u ferryman map
+scenario u shade
+sfx a ip glow
+sfx a lighthouse glow
+sfx a rain sunlight
+sfx a rainbow
+sfx b lighthouse glow
+sfx c earth dragon hole
+sfx c growth vines
+sfx c ip glow
+sfx e son of osiris head
+sfx g lightning bolt
+sfx g lightning skyflash
+sfx g plenty decal
+sfx g plenty shadow
+sfx meteorite splat decal
+sfx n dwarven mine
+sfx n frost ice block unit
+siege c fire lance bronze
+siege c fire lance head bronze
+siege c fire lance head iron
+siege c fire lance iron
+siege c sitting tiger iron
+siege c sitting tiger projectile
+siege e catapult iron
+siege e catapult projectile
+siege g helepolis iron
+siege g petrobolos low
+siege g petrobolos projectile
+siege g petrobolos tire low
+siege g trojan horse
+siege n ballista iron
+siege n ballista map
+siege n catapult map
+siege x chieroballista downgrade
+siege x chieroballista man upgrade
+siege x fire siphon upgrade
+siege x onager iron
+special c terracotta soldier head
+special e anubite iron
+special e avenger map
+special e priest head
+special e scorpion man head
+special e scorpion man upgrade
+special g agamemnon head
+special g athena head
+special g centaur head upgrade
+special g centaur low
+special g centaur upgrade
+special g cyclops upgrade
+special g hydra map
+special g medusa low map
+special g medusa map
+special g pegasus
+special g scylla map
+special g underworld shade
+special n einheriar upgrade
+special n frost giant head
+special n frost giant head upgrade
+special n frost giant upgrade
+special n giant map
+special n jormund brood hump
+special n king folstag
+special n valkyrie low
+special n valkyrie upgrade
+statue x kronos map
+temp santa hat
+temp santa head
+titan c pangu
+titan n troll hammer map
+titan n troll map1
+titan x golem map2
+toxotemap
+trash
+trash weapon
+ui
+ui background blue opaque
+ui background dark blue opaque
+ui background yellow opaque
+ui line yellow
+ui line yellow vertical
+ui progress bar flair
+ui text chat box
+ui text chat box grey
+villager e female head
+villager g atlantean male head
+villager g female head
+villager n female head
+villager n ox
+villager x female hero
+villager x male hero
+world a fountain
+world a gold map
+world a jade map
+world a relic armor of achilles
+world a relic eye of horus
+world a relic fetters of fenrir
+world a relic golden bridle of pegasus
+world a relic head of orpheus
+world a relic monkey
+world a relic ring of the nibelung
+world a relic ship of fingernails
+world a relic standard
+world a relic the wedjat eye
+world a tents map
+world a underworld crator
+world c dam
+world e brazier map
+world e tent
+world g brazier map
+world g shrine map
+world g statue base
+world g zues uwpassage
+world g zuesstairs
+world n brazier map
+world n loki statue map
+world n odin statue map
+world n thor statue map
+world x gaia  statue map
+
+OUTPUT
+------
+D:\AI_upscaling\AoMEE\reports\noalphatest_without_ct4.csv

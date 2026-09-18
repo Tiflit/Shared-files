@@ -1,0 +1,81 @@
+﻿AoM:EE Remaster Benchmark
+=========================
+
+Generated: 2026-09-18 17:41:52
+
+AUTHORITATIVE SOURCE SET
+------------------------
+Classified textures: 7487
+
+BENCHMARK
+---------
+Category samples:      70
+Small/edge cases:      10
+Recovered exceptions:  35
+Total benchmark files: 115
+
+CATEGORY COUNTS
+---------------
+Icon                    35
+UI                      17
+Other                   15
+World/Terrain           12
+Animal                  10
+Character/Unit           8
+Building                 8
+Shadow                   5
+Effect                   5
+
+ALPHA BANDS
+-----------
+Opaque                 101
+Broad                    5
+Moderate                 4
+Sparse                   2
+VeryBroad                2
+Empty                    1
+
+RECOVERED EXCEPTIONS
+--------------------
+patched_to_verify\textures\animal dog a map.tga
+patched_to_verify\textures\animal dog b map.tga
+patched_to_verify\textures\animal elephant indian.tga
+patched_to_verify\textures\animal parrot map.tga
+patched_to_verify\textures\archer c crossbow.tga
+patched_to_verify\textures\icons\boat c fire ship chinese icon.tga
+patched_to_verify\textures\icons\boat c fishing boat icon.tga
+patched_to_verify\textures\icons\boat c junk icon.tga
+patched_to_verify\textures\icons\boat c siege ship chinese icon.tga
+patched_to_verify\textures\icons\boat c transport icon.tga
+patched_to_verify\textures\icons\god power barrage icon.tga
+patched_to_verify\textures\icons\god power earth dragon icon.tga
+patched_to_verify\textures\icons\god power flood icon.tga
+patched_to_verify\textures\icons\god power geyser icon.tga
+patched_to_verify\textures\icons\god power journey icon.tga
+patched_to_verify\textures\icons\god power recreation icon.tga
+patched_to_verify\textures\icons\siege c fire lance icon.tga
+patched_to_verify\textures\icons\special c azure dragon icon.tga
+patched_to_verify\textures\icons\special c black tortoise icon.tga
+patched_to_verify\textures\icons\special c earth dragon icon.tga
+patched_to_verify\textures\icons\special c jiangshi icon.tga
+patched_to_verify\textures\icons\special c monkey king icon.tga
+patched_to_verify\textures\icons\special c pixiu icon.tga
+patched_to_verify\textures\icons\special c qilin icon.tga
+patched_to_verify\textures\icons\special c terracotta soldier icon.tga
+patched_to_verify\textures\icons\special c vermilion bird icon.tga
+patched_to_verify\textures\icons\special c war salamander icon.tga
+patched_to_verify\textures\icons\special c white tiger icon.tga
+patched_to_verify\textures\icons\trade c caravan icon.tga
+patched_to_verify\textures\special c qilin.tga
+patched_to_verify\textures\special g griffon map.tga
+patched_to_verify\textures\world c jungle palm burnt.tga
+patched_to_verify\textures\world c jungle palm.tga
+patched_to_verify\textures\world c jungle tree burnt.tga
+patched_to_verify\textures\world c jungle tree.tga
+
+OUTPUT
+------
+D:\AI_upscaling\AoMEE\tests\remaster_benchmark\input
+D:\AI_upscaling\AoMEE\tests\remaster_benchmark\edge_cases
+D:\AI_upscaling\AoMEE\tests\remaster_benchmark\recovered
+D:\AI_upscaling\AoMEE\tests\remaster_benchmark\remaster_benchmark_manifest.csv

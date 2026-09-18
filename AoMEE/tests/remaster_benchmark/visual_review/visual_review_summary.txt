@@ -1,0 +1,18 @@
+============================================
+AoM:EE HAT BENCHMARK VISUAL REVIEW
+============================================
+
+Benchmark textures: 115
+
+ALPHA INTEGRITY
+--------------------------------------------
+Sharper exact alpha: 115/115
+SRx4 exact alpha:    115/115
+
+Sharper alpha: PASS
+SRx4 alpha: PASS
+
+Visual sheets:
+D:\AI_upscaling\AoMEE\tests\remaster_benchmark\visual_review\by_category
+D:\AI_upscaling\AoMEE\tests\remaster_benchmark\visual_review\all
+D:\AI_upscaling\AoMEE\tests\remaster_benchmark\visual_review\recovered_exceptions

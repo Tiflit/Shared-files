@@ -1,0 +1,116 @@
+﻿RelativePath,SharperAlphaExact,SRx4AlphaExact
+textures\sfx x monster gater streak.tga,True,True
+textures\scenario a gate ram20.tga,True,True
+textures\building g underground passage greek.tga,True,True
+textures\building x dock.tga,True,True
+textures\gaia wonder statue.tga,True,True
+textures\building x temple og2 25.tga,True,True
+textures\building x temple age1.tga,True,True
+textures\building e isis wonder03.tga,True,True
+textures\hero n hersir head.tga,True,True
+textures\hero g atalanta head standard.tga,True,True
+textures\hero n hero head low.tga,True,True
+textures\cine x trident soldier helmet.tga,True,True
+textures\hero c general cape.tga,True,True
+textures\sfx a hero soul.tga,True,True
+textures\cavalry x lancer hero.tga,True,True
+textures\hero n ragnorok female head.tga,True,True
+textures\animal waterbuffalo map.tga,True,True
+textures\animal tiger map.tga,True,True
+textures\animal fish perch.tga,True,True
+textures\sfx e set animal glow.tga,True,True
+textures\animal orca map.tga,True,True
+textures\normal animal wolf map.tga,True,True
+textures\titlebar.tga,True,True
+textures\special n valkyrie staute map.tga,True,True
+textures\attachments a bow iron.tga,True,True
+textures\sfx c recreation.tga,True,True
+textures\sfx x arkantos birth steak.tga,True,True
+textures\infantry n ulfsark head standard.tga,True,True
+textures\ui_n_bottombar_b_loki.tga,True,True
+textures\god minor portrait atlantis rheia.tga,True,True
+textures\skyboxbluesky_lf.tga,True,True
+textures\skyboxsunset_bk.tga,True,True
+textures\icons\scenario n reginleif icon.tga,True,True
+textures\icons\god power inferno icon 64.tga,True,True
+textures\icons\icon pine snow tree 64.tga,True,True
+textures\improvement medium barracks icon.tga,True,True
+textures\icons\improvement conscript longhouse soldiers icon.tga,True,True
+textures\icons\siege x chieroballista icons 64.tga,True,True
+textures\icons\improvement long serpent icon 64.tga,True,True
+textures\icons\special g shade icon.tga,True,True
+textures\icons\special x argus icons 32.tga,True,True
+textures\icons\god major shennong icon 128.tga,True,True
+textures\ui\god minor icon greek hermes.tga,True,True
+textures\ui\campmap_greece7.tga,True,True
+textures\ui\techtreeouranos3.tga,True,True
+textures\ui\campmap_i_norselands4.tga,True,True
+textures\ui\ui_uparrow_s.tga,True,True
+textures\ui\god minor icon greek dionysus.tga,True,True
+textures\ui\de\campmap_greece7.tga,True,True
+textures\ui\techtreezeus4.tga,True,True
+textures\ui\campmap_atlantis10.tga,True,True
+textures\ui\start up9.tga,True,True
+textures\terrain\mountain04_gloss.tga,True,True
+textures\terrain\shorelinenorwegianc_spec.tga,True,True
+textures\terrain\marshd_nm.tga,True,True
+textures\terrain\sanddirt50.tga,True,True
+textures\world a farm cabbage02_spec.tga,True,True
+textures\terrain\riversandyb_nm.tga,True,True
+textures\terrain\savannahd_gloss.tga,True,True
+textures\terrain\hades1.tga,True,True
+textures\sfx e serpents water.tga,True,True
+textures\sfx a shiny water.tga,True,True
+textures\sfx a fire flame a.tga,True,True
+textures\sfx a fire flame c.tga,True,True
+textures\sfx x shockwave unit effect.tga,True,True
+textures\world n ram broken shadow map.tga,True,True
+textures\building e temple shadow age1.tga,True,True
+textures\building e shrine shadow age1.tga,True,True
+textures\sfx g plenty shadow.tga,True,True
+textures\world e catapult broken shadow map.tga,True,True
+textures\relic icon 16x16.tga,True,True
+textures\ui\ui scroll middle 64x16.tga,True,True
+textures\closebutton.tga,True,True
+textures\ui\ui scroll cap left 8x8 grey.tga,True,True
+textures\ui\boarder norse bottom left corner.tga,True,True
+textures\resizecursor.tga,True,True
+textures\ui\green.tga,True,True
+textures\ui\l-big-arrow-alpha.tga,True,True
+textures\ui\ui border egypt top middle.tga,True,True
+textures\ui\diamond.tga,True,True
+patched_to_verify\textures\icons\god power recreation icon.tga,True,True
+patched_to_verify\textures\icons\god power earth dragon icon.tga,True,True
+patched_to_verify\textures\icons\special c vermilion bird icon.tga,True,True
+patched_to_verify\textures\icons\special c pixiu icon.tga,True,True
+patched_to_verify\textures\icons\special c war salamander icon.tga,True,True
+patched_to_verify\textures\icons\special c qilin icon.tga,True,True
+patched_to_verify\textures\icons\boat c transport icon.tga,True,True
+patched_to_verify\textures\special g griffon map.tga,True,True
+patched_to_verify\textures\icons\special c azure dragon icon.tga,True,True
+patched_to_verify\textures\icons\special c earth dragon icon.tga,True,True
+patched_to_verify\textures\special c qilin.tga,True,True
+patched_to_verify\textures\world c jungle tree.tga,True,True
+patched_to_verify\textures\animal elephant indian.tga,True,True
+patched_to_verify\textures\icons\boat c fire ship chinese icon.tga,True,True
+patched_to_verify\textures\archer c crossbow.tga,True,True
+patched_to_verify\textures\animal parrot map.tga,True,True
+patched_to_verify\textures\icons\siege c fire lance icon.tga,True,True
+patched_to_verify\textures\icons\boat c fishing boat icon.tga,True,True
+patched_to_verify\textures\animal dog a map.tga,True,True
+patched_to_verify\textures\icons\special c monkey king icon.tga,True,True
+patched_to_verify\textures\icons\god power geyser icon.tga,True,True
+patched_to_verify\textures\icons\special c jiangshi icon.tga,True,True
+patched_to_verify\textures\icons\god power barrage icon.tga,True,True
+patched_to_verify\textures\icons\god power flood icon.tga,True,True
+patched_to_verify\textures\icons\boat c junk icon.tga,True,True
+patched_to_verify\textures\world c jungle palm.tga,True,True
+patched_to_verify\textures\icons\special c white tiger icon.tga,True,True
+patched_to_verify\textures\icons\boat c siege ship chinese icon.tga,True,True
+patched_to_verify\textures\icons\trade c caravan icon.tga,True,True
+patched_to_verify\textures\icons\god power journey icon.tga,True,True
+patched_to_verify\textures\icons\special c black tortoise icon.tga,True,True
+patched_to_verify\textures\animal dog b map.tga,True,True
+patched_to_verify\textures\world c jungle palm burnt.tga,True,True
+patched_to_verify\textures\world c jungle tree burnt.tga,True,True
+patched_to_verify\textures\icons\special c terracotta soldier icon.tga,True,True

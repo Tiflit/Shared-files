@@ -1,5 +1,5 @@
 ﻿AoMEE MASTER TEXTURE MANIFEST
-Generated: 2026-09-18 17:24:34
+Generated: 2026-09-18 17:31:44
 
 SOURCE POPULATIONS
 Original DDTs scanned:           7487
@@ -10,7 +10,7 @@ Combined TGA records:             7487
 INTEGRITY
 Unique processing-eligible TGAs:  7487
 Duplicate logical paths:          0
-TGAs missing BTI:                 1
+TGAs missing BTI:                 0
 Original DDTs without TGA:        0
 
 TGA FORMAT
@@ -30,8 +30,8 @@ MOST COMMON DIMENSIONS
   256 x  32       105
   8 x  8          71
   32 x  16        63
-  32 x  64        60
   512 x  64       60
+  32 x  64        60
   512 x  128      52
   128 x  32       49
   64 x  128       44
@@ -39,9 +39,3 @@ MOST COMMON DIMENSIONS
   64 x  16        33
   640 x  256      30
   256 x  64       28
-
-OUTPUT
-Master manifest:
-  D:\AI_upscaling\AoMEE\reports\master_texture_manifest.csv
-Original DDTs with no extracted TGA:
-  D:\AI_upscaling\AoMEE\reports\master_texture_manifest_missing_ddt.csv

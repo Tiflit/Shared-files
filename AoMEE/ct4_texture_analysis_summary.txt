@@ -1,0 +1,495 @@
+﻿AoM:EE CT4 Texture Analysis
+===========================
+
+Unique textures used by CT4 materials: 518
+Also used by CT0 materials: 386
+noalphatest: 447
+BTI alpha=1: 381
+BTI alpha=4: 91
+TGA binary alpha: 153
+Has PixelXForm material usage: 5
+
+CT4 TEXTURES BY BTI ALPHA BITS
+------------------------------
+                    22
+0                   24
+1                  381
+4                   91
+
+CT4 TEXTURES BY TGA ALPHA TYPE
+------------------------------
+                    64
+Binary             153
+MultiValue         301
+
+CT4 TEXTURES BY COVERAGE
+------------------------
+                    64
+0-10%              284
+10-25%              96
+25-50%              44
+50-75%              16
+75-100%             14
+
+CT4 + NOALPHATEST
+-----------------
+Animal Flying Purple Hippo                              AlphaBits=1  Alpha=Binary     Coverage=0
+archer c crossbowman head standard                      AlphaBits=4  Alpha=Binary     Coverage=0
+archer c mounted archer head standard                   AlphaBits=4  Alpha=Binary     Coverage=0
+Archer N Normal Head Standard                           AlphaBits=4  Alpha=Binary     Coverage=0
+building c roofage1                                     AlphaBits=4  Alpha=Binary     Coverage=0
+building c special                                      AlphaBits=4  Alpha=Binary     Coverage=0
+building c wonder city roof                             AlphaBits=4  Alpha=Binary     Coverage=0
+building c wonder city walls                            AlphaBits=4  Alpha=Binary     Coverage=0
+building c wonder palace roof                           AlphaBits=4  Alpha=Binary     Coverage=0
+hero c monk head                                        AlphaBits=4  Alpha=Binary     Coverage=0
+hero c monk weapon                                      AlphaBits=4  Alpha=Binary     Coverage=0
+hero g physician head                                   AlphaBits=4  Alpha=Binary     Coverage=0
+scenario c danzhu head                                  AlphaBits=4  Alpha=Binary     Coverage=0
+scenario c shun head                                    AlphaBits=4  Alpha=Binary     Coverage=0
+Special E Roc                                           AlphaBits=1  Alpha=Binary     Coverage=0
+Trade E Caravan Cargo                                   AlphaBits=1  Alpha=Binary     Coverage=0
+world c statue shennong head                            AlphaBits=4  Alpha=Binary     Coverage=0
+World G Statue Poseidon Base                            AlphaBits=1  Alpha=Binary     Coverage=0
+building E Outpost                                      AlphaBits=1  Alpha=Binary     Coverage=0.262
+Building G Shrine                                       AlphaBits=1  Alpha=Binary     Coverage=0.317
+Oranos Wonder Map                                       AlphaBits=1  Alpha=Binary     Coverage=0.397
+Building G RoofAge1                                     AlphaBits=1  Alpha=Binary     Coverage=0.412
+Building x TitanGate                                    AlphaBits=1  Alpha=Binary     Coverage=0.415
+Building X Palace Age2                                  AlphaBits=1  Alpha=Binary     Coverage=0.586
+Building N ThorArmory                                   AlphaBits=1  Alpha=Binary     Coverage=0.861
+building c wonder temple                                AlphaBits=4  Alpha=Binary     Coverage=0.873
+Building X Wall Iron                                    AlphaBits=1  Alpha=Binary     Coverage=1.32
+Building X Roof Age0                                    AlphaBits=1  Alpha=Binary     Coverage=1.324
+building x wall stone                                   AlphaBits=1  Alpha=Binary     Coverage=1.337
+Building N TempleAge1                                   AlphaBits=1  Alpha=Binary     Coverage=1.341
+Building N TempleAge2                                   AlphaBits=1  Alpha=Binary     Coverage=1.341
+Building N TempleAge3                                   AlphaBits=1  Alpha=Binary     Coverage=1.341
+Platform Map                                            AlphaBits=1  Alpha=Binary     Coverage=1.367
+Building N Shared06 2 map                               AlphaBits=1  Alpha=Binary     Coverage=1.37
+Building G Age0                                         AlphaBits=1  Alpha=Binary     Coverage=1.408
+Building G SettlementAge1                               AlphaBits=1  Alpha=Binary     Coverage=1.424
+Building G SettlementAge3                               AlphaBits=1  Alpha=Binary     Coverage=1.424
+Building X Wall Bronze                                  AlphaBits=1  Alpha=Binary     Coverage=1.428
+Building N SettlementAge1                               AlphaBits=1  Alpha=Binary     Coverage=1.434
+Building N SettlementAge2                               AlphaBits=1  Alpha=Binary     Coverage=1.45
+Building G TempleAge2                                   AlphaBits=1  Alpha=Binary     Coverage=1.479
+Building G TempleAge1                                   AlphaBits=1  Alpha=Binary     Coverage=1.515
+building x tower watch2                                 AlphaBits=1  Alpha=Binary     Coverage=1.517
+Building X Tower Watch3                                 AlphaBits=1  Alpha=Binary     Coverage=1.517
+Building_E_MonumentBase_Map                             AlphaBits=1  Alpha=Binary     Coverage=1.562
+Building E Lighthouse                                   AlphaBits=1  Alpha=Binary     Coverage=1.595
+Building G Wonder                                       AlphaBits=1  Alpha=Binary     Coverage=1.598
+Building E shared02 2 map                               AlphaBits=1  Alpha=Binary     Coverage=1.614
+Building N SettlementAge3                               AlphaBits=1  Alpha=Binary     Coverage=1.642
+Building G SettlementAge2                               AlphaBits=1  Alpha=Binary     Coverage=1.645
+World G Hades Temple                                    AlphaBits=1  Alpha=Binary     Coverage=1.672
+Building X Palace Age3                                  AlphaBits=1  Alpha=Binary     Coverage=1.678
+Building N Shared01 1 map                               AlphaBits=1  Alpha=Binary     Coverage=1.698
+Building G Towers                                       AlphaBits=1  Alpha=Binary     Coverage=1.712
+World E Statue Isis                                     AlphaBits=1  Alpha=Binary     Coverage=1.752
+Villager N Oxcart                                       AlphaBits=1  Alpha=Binary     Coverage=1.794
+Building G Fortifiedwall                                AlphaBits=1  Alpha=Binary     Coverage=1.804
+Animal GoatNubian map                                   AlphaBits=1  Alpha=Binary     Coverage=1.807
+Building E Wall4                                        AlphaBits=1  Alpha=Binary     Coverage=1.892
+building c earthen wall                                 AlphaBits=4  Alpha=Binary     Coverage=1.91
+building c fortified wall                               AlphaBits=4  Alpha=Binary     Coverage=1.91
+building c great wall                                   AlphaBits=4  Alpha=Binary     Coverage=1.91
+building c stone wall                                   AlphaBits=4  Alpha=Binary     Coverage=1.91
+World G Statue Hades                                    AlphaBits=1  Alpha=Binary     Coverage=1.941
+Oranos Wonder Map1                                      AlphaBits=1  Alpha=Binary     Coverage=1.953
+Building G Temple                                       AlphaBits=1  Alpha=Binary     Coverage=1.996
+Building N Shared01 3 map                               AlphaBits=1  Alpha=Binary     Coverage=1.996
+Archer G Toxotes Head Bronze                            AlphaBits=1  Alpha=Binary     Coverage=10.059
+Archer G Toxotes Head Copper                            AlphaBits=1  Alpha=Binary     Coverage=10.059
+Archer G Toxotes Head Iron                              AlphaBits=1  Alpha=Binary     Coverage=10.059
+Infantry G Hypaspist Head Iron                          AlphaBits=1  Alpha=Binary     Coverage=10.059
+SFX G Sentinel                                          AlphaBits=1  Alpha=Binary     Coverage=10.535
+Cavalry G Cataphract Head Iron                          AlphaBits=1  Alpha=Binary     Coverage=10.645
+hero c general cape                                     AlphaBits=4  Alpha=Binary     Coverage=100
+Special E Phoenix                                       AlphaBits=0  Alpha=Binary     Coverage=100
+Special E Phoenix Egg                                   AlphaBits=1  Alpha=Binary     Coverage=12.5
+Special N Einheriar                                     AlphaBits=1  Alpha=Binary     Coverage=13.428
+Special N Raven                                         AlphaBits=1  Alpha=Binary     Coverage=13.672
+Scenario Theocrat Staff                                 AlphaBits=1  Alpha=Binary     Coverage=15.625
+hero c general flag                                     AlphaBits=4  Alpha=Binary     Coverage=15.808
+World E Statue Ra                                       AlphaBits=1  Alpha=Binary     Coverage=15.906
+Cavalry G Hippikon Standard                             AlphaBits=1  Alpha=Binary     Coverage=18.872
+Infantry X Swordsman Iron                               AlphaBits=1  Alpha=Binary     Coverage=19.312
+building E Isis Wonder02                                AlphaBits=1  Alpha=Binary     Coverage=2.04
+building E Isis Wonder01                                AlphaBits=1  Alpha=Binary     Coverage=2.051
+Building X Roof Age1                                    AlphaBits=1  Alpha=Binary     Coverage=2.081
+building c tower age2                                   AlphaBits=4  Alpha=Binary     Coverage=2.094
+building E Ra Wonder02                                  AlphaBits=1  Alpha=Binary     Coverage=2.097
+SFX G Plenty                                            AlphaBits=1  Alpha=Binary     Coverage=2.107
+building E Set Wonder02                                 AlphaBits=1  Alpha=Binary     Coverage=2.142
+building E Monument platforms                           AlphaBits=1  Alpha=Binary     Coverage=2.251
+Building X Wall Oreichalkos                             AlphaBits=1  Alpha=Binary     Coverage=2.283
+Kronos Wonder Map2                                      AlphaBits=1  Alpha=Binary     Coverage=2.304
+Building G Hades Wonder                                 AlphaBits=1  Alpha=Binary     Coverage=2.344
+Building G WallsAge2                                    AlphaBits=1  Alpha=Binary     Coverage=2.435
+Building G FortressWall                                 AlphaBits=1  Alpha=Binary     Coverage=2.464
+Animal Cow A map                                        AlphaBits=1  Alpha=Binary     Coverage=2.686
+Building G Zues Wonder01                                AlphaBits=1  Alpha=Binary     Coverage=2.766
+Building E Titan Gate Map                               AlphaBits=1  Alpha=Binary     Coverage=2.826
+Statue X Oranos Map                                     AlphaBits=1  Alpha=Binary     Coverage=2.863
+World A Bouy                                            AlphaBits=1  Alpha=Binary     Coverage=22.656
+Hero G Belerophon                                       AlphaBits=1  Alpha=Binary     Coverage=23.071
+World A Waypoint Flag                                   AlphaBits=1  Alpha=Binary     Coverage=25
+Cavalry E Chariot Horse Map                             AlphaBits=1  Alpha=Binary     Coverage=28.888
+Building E Age2                                         AlphaBits=1  Alpha=Binary     Coverage=3.07
+building E Settlement Age2                              AlphaBits=1  Alpha=Binary     Coverage=3.07
+world c statue nuwa stand                               AlphaBits=4  Alpha=Binary     Coverage=3.125
+Building G WallsAge1                                    AlphaBits=1  Alpha=Binary     Coverage=3.145
+Building G WallsAge3                                    AlphaBits=1  Alpha=Binary     Coverage=3.355
+World G Statue Zeus                                     AlphaBits=1  Alpha=Binary     Coverage=3.381
+Cavalry G Hippikon Head Bronze                          AlphaBits=1  Alpha=Binary     Coverage=3.418
+Cavalry G Hippikon Head Copper                          AlphaBits=1  Alpha=Binary     Coverage=3.418
+Cavalry G Hippikon Head Iron                            AlphaBits=1  Alpha=Binary     Coverage=3.418
+Building G Shared05 2 map                               AlphaBits=1  Alpha=Binary     Coverage=3.461
+scenario t troy wall long                               AlphaBits=1  Alpha=Binary     Coverage=3.516
+scenario t troy wall long dead                          AlphaBits=1  Alpha=Binary     Coverage=3.516
+Special E Roc Basket                                    AlphaBits=1  Alpha=Binary     Coverage=3.754
+Cavalry X Javelin Copper                                AlphaBits=1  Alpha=Binary     Coverage=31.104
+Siege N Ballista                                        AlphaBits=1  Alpha=Binary     Coverage=4.126
+SFX E Citadel                                           AlphaBits=1  Alpha=Binary     Coverage=4.276
+SFX E Citadel Age4                                      AlphaBits=1  Alpha=Binary     Coverage=4.276
+Cine G Poseidon Stone                                   AlphaBits=1  Alpha=Binary     Coverage=4.282
+Special E Petesuchos                                    AlphaBits=1  Alpha=Binary     Coverage=4.37
+Special G Centaur                                       AlphaBits=1  Alpha=Binary     Coverage=4.639
+Special G Cyclops                                       AlphaBits=1  Alpha=Binary     Coverage=4.785
+World G Garrison Flag                                   AlphaBits=1  Alpha=Binary     Coverage=47.461
+infantry e khopesh head standard                        AlphaBits=4  Alpha=Binary     Coverage=49.658
+building E Age4                                         AlphaBits=1  Alpha=Binary     Coverage=5.151
+building E Settlement Age4                              AlphaBits=1  Alpha=Binary     Coverage=5.151
+Siege G Petrobolos                                      AlphaBits=1  Alpha=Binary     Coverage=5.615
+Siege G Petrobolos Iron                                 AlphaBits=1  Alpha=Binary     Coverage=5.615
+Trade G Caravan Cargo                                   AlphaBits=1  Alpha=Binary     Coverage=5.908
+Siege C Sitting Tiger                                   AlphaBits=4  Alpha=Binary     Coverage=5.981
+Scenario N Reginleif map                                AlphaBits=1  Alpha=Binary     Coverage=6.055
+Scenario G Circe                                        AlphaBits=1  Alpha=Binary     Coverage=6.616
+Siege E Catapult                                        AlphaBits=1  Alpha=Binary     Coverage=6.616
+Cavalry G Hippikon Horse Standard                       AlphaBits=1  Alpha=Binary     Coverage=8.521
+Cavalry G Prodromos Horse Standard                      AlphaBits=1  Alpha=Binary     Coverage=8.521
+Projectile A Ballista Arrow                             AlphaBits=1  Alpha=Binary     Coverage=8.594
+Siege N Ballista Bolt                                   AlphaBits=1  Alpha=Binary     Coverage=8.594
+Siege N Ballista Bolt Iron                              AlphaBits=1  Alpha=Binary     Coverage=8.594
+Infantry G Myrmidon Head Iron                           AlphaBits=1  Alpha=Binary     Coverage=8.74
+Archer G Peltast Cape Standard                          AlphaBits=1  Alpha=Binary     Coverage=80.908
+Trade E Caravan Basket                                  AlphaBits=1  Alpha=Binary     Coverage=9.015
+Hero G Theseus Shield                                   AlphaBits=1  Alpha=Binary     Coverage=9.961
+Infantry G Hoplite Head Iron                            AlphaBits=1  Alpha=Binary     Coverage=9.961
+building E Fortress Accessories                         AlphaBits=4  Alpha=MultiValue Coverage=0
+Special G Giant Turtle                                  AlphaBits=4  Alpha=MultiValue Coverage=0
+Special G Pegasus Wings                                 AlphaBits=4  Alpha=MultiValue Coverage=0
+Titan E Ra Pads Map                                     AlphaBits=4  Alpha=MultiValue Coverage=0
+Titan E Ra Skirt Map                                    AlphaBits=4  Alpha=MultiValue Coverage=0
+Titan X Gaia                                            AlphaBits=4  Alpha=MultiValue Coverage=0
+Titan X Golem Map1                                      AlphaBits=4  Alpha=MultiValue Coverage=0
+building c wonder palace walls                          AlphaBits=4  Alpha=MultiValue Coverage=0.024
+archer c mounted archer horse standard                  AlphaBits=4  Alpha=MultiValue Coverage=0.391
+building c wallsage1                                    AlphaBits=4  Alpha=MultiValue Coverage=0.476
+Building N Wonder                                       AlphaBits=1  Alpha=MultiValue Coverage=0.536
+hero c general head                                     AlphaBits=4  Alpha=MultiValue Coverage=0.879
+Titan X Kronos                                          AlphaBits=1  Alpha=MultiValue Coverage=0.89
+Building X Temple age0                                  AlphaBits=1  Alpha=MultiValue Coverage=0.946
+World N Tent                                            AlphaBits=1  Alpha=MultiValue Coverage=1.007
+Animal Yak                                              AlphaBits=4  Alpha=MultiValue Coverage=1.025
+animal white tiger map                                  AlphaBits=4  Alpha=MultiValue Coverage=1.031
+Building N Shared02 2 map                               AlphaBits=1  Alpha=MultiValue Coverage=1.054
+Special E Mummy map                                     AlphaBits=1  Alpha=MultiValue Coverage=1.099
+Special G Chimera                                       AlphaBits=1  Alpha=MultiValue Coverage=1.099
+Special G Sea Turtle                                    AlphaBits=1  Alpha=MultiValue Coverage=1.1
+Gaia Wonder Map2                                        AlphaBits=1  Alpha=MultiValue Coverage=1.176
+LP Cine X Krios                                         AlphaBits=1  Alpha=MultiValue Coverage=1.208
+Special G Nemean Lion                                   AlphaBits=1  Alpha=MultiValue Coverage=1.361
+Cavalry N Raiding Cavalry Horse Standard                AlphaBits=1  Alpha=MultiValue Coverage=1.416
+Building N WallAge4                                     AlphaBits=1  Alpha=MultiValue Coverage=1.428
+Cine X Krios                                            AlphaBits=1  Alpha=MultiValue Coverage=1.544
+Building N Tower                                        AlphaBits=1  Alpha=MultiValue Coverage=1.596
+World E Statue Set                                      AlphaBits=1  Alpha=MultiValue Coverage=1.599
+Titan G Cerebus Map2                                    AlphaBits=1  Alpha=MultiValue Coverage=1.604
+cavalry c chariot horse standard                        AlphaBits=4  Alpha=MultiValue Coverage=1.617
+Building N Hillfort                                     AlphaBits=1  Alpha=MultiValue Coverage=1.683
+Animal Pig map                                          AlphaBits=1  Alpha=MultiValue Coverage=1.685
+scenario c danzhu                                       AlphaBits=4  Alpha=MultiValue Coverage=1.691
+hero g physician                                        AlphaBits=4  Alpha=MultiValue Coverage=1.733
+Building N Shrine                                       AlphaBits=1  Alpha=MultiValue Coverage=1.782
+Building N SettlementAge4                               AlphaBits=1  Alpha=MultiValue Coverage=1.868
+building E Age2 wall                                    AlphaBits=1  Alpha=MultiValue Coverage=1.955
+World N Statue Odin                                     AlphaBits=1  Alpha=MultiValue Coverage=1.971
+special c vermillion bird                               AlphaBits=4  Alpha=MultiValue Coverage=1.988
+building c titan gate door map                          AlphaBits=1  Alpha=MultiValue Coverage=10.266
+Special G Shade                                         AlphaBits=1  Alpha=MultiValue Coverage=10.278
+archer c crossbowman standard                           AlphaBits=4  Alpha=MultiValue Coverage=10.498
+Special N Jarl Cape map                                 AlphaBits=1  Alpha=MultiValue Coverage=10.547
+Villager X Pony                                         AlphaBits=1  Alpha=MultiValue Coverage=10.62
+cavalry c chariot standard                              AlphaBits=4  Alpha=MultiValue Coverage=10.681
+Trade G Caravan Donkey                                  AlphaBits=1  Alpha=MultiValue Coverage=10.718
+Infantry E Mercenary                                    AlphaBits=1  Alpha=MultiValue Coverage=10.84
+Cine X Kastor Adult                                     AlphaBits=1  Alpha=MultiValue Coverage=10.884
+Infantry X 2 Sword Fighter Iron                         AlphaBits=1  Alpha=MultiValue Coverage=11.182
+Special G Agamemnon                                     AlphaBits=1  Alpha=MultiValue Coverage=11.45
+special c terracotta soldier                            AlphaBits=4  Alpha=MultiValue Coverage=11.621
+Cine G Ajax Map                                         AlphaBits=1  Alpha=MultiValue Coverage=11.865
+Villager E Male Standard                                AlphaBits=1  Alpha=MultiValue Coverage=12.085
+Hero G Belerophon Shield                                AlphaBits=1  Alpha=MultiValue Coverage=12.109
+MU X Atlantean Hundred Giant Map                        AlphaBits=1  Alpha=MultiValue Coverage=12.238
+Attachments X Shield Medium                             AlphaBits=1  Alpha=MultiValue Coverage=12.476
+Hero X Kastor                                           AlphaBits=1  Alpha=MultiValue Coverage=12.5
+Cavalry X Javelin Bronze                                AlphaBits=1  Alpha=MultiValue Coverage=12.695
+Cavalry X Javelin Hero                                  AlphaBits=1  Alpha=MultiValue Coverage=12.695
+Cavalry X Javelin Iron                                  AlphaBits=1  Alpha=MultiValue Coverage=12.695
+Attachments N Shield Iron                               AlphaBits=1  Alpha=MultiValue Coverage=12.915
+Trade X Caravan                                         AlphaBits=1  Alpha=MultiValue Coverage=13.184
+Attachments A Shields map                               AlphaBits=1  Alpha=MultiValue Coverage=13.391
+Infantry X Trident Soldier Hero                         AlphaBits=1  Alpha=MultiValue Coverage=13.721
+Infantry X Trident Soldier Iron                         AlphaBits=1  Alpha=MultiValue Coverage=13.721
+MU X Atlantean Flying Medic Map                         AlphaBits=1  Alpha=MultiValue Coverage=13.733
+MU X Nereid Rider Map                                   AlphaBits=1  Alpha=MultiValue Coverage=13.733
+Archer G Crossbowman                                    AlphaBits=1  Alpha=MultiValue Coverage=13.794
+World A Underworld Passage Color Transform              AlphaBits=1  Alpha=MultiValue Coverage=13.965
+Attachments G Shield Copper                             AlphaBits=1  Alpha=MultiValue Coverage=13.977
+Special N Jormund Brood                                 AlphaBits=1  Alpha=MultiValue Coverage=14.044
+Infantry X Maceman Iron                                 AlphaBits=1  Alpha=MultiValue Coverage=14.282
+Scenario G Kastor map                                   AlphaBits=1  Alpha=MultiValue Coverage=14.355
+Archer N Normal Standard                                AlphaBits=4  Alpha=MultiValue Coverage=14.526
+Special G Chimera Tail                                  AlphaBits=1  Alpha=MultiValue Coverage=14.6
+Archer X Iron                                           AlphaBits=1  Alpha=MultiValue Coverage=14.673
+Special G Colossus map                                  AlphaBits=1  Alpha=MultiValue Coverage=14.728
+special c azure dragon                                  AlphaBits=4  Alpha=MultiValue Coverage=14.825
+Hero N Ragnorok Female                                  AlphaBits=1  Alpha=MultiValue Coverage=15.186
+Villager N Female                                       AlphaBits=1  Alpha=MultiValue Coverage=15.186
+Cavalry G Cataphract Iron                               AlphaBits=1  Alpha=MultiValue Coverage=15.479
+cavalry c cataphract horse standard                     AlphaBits=4  Alpha=MultiValue Coverage=15.607
+MU X Automation Map                                     AlphaBits=1  Alpha=MultiValue Coverage=15.845
+Attachments E Shield Copper                             AlphaBits=1  Alpha=MultiValue Coverage=16.052
+Attachments N Shield Copper                             AlphaBits=1  Alpha=MultiValue Coverage=16.162
+Special G Scylla                                        AlphaBits=1  Alpha=MultiValue Coverage=16.261
+special c monkey king                                   AlphaBits=4  Alpha=MultiValue Coverage=16.342
+Scenario E Setna map                                    AlphaBits=1  Alpha=MultiValue Coverage=16.797
+Scenario B Amanra map                                   AlphaBits=1  Alpha=MultiValue Coverage=16.895
+scenario c jiaolong                                     AlphaBits=4  Alpha=MultiValue Coverage=17.172
+Cine A Arkantos Map                                     AlphaBits=1  Alpha=MultiValue Coverage=17.513
+Hero G Achilles Cape                                    AlphaBits=1  Alpha=MultiValue Coverage=17.627
+Siege X Chieroballista Man                              AlphaBits=1  Alpha=MultiValue Coverage=18.042
+Hero G Perseus Standard                                 AlphaBits=1  Alpha=MultiValue Coverage=18.53
+scenario c shun                                         AlphaBits=1  Alpha=MultiValue Coverage=18.701
+Infantry G Hoplite Standard                             AlphaBits=1  Alpha=MultiValue Coverage=19.189
+MU X Atlantean Lampedes map                             AlphaBits=1  Alpha=MultiValue Coverage=19.464
+Special E Scarab map                                    AlphaBits=1  Alpha=MultiValue Coverage=2.057
+Special G Hydra Land                                    AlphaBits=1  Alpha=MultiValue Coverage=2.126
+hero c general horse                                    AlphaBits=4  Alpha=MultiValue Coverage=2.228
+MU X Behemoth Map                                       AlphaBits=1  Alpha=MultiValue Coverage=2.277
+hero c monk                                             AlphaBits=4  Alpha=MultiValue Coverage=2.295
+Building X Sky Temple                                   AlphaBits=1  Alpha=MultiValue Coverage=2.344
+SFX G Animal Magnetism                                  AlphaBits=1  Alpha=MultiValue Coverage=2.344
+Siege X Fire Siphon                                     AlphaBits=1  Alpha=MultiValue Coverage=2.417
+Cavalry X Javelin Horse Iron                            AlphaBits=1  Alpha=MultiValue Coverage=2.466
+Cavalry G Hetairoi Horse Iron                           AlphaBits=1  Alpha=MultiValue Coverage=2.557
+special c salamander                                    AlphaBits=4  Alpha=MultiValue Coverage=2.606
+Animal Goat map                                         AlphaBits=1  Alpha=MultiValue Coverage=2.612
+World N Statue Thor                                     AlphaBits=1  Alpha=MultiValue Coverage=2.643
+Building N Shared04 2 map                               AlphaBits=1  Alpha=MultiValue Coverage=2.66
+Building E Age1                                         AlphaBits=1  Alpha=MultiValue Coverage=2.762
+building E Settlement Age1                              AlphaBits=1  Alpha=MultiValue Coverage=2.762
+World N Statue Loki                                     AlphaBits=1  Alpha=MultiValue Coverage=2.814
+Hero G Heracles Shield                                  AlphaBits=1  Alpha=MultiValue Coverage=2.832
+Building N Shared01 2 map                               AlphaBits=1  Alpha=MultiValue Coverage=2.858
+building c accessories                                  AlphaBits=1  Alpha=MultiValue Coverage=2.884
+Siege X Onager                                          AlphaBits=4  Alpha=MultiValue Coverage=2.979
+Special E Priest                                        AlphaBits=1  Alpha=MultiValue Coverage=20.068
+scenario x amanra map                                   AlphaBits=1  Alpha=MultiValue Coverage=20.63
+Special X Oracle                                        AlphaBits=1  Alpha=MultiValue Coverage=20.679
+Special X Oracle Hero                                   AlphaBits=1  Alpha=MultiValue Coverage=20.679
+Cavalry X Lancer Iron                                   AlphaBits=1  Alpha=MultiValue Coverage=20.874
+Scenario N Brokk Standard                               AlphaBits=1  Alpha=MultiValue Coverage=20.874
+Infantry G Hoplite Bronze                               AlphaBits=1  Alpha=MultiValue Coverage=20.923
+Special N Valkyrie map                                  AlphaBits=1  Alpha=MultiValue Coverage=21.033
+special c jiangshi head                                 AlphaBits=4  Alpha=MultiValue Coverage=21.484
+Villager X Male                                         AlphaBits=1  Alpha=MultiValue Coverage=21.582
+Infantry X Trident Soldier Shield Hero                  AlphaBits=1  Alpha=MultiValue Coverage=21.68
+Infantry X Trident Soldier Shield Iron                  AlphaBits=1  Alpha=MultiValue Coverage=21.68
+Cavalry N Jarl Standard                                 AlphaBits=1  Alpha=MultiValue Coverage=21.777
+Scenario N Eitri Standard                               AlphaBits=1  Alpha=MultiValue Coverage=22.217
+infantry n ulfsark scout                                AlphaBits=1  Alpha=MultiValue Coverage=22.803
+Villager X Female                                       AlphaBits=1  Alpha=MultiValue Coverage=22.803
+Hero X Ajax                                             AlphaBits=1  Alpha=MultiValue Coverage=23.047
+Cavalry G Hetairoi Iron                                 AlphaBits=1  Alpha=MultiValue Coverage=23.584
+siege c fire lance                                      AlphaBits=4  Alpha=MultiValue Coverage=24.243
+Archer G Toxotes Iron                                   AlphaBits=1  Alpha=MultiValue Coverage=24.292
+Scenario G Chiron Map                                   AlphaBits=1  Alpha=MultiValue Coverage=24.756
+Special E Pharaoh Head                                  AlphaBits=1  Alpha=MultiValue Coverage=25.293
+Scenario G Arkantos Man map                             AlphaBits=1  Alpha=MultiValue Coverage=25.61
+Hero N Hero                                             AlphaBits=1  Alpha=MultiValue Coverage=26.245
+infantry e khopesh standard                             AlphaBits=4  Alpha=MultiValue Coverage=26.343
+cavalry c scout head copper                             AlphaBits=4  Alpha=MultiValue Coverage=26.758
+cavalry c scout head standard                           AlphaBits=4  Alpha=MultiValue Coverage=26.758
+Cavalry N Raiding Cavalry Standard                      AlphaBits=1  Alpha=MultiValue Coverage=26.904
+Scenario G Arkantos map                                 AlphaBits=1  Alpha=MultiValue Coverage=27.655
+Hero N Ragnorok Male                                    AlphaBits=1  Alpha=MultiValue Coverage=27.832
+Villager N Male Standard                                AlphaBits=1  Alpha=MultiValue Coverage=27.832
+MU X Servant of Oceanus Map                             AlphaBits=1  Alpha=MultiValue Coverage=28.058
+MU X Atlantean ManOWar Map                              AlphaBits=1  Alpha=MultiValue Coverage=28.186
+Infantry G Myrmidon Iron                                AlphaBits=1  Alpha=MultiValue Coverage=28.809
+Special E Anubite                                       AlphaBits=1  Alpha=MultiValue Coverage=28.827
+Hero G Jason Shield                                     AlphaBits=1  Alpha=MultiValue Coverage=28.906
+forkboy map                                             AlphaBits=1  Alpha=MultiValue Coverage=29.346
+scenario g skult map                                    AlphaBits=1  Alpha=MultiValue Coverage=29.663
+hero c immortal                                         AlphaBits=4  Alpha=MultiValue Coverage=29.98
+Naval C All                                             AlphaBits=4  Alpha=MultiValue Coverage=3.027
+Siege G Helepolis                                       AlphaBits=1  Alpha=MultiValue Coverage=3.366
+Building N Odin Wonder01                                AlphaBits=1  Alpha=MultiValue Coverage=3.384
+Special G Carcinos                                      AlphaBits=1  Alpha=MultiValue Coverage=3.424
+Hero G Polyphemus Shield                                AlphaBits=1  Alpha=MultiValue Coverage=3.467
+Building N Titan Gate Map                               AlphaBits=1  Alpha=MultiValue Coverage=3.496
+Special N Giant                                         AlphaBits=1  Alpha=MultiValue Coverage=3.497
+Temp Santa Body                                         AlphaBits=1  Alpha=MultiValue Coverage=3.497
+Cavalry E Camelry Camel Copper                          AlphaBits=1  Alpha=MultiValue Coverage=3.571
+MU X Dryad                                              AlphaBits=1  Alpha=MultiValue Coverage=3.748
+Scenario E Great Box                                    AlphaBits=1  Alpha=MultiValue Coverage=3.893
+siege c fire lance head                                 AlphaBits=4  Alpha=MultiValue Coverage=3.906
+Building X Mirror Tower                                 AlphaBits=1  Alpha=MultiValue Coverage=3.943
+Special G Manticore                                     AlphaBits=1  Alpha=MultiValue Coverage=3.955
+trade c caravan cargo                                   AlphaBits=4  Alpha=MultiValue Coverage=3.955
+SFX A Walking Woods                                     AlphaBits=1  Alpha=MultiValue Coverage=3.967
+Infantry E Spearman Standard                            AlphaBits=1  Alpha=MultiValue Coverage=30.566
+Villager G Atlantean Male                               AlphaBits=1  Alpha=MultiValue Coverage=31.616
+SFX E Son of Osiris                                     AlphaBits=1  Alpha=MultiValue Coverage=31.714
+archer e slinger standard                               AlphaBits=1  Alpha=MultiValue Coverage=31.86
+special c earth dragon                                  AlphaBits=4  Alpha=MultiValue Coverage=33.531
+cavalry c cataphract standard                           AlphaBits=4  Alpha=MultiValue Coverage=33.545
+Archer G Peltast Head Standard                          AlphaBits=1  Alpha=MultiValue Coverage=34.082
+cavalry e chariot archer copper                         AlphaBits=1  Alpha=MultiValue Coverage=34.428
+Archer G Toxotes Standard                               AlphaBits=1  Alpha=MultiValue Coverage=34.961
+Hero G Jason Standard                                   AlphaBits=1  Alpha=MultiValue Coverage=34.985
+attachments c flag naval                                AlphaBits=4  Alpha=MultiValue Coverage=35.498
+Special G Hippocampus                                   AlphaBits=1  Alpha=MultiValue Coverage=36.346
+Infantry N Ulfsark Standard                             AlphaBits=1  Alpha=MultiValue Coverage=36.475
+villager c male standard                                AlphaBits=4  Alpha=MultiValue Coverage=39.185
+Special G Golem map                                     AlphaBits=1  Alpha=MultiValue Coverage=4.024
+Special N Fenris                                        AlphaBits=1  Alpha=MultiValue Coverage=4.108
+Special G Cyclops map                                   AlphaBits=1  Alpha=MultiValue Coverage=4.138
+Cavalry E Mercenary Horse Standard                      AlphaBits=1  Alpha=MultiValue Coverage=4.175
+Building E Age3                                         AlphaBits=1  Alpha=MultiValue Coverage=4.213
+building E Settlement Age3                              AlphaBits=1  Alpha=MultiValue Coverage=4.213
+Cavalry G Cataphract Horse Iron                         AlphaBits=1  Alpha=MultiValue Coverage=4.279
+Siege X Chieroballista                                  AlphaBits=1  Alpha=MultiValue Coverage=4.297
+World G Statue Poseidon                                 AlphaBits=1  Alpha=MultiValue Coverage=4.333
+Cavalry E War Elephant Copper                           AlphaBits=1  Alpha=MultiValue Coverage=4.401
+Cavalry X Lancer Horse Iron                             AlphaBits=1  Alpha=MultiValue Coverage=4.401
+world c statue shennong                                 AlphaBits=4  Alpha=MultiValue Coverage=4.443
+Titan G Cerebus Map1                                    AlphaBits=1  Alpha=MultiValue Coverage=4.501
+Building G Titan Gate Door Map                          AlphaBits=1  Alpha=MultiValue Coverage=4.584
+Building N Loki Wonder02                                AlphaBits=1  Alpha=MultiValue Coverage=4.692
+Animal William Walrus Map                               AlphaBits=4  Alpha=MultiValue Coverage=4.701
+LP MU X Stymphalian Bird Map                            AlphaBits=1  Alpha=MultiValue Coverage=4.871
+Titan N Troll Map2                                      AlphaBits=1  Alpha=MultiValue Coverage=4.941
+infantry c halberdier standard                          AlphaBits=4  Alpha=MultiValue Coverage=41.553
+Infantry G Hypaspist Standard                           AlphaBits=1  Alpha=MultiValue Coverage=41.65
+Villager G Male Standard                                AlphaBits=1  Alpha=MultiValue Coverage=42.725
+cavalry c scout standard                                AlphaBits=4  Alpha=MultiValue Coverage=43.506
+Cavalry E Camelry Copper                                AlphaBits=1  Alpha=MultiValue Coverage=43.872
+Waypoint                                                AlphaBits=1  Alpha=MultiValue Coverage=44.409
+Infantry E Axeman Standard                              AlphaBits=1  Alpha=MultiValue Coverage=45.605
+Villager E Female                                       AlphaBits=1  Alpha=MultiValue Coverage=48.999
+MU X Stymphalian Bird Map                               AlphaBits=1  Alpha=MultiValue Coverage=5.052
+Building E Obelisk                                      AlphaBits=1  Alpha=MultiValue Coverage=5.164
+Special N Frost Giant                                   AlphaBits=1  Alpha=MultiValue Coverage=5.255
+Special N King Folstag Upgrade                          AlphaBits=1  Alpha=MultiValue Coverage=5.255
+Statue X Gaia Map                                       AlphaBits=1  Alpha=MultiValue Coverage=5.255
+World G Tent                                            AlphaBits=1  Alpha=MultiValue Coverage=5.273
+Cavalry G Scout Horse                                   AlphaBits=1  Alpha=MultiValue Coverage=5.328
+MU X Promethean Map                                     AlphaBits=1  Alpha=MultiValue Coverage=5.371
+Cavalry N Jarl Horse Standard                           AlphaBits=1  Alpha=MultiValue Coverage=5.438
+Special E Sphinx                                        AlphaBits=1  Alpha=MultiValue Coverage=5.499
+Siege N Ram                                             AlphaBits=1  Alpha=MultiValue Coverage=5.548
+Siege N Ram Iron                                        AlphaBits=1  Alpha=MultiValue Coverage=5.548
+Special N Battle Boar                                   AlphaBits=1  Alpha=MultiValue Coverage=5.548
+Agamemnon Map                                           AlphaBits=1  Alpha=MultiValue Coverage=5.562
+world c statue nuwa                                     AlphaBits=4  Alpha=MultiValue Coverage=5.658
+special c dragon turtle                                 AlphaBits=4  Alpha=MultiValue Coverage=5.861
+Naval E Pirate Ship                                     AlphaBits=1  Alpha=MultiValue Coverage=5.92
+Scenario E Guardian                                     AlphaBits=1  Alpha=MultiValue Coverage=5.963
+villager c female                                       AlphaBits=4  Alpha=MultiValue Coverage=50.017
+cavalry c charioteer standard                           AlphaBits=4  Alpha=MultiValue Coverage=50.594
+Infantry G Militia                                      AlphaBits=1  Alpha=MultiValue Coverage=52.148
+Villager G Female                                       AlphaBits=1  Alpha=MultiValue Coverage=52.832
+Archer N Throwing Axeman Standard                       AlphaBits=1  Alpha=MultiValue Coverage=52.93
+Archer G Peltast Standard                               AlphaBits=1  Alpha=MultiValue Coverage=53.735
+special c jiangshi                                      AlphaBits=4  Alpha=MultiValue Coverage=57.91
+Special C Pixiu                                         AlphaBits=4  Alpha=MultiValue Coverage=6.004
+Trade E Caravan Camel                                   AlphaBits=1  Alpha=MultiValue Coverage=6.042
+Trade N Caravan Cargo                                   AlphaBits=1  Alpha=MultiValue Coverage=6.238
+Special E Pharaoh                                       AlphaBits=1  Alpha=MultiValue Coverage=6.323
+SFX A Serpent                                           AlphaBits=1  Alpha=MultiValue Coverage=6.372
+Scenario Theocrat                                       AlphaBits=1  Alpha=MultiValue Coverage=6.519
+Special N Troll                                         AlphaBits=1  Alpha=MultiValue Coverage=6.592
+SFX A Healing Spring Stone                              AlphaBits=1  Alpha=MultiValue Coverage=6.729
+Hero G Atalanta Shield                                  AlphaBits=1  Alpha=MultiValue Coverage=6.982
+Cavalry G Prodromos Standard                            AlphaBits=1  Alpha=MultiValue Coverage=63.11
+Scenario G Odysseus map                                 AlphaBits=1  Alpha=MultiValue Coverage=65.063
+Scenario G Old Man Map                                  AlphaBits=1  Alpha=MultiValue Coverage=65.674
+World N Garrison Flag                                   AlphaBits=1  Alpha=MultiValue Coverage=66.504
+World E Garrison Flag                                   AlphaBits=1  Alpha=MultiValue Coverage=67.236
+Special G Medusa                                        AlphaBits=1  Alpha=MultiValue Coverage=67.932
+Special E Wadjet                                        AlphaBits=1  Alpha=MultiValue Coverage=69.495
+Special G Athena                                        AlphaBits=1  Alpha=MultiValue Coverage=7.007
+Infantry N Huskarl Bronze                               AlphaBits=1  Alpha=MultiValue Coverage=7.104
+infantry n huskarl iron                                 AlphaBits=1  Alpha=MultiValue Coverage=7.104
+Infantry N Huskarl Standard                             AlphaBits=1  Alpha=MultiValue Coverage=7.104
+Special G Chimera map                                   AlphaBits=1  Alpha=MultiValue Coverage=7.129
+special c vermillion bird wing                          AlphaBits=4  Alpha=MultiValue Coverage=7.178
+Attachments MU X Automaton                              AlphaBits=1  Alpha=MultiValue Coverage=7.373
+Theocrat Map                                            AlphaBits=1  Alpha=MultiValue Coverage=7.521
+Scenario C Gargarensis map                              AlphaBits=1  Alpha=MultiValue Coverage=7.611
+Special N Fire Giant                                    AlphaBits=1  Alpha=MultiValue Coverage=7.648
+cavalry c scout horse standard                          AlphaBits=4  Alpha=MultiValue Coverage=7.69
+Titan X Promethean 1                                    AlphaBits=1  Alpha=MultiValue Coverage=7.755
+cavalry c cataphract head copper                        AlphaBits=4  Alpha=MultiValue Coverage=7.812
+cavalry c cataphract head iron                          AlphaBits=4  Alpha=MultiValue Coverage=7.812
+cavalry c cataphract head standard                      AlphaBits=4  Alpha=MultiValue Coverage=7.812
+infantry c halberdier head bronze                       AlphaBits=4  Alpha=MultiValue Coverage=7.812
+infantry c halberdier head copper                       AlphaBits=4  Alpha=MultiValue Coverage=7.812
+infantry c halberdier head iron                         AlphaBits=4  Alpha=MultiValue Coverage=7.812
+infantry c halberdier head standard                     AlphaBits=4  Alpha=MultiValue Coverage=7.812
+Naval G All                                             AlphaBits=1  Alpha=MultiValue Coverage=74.352
+naval g all wrecked                                     AlphaBits=1  Alpha=MultiValue Coverage=74.352
+Naval E All                                             AlphaBits=1  Alpha=MultiValue Coverage=75.522
+Naval X All                                             AlphaBits=1  Alpha=MultiValue Coverage=75.914
+Test Flags                                              AlphaBits=1  Alpha=MultiValue Coverage=78.54
+Cine N Huskarl                                          AlphaBits=1  Alpha=MultiValue Coverage=8.035
+Trade N Caravan Ox                                      AlphaBits=1  Alpha=MultiValue Coverage=8.246
+Building X Wall Age2                                    AlphaBits=1  Alpha=MultiValue Coverage=8.45
+Scenario C Kamos                                        AlphaBits=1  Alpha=MultiValue Coverage=8.551
+MU X Atlantean Satyr Map                                AlphaBits=1  Alpha=MultiValue Coverage=8.82
+Naval N Kraken                                          AlphaBits=1  Alpha=MultiValue Coverage=8.838
+scenario c jiaolong head                                AlphaBits=4  Alpha=MultiValue Coverage=8.838
+Cavalry X Lancer Cape Iron                              AlphaBits=1  Alpha=MultiValue Coverage=82.227
+Infantry X Trident Soldier Cape Iron                    AlphaBits=1  Alpha=MultiValue Coverage=83.496
+Special G Minotaur                                      AlphaBits=1  Alpha=MultiValue Coverage=9.07
+Gine G Kamos Map                                        AlphaBits=1  Alpha=MultiValue Coverage=9.174
+Special E Apep map                                      AlphaBits=1  Alpha=MultiValue Coverage=9.174
+Special E Scorpion Man                                  AlphaBits=1  Alpha=MultiValue Coverage=9.241
+LP MU X Argus Map                                       AlphaBits=1  Alpha=MultiValue Coverage=9.265
+Cine G Gargarensis Map                                  AlphaBits=1  Alpha=MultiValue Coverage=9.419
+archer c mounted archer standard                        AlphaBits=4  Alpha=MultiValue Coverage=9.521
+archer c crossbowman head copper                        AlphaBits=4  Alpha=MultiValue Coverage=9.668
+hero c general                                          AlphaBits=4  Alpha=MultiValue Coverage=9.735
+MU X Argus Map                                          AlphaBits=1  Alpha=MultiValue Coverage=9.903
+Scenario N Reginleif Weapons map                        AlphaBits=1  Alpha=MultiValue Coverage=9.912
+Special N Troll Bag                                     AlphaBits=1  Alpha=MultiValue Coverage=9.912
+Archer E Slinger Head Standard                          AlphaBits=1  Alpha=MultiValue Coverage=9.961
+
+CT4 + PIXELXFORM
+----------------
+Cine X Kastor Adult(pixelxform1)
+Hero X Kastor(pixelxform1)
+Scenario Theocrat Staff(pixelxform1)
+Scenario Theocrat(pixelxform1)
+Theocrat Map(pixelxform1)
+
+OUTPUT
+------
+D:\AI_upscaling\AoMEE\reports\ct4_texture_analysis.csv
+D:\AI_upscaling\AoMEE\reports\ct4_texture_analysis_summary.txt

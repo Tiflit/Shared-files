@@ -1,0 +1,25 @@
+﻿Greek model comparison
+======================
+
+Input set:
+  tests\greek_model_comparison\original
+
+Output folders:
+  tests\greek_model_comparison\HAT
+  tests\greek_model_comparison\SwinIR
+  tests\greek_model_comparison\DRCT
+  tests\greek_model_comparison\DAT
+
+Pipeline for EVERY model:
+  RGB -> model x4
+  Alpha -> nearest-neighbour x4
+  Merge RGBA
+  Save lossless image for visual comparison
+
+Do not use the clean game/source tree as an output location.
+
+Recommended:
+  - Keep the same ChaiNNer 0.25.1 graph structure used for the HAT benchmark.
+  - Change ONLY the model checkpoint and output directory between runs.
+  - Use the same 24 original inputs for all four models.
+  - Save PNG during the comparison stage, before any DDT compilation.

@@ -1,0 +1,5 @@
+﻿"Model","Checkpoint"
+"HAT","D:\AI_upscaling\AoMEE\models\HAT\Real_HAT_GAN_sharper.pth"
+"SwinIR","D:\AI_upscaling\AoMEE\models\SwinIR\001_classicalSR_DF2K_s64w8_SwinIR-M_x4.pth"
+"DRCT","D:\AI_upscaling\AoMEE\models\DRCT\DRCT-L_X4.pth"
+"DAT","D:\AI_upscaling\AoMEE\models\DAT\DAT_x4.pth"

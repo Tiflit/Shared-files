@@ -1,0 +1,4 @@
+﻿"Chain","Control","Candidate"
+"D:\AI_upscaling\AoMEE\tests\greek_model_comparison\chains\Greek_HAT_vs_SwinIR.chn","HAT Sharper","SwinIR-M Classical SR x4"
+"D:\AI_upscaling\AoMEE\tests\greek_model_comparison\chains\Greek_HAT_vs_DRCT.chn","HAT Sharper","DRCT-L x4"
+"D:\AI_upscaling\AoMEE\tests\greek_model_comparison\chains\Greek_HAT_vs_DAT.chn","HAT Sharper","DAT x4"

@@ -1,0 +1,97 @@
+﻿Model,RelativePath,Found,Correct4x,AlphaExactNN4x,OutputWidth,OutputHeight,OriginalWidth,OriginalHeight,OutputSHA256,Status
+HAT,textures\building g settlementage1.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+HAT,textures\building g settlementage2.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+HAT,textures\building g settlementage3.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+HAT,textures\building g shared05 2 map.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+HAT,textures\building g shrine.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+HAT,textures\building g temple.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+HAT,textures\building g templeage1.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+HAT,textures\building g towers.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+HAT,textures\building g wallsage1.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+HAT,textures\building g wonder.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+HAT,textures\cavalry g hippikon standard.tga,False,False,False,,,64,64,,MISSING_OUTPUT
+HAT,textures\cavalry g hippikon horse standard.tga,False,False,False,,,128,128,,MISSING_OUTPUT
+HAT,textures\cavalry g prodromos horse standard.tga,False,False,False,,,128,128,,MISSING_OUTPUT
+HAT,textures\hero g achilles cape.tga,False,False,False,,,64,32,,MISSING_OUTPUT
+HAT,textures\hero g heracles head.tga,False,False,False,,,64,32,,MISSING_OUTPUT
+HAT,textures\hero g theseus shield.tga,False,False,False,,,64,32,,MISSING_OUTPUT
+HAT,textures\hero g atalanta shield.tga,False,False,False,,,64,32,,MISSING_OUTPUT
+HAT,textures\infantry g hoplite head iron.tga,False,False,False,,,32,32,,MISSING_OUTPUT
+HAT,textures\infantry g hoplite standard.tga,False,False,False,,,64,64,,MISSING_OUTPUT
+HAT,textures\infantry g hypaspist standard.tga,False,False,False,,,64,64,,MISSING_OUTPUT
+HAT,textures\infantry g myrmidon head iron.tga,False,False,False,,,64,32,,MISSING_OUTPUT
+HAT,textures\infantry g myrmidon iron.tga,False,False,False,,,64,64,,MISSING_OUTPUT
+HAT,textures\siege g petrobolos.tga,False,False,False,,,64,64,,MISSING_OUTPUT
+HAT,textures\special g centaur.tga,False,False,False,,,64,64,,MISSING_OUTPUT
+SwinIR,textures\building g settlementage1.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+SwinIR,textures\building g settlementage2.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+SwinIR,textures\building g settlementage3.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+SwinIR,textures\building g shared05 2 map.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+SwinIR,textures\building g shrine.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+SwinIR,textures\building g temple.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+SwinIR,textures\building g templeage1.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+SwinIR,textures\building g towers.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+SwinIR,textures\building g wallsage1.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+SwinIR,textures\building g wonder.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+SwinIR,textures\cavalry g hippikon standard.tga,False,False,False,,,64,64,,MISSING_OUTPUT
+SwinIR,textures\cavalry g hippikon horse standard.tga,False,False,False,,,128,128,,MISSING_OUTPUT
+SwinIR,textures\cavalry g prodromos horse standard.tga,False,False,False,,,128,128,,MISSING_OUTPUT
+SwinIR,textures\hero g achilles cape.tga,False,False,False,,,64,32,,MISSING_OUTPUT
+SwinIR,textures\hero g heracles head.tga,False,False,False,,,64,32,,MISSING_OUTPUT
+SwinIR,textures\hero g theseus shield.tga,False,False,False,,,64,32,,MISSING_OUTPUT
+SwinIR,textures\hero g atalanta shield.tga,False,False,False,,,64,32,,MISSING_OUTPUT
+SwinIR,textures\infantry g hoplite head iron.tga,False,False,False,,,32,32,,MISSING_OUTPUT
+SwinIR,textures\infantry g hoplite standard.tga,False,False,False,,,64,64,,MISSING_OUTPUT
+SwinIR,textures\infantry g hypaspist standard.tga,False,False,False,,,64,64,,MISSING_OUTPUT
+SwinIR,textures\infantry g myrmidon head iron.tga,False,False,False,,,64,32,,MISSING_OUTPUT
+SwinIR,textures\infantry g myrmidon iron.tga,False,False,False,,,64,64,,MISSING_OUTPUT
+SwinIR,textures\siege g petrobolos.tga,False,False,False,,,64,64,,MISSING_OUTPUT
+SwinIR,textures\special g centaur.tga,False,False,False,,,64,64,,MISSING_OUTPUT
+DRCT,textures\building g settlementage1.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+DRCT,textures\building g settlementage2.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+DRCT,textures\building g settlementage3.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+DRCT,textures\building g shared05 2 map.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+DRCT,textures\building g shrine.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+DRCT,textures\building g temple.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+DRCT,textures\building g templeage1.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+DRCT,textures\building g towers.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+DRCT,textures\building g wallsage1.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+DRCT,textures\building g wonder.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+DRCT,textures\cavalry g hippikon standard.tga,False,False,False,,,64,64,,MISSING_OUTPUT
+DRCT,textures\cavalry g hippikon horse standard.tga,False,False,False,,,128,128,,MISSING_OUTPUT
+DRCT,textures\cavalry g prodromos horse standard.tga,False,False,False,,,128,128,,MISSING_OUTPUT
+DRCT,textures\hero g achilles cape.tga,False,False,False,,,64,32,,MISSING_OUTPUT
+DRCT,textures\hero g heracles head.tga,False,False,False,,,64,32,,MISSING_OUTPUT
+DRCT,textures\hero g theseus shield.tga,False,False,False,,,64,32,,MISSING_OUTPUT
+DRCT,textures\hero g atalanta shield.tga,False,False,False,,,64,32,,MISSING_OUTPUT
+DRCT,textures\infantry g hoplite head iron.tga,False,False,False,,,32,32,,MISSING_OUTPUT
+DRCT,textures\infantry g hoplite standard.tga,False,False,False,,,64,64,,MISSING_OUTPUT
+DRCT,textures\infantry g hypaspist standard.tga,False,False,False,,,64,64,,MISSING_OUTPUT
+DRCT,textures\infantry g myrmidon head iron.tga,False,False,False,,,64,32,,MISSING_OUTPUT
+DRCT,textures\infantry g myrmidon iron.tga,False,False,False,,,64,64,,MISSING_OUTPUT
+DRCT,textures\siege g petrobolos.tga,False,False,False,,,64,64,,MISSING_OUTPUT
+DRCT,textures\special g centaur.tga,False,False,False,,,64,64,,MISSING_OUTPUT
+DAT,textures\building g settlementage1.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+DAT,textures\building g settlementage2.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+DAT,textures\building g settlementage3.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+DAT,textures\building g shared05 2 map.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+DAT,textures\building g shrine.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+DAT,textures\building g temple.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+DAT,textures\building g templeage1.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+DAT,textures\building g towers.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+DAT,textures\building g wallsage1.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+DAT,textures\building g wonder.tga,False,False,False,,,256,256,,MISSING_OUTPUT
+DAT,textures\cavalry g hippikon standard.tga,False,False,False,,,64,64,,MISSING_OUTPUT
+DAT,textures\cavalry g hippikon horse standard.tga,False,False,False,,,128,128,,MISSING_OUTPUT
+DAT,textures\cavalry g prodromos horse standard.tga,False,False,False,,,128,128,,MISSING_OUTPUT
+DAT,textures\hero g achilles cape.tga,False,False,False,,,64,32,,MISSING_OUTPUT
+DAT,textures\hero g heracles head.tga,False,False,False,,,64,32,,MISSING_OUTPUT
+DAT,textures\hero g theseus shield.tga,False,False,False,,,64,32,,MISSING_OUTPUT
+DAT,textures\hero g atalanta shield.tga,False,False,False,,,64,32,,MISSING_OUTPUT
+DAT,textures\infantry g hoplite head iron.tga,False,False,False,,,32,32,,MISSING_OUTPUT
+DAT,textures\infantry g hoplite standard.tga,False,False,False,,,64,64,,MISSING_OUTPUT
+DAT,textures\infantry g hypaspist standard.tga,False,False,False,,,64,64,,MISSING_OUTPUT
+DAT,textures\infantry g myrmidon head iron.tga,False,False,False,,,64,32,,MISSING_OUTPUT
+DAT,textures\infantry g myrmidon iron.tga,False,False,False,,,64,64,,MISSING_OUTPUT
+DAT,textures\siege g petrobolos.tga,False,False,False,,,64,64,,MISSING_OUTPUT
+DAT,textures\special g centaur.tga,False,False,False,,,64,64,,MISSING_OUTPUT

@@ -1,0 +1,6 @@
+﻿"Variant","BTI","ExitCode","DDTBytes","Success"
+"01_original","alpha=0 nomip fmt=BC1","-1073741819","0","False"
+"02_no_nomip","alpha=0 fmt=BC1","0","4120","True"
+"03_bc3","alpha=0 nomip fmt=BC3","-1073741819","0","False"
+"04_alpha1_bc1","alpha=1 nomip fmt=BC1","-1073741819","0","False"
+"05_deflated_rgb8","alpha=0 nomip fmt=DeflatedRGB8","0","2072","True"

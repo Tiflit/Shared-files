@@ -1,0 +1,97 @@
+﻿Model,RelativePath,OriginalWidth,OriginalHeight,OutputWidth,OutputHeight,Found,Correct4x,AlphaExactNN4x,OutputSHA256,Status
+HAT,textures\building g settlementage1.tga,256,256,1024,1024,True,True,True,59e4bee8c214dd75ba1a2a139cd7816a21f8aa57b81b14a020b2c0da88122df5,PASS
+HAT,textures\building g settlementage2.tga,256,256,1024,1024,True,True,True,40a7d59d8e09c379b38d025b7c5b2fe6e0af92dd629782853ac4d058725fc18c,PASS
+HAT,textures\building g settlementage3.tga,256,256,1024,1024,True,True,True,647ba6ec4df829a05fcc8abab4e7f19520d08ce95bb8ac86ac8992015811f5c6,PASS
+HAT,textures\building g shared05 2 map.tga,256,256,1024,1024,True,True,True,412ccaabfd3212797df49d4fc03839e82d105f5f52c7457d5d6e4b7ce74298a9,PASS
+HAT,textures\building g shrine.tga,256,256,1024,1024,True,True,True,6c39805e7716882f9c77bd5a5e335e109ccb90add6e67e220db8b87cec4efae0,PASS
+HAT,textures\building g temple.tga,256,256,1024,1024,True,True,True,8cc5f2755c2b142db2342d590692827cade404fc34b52f442514d83f04077c98,PASS
+HAT,textures\building g templeage1.tga,256,256,1024,1024,True,True,True,98e2afcdbe1e511f55b46c243ef3c0550f1b7ac3a9ce33f48724ed8beb3edb58,PASS
+HAT,textures\building g towers.tga,256,256,1024,1024,True,True,True,59e506fb1d878c6ebe947cd48a311e3f8c10a0729b98fa8676096370807ca5e8,PASS
+HAT,textures\building g wallsage1.tga,256,256,1024,1024,True,True,True,c8145f5fc65ec260e31b98107324f42691f324d92932a4be7ae0d5f61c6d991b,PASS
+HAT,textures\building g wonder.tga,256,256,1024,1024,True,True,True,42ccfacf66affd3fdae13399dff181b75fe0d87d8d220c866637d524f1fe45a7,PASS
+HAT,textures\cavalry g hippikon standard.tga,64,64,256,256,True,True,True,25fcad72621035402b38d96d88076b56984910f5e2e67e0e6789a80bd57d7314,PASS
+HAT,textures\cavalry g hippikon horse standard.tga,128,128,512,512,True,True,True,dafa128e7c664306c29b853c03537fe9081ff9cf320f33ad197c6b2ac2dc70af,PASS
+HAT,textures\cavalry g prodromos horse standard.tga,128,128,512,512,True,True,True,0af7e0377cf9bc63f25c16e27c569defbcc08e771e5597609720c13238d3c882,PASS
+HAT,textures\hero g achilles cape.tga,64,32,256,128,True,True,True,695f1d357b651de5e64f81ddc74edaeda262a53c1f0c0a776693b058ad13ed80,PASS
+HAT,textures\hero g heracles head.tga,64,32,256,128,True,True,True,7873cb9ff6b594ae9e3b044048997df7696b770059d02ee27e0b9d894026bfc6,PASS
+HAT,textures\hero g theseus shield.tga,64,32,256,128,True,True,True,bf13e79b3aa2b3ea79ede29cadd46519d296a3c2505a435814096d26de7a9696,PASS
+HAT,textures\hero g atalanta shield.tga,64,32,256,128,True,True,True,a702e15bf484cebbfc4f979b8d8fc12213a388caf23c9a71342cd195c2988a15,PASS
+HAT,textures\infantry g hoplite head iron.tga,32,32,128,128,True,True,True,3dfa893f8e3a781c378ce719012f62f4c9ab617d2e2e19ddf1695cb9c60b0e7c,PASS
+HAT,textures\infantry g hoplite standard.tga,64,64,256,256,True,True,True,d987b0f6cb12b4d16255da40b5158e809605a52a4ba2e9ef31a92e0cb84bac20,PASS
+HAT,textures\infantry g hypaspist standard.tga,64,64,256,256,True,True,True,3b1ea857995fe79e88cfdefd8670571bbd37c7bad8f1dd221cedb82d1b8fb9f0,PASS
+HAT,textures\infantry g myrmidon head iron.tga,64,32,256,128,True,True,True,6773a6109287d8ea8e4671844bb99a7f312d29ba5dde28cbe9549a53c5ec79aa,PASS
+HAT,textures\infantry g myrmidon iron.tga,64,64,256,256,True,True,True,88cd207f779d6a0e752665ea091385df980e73a344c7fba1a051095ce66d326d,PASS
+HAT,textures\siege g petrobolos.tga,64,64,256,256,True,True,True,099c98a73fa8214f6f0ad50765c03d1cec95e4ee06368621558c36fa2b5c085a,PASS
+HAT,textures\special g centaur.tga,64,64,256,256,True,True,True,f569efc6d7b320234cdf9eb2be5c5d641144db67077ed60c45079623f7651119,PASS
+SwinIR,textures\building g settlementage1.tga,256,256,1024,1024,True,True,True,f3a8825bc0fd679d2390979f6de7ce3780ef8970255e7169e07e6198e7563a82,PASS
+SwinIR,textures\building g settlementage2.tga,256,256,1024,1024,True,True,True,50b77336b9388d4f3e76c3b12b4ca023f4e016e6b50cd15ab38517bd88db2971,PASS
+SwinIR,textures\building g settlementage3.tga,256,256,1024,1024,True,True,True,d38e31abe524a599b8a7e872ff46e369d9b43d41fa86a524e832ae6f669e7500,PASS
+SwinIR,textures\building g shared05 2 map.tga,256,256,1024,1024,True,True,True,9b515b2456df0085c294fa632853050f8bff5620eb6272a10dcad7af2e8e182d,PASS
+SwinIR,textures\building g shrine.tga,256,256,1024,1024,True,True,True,53bef478db1ece524bcae0a8a327856ac3e6b82e6f7bd2fb10bf56f42aec4d15,PASS
+SwinIR,textures\building g temple.tga,256,256,1024,1024,True,True,True,ea4e50b78ee7f29066c9891856e7124240c56208e475b5ab91925f9716c30e95,PASS
+SwinIR,textures\building g templeage1.tga,256,256,1024,1024,True,True,True,8f8edd065bd41199203755f08912f0e05ab17cdc973fc547e16489626cc59903,PASS
+SwinIR,textures\building g towers.tga,256,256,1024,1024,True,True,True,7cc5fa02892f6f53bc4f55b085a047446cd7007346f445dfd62711f386e58af9,PASS
+SwinIR,textures\building g wallsage1.tga,256,256,1024,1024,True,True,True,c076bc90d98be1e5ec8a7d74137af1ca1ac9660b9c6bfc8848b6186ea76ac6b7,PASS
+SwinIR,textures\building g wonder.tga,256,256,1024,1024,True,True,True,d50e8dced332be1de1c67bc9977575d1df4fa8b1317aafc00942eecc307a78e7,PASS
+SwinIR,textures\cavalry g hippikon standard.tga,64,64,256,256,True,True,True,2fc6207c50ff93247ede729e83bd2eeca987a04d1f7fe2cf93b7ecfa0fa49aa6,PASS
+SwinIR,textures\cavalry g hippikon horse standard.tga,128,128,512,512,True,True,True,cd4ab93d6c61fe89bdbbd11eee68cac8260bed81a0e32b76a290c99bf863b92b,PASS
+SwinIR,textures\cavalry g prodromos horse standard.tga,128,128,512,512,True,True,True,351acd66197e3ec095a96b322c747aa5a75067ce17a05145e6d505516a3cceca,PASS
+SwinIR,textures\hero g achilles cape.tga,64,32,256,128,True,True,True,eee154d160c003e201e2e231f55594b28ffbba6bdc0a297c83e096ff3d9051cf,PASS
+SwinIR,textures\hero g heracles head.tga,64,32,256,128,True,True,True,91cb527133784bb922175f4a2f0f9eadeadb34c18a5d361c9a6688526be570eb,PASS
+SwinIR,textures\hero g theseus shield.tga,64,32,256,128,True,True,True,49387046e24b5254d8ee6291c965d47455fd2d304094f33ba5205af41d67594f,PASS
+SwinIR,textures\hero g atalanta shield.tga,64,32,256,128,True,True,True,09fe67303521f1b2de3d54aac6684659e2273ca46c7aca97716405353911b942,PASS
+SwinIR,textures\infantry g hoplite head iron.tga,32,32,128,128,True,True,True,d467e1a88dbb2351f2393338eb0ae542fac08a1901009093246f2d5d9be525d3,PASS
+SwinIR,textures\infantry g hoplite standard.tga,64,64,256,256,True,True,True,1a1753af87e1c741702209f4dcd8b3aa988880006b768ef8178e097c7175cced,PASS
+SwinIR,textures\infantry g hypaspist standard.tga,64,64,256,256,True,True,True,218a48591b4b18d726d32011e7a3e38af80e0dfba791f5a7dc799cf0fdaf67ed,PASS
+SwinIR,textures\infantry g myrmidon head iron.tga,64,32,256,128,True,True,True,f6b1ca3ba71cadd1a7df4df47cecd59df98e630db9083f3cc4de93edaa81a8e0,PASS
+SwinIR,textures\infantry g myrmidon iron.tga,64,64,256,256,True,True,True,dad0b57035c8791d7c23ef11e38888dc2d40d2d2a75f5a99a2c9eee3f6849b2a,PASS
+SwinIR,textures\siege g petrobolos.tga,64,64,256,256,True,True,True,36d1fa33112953a23b56e42b648639e47609394f1d6f83eae451dc35aaa993bc,PASS
+SwinIR,textures\special g centaur.tga,64,64,256,256,True,True,True,3c2232327b33ad13da8ae97925f12610d9fbf599d4a406e4ae9973a7b7ee4a59,PASS
+DRCT,textures\building g settlementage1.tga,256,256,1024,1024,True,True,True,097efe9086e3bfa46f8d21e5c0927e85d816d154d2864fcf1cf168c790117c02,PASS
+DRCT,textures\building g settlementage2.tga,256,256,1024,1024,True,True,True,b43dd9975dc1685a979d4cf265e3b1ac0251c0475adca5bc9704715ed1ce5f2f,PASS
+DRCT,textures\building g settlementage3.tga,256,256,1024,1024,True,True,True,8635f749d8a82d9d26a2ac0a8c42bba1a0b6073d242b0fc859d351c40f6ebeda,PASS
+DRCT,textures\building g shared05 2 map.tga,256,256,1024,1024,True,True,True,d90be6b080e45ffd57e028d058e8c2dbabaffe91d361b5885180b70cbc9244da,PASS
+DRCT,textures\building g shrine.tga,256,256,1024,1024,True,True,True,8f6bbc7283914cb94f952e66af11a1019c4868cac30c22ba065257fc4fc6f645,PASS
+DRCT,textures\building g temple.tga,256,256,1024,1024,True,True,True,d934c4a48f47fad860d7af95fb65b7b92cf468118f4239e67cccd2d0f4930ae6,PASS
+DRCT,textures\building g templeage1.tga,256,256,1024,1024,True,True,True,b2fb191a27a7e1a573db7891b63d05741b79f28d4792a9e7c866f9cf86cc2e52,PASS
+DRCT,textures\building g towers.tga,256,256,1024,1024,True,True,True,04e72b90e5f0241533e5da3c9596ceb99abfa57a4a2d21bd67592d23c5186e63,PASS
+DRCT,textures\building g wallsage1.tga,256,256,1024,1024,True,True,True,b104432f1425bb248ee7097b59f12a1e375349e14d6fd29010bef58e60005813,PASS
+DRCT,textures\building g wonder.tga,256,256,1024,1024,True,True,True,b1490bbd6675a37ea69d7cc63e72cfeead622b3fe792ff081f3d8ba75aa6992e,PASS
+DRCT,textures\cavalry g hippikon standard.tga,64,64,256,256,True,True,True,b2eae71a8930c8e563a5e1251a54ea25f214c6a078c4dc5440ee6a3c6b44d2d1,PASS
+DRCT,textures\cavalry g hippikon horse standard.tga,128,128,512,512,True,True,True,29b0f319da0e5408f2eca1a8de5612df7772f7b7c7e3deaae577afa9b66a5293,PASS
+DRCT,textures\cavalry g prodromos horse standard.tga,128,128,512,512,True,True,True,36cd0f7685721e9e98a4e5a29bb4bdd6211a974a5d6f7f01fb914aae4b8e728d,PASS
+DRCT,textures\hero g achilles cape.tga,64,32,256,128,True,True,True,f6c6a3371823cd901c3362f11602e38b3660341d9dcf098e61b298db2af1be48,PASS
+DRCT,textures\hero g heracles head.tga,64,32,256,128,True,True,True,4a67baa9b2777ca178cb224a70703b1c8a552bae0f9abf66123694b248c5feef,PASS
+DRCT,textures\hero g theseus shield.tga,64,32,256,128,True,True,True,c2602f0c6431a0dc920237286a1831f23c60387c616a0bb9e2c42d71c4091388,PASS
+DRCT,textures\hero g atalanta shield.tga,64,32,256,128,True,True,True,ac81e9c522fee855ec5a798c5d29cbee57574cfbb1a35abf3558cb8e0e26a7fb,PASS
+DRCT,textures\infantry g hoplite head iron.tga,32,32,128,128,True,True,True,27693dbe5b2cafe47fcb7788ffb64662c301fd084a0a6cc942ccc453c5395ae0,PASS
+DRCT,textures\infantry g hoplite standard.tga,64,64,256,256,True,True,True,2e134f46a7bca360aabf2349c680d097a791f5050918a7875dfaa91b3bca9811,PASS
+DRCT,textures\infantry g hypaspist standard.tga,64,64,256,256,True,True,True,7dc68b8be639c4e530df6bef431c70929021f5b1249411ea51744bba6f979311,PASS
+DRCT,textures\infantry g myrmidon head iron.tga,64,32,256,128,True,True,True,20706817018492cbe8312210bab7d1ed4eb4b3977d7230aaafe99a88141cc811,PASS
+DRCT,textures\infantry g myrmidon iron.tga,64,64,256,256,True,True,True,d1b318a7607a047de9e39949e9742e5d81f11db7338834170fb71dee36c11910,PASS
+DRCT,textures\siege g petrobolos.tga,64,64,256,256,True,True,True,d92e8b5c6dcccee4b1b7b6e5a8bdce08428cfc9b84e6e5778cc3f30c626e9b4a,PASS
+DRCT,textures\special g centaur.tga,64,64,256,256,True,True,True,d5137f467ca3a5517a317e9165ca3850f117b132d30b90825adf7988bec0d007,PASS
+DAT,textures\building g settlementage1.tga,256,256,1024,1024,True,True,True,e5308d28c0b4897c3b977e09adc26d5e1e7a410dc32289d7c293b2c896d7620d,PASS
+DAT,textures\building g settlementage2.tga,256,256,1024,1024,True,True,True,7dfaf39758ede7fa7a346ec5dea8cb19c93dbb0686b5bb404850af7e4281089b,PASS
+DAT,textures\building g settlementage3.tga,256,256,1024,1024,True,True,True,96e89c5120b720f0ebd18a01aa625444d987e9a30f969345025ca9d4f1652ad4,PASS
+DAT,textures\building g shared05 2 map.tga,256,256,1024,1024,True,True,True,766b9c31f6439a5288d6f928701b15338a665d2e3bfeaa3d443489a9e25390b4,PASS
+DAT,textures\building g shrine.tga,256,256,1024,1024,True,True,True,d8ae3eb665e16ff121b4e0c9162711665b3b59a09270a88a29e6319966b9e58a,PASS
+DAT,textures\building g temple.tga,256,256,1024,1024,True,True,True,715c7d13b3345a994031e04ad18bd0de050802172d337ee00140c44da94fa384,PASS
+DAT,textures\building g templeage1.tga,256,256,1024,1024,True,True,True,8222fefd107f1d1d1a13ee6e5f231cfd81e30d3b22e132f2642fefd3340aebee,PASS
+DAT,textures\building g towers.tga,256,256,1024,1024,True,True,True,33652abaed0f3c551e1d01ad433e0bbf3ef16218b0b4ce7c8fbc2673dff2d9dd,PASS
+DAT,textures\building g wallsage1.tga,256,256,1024,1024,True,True,True,2c88ba36043ed00c9dca5efcf901102ead256cd68e8159c31bb056d9bd7128a2,PASS
+DAT,textures\building g wonder.tga,256,256,1024,1024,True,True,True,36abf6644e97e4179226d916f32d1a9fdfd3338a88ed86728d96cda07af3b5d8,PASS
+DAT,textures\cavalry g hippikon standard.tga,64,64,256,256,True,True,True,fdb06bd06d154b0e8c4fc3d70762bb439bbff42bde6929081bfbe762719011b6,PASS
+DAT,textures\cavalry g hippikon horse standard.tga,128,128,512,512,True,True,True,7549d7042a1db313ed4edbef82d4ac533e3f7e839b0773a6ea38083dad5a9dee,PASS
+DAT,textures\cavalry g prodromos horse standard.tga,128,128,512,512,True,True,True,bbd3c0c0ed9d0ee63f5b2b98fb054b331dfe12c1bda828bbe59dcfa9045744ad,PASS
+DAT,textures\hero g achilles cape.tga,64,32,256,128,True,True,True,65aa6dc086f049b901f64a3fa0317a5c8f4feb958145b5cb627023c5e50e84f2,PASS
+DAT,textures\hero g heracles head.tga,64,32,256,128,True,True,True,e1ed5c1f8d2b1371be4bd57d58f816c45d0be13ce9be7c870216b0f3da70092e,PASS
+DAT,textures\hero g theseus shield.tga,64,32,256,128,True,True,True,4798ea411c5135b161cc2ee13d41512b62e6c80c6fa63b63cd4e6e24183d436f,PASS
+DAT,textures\hero g atalanta shield.tga,64,32,256,128,True,True,True,aa6370fb07bbb3a1b85ac26de582016e16cfe59cb09dae15e6fb132c4c49497e,PASS
+DAT,textures\infantry g hoplite head iron.tga,32,32,128,128,True,True,True,08ce670f30fd32aeb798cc3a19ce14abd737754df0145a92e3ece22c75bbf789,PASS
+DAT,textures\infantry g hoplite standard.tga,64,64,256,256,True,True,True,b5fc7e8e9727bf335c2a89dadebbbabdc6f9105aa23a935d36e44798fa985c89,PASS
+DAT,textures\infantry g hypaspist standard.tga,64,64,256,256,True,True,True,79476839616cbe936f5d3f8d6154998f1fcf336dc35b8dfc31bf912f1f675159,PASS
+DAT,textures\infantry g myrmidon head iron.tga,64,32,256,128,True,True,True,435512c160a7fa6df49273acdf885146dd2766239ac3425a843750e04b00322c,PASS
+DAT,textures\infantry g myrmidon iron.tga,64,64,256,256,True,True,True,1d5be2e3d1cbdd4c35b3ece2a0bde0e0d5ae646bfb911919ddab8db029638b0e,PASS
+DAT,textures\siege g petrobolos.tga,64,64,256,256,True,True,True,0535025dcc5f34be5c0c467ca3f1e37bae26e6386a6218a26ac7bfd5046b4358,PASS
+DAT,textures\special g centaur.tga,64,64,256,256,True,True,True,6288f3fe05f53e77ff7c5a9c6590e23817c1ba2b80150f7c2873fac3e62a6faa,PASS

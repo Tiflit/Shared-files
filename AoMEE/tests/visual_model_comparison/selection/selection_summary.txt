@@ -1,0 +1,24 @@
+AoM:EE Visual Model Comparison Benchmark
+========================================
+
+Selected textures: 80
+
+CATEGORY COUNTS
+---------------
+Icon                  40
+UI                    25
+Portrait/Artwork      10
+Effect/Misc            5
+
+TARGETS
+-------
+Icon                  40
+UI                    25
+Portrait/Artwork      10
+Effect/Misc            5
+
+Excluded technical textures include normal/spec/gloss/
+shadow/mask/alpha/depth/height-style assets.
+
+This is a visual-selection benchmark, not a production
+classification of the entire AoM:EE texture inventory.

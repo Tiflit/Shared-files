@@ -1,0 +1,7 @@
+AoM:EE Visual Model Comparison
+Unreadable candidate textures
+==============================
+
+patched_to_verify/textures/icons/god power journey icon.tga
+  OSError: buffer overrun when reading image file
+

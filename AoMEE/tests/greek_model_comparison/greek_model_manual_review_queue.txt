@@ -1,0 +1,174 @@
+AoM:EE Greek Model Comparison — Manual Review Queue
+========================================================
+
+Textures are ordered by largest cross-model mean RGB disagreement.
+This is a triage list, not a quality ranking.
+
+01. textures\siege g petrobolos.tga
+    Category: Other
+    Largest pair: HAT vs DAT
+    MeanAbsRGB: 16.0474
+    MeanRGBEuclidean: 29.5926
+    Mean-colour spread: 14.0473
+
+02. textures\building g shared05 2 map.tga
+    Category: Building
+    Largest pair: HAT vs DAT
+    MeanAbsRGB: 11.1876
+    MeanRGBEuclidean: 20.3029
+    Mean-colour spread: 1.8978
+
+03. textures\building g settlementage3.tga
+    Category: Building
+    Largest pair: HAT vs DAT
+    MeanAbsRGB: 11.0569
+    MeanRGBEuclidean: 20.1447
+    Mean-colour spread: 3.7936
+
+04. textures\infantry g myrmidon iron.tga
+    Category: Character/Unit
+    Largest pair: HAT vs DRCT
+    MeanAbsRGB: 10.7304
+    MeanRGBEuclidean: 20.2236
+    Mean-colour spread: 1.8447
+
+05. textures\building g settlementage2.tga
+    Category: Building
+    Largest pair: HAT vs SwinIR
+    MeanAbsRGB: 10.5441
+    MeanRGBEuclidean: 19.5085
+    Mean-colour spread: 2.6266
+
+06. textures\building g towers.tga
+    Category: Building
+    Largest pair: HAT vs SwinIR
+    MeanAbsRGB: 9.7554
+    MeanRGBEuclidean: 17.8732
+    Mean-colour spread: 3.3768
+
+07. textures\building g wallsage1.tga
+    Category: Building
+    Largest pair: HAT vs SwinIR
+    MeanAbsRGB: 9.6566
+    MeanRGBEuclidean: 17.6376
+    Mean-colour spread: 5.0612
+
+08. textures\building g settlementage1.tga
+    Category: Building
+    Largest pair: HAT vs SwinIR
+    MeanAbsRGB: 9.5991
+    MeanRGBEuclidean: 17.8074
+    Mean-colour spread: 3.4064
+
+09. textures\infantry g hoplite head iron.tga
+    Category: Character/Unit
+    Largest pair: HAT vs DRCT
+    MeanAbsRGB: 9.5192
+    MeanRGBEuclidean: 19.1789
+    Mean-colour spread: 9.3995
+
+10. textures\infantry g hypaspist standard.tga
+    Category: Character/Unit
+    Largest pair: HAT vs DRCT
+    MeanAbsRGB: 9.3688
+    MeanRGBEuclidean: 17.1476
+    Mean-colour spread: 1.7841
+
+11. textures\building g temple.tga
+    Category: Building
+    Largest pair: HAT vs SwinIR
+    MeanAbsRGB: 9.0011
+    MeanRGBEuclidean: 16.3633
+    Mean-colour spread: 3.5393
+
+12. textures\building g templeage1.tga
+    Category: Building
+    Largest pair: HAT vs SwinIR
+    MeanAbsRGB: 8.9059
+    MeanRGBEuclidean: 16.5396
+    Mean-colour spread: 2.7727
+
+13. textures\building g wonder.tga
+    Category: Building
+    Largest pair: HAT vs SwinIR
+    MeanAbsRGB: 8.8958
+    MeanRGBEuclidean: 16.2119
+    Mean-colour spread: 3.1812
+
+14. textures\hero g atalanta shield.tga
+    Category: Character/Unit
+    Largest pair: HAT vs DRCT
+    MeanAbsRGB: 8.3044
+    MeanRGBEuclidean: 15.2512
+    Mean-colour spread: 3.2901
+
+15. textures\hero g theseus shield.tga
+    Category: Character/Unit
+    Largest pair: HAT vs SwinIR
+    MeanAbsRGB: 8.0513
+    MeanRGBEuclidean: 14.5245
+    Mean-colour spread: 2.2534
+
+16. textures\infantry g myrmidon head iron.tga
+    Category: Character/Unit
+    Largest pair: HAT vs SwinIR
+    MeanAbsRGB: 7.8185
+    MeanRGBEuclidean: 15.3439
+    Mean-colour spread: 1.2326
+
+17. textures\hero g achilles cape.tga
+    Category: Character/Unit
+    Largest pair: HAT vs DRCT
+    MeanAbsRGB: 7.0405
+    MeanRGBEuclidean: 12.5848
+    Mean-colour spread: 7.9862
+
+18. textures\infantry g hoplite standard.tga
+    Category: Character/Unit
+    Largest pair: HAT vs SwinIR
+    MeanAbsRGB: 6.8004
+    MeanRGBEuclidean: 13.1254
+    Mean-colour spread: 2.7852
+
+19. textures\cavalry g hippikon standard.tga
+    Category: Character/Unit
+    Largest pair: HAT vs DRCT
+    MeanAbsRGB: 6.6491
+    MeanRGBEuclidean: 12.8880
+    Mean-colour spread: 2.6949
+
+20. textures\special g centaur.tga
+    Category: Other
+    Largest pair: HAT vs DRCT
+    MeanAbsRGB: 6.3643
+    MeanRGBEuclidean: 12.4035
+    Mean-colour spread: 2.6346
+
+21. textures\hero g heracles head.tga
+    Category: Character/Unit
+    Largest pair: HAT vs SwinIR
+    MeanAbsRGB: 5.9268
+    MeanRGBEuclidean: 11.2548
+    Mean-colour spread: 3.4948
+
+22. textures\cavalry g hippikon horse standard.tga
+    Category: Character/Unit
+    Largest pair: HAT vs DAT
+    MeanAbsRGB: 5.1008
+    MeanRGBEuclidean: 9.3698
+    Mean-colour spread: 4.4723
+
+23. textures\building g shrine.tga
+    Category: Building
+    Largest pair: HAT vs SwinIR
+    MeanAbsRGB: 4.4551
+    MeanRGBEuclidean: 8.2965
+    Mean-colour spread: 4.1286
+
+24. textures\cavalry g prodromos horse standard.tga
+    Category: Character/Unit
+    Largest pair: HAT vs DAT
+    MeanAbsRGB: 4.2166
+    MeanRGBEuclidean: 8.0306
+    Mean-colour spread: 1.2896
+

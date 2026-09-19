@@ -1,0 +1,25 @@
+﻿RelativePath,Category,LargestPairMeanAbsRGB,LargestPairMeanRGBEuclidean,LargestPairA,LargestPairB,ModelMeanColourSpread
+textures\siege g petrobolos.tga,Other,16.04736328125,29.59261877202964,HAT,DAT,14.047345640468503
+textures\building g shared05 2 map.tga,Building,11.187611897786459,20.302913168703885,HAT,DAT,1.897837502219501
+textures\building g settlementage3.tga,Building,11.056920369466146,20.144719840790053,HAT,DAT,3.793586558486155
+textures\infantry g myrmidon iron.tga,Character/Unit,10.730387369791666,20.223554902074596,HAT,DRCT,1.8447212796718708
+textures\building g settlementage2.tga,Building,10.544108072916666,19.508538951628374,HAT,SwinIR,2.6265561965902773
+textures\building g towers.tga,Building,9.755401611328125,17.873160977279472,HAT,SwinIR,3.3768044689505254
+textures\building g wallsage1.tga,Building,9.656600952148438,17.637579330876584,HAT,SwinIR,5.061180751287027
+textures\building g settlementage1.tga,Building,9.59906005859375,17.80743692521965,HAT,SwinIR,3.406352381366532
+textures\infantry g hoplite head iron.tga,Character/Unit,9.519205729166666,19.178891815953484,HAT,DRCT,9.399511870432676
+textures\infantry g hypaspist standard.tga,Character/Unit,9.368815104166666,17.147637154476758,HAT,DRCT,1.7840674354055979
+textures\building g temple.tga,Building,9.001088460286459,16.363347906176056,HAT,SwinIR,3.5393303421515223
+textures\building g templeage1.tga,Building,8.905909220377604,16.53955118649003,HAT,SwinIR,2.7727377600665455
+textures\building g wonder.tga,Building,8.895757039388021,16.211881705300225,HAT,SwinIR,3.1811852631655126
+textures\hero g atalanta shield.tga,Character/Unit,8.304361979166666,15.25118964310508,HAT,DRCT,3.2900733391144503
+textures\hero g theseus shield.tga,Character/Unit,8.05126953125,14.524475365607787,HAT,SwinIR,2.2533567079294783
+textures\infantry g myrmidon head iron.tga,Character/Unit,7.818522135416667,15.343913109869142,HAT,SwinIR,1.2325529340167092
+textures\hero g achilles cape.tga,Character/Unit,7.04052734375,12.584772010956831,HAT,DRCT,7.98618833550604
+textures\infantry g hoplite standard.tga,Character/Unit,6.800374348958333,13.125384754409493,HAT,SwinIR,2.785171712053992
+textures\cavalry g hippikon standard.tga,Character/Unit,6.649088541666667,12.888037934639915,HAT,DRCT,2.694927707792429
+textures\special g centaur.tga,Other,6.364339192708333,12.403498651807721,HAT,DRCT,2.6346135190997835
+textures\hero g heracles head.tga,Character/Unit,5.9267578125,11.254772334426223,HAT,SwinIR,3.4948103781519952
+textures\cavalry g hippikon horse standard.tga,Character/Unit,5.100830078125,9.369759383423569,HAT,DAT,4.472303164175716
+textures\building g shrine.tga,Building,4.4550730387369795,8.296548888423077,HAT,SwinIR,4.128610290686917
+textures\cavalry g prodromos horse standard.tga,Character/Unit,4.216634114583333,8.03056664838911,HAT,DAT,1.289604544105663

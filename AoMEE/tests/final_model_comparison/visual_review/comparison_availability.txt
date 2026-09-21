@@ -1,0 +1,8 @@
+﻿AoM:EE FINAL MODEL COMPARISON AVAILABILITY
+
+Manifest textures: 80
+Complete: 80
+Incomplete: 0
+
+Columns: Original | PBRify V4 | UltraSharp V2
+

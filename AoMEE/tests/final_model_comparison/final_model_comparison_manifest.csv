@@ -1,0 +1,81 @@
+﻿Index,RelativePath,Category,Width,Height,CategoryScore,SelectionScore
+1,textures\icons\icon c titan gate placement.tga,Icon,128,128,26.000,38.000
+2,textures\icons\icon e titan gate placement.tga,Icon,128,128,26.000,38.000
+3,textures\icons\icon g titan gate placement.tga,Icon,128,128,26.000,38.000
+4,textures\icons\icon n titan gate placement.tga,Icon,128,128,26.000,38.000
+5,textures\icons\icon x titan gate placement.tga,Icon,128,128,26.000,38.000
+6,textures\icons\icon marsh tree icons 32.tga,Icon,64,64,29.000,37.500
+7,textures\icons\icon marsh tree icons 64.tga,Icon,64,64,29.000,37.500
+8,textures\icons\icon tundra tree icons 32.tga,Icon,64,64,29.000,37.500
+9,textures\icons\icon tundra tree icons 64.tga,Icon,64,64,29.000,37.500
+10,textures\icons\god major fuxi icon 128.tga,Icon,128,128,24.000,36.000
+11,textures\icons\god major nuwa icon 128.tga,Icon,128,128,24.000,36.000
+12,textures\icons\god major shennong icon 128.tga,Icon,128,128,24.000,36.000
+13,textures\icons\animal lizard icon.tga,Icon,256,256,24.000,35.500
+14,textures\icons\improvement lord of the river icon.tga,Icon,256,256,24.000,35.500
+15,textures\icons\god major hades icon 128.tga,Icon,128,128,24.000,34.500
+16,textures\icons\god major isis icon 128.tga,Icon,128,128,24.000,34.500
+17,textures\icons\god major loki icon 128.tga,Icon,128,128,24.000,34.500
+18,textures\icons\god major odin icon 128.tga,Icon,128,128,24.000,34.500
+19,textures\icons\god major poseidon icon 128.tga,Icon,128,128,24.000,34.500
+20,textures\icons\god major ra icon 128.tga,Icon,128,128,24.000,34.500
+21,textures\icons\god major set icon 128.tga,Icon,128,128,24.000,34.500
+22,textures\icons\god major thor icon 128.tga,Icon,128,128,24.000,34.500
+23,textures\icons\god major zeus icon 128.tga,Icon,128,128,24.000,34.500
+24,textures\icons\icon bamboo tree.tga,Icon,64,64,26.000,34.500
+25,textures\icons\icon building academy.tga,Icon,64,64,26.000,34.500
+26,textures\icons\icon building archery range.tga,Icon,64,64,26.000,34.500
+27,textures\icons\icon building armory.tga,Icon,64,64,26.000,34.500
+28,textures\icons\icon building ballista tower 64.tga,Icon,64,64,26.000,34.500
+29,textures\icons\icon building ballista tower.tga,Icon,64,64,26.000,34.500
+30,textures\icons\icon building barracks.tga,Icon,64,64,26.000,34.500
+31,textures\icons\icon building dock.tga,Icon,64,64,26.000,34.500
+32,textures\icons\icon building egypt migdol 64.tga,Icon,64,64,26.000,34.500
+33,textures\icons\special e vulture icon.tga,Icon,64,64,24.000,32.500
+34,textures\icons\icon class anti archer.tga,Icon,32,32,26.000,30.000
+35,textures\icons\improvement heavy chieroballista icons 64.tga,Icon,64,64,21.000,29.500
+36,textures\icons\improvement ageis shield icon 64.tga,Icon,32,32,24.000,26.500
+37,textures\ui_banners selected atlantean2.tga,Icon,256,256,7.000,20.000
+38,textures\sfx n frost cloud.tga,Icon,128,128,7.000,19.000
+39,textures\attachments a footstep portable ram.tga,Icon,64,64,7.000,17.000
+40,textures\siege e tower corpse bodya.tga,Icon,64,64,7.000,17.000
+41,textures\ui\ui_consolebackground.tga,UI,256,256,17.000,28.500
+42,dlc-frontend\textures\ui\ui god boarder highlight 128x128.tga,UI,256,256,15.000,28.000
+43,dlc-frontend\textures\ui\ui map boarder highlight 128x128.tga,UI,256,256,15.000,28.000
+44,dlc-frontend\textures\ui\ui map boarder template 128x128.tga,UI,256,256,15.000,28.000
+45,textures\ui\overlay_arrow_12.tga,UI,256,256,15.000,28.000
+46,textures\ui\overlay_arrow_12x.tga,UI,256,256,15.000,28.000
+47,textures\ui\overlay_arrow_22.tga,UI,256,256,15.000,28.000
+48,textures\ui\techtreeposeidon7.tga,UI,256,256,15.000,28.000
+49,textures\ui\ui god boarder highlight 256x256.tga,UI,256,256,15.000,28.000
+50,textures\ui\ui map boarder highlight 256x256.tga,UI,256,256,15.000,28.000
+51,textures\ui\ui map boarder template 256x256.tga,UI,256,256,15.000,28.000
+52,textures\ui\overlay_arrow_05y.tga,UI,205,175,15.000,27.000
+53,textures\ui\overlay_arrow_06y.tga,UI,156,146,15.000,27.000
+54,textures\ui\overlay_arrow_13x.tga,UI,128,128,15.000,27.000
+55,textures\ui\overlay_arrow_15.tga,UI,128,128,15.000,27.000
+56,textures\ui\ui god boarder highlight 128x128.tga,UI,128,128,15.000,27.000
+57,textures\ui\ui map boarder highlight 128x128.tga,UI,128,128,15.000,27.000
+58,textures\ui\ui map boarder template 128x128.tga,UI,128,128,15.000,27.000
+59,textures\ui\br\campmap_atlantis6.tga,UI,256,256,15.000,26.500
+60,textures\ui\br\campmap_atlantis7.tga,UI,256,256,15.000,26.500
+61,textures\ui\overlay_fortress_10.tga,UI,128,128,12.000,24.000
+62,textures\ui_c_bottombar_d_nuwa.tga,UI,640,256,10.000,20.500
+63,textures\ui\ui god nuwa 64x64.tga,UI,64,64,10.000,20.000
+64,textures\ui_e_bottomcap_a_ra.tga,UI,512,128,7.000,16.500
+65,textures\ui_g_bottomcap_a_poseidon.tga,UI,512,128,7.000,16.500
+66,textures\cine c emperor head.tga,Portrait/Artwork,256,256,11.000,24.000
+67,textures\god minor portrait atlantis atlas.tga,Portrait/Artwork,256,256,11.000,22.500
+68,textures\god minor portrait atlantis hekate.tga,Portrait/Artwork,256,256,11.000,22.500
+69,textures\god minor portrait atlantis helios.tga,Portrait/Artwork,256,256,11.000,22.500
+70,textures\god minor portrait atlantis hyperion.tga,Portrait/Artwork,256,256,11.000,22.500
+71,textures\god minor portrait atlantis leto.tga,Portrait/Artwork,256,256,11.000,22.500
+72,textures\god minor portrait atlantis okeanus.tga,Portrait/Artwork,256,256,11.000,22.500
+73,textures\god minor portrait atlantis prometheus.tga,Portrait/Artwork,256,256,11.000,22.500
+74,textures\cine a arkantos shoulder map.tga,Portrait/Artwork,128,128,8.000,18.500
+75,textures\infantry e khopesh head iron.tga,Portrait/Artwork,64,32,3.000,4.500
+76,textures\sfx e meteor shockwave map.tga,Effect/Misc,128,128,12.000,24.000
+77,textures\sfx x shockwave unit effect.tga,Effect/Misc,128,128,12.000,22.500
+78,textures\sfx a meteor crator large.tga,Effect/Misc,256,256,9.000,22.000
+79,textures\sfx a meteor crator small.tga,Effect/Misc,256,256,9.000,22.000
+80,textures\sfx x arkantos birth bolt1.tga,Effect/Misc,128,256,6.000,14.000

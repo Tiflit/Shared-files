@@ -1,0 +1,11 @@
+AoM:EE PBRify model comparison availability
+====================================================
+
+Manifest entries: 80
+
+Original: 80/80 found
+HAT: 80/80 found
+PBRify V4: 80/80 found
+PBRify RPLKSRd V3: 80/80 found
+
+Missing outputs:

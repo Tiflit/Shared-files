@@ -1,0 +1,4 @@
+﻿"Model","Checkpoint"
+"HAT","D:\AI_upscaling\AoMEE\models\HAT\Real_HAT_GAN_sharper.pth"
+"PBRify_V4","D:\AI_upscaling\AoMEE\models\PBRify\4x-PBRify_UpscalerV4.pth"
+"PBRify_RPLKSRd_V3","D:\AI_upscaling\AoMEE\models\PBRify\4x-PBRify_RPLKSRd_V3.pth"

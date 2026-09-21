@@ -1,8 +1,92 @@
-﻿AoM:EE FINAL MODEL COMPARISON AVAILABILITY
+AoM:EE FINAL MODEL COMPARISON AVAILABILITY
+================================================
 
 Manifest textures: 80
-Complete: 80
-Incomplete: 0
 
-Columns: Original | PBRify V4 | UltraSharp V2
+Original: 0/80 found
+PBRify V4: 80/80 found
+UltraSharp V2: 80/80 found
 
+Missing outputs:
+
+Original (80 missing)
+  textures\icons\icon c titan gate placement.tga
+  textures\icons\icon e titan gate placement.tga
+  textures\icons\icon g titan gate placement.tga
+  textures\icons\icon n titan gate placement.tga
+  textures\icons\icon x titan gate placement.tga
+  textures\icons\icon marsh tree icons 32.tga
+  textures\icons\icon marsh tree icons 64.tga
+  textures\icons\icon tundra tree icons 32.tga
+  textures\icons\icon tundra tree icons 64.tga
+  textures\icons\god major fuxi icon 128.tga
+  textures\icons\god major nuwa icon 128.tga
+  textures\icons\god major shennong icon 128.tga
+  textures\icons\animal lizard icon.tga
+  textures\icons\improvement lord of the river icon.tga
+  textures\icons\god major hades icon 128.tga
+  textures\icons\god major isis icon 128.tga
+  textures\icons\god major loki icon 128.tga
+  textures\icons\god major odin icon 128.tga
+  textures\icons\god major poseidon icon 128.tga
+  textures\icons\god major ra icon 128.tga
+  textures\icons\god major set icon 128.tga
+  textures\icons\god major thor icon 128.tga
+  textures\icons\god major zeus icon 128.tga
+  textures\icons\icon bamboo tree.tga
+  textures\icons\icon building academy.tga
+  textures\icons\icon building archery range.tga
+  textures\icons\icon building armory.tga
+  textures\icons\icon building ballista tower 64.tga
+  textures\icons\icon building ballista tower.tga
+  textures\icons\icon building barracks.tga
+  textures\icons\icon building dock.tga
+  textures\icons\icon building egypt migdol 64.tga
+  textures\icons\special e vulture icon.tga
+  textures\icons\icon class anti archer.tga
+  textures\icons\improvement heavy chieroballista icons 64.tga
+  textures\icons\improvement ageis shield icon 64.tga
+  textures\ui_banners selected atlantean2.tga
+  textures\sfx n frost cloud.tga
+  textures\attachments a footstep portable ram.tga
+  textures\siege e tower corpse bodya.tga
+  textures\ui\ui_consolebackground.tga
+  dlc-frontend\textures\ui\ui god boarder highlight 128x128.tga
+  dlc-frontend\textures\ui\ui map boarder highlight 128x128.tga
+  dlc-frontend\textures\ui\ui map boarder template 128x128.tga
+  textures\ui\overlay_arrow_12.tga
+  textures\ui\overlay_arrow_12x.tga
+  textures\ui\overlay_arrow_22.tga
+  textures\ui\techtreeposeidon7.tga
+  textures\ui\ui god boarder highlight 256x256.tga
+  textures\ui\ui map boarder highlight 256x256.tga
+  textures\ui\ui map boarder template 256x256.tga
+  textures\ui\overlay_arrow_05y.tga
+  textures\ui\overlay_arrow_06y.tga
+  textures\ui\overlay_arrow_13x.tga
+  textures\ui\overlay_arrow_15.tga
+  textures\ui\ui god boarder highlight 128x128.tga
+  textures\ui\ui map boarder highlight 128x128.tga
+  textures\ui\ui map boarder template 128x128.tga
+  textures\ui\br\campmap_atlantis6.tga
+  textures\ui\br\campmap_atlantis7.tga
+  textures\ui\overlay_fortress_10.tga
+  textures\ui_c_bottombar_d_nuwa.tga
+  textures\ui\ui god nuwa 64x64.tga
+  textures\ui_e_bottomcap_a_ra.tga
+  textures\ui_g_bottomcap_a_poseidon.tga
+  textures\cine c emperor head.tga
+  textures\god minor portrait atlantis atlas.tga
+  textures\god minor portrait atlantis hekate.tga
+  textures\god minor portrait atlantis helios.tga
+  textures\god minor portrait atlantis hyperion.tga
+  textures\god minor portrait atlantis leto.tga
+  textures\god minor portrait atlantis okeanus.tga
+  textures\god minor portrait atlantis prometheus.tga
+  textures\cine a arkantos shoulder map.tga
+  textures\infantry e khopesh head iron.tga
+  textures\sfx e meteor shockwave map.tga
+  textures\sfx x shockwave unit effect.tga
+  textures\sfx a meteor crator large.tga
+  textures\sfx a meteor crator small.tga
+  textures\sfx x arkantos birth bolt1.tga

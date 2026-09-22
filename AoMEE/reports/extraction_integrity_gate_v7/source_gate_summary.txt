@@ -1,0 +1,22 @@
+AoM:EE SOURCE / EXTRACTION INTEGRITY GATE v7
+==============================================
+
+Clean DDT count                    : 7487
+Historical combined texture count : 7487
+Historical normal count            : 7452
+Historical recovered count         : 35
+Current logical TGA count           : 7487
+Current logical BTI count           : 7487
+
+Clean DDT vs historical inventory  : PASS
+Clean DDT vs extracted TGA          : PASS
+TGA -> BTI pairing                  : PASS
+TGA structural/header validation    : PASS
+Clean DDT SHA-256 baseline          : CREATED
+Extracted TGA/BTI SHA-256 baseline  : CREATED
+
+Clean DDT baseline manifest SHA-256 : ba905f5f8807cc8f71d82b620c13b5d6fb79ff3771b574c2245d191c1c923332
+Extracted baseline manifest SHA-256 : 16d891e11b81691373cdcf6f543f18f6de0672db1cbae3947d7d7ad6f05f6e52
+
+SOURCE LOCK: PASS
+Do not modify the clean game or extracted source tree.

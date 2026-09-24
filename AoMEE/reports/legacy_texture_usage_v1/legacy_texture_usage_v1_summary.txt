@@ -1,0 +1,26 @@
+AoM:EE LEGACY TEXTURE USAGE AUDIT V1
+====================================
+
+Search roots present: 3
+Total unique hits: 70
+
+CANDIDATE COUNTS
+----------------
+Black Tortoise              3
+Gryphon / Griffon          67
+
+CLEAN GAME TREE HITS
+--------------------
+36
+
+SOURCE / MATERIAL TREE HITS
+---------------------------
+34
+
+INTERPRETATION
+--------------
+Filename-only hits show that the candidate exists in a scanned tree.
+CONTENT_REFERENCE hits show the candidate name/path was found inside another file.
+A hit in reports or extracted is not proof of live runtime usage.
+A content hit inside the clean Age of Mythology tree is the strongest evidence in this audit, but should still be interpreted according to the file type.
+No hit does not mathematically prove the asset is unused if the engine constructs the name dynamically.

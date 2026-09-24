@@ -1,0 +1,8 @@
+variant,exit_code,ddt_bytes,success
+01_original,3221225477,0,False
+02_alpha_255,3221225477,0,False
+03_alpha_0,3221225477,0,False
+04_rgb_black,3221225477,0,False
+05_rgb_white,3221225477,0,False
+06_black_opaque,3221225477,0,False
+07_white_opaque,3221225477,0,False

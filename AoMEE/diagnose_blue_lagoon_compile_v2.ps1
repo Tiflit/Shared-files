@@ -65,7 +65,8 @@ function Get-TgaInfo {
         ExpectedFileBytesWithoutFooter = $expectedPayloadLength
         TrailingBytesAfterExpectedPayload = $trailingBytes
         FooterPresent = $footerPresent
-        FooterSignature = if ($footerPresent) { $footerSignature.Replace([char]0,'<NUL>') } else { '' }
+        FooterSignature = if ($footerPresent) { $footerSignature = [Text.Encoding]::ASCII.GetString($data,$data.Length - 18,18) } else { '' }
+        FooterSignature = if ($footerPresent) { '<TRUEVISION-XFILE.+NUL>' } else { '' }
     }
 }
 

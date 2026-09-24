@@ -1,0 +1,7 @@
+﻿"Variant","TGA","BTI","ExitCode","DDTBytes","Success"
+"01_original_tga_original_bti","D:\AI_upscaling\AoMEE\extracted\textures\ui\ui map blue lagoon.tga","alpha=4 fmt=BC1","0","65560","True"
+"02_pbrify_tga_original_bti","D:\AI_upscaling\AoMEE\processed\PBRify_V4\textures\ui\ui map blue lagoon.tga","alpha=4 fmt=BC1","-1073741819","0","False"
+"03_pbrify_alpha4_bc3","D:\AI_upscaling\AoMEE\processed\PBRify_V4\textures\ui\ui map blue lagoon.tga","alpha=4 fmt=BC3","0","1048600","True"
+"04_pbrify_alpha4_deflatedrgba8","D:\AI_upscaling\AoMEE\processed\PBRify_V4\textures\ui\ui map blue lagoon.tga","alpha=4 fmt=DeflatedRGBA8","0","655392","True"
+"05_pbrify_alpha1_bc1","D:\AI_upscaling\AoMEE\processed\PBRify_V4\textures\ui\ui map blue lagoon.tga","alpha=1 fmt=BC1","-1073741819","0","False"
+"06_pbrify_alpha0_bc1","D:\AI_upscaling\AoMEE\processed\PBRify_V4\textures\ui\ui map blue lagoon.tga","alpha=0 fmt=BC1","-1073741819","0","False"

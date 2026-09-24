@@ -1,5 +1,5 @@
-﻿=== AoM:EE PBRify V4 full compile ===
-Started: 2026-09-24T13:12:39.6097321-04:00
+﻿=== AoM:EE PBRify V4 full compile V2 ===
+Started: 2026-09-24T17:58:27.4541177-04:00
 Expected compile count: 7486
 Excluded: textures\icons\special c black tortoise icon.tga
 
@@ -206,11 +206,17 @@ Running Texture Compiler...
 Processed: 1
 1 texture(s) processed!
 
-=== COMPILE FAILURE ===
+=== FALLBACK ===
 Texture: textures\ui\ui map blue lagoon.tga
-Exit code: -1073741819
-Compiler output:
+Original format: BC1
+Fallback format: BC2
+Original exit code: -1073741819
 Running Texture Compiler...
+
+Fallback exit code: 0
+Running Texture Compiler...
+Processed: 1
+1 texture(s) processed!
 
 [textures\world c jungle palm burnt.tga]
 Running Texture Compiler...
@@ -241,10 +247,11 @@ Processed: 1
 1 texture(s) processed!
 
 
-Finished: 2026-09-24T13:39:31.9455042-04:00
-Compiled: 7485
+Finished: 2026-09-24T18:22:13.8510269-04:00
+Compiled: 7486
 Excluded: 1
-Failed: 1
+Failed: 0
+Fallbacks: 1
 Warnings: 66
 DDTs present: 7486
 Missing DDTs: 0

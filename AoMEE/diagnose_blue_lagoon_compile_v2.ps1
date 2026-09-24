@@ -1,8 +1,8 @@
-$ErrorActionPreference = 'Continue'
-
 param(
     [string]$Root = 'D:\AI_upscaling\AoMEE'
 )
+
+$ErrorActionPreference = 'Continue'
 
 $Compiler = Join-Path $Root 'tools\TextureCompiler.exe'
 $OriginalTGA = Join-Path $Root 'extracted\textures\ui\ui map blue lagoon.tga'

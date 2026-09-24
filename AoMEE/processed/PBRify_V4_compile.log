@@ -1,0 +1,251 @@
+﻿=== AoM:EE PBRify V4 full compile ===
+Started: 2026-09-24T13:12:39.6097321-04:00
+Expected compile count: 7486
+Excluded: textures\icons\special c black tortoise icon.tga
+
+[textures\animal dog a map.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '1'
+Processed: 1
+1 texture(s) processed!
+
+[textures\animal dog b map.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '1'
+Processed: 1
+1 texture(s) processed!
+
+[textures\animal elephant indian.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '0'
+Processed: 1
+1 texture(s) processed!
+
+[textures\animal parrot map.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '1'
+Processed: 1
+1 texture(s) processed!
+
+[textures\archer c crossbow.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '1'
+Processed: 1
+1 texture(s) processed!
+
+[textures\icons\boat c fire ship chinese icon.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '0'
+Processed: 1
+1 texture(s) processed!
+
+[textures\icons\boat c fishing boat icon.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '0'
+Processed: 1
+1 texture(s) processed!
+
+[textures\icons\boat c junk icon.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '0'
+Processed: 1
+1 texture(s) processed!
+
+[textures\icons\boat c siege ship chinese icon.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '0'
+Processed: 1
+1 texture(s) processed!
+
+[textures\icons\boat c transport icon.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '0'
+Processed: 1
+1 texture(s) processed!
+
+[textures\icons\god power barrage icon.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '0'
+Processed: 1
+1 texture(s) processed!
+
+[textures\icons\god power earth dragon icon.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '0'
+Processed: 1
+1 texture(s) processed!
+
+[textures\icons\god power flood icon.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '0'
+Processed: 1
+1 texture(s) processed!
+
+[textures\icons\god power geyser icon.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '0'
+Processed: 1
+1 texture(s) processed!
+
+[textures\icons\god power journey icon.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '0'
+Processed: 1
+1 texture(s) processed!
+
+[textures\icons\god power recreation icon.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '0'
+Processed: 1
+1 texture(s) processed!
+
+[textures\icons\siege c fire lance icon.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '0'
+Processed: 1
+1 texture(s) processed!
+
+[textures\icons\special c azure dragon icon.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '0'
+Processed: 1
+1 texture(s) processed!
+
+[textures\icons\special c earth dragon icon.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '0'
+Processed: 1
+1 texture(s) processed!
+
+[textures\icons\special c jiangshi icon.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '0'
+Processed: 1
+1 texture(s) processed!
+
+[textures\icons\special c monkey king icon.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '0'
+Processed: 1
+1 texture(s) processed!
+
+[textures\icons\special c pixiu icon.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '0'
+Processed: 1
+1 texture(s) processed!
+
+[textures\icons\special c qilin icon.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '0'
+Processed: 1
+1 texture(s) processed!
+
+[textures\icons\special c terracotta soldier icon.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '0'
+Processed: 1
+1 texture(s) processed!
+
+[textures\icons\special c vermilion bird icon.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '0'
+Processed: 1
+1 texture(s) processed!
+
+[textures\icons\special c war salamander icon.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '0'
+Processed: 1
+1 texture(s) processed!
+
+[textures\icons\special c white tiger icon.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '0'
+Processed: 1
+1 texture(s) processed!
+
+[textures\icons\trade c caravan icon.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '0'
+Processed: 1
+1 texture(s) processed!
+
+[textures\special c qilin.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '1'
+Processed: 1
+1 texture(s) processed!
+
+=== COMPILE FAILURE ===
+Texture: textures\ui\ui map blue lagoon.tga
+Exit code: -1073741819
+Compiler output:
+Running Texture Compiler...
+
+[textures\world c jungle palm burnt.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '1'
+Processed: 1
+1 texture(s) processed!
+
+[textures\world c jungle palm.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '1'
+Processed: 1
+1 texture(s) processed!
+
+[textures\world c jungle tree burnt.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '1'
+Processed: 1
+1 texture(s) processed!
+
+[textures\world c jungle tree.tga]
+Running Texture Compiler...
+        UNHANDLED token encountered '﻿alpha'
+        UNHANDLED token encountered '1'
+Processed: 1
+1 texture(s) processed!
+
+
+Finished: 2026-09-24T13:39:31.9455042-04:00
+Compiled: 7485
+Excluded: 1
+Failed: 1
+Warnings: 66
+DDTs present: 7486
+Missing DDTs: 0
+Unexpected DDTs: 0

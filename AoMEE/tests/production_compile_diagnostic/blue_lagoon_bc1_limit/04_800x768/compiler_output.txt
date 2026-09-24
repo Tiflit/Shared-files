@@ -1,0 +1,3 @@
+Running Texture Compiler...
+Processed: 1
+1 texture(s) processed!

@@ -1,0 +1,12 @@
+case,mode,requested_format,requested_alpha,exit_code,ddt_bytes,ddt_magic,ddt_properties,ddt_alpha,ddt_format_byte,ddt_mips,ddt_width,ddt_height,first_mip_offset,first_mip_size,expected_format_byte,format_matches_requested
+BTI_BC1_A0,bti_metadata,BC1,0,3221225477,0,,,,,,,,,,4,False
+BTI_BC1_A1,bti_metadata,BC1,1,3221225477,0,,,,,,,,,,4,False
+BTI_BC2_A4,bti_metadata,BC2,4,0,1048600,RTS3,0,4,8,1,1024,1024,24,1048576,8,True
+BTI_BC3_A8,bti_metadata,BC3,8,0,1048600,RTS3,0,8,9,1,1024,1024,24,1048576,9,True
+BTI_DEFLATEDRGB8_A0,bti_metadata,DeflatedRGB8,0,0,655392,RTS3,0,0,4,2,1024,1024,32,524288,11,False
+BTI_DEFLATEDRGBA8_A8,bti_metadata,DeflatedRGBA8,8,0,655392,RTS3,0,8,4,2,1024,1024,32,524288,10,False
+EXPLICIT_BC1_A0,explicit_-c,BC1,0,3221225477,0,,,,,,,,,,4,False
+EXPLICIT_BC2_A4,explicit_-c,BC2,4,0,1048600,RTS3,0,4,8,1,1024,1024,24,1048576,8,True
+EXPLICIT_BC3_A8,explicit_-c,BC3,8,0,1048600,RTS3,0,8,9,1,1024,1024,24,1048576,9,True
+EXPLICIT_DEFLATEDRGB8_A0,explicit_-c,DeflatedRGB8,0,0,3004004,RTS3,0,0,10,2,1024,1024,32,2367477,11,False
+EXPLICIT_DEFLATEDRGBA8_A8,explicit_-c,DeflatedRGBA8,8,0,3004004,RTS3,0,8,10,2,1024,1024,32,2367477,10,True

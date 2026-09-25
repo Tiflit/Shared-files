@@ -1,0 +1,11 @@
+=== bti_only ===
+Running Texture Compiler...
+Processed: 1
+1 texture(s) processed!DDT_BYTES=262168
+DDT_HEADER={'magic': 'RTS3', 'properties': 0, 'alpha': 0, 'format': 4, 'mips': 1, 'width': 512, 'height': 512}
+
+=== explicit_c ===
+Running Texture Compiler...
+Processed: 1
+1 texture(s) processed!DDT_BYTES=262168
+DDT_HEADER={'magic': 'RTS3', 'properties': 0, 'alpha': 0, 'format': 4, 'mips': 1, 'width': 512, 'height': 512}

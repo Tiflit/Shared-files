@@ -1,0 +1,5 @@
+label,requested_format,exit_code,header_format,header_alpha,mips,width,height,bytes
+rgba32_DeflatedRGB8,DeflatedRGB8,0,10,0,2,256,256,208514
+rgba32_RGB8,RGB8,0,0,0,2,256,256,32
+rgb24_DeflatedRGB8,DeflatedRGB8,0,11,0,2,256,256,188750
+rgb24_RGB8,RGB8,0,0,0,2,256,256,32

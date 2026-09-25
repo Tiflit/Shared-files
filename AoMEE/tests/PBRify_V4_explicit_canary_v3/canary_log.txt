@@ -1,0 +1,26 @@
+﻿=== AoM:EE PBRify V4 explicit format canary V3 ===
+Started: 2026-09-25T11:37:28.6348024-04:00
+
+[textures\animal elephant indian.tga]
+
+[textures\ui\ui map blue lagoon.tga]
+Running Texture Compiler...
+Processed: 1
+1 texture(s) processed!
+
+[textures\animal dog a map.tga]
+
+[textures\animal dog b map.tga]
+
+[textures\_missingtexture.tga]
+
+[textures\agamemnon map.tga]
+
+[dlc-frontend\textures\ui\screen shot a_01.tga]
+
+[dlc-frontend\textures\ui\screen shot a_02.tga]
+
+[textures\icons\building storage pit icon.tga]
+
+[textures\icons\improvement bone oracle script icon.tga]
+

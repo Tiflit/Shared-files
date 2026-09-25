@@ -22,7 +22,7 @@ FORMATS = [
 
 
 def norm(p: str) -> str:
-    return p.replace("/", "\").strip().lstrip("\")
+    return p.replace("/", "\\").strip().lstrip("\\")
 
 
 def read_csv(path: Path) -> list[dict]:

@@ -1,0 +1,6 @@
+sample,format_requested,alpha_requested,bti_only_exit,bti_only_header_format,bti_only_bytes,explicit_exit,explicit_header_format,explicit_header_alpha,explicit_header_mips,explicit_width,explicit_height,explicit_bytes
+textures\animal elephant indian.tga,BC1,0,0,4,262168,0,4,0,1,512,512,262168
+textures\animal dog a map.tga,BC2,4,0,8,65560,0,8,4,1,256,256,65560
+textures\_missingtexture.tga,BC3,8,0,9,1048600,0,9,8,1,1024,1024,1048600
+dlc-frontend\textures\ui\screen shot a_01.tga,DeflatedRGBA8,8,0,4,655392,0,10,8,2,1024,1024,3004004
+textures\icons\building storage pit icon.tga,DeflatedRGB8,0,0,4,40992,0,10,0,2,256,256,208514

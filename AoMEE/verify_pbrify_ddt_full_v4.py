@@ -351,7 +351,7 @@ def validate_entries(ddt: Path, hdr: dict) -> tuple[bool, bool, str]:
     return in_bounds, overlap_ok, failure
 
 
-def verify_one(index: int, rel: str, tga: Path, ddt: Path, manifest: dict, btis: dict[str, Path], timeout: int) -> dict:
+def verify_one(index: int, rel: str, tga: Path, ddt: Path, manifest: dict, btis: dict[str, Path], timeout: int, run_extractor: bool) -> dict:
     start = time.perf_counter()
     row = {f: "" for f in FIELDS}
     row.update({
@@ -481,7 +481,7 @@ def verify_one(index: int, rel: str, tga: Path, ddt: Path, manifest: dict, btis:
         # This avoids crashes/noise and makes the report distinguish bad container data
         # from decoder/tool limitations.
         decode_ok = False
-        if core:
+        if core and run_extractor:
             out_tga = SCRATCH_ROOT / f"{index:05d}.tga"
             out_bti = SCRATCH_ROOT / f"{index:05d}.bti"
             out_tga.parent.mkdir(parents=True, exist_ok=True)
@@ -515,7 +515,7 @@ def verify_one(index: int, rel: str, tga: Path, ddt: Path, manifest: dict, btis:
                 )
 
             row["ExtractorDecodePASS"] = str(decode_ok)
-        else:
+        elif not core:
             row["ExtractorDecodePASS"] = "SKIPPED"
             row["FailureStage"] = "CORE_DDT_INTEGRITY"
             row["FailureReason"] = (
@@ -530,7 +530,12 @@ def verify_one(index: int, rel: str, tga: Path, ddt: Path, manifest: dict, btis:
                 ] if x)
             )
 
-        if core and not decode_ok:
+        elif core and not run_extractor:
+            row["ExtractorDecodePASS"] = "SKIPPED"
+            row["FailureStage"] = ""
+            row["FailureReason"] = ""
+            decode_ok = True
+        elif core and not decode_ok:
             row["FailureStage"] = "EXTRACTOR"
             row["FailureReason"] = f"TextureExtractor exit code {row['ExtractorExitCode']} ({row['ExtractorExitHex']})"
         elif core:
@@ -657,11 +662,9 @@ def main() -> int:
             print(f"[{total + 1}/{EXPECTED_DDTS}] VERIFY: {rel}")
             row = verify_one(
                 i, rel, ti[tga_key], di[key(ddt_rel)], manifest, bi,
-                args.timeout if not args.skip_extractor else 0,
+                args.timeout,
+                not args.skip_extractor,
             )
-            if args.skip_extractor and row["ExtractorDecodePASS"] == "":
-                row["ExtractorDecodePASS"] = "SKIPPED"
-
             append_partial(row)
             total += 1
 

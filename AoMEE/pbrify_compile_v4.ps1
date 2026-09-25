@@ -374,6 +374,45 @@ Write-Host "DDT output            : $DDTRoot"
 Write-Host "RGB8 staging          : TRUE 24-bit temporary TGA"
 Write-Host "BTI staging           : UTF-8 without BOM"
 Write-Host ""
+# ------------------------------------------------------------
+# Authoritative BTI format preflight.
+# ------------------------------------------------------------
+
+if ($btiMap.Count -ne $ExpectedTotal) {
+    throw "Expected $ExpectedTotal authoritative BTIs, found $($btiMap.Count)"
+}
+
+$observedFormats = @{}
+foreach ($btiPath in $btiMap.Values) {
+    $info = Read-BTIInfo -Path $btiPath
+    if (-not $CLIFormats.ContainsKey($info.Format)) {
+        throw "Unsupported authoritative BTI format '$($info.Format)': $btiPath"
+    }
+    if (-not $observedFormats.ContainsKey($info.Format)) {
+        $observedFormats[$info.Format] = 0
+    }
+    $observedFormats[$info.Format]++
+}
+
+$expectedSourceFormats = @{
+    'BC1' = 3
+    'BC2' = 9
+    'BC3' = 4827
+    'DEFLATEDRGBA8' = 2559
+    'DEFLATEDRGB8' = 89
+}
+
+foreach ($format in $expectedSourceFormats.Keys) {
+    $actual = if ($observedFormats.ContainsKey($format)) { $observedFormats[$format] } else { 0 }
+    if ($actual -ne $expectedSourceFormats[$format]) {
+        throw "Authoritative BTI format preflight failed for $format: expected $($expectedSourceFormats[$format]), found $actual"
+    }
+}
+
+Write-Host "Authoritative BTI format preflight: PASS"
+Write-Host ("BC1={0} BC2={1} BC3={2} DeflatedRGBA8={3} DeflatedRGB8={4}" -f $observedFormats["BC1"], $observedFormats["BC2"], $observedFormats["BC3"], $observedFormats["DEFLATEDRGBA8"], $observedFormats["DEFLATEDRGB8"])
+Write-Host ""
+
 
 "=== AoM:EE PBRify V4 full explicit compile V4 ===" | Set-Content -LiteralPath $LogPath -Encoding UTF8
 "Started: $(Get-Date -Format o)" | Add-Content -LiteralPath $LogPath -Encoding UTF8
@@ -591,7 +630,7 @@ foreach ($tga in ($allTga | Sort-Object FullName)) {
             DDTSHA256 = $ddtSha
             DDTBytes = $ddtInfo.Length
             CompilerExitCode = $usedExitCode
-            WarningCount = $attemptWarnings
+            WarningCount = @($attemptOutput | Where-Object { $_ -match 'UNHANDLED token encountered' }).Count
             StagedBTIBomRemoved = if ($btiInfo.HadBom) { 'YES' } else { 'NO' }
             FallbackUsed = $fallbackUsed
             FallbackReason = $fallbackReason
@@ -723,6 +762,7 @@ $pass = (
     $excluded -eq 1 -and
     $fallbacks -eq 1 -and
     $failed -eq 0 -and
+    $warnings -eq 0 -and
     $missing.Count -eq 0 -and
     $unexpected.Count -eq 0
 )

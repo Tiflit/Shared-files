@@ -19,6 +19,14 @@ $LogPath = Join-Path $OutRoot 'canary_log.txt'
 
 $BlueLagoon = 'textures\ui\ui map blue lagoon.tga'
 
+$CanonicalCompilerFormat = @{
+    'BC1'           = 'BC1'
+    'BC2'           = 'BC2'
+    'BC3'           = 'BC3'
+    'DEFLATEDRGBA8' = 'DeflatedRGBA8'
+    'DEFLATEDRGB8'  = 'DeflatedRGB8'
+}
+
 $ExpectedBytes = @{
     'BC1' = 4
     'BC2' = 8
@@ -228,8 +236,11 @@ foreach ($m in $selected) {
     $ddtPath = Join-Path $DDTRoot $ddtRel
     $null = New-Item -ItemType Directory -Force -Path (Split-Path -Parent $ddtPath)
 
-    $attempt = RunCompiler $compileTga $ddtPath $originalFormat
-    $attempts = @($attempt)
+    $cliFormat = $CanonicalCompilerFormat[$originalFormat]
+    if (-not $cliFormat) { throw "Unsupported compiler format: $originalFormat" }
+
+    $attempt = RunCompiler $compileTga $ddtPath $cliFormat
+    $attempts = @([pscustomobject]@{ Format = $cliFormat; Result = $attempt })
     $usedFormat = $originalFormat
     $fallback = 'NO'
     $success = $false
@@ -256,7 +267,7 @@ foreach ($m in $selected) {
     $result = [pscustomobject]@{
         RelativePath = $relative
         OriginalBTIFormat = $originalFormat
-        RequestedFormat = $originalFormat
+        RequestedFormat = $cliFormat
         UsedFormat = $usedFormat
         ExpectedDDTFormatByte = $ExpectedBytes[$usedFormat]
         ActualDDTFormatByte = if ($hdr) { $hdr.Format } else { '' }
@@ -268,7 +279,7 @@ foreach ($m in $selected) {
         DDTWidth = if ($hdr) { $hdr.Width } else { '' }
         DDTHeight = if ($hdr) { $hdr.Height } else { '' }
         DDTMips = if ($hdr) { $hdr.Mips } else { '' }
-        CompilerExitCode = $attempt.ExitCode
+        CompilerExitCode = $usedAttempt.ExitCode
         FallbackUsed = $fallback
         WarningCount = $warnings.Count
         Status = if ($success) { 'PASS' } else { 'FAIL' }
@@ -283,7 +294,7 @@ foreach ($m in $selected) {
         Write-Host "[$index/$($selected.Count)] PASS $relative -> DDT fmt $($hdr.Format), input $inputBits-bit, $($hdr.Bytes) bytes"
     } else {
         $actual = if ($hdr) { $hdr.Format } else { '' }
-        Write-Host "[$index/$($selected.Count)] FAIL $relative -> requested $originalFormat, actual $actual"
+        Write-Host "[$index/$($selected.Count)] FAIL $relative -> requested $cliFormat, actual $actual"
     }
 }
 

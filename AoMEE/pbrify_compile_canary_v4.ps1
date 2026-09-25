@@ -156,7 +156,7 @@ function ReadDdt([string]$path) {
     }
 }
 
-foreach ($p in @($PBRifyRoot, $ExtractedRoot, $ManifestPath, $Compiler)) {
+foreach ($p in @($PBRifyRoot, $ExtractedRoot, $Compiler)) {
     if (-not (Test-Path -LiteralPath $p)) { throw "Required path not found: $p" }
 }
 

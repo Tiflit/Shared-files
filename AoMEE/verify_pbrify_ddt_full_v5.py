@@ -359,7 +359,11 @@ def verify_one(index: int, rel: str, tga: Path, ddt: Path, manifest: dict, btis:
         "DDTRelativePath": norm(str(Path(rel).with_suffix(".ddt"))),
         "ManifestStatus": manifest.get("Status", ""),
         "OriginalBTIFormat": manifest.get("OriginalBTIFormat", "").upper(),
-        "CompileFormat": manifest.get("CompileFormat", "").upper(),
+        "CompileFormat": (
+            manifest.get("ActualCompileFormat", "")
+            or manifest.get("CompileFormat", "")
+            or manifest.get("RequestedCLIFormat", "")
+        ).upper(),
         "FallbackUsed": manifest.get("FallbackUsed", ""),
         "Provisional": manifest.get("Provisional", ""),
         "ExpectedTgaSHA256": manifest.get("SourceTgaSHA256", "").lower(),

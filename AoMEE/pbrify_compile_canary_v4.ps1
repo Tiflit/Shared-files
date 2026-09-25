@@ -302,7 +302,7 @@ $passed = @($Results | Where-Object Status -eq 'PASS')
 
 Write-Host ""
 Write-Host "============================================"
-Write-Host "EXPLICIT FORMAT CANARY V3 RESULT"
+Write-Host "EXPLICIT FORMAT CANARY V4 RESULT"
 Write-Host "============================================"
 Write-Host "Cases tested : $($Results.Count)"
 Write-Host "Passed       : $($passed.Count)"

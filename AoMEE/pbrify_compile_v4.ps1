@@ -672,7 +672,7 @@ foreach ($tga in ($allTga | Sort-Object FullName)) {
             DDTSHA256 = ''
             DDTBytes = ''
             CompilerExitCode = $usedExitCode
-            WarningCount = $attemptWarnings
+            WarningCount = @($attemptOutput | Where-Object { $_ -match 'UNHANDLED token encountered' }).Count
             StagedBTIBomRemoved = if ($btiInfo.HadBom) { 'YES' } else { 'NO' }
             FallbackUsed = $fallbackUsed
             FallbackReason = $fallbackReason

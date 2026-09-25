@@ -37,10 +37,11 @@ The clean game and extracted trees are source-locked. Never modify them during t
 4. Stage source TGAs and convert them to PNG for the AI workflow.
 5. Run the canonical PBRify V4 chaiNNer workflow.
 6. Verify the 4x output dimensions and alpha replication.
-7. Run the explicit compiler canary before a full DDT compile.
-8. Run the explicit production DDT compiler.
-9. Run the DDT core verifier first without the external decoder, then run it again with the official decoder.
-10. Test the resulting DDT set in-game before any normalization or release packaging.
+7. Run verify_texture_compiler_formats.py when validating the installed compiler/toolchain.
+8. Run the explicit compiler canary before a full DDT compile.
+9. Run the explicit production DDT compiler.
+10. Run the DDT core verifier first without the external decoder, then run it again with the official decoder.
+11. Test the resulting DDT set in-game before any normalization or release packaging.
 
 Recommended commands from the project root:
 

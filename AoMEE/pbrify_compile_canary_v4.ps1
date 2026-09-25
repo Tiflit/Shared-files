@@ -8,10 +8,9 @@ $ErrorActionPreference = 'Stop'
 $Root = 'D:\AI_upscaling\AoMEE'
 $PBRifyRoot = Join-Path $Root 'processed\PBRify_V4'
 $ExtractedRoot = Join-Path $Root 'extracted'
-$ManifestPath = Join-Path $Root 'processed\PBRify_V4_compile_manifest.csv'
 $Compiler = Join-Path $Root 'tools\TextureCompiler.exe'
 
-$OutRoot = Join-Path $Root 'tests\PBRify_V4_explicit_canary_v3'
+$OutRoot = Join-Path $Root 'tests\PBRify_V4_explicit_canary'
 $StageRoot = Join-Path $OutRoot 'stage'
 $DDTRoot = Join-Path $OutRoot 'ddt'
 $ReportPath = Join-Path $OutRoot 'canary_report.csv'
@@ -168,29 +167,20 @@ if (Test-Path -LiteralPath $OutRoot) {
 $null = New-Item -ItemType Directory -Force -Path $StageRoot
 $null = New-Item -ItemType Directory -Force -Path $DDTRoot
 
-$rows = @(Import-Csv -LiteralPath $ManifestPath)
-if ($rows.Count -ne 7487) { throw "Expected 7487 manifest rows, found $($rows.Count)" }
+$selected = @(
+    [pscustomobject]@{ RelativePath = 'textures\animal elephant indian.tga'; ExpectedFormat = 'BC1' }
+    [pscustomobject]@{ RelativePath = 'textures\ui\ui map blue lagoon.tga'; ExpectedFormat = 'BC1' }
+    [pscustomobject]@{ RelativePath = 'textures\animal dog a map.tga'; ExpectedFormat = 'BC2' }
+    [pscustomobject]@{ RelativePath = 'textures\animal dog b map.tga'; ExpectedFormat = 'BC2' }
+    [pscustomobject]@{ RelativePath = 'textures\_missingtexture.tga'; ExpectedFormat = 'BC3' }
+    [pscustomobject]@{ RelativePath = 'textures\agamemnon map.tga'; ExpectedFormat = 'BC3' }
+    [pscustomobject]@{ RelativePath = 'dlc-frontend\textures\ui\screen shot a_01.tga'; ExpectedFormat = 'DeflatedRGBA8' }
+    [pscustomobject]@{ RelativePath = 'dlc-frontend\textures\ui\screen shot a_02.tga'; ExpectedFormat = 'DeflatedRGBA8' }
+    [pscustomobject]@{ RelativePath = 'textures\icons\building storage pit icon.tga'; ExpectedFormat = 'DeflatedRGB8' }
+    [pscustomobject]@{ RelativePath = 'textures\icons\improvement bone oracle script icon.tga'; ExpectedFormat = 'DeflatedRGB8' }
+)
 
-$selected = [System.Collections.Generic.List[object]]::new()
-
-foreach ($fmt in @('BC1','BC2','BC3','DeflatedRGBA8','DeflatedRGB8')) {
-    $found = @(
-        $rows |
-        Where-Object { $_.Status -ne 'EXCLUDED' -and $_.OriginalBTIFormat -eq $fmt } |
-        Sort-Object RelativePath |
-        Select-Object -First 2
-    )
-    if ($found.Count -lt 2) { throw "Could not find two $fmt samples" }
-    foreach ($r in $found) { $selected.Add($r) }
-}
-
-if (-not ($selected | Where-Object { $_.RelativePath -eq $BlueLagoon })) {
-    $blue = $rows | Where-Object { $_.RelativePath -eq $BlueLagoon } | Select-Object -First 1
-    if (-not $blue) { throw "Blue Lagoon row missing from manifest" }
-    $selected.Add($blue)
-}
-
-"=== AoM:EE PBRify V4 explicit format canary V3 ===" | Set-Content -LiteralPath $LogPath -Encoding UTF8
+"=== AoM:EE PBRify V4 explicit format canary V4 ===" | Set-Content -LiteralPath $LogPath -Encoding UTF8
 "Started: $(Get-Date -Format o)" | Add-Content -LiteralPath $LogPath -Encoding UTF8
 "" | Add-Content -LiteralPath $LogPath -Encoding UTF8
 
@@ -212,6 +202,10 @@ foreach ($m in $selected) {
     if (-not (Test-Path -LiteralPath $source)) { throw "PBRify TGA missing: $relative" }
 
     $originalFormat = (GetBtiValue $btiPath 'fmt').ToUpperInvariant()
+    $expectedFormat = $m.ExpectedFormat.ToUpperInvariant()
+    if ($originalFormat -ne $expectedFormat) {
+        throw "Sample metadata mismatch: $relative expected $expectedFormat but BTI says $originalFormat"
+    }
     $alpha = [int](GetBtiValue $btiPath 'alpha')
     $tga = TgaInfo $source
 
@@ -319,9 +313,9 @@ Write-Host "Output DDT   : $DDTRoot"
 Write-Host ""
 
 if ($failed.Count -eq 0) {
-    Write-Host "EXPLICIT FORMAT CANARY V3: PASS"
+    Write-Host "EXPLICIT FORMAT CANARY V4: PASS"
     exit 0
 }
 
-Write-Host "EXPLICIT FORMAT CANARY V3: FAIL"
+Write-Host "EXPLICIT FORMAT CANARY V4: FAIL"
 exit 1

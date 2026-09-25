@@ -468,11 +468,20 @@ foreach ($tga in ($allTga | Sort-Object FullName)) {
     $stageBti = [IO.Path]::ChangeExtension($stageTga, '.bti')
 
     Copy-Item -LiteralPath $tga.FullName -Destination $stageTga -Force
-    $null = Write-StagedBTI -Source $btiPath -Destination $stageBti -ForcedFormat $originalFormat
+    $btiInfo = Write-StagedBTI -Source $btiPath -Destination $stageBti -ForcedFormat $originalFormat
+
+    $compileBti = $stageBti
 
     if ($originalFormat -eq 'DEFLATEDRGB8') {
         $compileTga = Join-Path $caseRoot 'rgb24_input.tga'
+        $compileBti = Join-Path $caseRoot 'rgb24_input.bti'
+
         Convert-Tga32To24 -Source $stageTga -Destination $compileTga
+
+        # The legacy compiler associates BTI metadata by basename.
+        # Keep the temporary RGB24 TGA paired with an equally named BTI.
+        $null = Write-StagedBTI -Source $btiPath -Destination $compileBti -ForcedFormat $originalFormat
+
         $compileBits = 24
     }
 

@@ -1,0 +1,30 @@
+AoM:EE FULL DDT VERIFICATION V2
+================================
+
+Expected production DDTs: 7486
+Final report rows:        7486
+Verified this run:        2660
+Skipped prior PASS:       4826
+PASS in final report:     4826
+FAIL in final report:     2660
+Elapsed seconds:          979.726
+
+INDEPENDENT GATES
+-----------------
+Production path completeness
+Compile-manifest coverage
+PBRify TGA SHA-256
+Generated DDT SHA-256
+Generated DDT byte size
+RTS3 DDT signature
+DDT embedded dimensions
+DDT dimensions vs PBRify TGA
+Official AoM TextureExtractor decode
+Decoded TGA dimensions and 32-bit format
+Regenerated BTI existence
+Regenerated BTI compile format
+Regenerated BTI metadata vs authoritative BTI
+
+A DDT is PASS only when every gate above passes.
+
+FULL DDT VERIFICATION: FAIL

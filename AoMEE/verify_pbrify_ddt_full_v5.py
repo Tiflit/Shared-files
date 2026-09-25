@@ -19,11 +19,11 @@ EXTRACTED_ROOT = ROOT / r"extracted"
 EXTRACTOR = ROOT / r"tools\TextureExtractor.exe"
 
 OUT_ROOT = ROOT / r"reports\ddt_full_verification_v5"
-FINAL_REPORT = OUT_ROOT / "ddt_full_verification_v4.csv"
-PARTIAL_REPORT = OUT_ROOT / "ddt_full_verification_v4.partial.csv"
-CHECKPOINT = OUT_ROOT / "ddt_full_verification_v4_checkpoint.txt"
-SUMMARY = OUT_ROOT / "ddt_full_verification_v4_summary.txt"
-SCRATCH_ROOT = ROOT / r"tests\ddt_full_verification_v4_stage"
+FINAL_REPORT = OUT_ROOT / "ddt_full_verification_v5.csv"
+PARTIAL_REPORT = OUT_ROOT / "ddt_full_verification_v5.partial.csv"
+CHECKPOINT = OUT_ROOT / "ddt_full_verification_v5_checkpoint.txt"
+SUMMARY = OUT_ROOT / "ddt_full_verification_v5_summary.txt"
+SCRATCH_ROOT = ROOT / r"tests\ddt_full_verification_v5_stage"
 
 EXPECTED_TGAS = 7487
 EXPECTED_DDTS = 7486

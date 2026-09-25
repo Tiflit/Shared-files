@@ -4,19 +4,25 @@ Last reviewed: 2026-09-25
 
 ## Objective
 
-Remaster the **Age of Mythology: Extended Edition** texture set while preserving the original game's texture population, metadata relationships, and runtime behavior. The project is at the DDT compilation/verification stage for the PBRify V4 masters. Runtime normalization, in-game validation, and final packaging remain after the DDT build.
+Remaster the **Age of Mythology: Extended Edition** texture set while preserving the original game's texture population, metadata relationships, and runtime behavior. The current work is at the final DDT compilation/verification stage for the PBRify V4 texture masters. Runtime normalization, in-game validation, and final packaging remain after the DDT build.
 
-## Locked baseline
+## Locked source baseline
 
-- 7,487 original DDT textures.
-- 7,487 logical TGA/BTI pairs: 7,452 normal + 35 recovered exceptions.
-- Clean game and `extracted/` are protected local reference data.
-- Black Tortoise is archive-only and excluded from production.
-- 7,487 PBRify V4 32-bit TGA masters exist locally.
+- 7,487 original DDT textures are the authoritative population.
+- 7,487 logical TGA/BTI pairs exist in the locked extraction: 7,452 normal + 35 recovered exceptions.
+- The clean game copy and `extracted/` tree are protected local reference data.
+- Black Tortoise is archive-only and excluded from the production set.
+
+## PBRify baseline
+
+- Canonical workflow: chaiNNer 0.25.1 + `4x-PBRify_UpscalerV4.pth`.
+- 7,487 PBRify V4 masters exist locally as 32-bit TGAs.
+- PBRify masters are never modified for compiler staging.
+- The 4x master is intentionally retained because runtime resolution/normalization has not yet been finalized.
 
 ## Canonical DDT compilation
 
-The legacy TextureCompiler must receive an explicit format. BTI-only inference is rejected for Deflated formats.
+The legacy TextureCompiler must receive an explicit format. The original BTI-only path is rejected for Deflated formats.
 
 | Source BTI | Compiler argument | Compile input | DDT byte 6 |
 | --- | --- | --- | ---: |
@@ -26,28 +32,34 @@ The legacy TextureCompiler must receive an explicit format. BTI-only inference i
 | DeflatedRGBA8 | `-c DeflatedRGBA8` | 32-bit TGA | 10 |
 | DeflatedRGB8 | `-c DeflatedRGB8` | temporary true 24-bit TGA | 11 |
 
-The RGB8 conversion is compile-only staging. It removes only the alpha byte from each BGR pixel; the 32-bit PBRify master is never modified. Staged BTIs are UTF-8 without BOM.
+For `DeflatedRGB8`, the temporary 24-bit TGA removes only the alpha byte from each BGR pixel. The authoritative 32-bit PBRify master is untouched. The temporary BTI is UTF-8 without a BOM and retains the original metadata values.
 
-The CLI argument is `DeflatedRGB8`; `RGB8` is only the GUI display label.
+The installed compiler previously treated `RGB8` as an invalid CLI value; the GUI label `RGB8` corresponds to the compiler argument `DeflatedRGB8`.
 
 ## Known exception
 
-`textures\ui\ui map blue lagoon.tga` is the only automatic fallback: `BC1 -> BC2`. New compiler failures remain hard failures until investigated.
+`textures\ui\ui map blue lagoon.tga` is the only automatic fallback:
 
-## Current canary gate
+`BC1 -> BC2`
 
-The explicit-format canary has already passed 10/10 real production samples:
+This is an explicit, allowlisted workaround for the legacy BC1 encoder's instability on the 1024x1024 PBRify result. New compiler failures must remain hard failures until individually investigated.
+
+## Canary gate
+
+The corrected explicit-format canary has already passed 10/10 against real production samples:
 
 - BC1 -> 4
 - BC2 -> 8
 - BC3 -> 9
 - DeflatedRGBA8 -> 10
-- DeflatedRGB8 -> 11 with 24-bit input
+- DeflatedRGB8 -> 11 with 24-bit compiler input
 - Blue Lagoon fallback -> 8
 
-It must pass again after synchronization before the full compile.
+The canary must pass again after repository synchronization before the full build.
 
 ## Expected production result
+
+The authoritative source-format population is expected to compile to 7,486 production DDTs:
 
 ```text
 DDT 4  / BC1             1
@@ -58,30 +70,37 @@ DDT 11 / DeflatedRGB8    89
 TOTAL                  7486
 ```
 
-The missing one is the archive-only Black Tortoise asset.
+The missing 1 of 7,487 is the archive-only Black Tortoise asset.
 
-## Verification order
+## Verification gate
+
+Run the core verifier before the official extractor:
 
 ```powershell
 python .\verify_pbrify_ddt_full_v5.py --skip-extractor
+```
+
+Only after the core container/format/payload checks pass:
+
+```powershell
 python .\verify_pbrify_ddt_full_v5.py
 ```
 
-Core DDT integrity must pass before the official decoder is invoked. DDT byte 6 is authoritative for stored format.
+The DDT's byte 6 is authoritative for stored format. The extractor is a separate decoder test and must not be used to infer the DDT format.
 
-## Remaining project work
+## What remains after the DDT build
 
-1. Produce and structurally verify 7,486 production DDTs.
-2. Verify them with the official extractor.
-3. Test them in a disposable game copy.
-4. Perform role/family-aware runtime normalization; do not impose a global 1024 cap.
-5. Review the seven >=4096 outputs individually.
-6. Validate CT4/noalphatest/player-colour behavior where relevant.
-7. Perform in-game validation.
-8. Package the final remaster.
+1. Verify all 7,486 production DDTs structurally.
+2. Verify all 7,486 with the official extractor.
+3. Replace/test the DDT set against the clean game in a disposable runtime copy.
+4. Perform role-aware/family-aware normalization; do not impose a global 1024 cap.
+5. Review the seven >=4096 PBRify outputs individually.
+6. Validate player-colour/CT4/noalphatest behavior where relevant.
+7. Test the remaster in-game.
+8. Package the final release only after runtime validation.
 
 ## Repository rule
 
-Git is the reproducibility/research record, not storage for multi-gigabyte source/output trees. Keep clean game data, extracted trees, models, PBRify images, generated DDTs, staging and tests local. Keep source-lock evidence, manifests, workflow definitions, canonical tools, verification code, material semantics and concise research conclusions in Git.
+Git is the reproducibility and research record, not the storage location for the multi-gigabyte working trees. Keep clean game data, extracted trees, models, PBRify image masters, generated DDTs, staging and tests local. Keep source-lock evidence, manifests, workflow definitions, canonical tools, verification code, material semantics, and concise research conclusions in Git.
 
-Historical experiments may be removed once their conclusions are captured in `TECHNICAL_REFERENCE.md`. Do not retain superseded compiler/verifier generations merely because they have a lower version number.
+Historical experiments may be removed once their conclusions are captured in `TECHNICAL_REFERENCE.md`. Do not retain obsolete compiler/verifier generations merely because they have a lower version number.

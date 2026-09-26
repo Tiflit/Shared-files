@@ -135,7 +135,7 @@ function Read-BTIInfo {
 
     return [pscustomobject]@{
         Text = $text
-        Format = $fmtMatch.Groups[1].Value.ToUpperInvariant()
+        Format = $fmtMatch.Groups[1].Value
         AlphaBits = [int]$alphaMatch.Groups[1].Value
         HadBom = $hadBom
     }
@@ -405,7 +405,7 @@ $expectedSourceFormats = @{
 foreach ($format in $expectedSourceFormats.Keys) {
     $actual = if ($observedFormats.ContainsKey($format)) { $observedFormats[$format] } else { 0 }
     if ($actual -ne $expectedSourceFormats[$format]) {
-        throw "Authoritative BTI format preflight failed for $format: expected $($expectedSourceFormats[$format]), found $actual"
+        throw "Authoritative BTI format preflight failed for $(format): expected $($expectedSourceFormats[$format]), found $actual"
     }
 }
 
@@ -497,18 +497,17 @@ foreach ($tga in ($allTga | Sort-Object FullName)) {
         throw "PBRify source is not 32-bit: $relative (bpp=$($sourceInfo.Bits))"
     }
 
-    $compileTga = $tga.FullName
     $compileBits = 32
 
     $caseRoot = Join-Path $StageRoot ('{0:D5}' -f $index)
-    $null = New-Item -ItemType Directory -Force -Path $caseRoot
-
     $stageTga = Join-Path $caseRoot ([IO.Path]::GetFileName($relative))
     $stageBti = [IO.Path]::ChangeExtension($stageTga, '.bti')
 
+    New-Item -ItemType Directory -Path $caseRoot -Force | Out-Null
     Copy-Item -LiteralPath $tga.FullName -Destination $stageTga -Force
     $btiInfo = Write-StagedBTI -Source $btiPath -Destination $stageBti -ForcedFormat $originalFormat
 
+    $compileTga = $stageTga
     $compileBti = $stageBti
 
     if ($originalFormat -eq 'DEFLATEDRGB8') {
@@ -531,6 +530,40 @@ foreach ($tga in ($allTga | Sort-Object FullName)) {
     $null = New-Item -ItemType Directory -Force -Path $ddtDir
 
     Write-Host "[$index/$ExpectedTotal] Compiling: $relative -> $cliFormat (input $compileBits-bit)"
+
+    # TEMPORARY DEBUG — remove after diagnosis
+    if ($relative -ieq 'dlc-frontend\textures\ui\ui background opaque 1.tga') {
+        Write-Host ""
+        Write-Host "=== PRE-COMPILE DEBUG ==="
+        Write-Host "Relative          : $relative"
+        Write-Host "Compiler          : $Compiler"
+        Write-Host "CWD               : $(Get-Location)"
+        Write-Host ""
+        Write-Host "AUTHORITATIVE BTI SELECTED BY V4:"
+        Write-Host "btiPath           : $btiPath"
+        Write-Host "btiKey            : $btiKey"
+        Write-Host "originalFormat    : $originalFormat"
+        Write-Host "alpha             : $($btiInfo.AlphaBits)"
+        Write-Host "Source BTI SHA256 : $((Get-FileHash -LiteralPath $btiPath -Algorithm SHA256).Hash)"
+        Write-Host "Source BTI:"
+        Get-Content -LiteralPath $btiPath
+        Write-Host ""
+        Write-Host "STAGED BTI:"
+        Write-Host "compileBti        : $compileBti"
+        Write-Host "Staged BTI SHA256 : $((Get-FileHash -LiteralPath $compileBti -Algorithm SHA256).Hash)"
+        Get-Content -LiteralPath $compileBti
+        Write-Host ""
+        Write-Host "TGA:"
+        Write-Host "compileTga        : $compileTga"
+        Write-Host "TGA SHA256        : $((Get-FileHash -LiteralPath $compileTga -Algorithm SHA256).Hash)"
+        Write-Host ""
+        Write-Host "Compiler arguments:"
+        Write-Host "  -c $cliFormat"
+        Write-Host "  -i $compileTga"
+        Write-Host "  -o $ddtPath"
+        Write-Host "========================"
+        Write-Host ""
+    }
 
     $attempt = Invoke-TextureCompiler -InputTga $compileTga -OutputDdt $ddtPath -CliFormat $cliFormat
 

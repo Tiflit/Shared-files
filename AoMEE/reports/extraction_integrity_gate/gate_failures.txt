@@ -1,0 +1,3 @@
+﻿TGA decode/metadata gate failed.
+Decoded: 7487
+Metadata failures: 7487

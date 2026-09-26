@@ -1,2 +1,0 @@
-last_run_completed=2026-09-24T21:40:55
-rows_in_final=7486

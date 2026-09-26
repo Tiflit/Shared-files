@@ -1,0 +1,10 @@
+Age of Mythology/
+extracted/
+input/
+models/
+processed/
+tests/
+reports/materials_xml/
+tools/
+__pycache__/
+*.log

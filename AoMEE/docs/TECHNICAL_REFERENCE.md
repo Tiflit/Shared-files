@@ -10,10 +10,13 @@ Only `textures/ui/ui map blue lagoon.tga` is allowlisted for BC1→BC2 fallback 
 
 Core verification covers hashes, TGA structure, DDT header/format/alpha/dimensions, entry bounds/non-overlap, block sizes and zlib integrity. The legacy TextureExtractor is secondary.
 
-Six tiny DeflatedRGBA8 lower-mip streams remain unresolved. Nine structurally valid generated BC2 DDTs reproduce a legacy extractor access violation; synthetic data and controlled dimensions reproduce it too.
+Six tiny DeflatedRGBA8 lower-mip streams remain unresolved. Nine structurally valid generated BC2 DDTs reproduce a legacy extractor access violation; controlled real-data and synthetic tests show the same class of failure across several dimensions and content patterns. The tests do not establish a single monotonic size/block threshold or a malformed-payload cause. See `docs/EXTRACTOR_CONTROL_FINDINGS.md`.
 
 Material snapshot: 20,842 XML files; 20,199 with texture fields; 5,490 with ColorTransform4; 19 with PixelXForm; 1,304 unique texture names; 80 materials with secondary_texture. Alpha metadata alone is insufficient for future CT4/player-colour policy.
 
 Do not globally cap at 1024. Future normalization must join accurate classification, material semantics, family relationships and runtime role.
 
-References: https://github.com/ptasev/Age-of-Mythology ; https://github.com/chaiNNer-org/chaiNNer ; https://github.com/Kim2091/Kim2091-Models/releases
+References:
+- https://github.com/ptasev/Age-of-Mythology
+- https://github.com/chaiNNer-org/chaiNNer
+- https://github.com/Kim2091/Kim2091-Models/releases

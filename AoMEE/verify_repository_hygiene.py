@@ -1,7 +1,8 @@
 from pathlib import Path
 import re,sys
 ROOT=Path(__file__).resolve().parent
-RX=[re.compile(r'(?i)[A-Z]:[\\\\/]+'),re.compile(r'(?i)(?:[\\\\/])Users(?:[\\\\/])'),re.compile(r'(?i)(?:[\\\\/])home(?:[\\\\/])'),re.compile(r'(?i)OneDrive'),re.compile(r'(?i)AppData')]
+DRIVE = re.compile(r'(?i)' + r'[A-Z]' + r':[\\\\/]+')
+RX=[DRIVE,re.compile(r'(?i)(?:[\\\\/])Users(?:[\\\\/])'),re.compile(r'(?i)(?:[\\\\/])home(?:[\\\\/])'),re.compile(r'(?i)OneDrive'),re.compile(r'(?i)AppData')]
 EXT={'.md','.txt','.csv','.json','.py','.ps1','.chn','.html','.xml','.ini'}
 bad=[]
 for p in ROOT.rglob('*'):

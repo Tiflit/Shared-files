@@ -1,0 +1,1000 @@
+﻿AX80 Investigation 5
+Generated: 2026-09-29 00:02:38
+Purpose: compact firmware/container/boot-state investigation
+
+============================================================
+FILE: C:\AX80\GPL\gpl_clean\temp_data\sdk\openwrt-21.02\uboot\uboot\lib\nvrammanager\nm_api.h
+LINES: 1-60
+============================================================
+     1: 
+     2: /*! Copyright(c) 1996-2009 Shenzhen TP-LINK Technologies Co. Ltd.
+     3:  * \file    nm_lib.h
+     4:  * \brief   Protos for NVRAM manager's api functions.
+     5:  * \author  Meng Qing
+     6:  * \version 1.0
+     7:  * \date    25/04/2009
+     8:  */
+     9: 
+    10: #ifndef NM_API_H
+    11: #define NM_API_H
+    12: 
+    13: #ifdef __cplusplus
+    14: extern "C"{
+    15: #endif
+    16: 
+    17: /**************************************************************************************************/
+    18: /*                                      CONFIGURATIONS                                            */
+    19: /**************************************************************************************************/
+    20: 
+    21: /**************************************************************************************************/
+    22: /*                                      INCLUDE_FILES                                             */
+    23: /**************************************************************************************************/
+    24: 
+    25: /**************************************************************************************************/
+    26: /*                                      DEFINES                                                   */
+    27: /**************************************************************************************************/
+    28: 
+    29: #define TP_BOOT_IDX     "tp_boot_idx"
+    30: 
+    31: #define NM_PTN_NAME_FS_UBOOT "fs-uboot"
+    32: 	
+    33: #define NM_PTN_NAME_PTN_TABLE "partition-table"
+    34: 
+    35: #define NM_PTN_NAME_DEFAULT_MAC "default-mac"
+    36: #define NM_PTN_NAME_PIN	"pin"
+    37: #define NM_PTN_NAME_PRODUCT_INFO "product-info"
+    38: #define NM_PTN_NAME_SOFT_VERSION "soft-version"
+    39: 
+    40: #define NM_PTN_NAME_SUPPORT_LIST "support-list"
+    41: 	
+    42: #define NM_PTN_NAME_OS_IMAGE "os-image"
+    43: 
+    44: #define NM_PTN_NAME_FILE_SYSTEM "file-system"
+    45: 
+    46: #define NM_PTN_NAME_USER_CFG "user-config"
+    47: 
+    48: #define NM_PTN_NAME_DEFAULT_CFG "default-config"
+    49: 	
+    50: #define NM_PTN_NAME_RADIO "radio"
+    51: 
+    52: #define NM_PTN_NAME_LOG "log"
+    53: 
+    54: 
+    55: /* end add */
+    56: 
+    57: 
+    58: 
+    59: /**************************************************************************************************/
+    60: /*                                      FUNCTIONS                                                 */
+
+============================================================
+FILE: C:\AX80\GPL\gpl_clean\temp_data\sdk\openwrt-21.02\uboot\uboot\lib\nvrammanager\nm_fwup.c
+LINES: 150-220
+============================================================
+   150:         pre_base = pEntry->base;
+   151:         pre_size = pEntry->size;
+   152:         fw_size = pre_base + pre_size;
+   153:     }
+   154:     if (fw_size + NM_FWUP_PTN_INDEX_SIZE > len)
+   155:     {
+   156:         NM_ERROR("Up file too small, fw_size: %d, len: %d", fw_size, len);
+   157:         return ret;
+   158:     }
+   159:     ret = OK;
+   160:     return ret;
+   161: }
+   162: 
+   163: 
+   164: static NM_UP_PTN_ENTRY *nm_ptnNameToUpEntry(const char *ptnName)
+   165: {
+   166:     int index = 0;
+   167:     if (!ptnName)
+   168:     {
+   169:         NM_ERROR("null ptnName");
+   170:         return NULL;
+   171:     }
+   172: 
+   173:     for (index = 0; index < g_nmUpTbl.ptnNum; index++)
+   174:     {
+   175:         if (strncmp(g_nmUpTbl.entries[index].name, ptnName, NM_PTN_NAME_LEN) == 0)
+   176:         {
+   177:             NM_DEBUG("ptn %s found", ptnName);
+   178:             return (&g_nmUpTbl.entries[index]);
+   179:         }
+   180:     }
+   181:     return NULL;
+   182: }
+   183: 
+   184: 
+   185: 
+   186: 
+   187: 
+   188: int nm_setBootIdx(int idx)
+   189: {
+   190:     
+   191:     NM_DEBUG("Setting boot idx: %d", idx);
+   192:     if (env_set(TP_BOOT_IDX, idx ? "1":"0"))
+   193:     {
+   194:         NM_ERROR("Fail to setenv");
+   195:         return ERROR;
+   196:     }
+   197:     if(env_save())
+   198:     {
+   199:         NM_ERROR("Fail to save env");
+   200:         return ERROR;
+   201:     }
+   202:     has_boot_alter_flag = idx ? 1 : 0;
+   203:     return OK;
+   204: }
+   205: 
+   206: 
+   207: static int nm_checkUpContents(char *contentsBuf, int contentSize)
+   208: {
+   209:     int ret = ERROR;
+   210:     int upFileSize = 0;
+   211:     int index = 0;
+   212:     NM_UP_PTN_ENTRY *pEntry = NULL;
+   213: 
+   214:     upFileSize = g_nmUpTbl.rootSize;
+   215: 
+   216:     /* file size check */
+   217:     for (index = 0; index < g_nmUpTbl.ptnNum; index++)
+   218:     {
+   219:         pEntry = &g_nmUpTbl.entries[index];
+   220:         if (upFileSize != pEntry->base)
+
+============================================================
+FILE: C:\AX80\GPL\gpl_clean\temp_data\sdk\openwrt-21.02\uboot-7981\uboot\lib\nvrammanager\nm_fwup.c
+LINES: 150-220
+============================================================
+   150:         pre_base = pEntry->base;
+   151:         pre_size = pEntry->size;
+   152:         fw_size = pre_base + pre_size;
+   153:     }
+   154:     if (fw_size + NM_FWUP_PTN_INDEX_SIZE > len)
+   155:     {
+   156:         NM_ERROR("Up file too small, fw_size: %d, len: %d", fw_size, len);
+   157:         return ret;
+   158:     }
+   159:     ret = OK;
+   160:     return ret;
+   161: }
+   162: 
+   163: 
+   164: static NM_UP_PTN_ENTRY *nm_ptnNameToUpEntry(const char *ptnName)
+   165: {
+   166:     int index = 0;
+   167:     if (!ptnName)
+   168:     {
+   169:         NM_ERROR("null ptnName");
+   170:         return NULL;
+   171:     }
+   172: 
+   173:     for (index = 0; index < g_nmUpTbl.ptnNum; index++)
+   174:     {
+   175:         if (strncmp(g_nmUpTbl.entries[index].name, ptnName, NM_PTN_NAME_LEN) == 0)
+   176:         {
+   177:             NM_DEBUG("ptn %s found", ptnName);
+   178:             return (&g_nmUpTbl.entries[index]);
+   179:         }
+   180:     }
+   181:     return NULL;
+   182: }
+   183: 
+   184: 
+   185: 
+   186: 
+   187: 
+   188: int nm_setBootIdx(int idx)
+   189: {
+   190:     
+   191:     NM_DEBUG("Setting boot idx: %d", idx);
+   192:     if (env_set(TP_BOOT_IDX, idx ? "1":"0"))
+   193:     {
+   194:         NM_ERROR("Fail to setenv");
+   195:         return ERROR;
+   196:     }
+   197:     if(env_save())
+   198:     {
+   199:         NM_ERROR("Fail to save env");
+   200:         return ERROR;
+   201:     }
+   202:     has_boot_alter_flag = idx ? 1 : 0;
+   203:     return OK;
+   204: }
+   205: 
+   206: 
+   207: static int nm_checkUpContents(char *contentsBuf, int contentSize)
+   208: {
+   209:     int ret = ERROR;
+   210:     int upFileSize = 0;
+   211:     int index = 0;
+   212:     NM_UP_PTN_ENTRY *pEntry = NULL;
+   213: 
+   214:     upFileSize = g_nmUpTbl.rootSize;
+   215: 
+   216:     /* file size check */
+   217:     for (index = 0; index < g_nmUpTbl.ptnNum; index++)
+   218:     {
+   219:         pEntry = &g_nmUpTbl.entries[index];
+   220:         if (upFileSize != pEntry->base)
+
+============================================================
+TARGETED BUILD-SYSTEM SEARCH
+============================================================
+
+Path                                                       LineNumber Line                                                                                                                                                                      
+----                                                       ---------- ----                                                                                                                                                                      
+C:\AX80\GPL\selected\temp_data\build\apdefconfig.xml              636 <redistribute>kernel</redistribute>                                                                                                                                       
+C:\AX80\GPL\selected\temp_data\build\atf.config                    15 # CONFIG_TARGET_BL2 is not set                                                                                                                                            
+C:\AX80\GPL\selected\temp_data\build\atf.config                    52 CONFIG_NEED_BL2=y                                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\atf.config                    55 CONFIG_NEED_FIP=y                                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\atf.config                    56 CONFIG_BL33="$(UBOOT_DIR)/u-boot.bin"                                                                                                                                     
+C:\AX80\GPL\selected\temp_data\build\atf.config                    62 CONFIG_FIP_BASE=0x20000                                                                                                                                                   
+C:\AX80\GPL\selected\temp_data\build\atf.config                    63 CONFIG_FIP_SIZE=0x100000                                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\basic.config                  37 SDK_KERNEL_DIR:=$(SDK_ROOT_DIR)/target/linux/linux-5.4.124                                                                                                                
+C:\AX80\GPL\selected\temp_data\build\basic.config                  63 # fix kernel's vermagic                                                                                                                                                   
+C:\AX80\GPL\selected\temp_data\build\defaultconfig.xml            697 <redistribute>kernel</redistribute>                                                                                                                                       
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config            201 CONFIG_CONFIG_BL2_OFFSET=0x0                                                                                                                                              
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config            202 CONFIG_CONFIG_BL2_SIZE=0x20000                                                                                                                                            
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config            203 CONFIG_CONFIG_FIP_OFFSET=0x20000                                                                                                                                          
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config            204 CONFIG_CONFIG_FIP_SIZE=0x100000                                                                                                                                           
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config            257 # CONFIG_ENV_VARS_UBOOT_CONFIG is not set                                                                                                                                 
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config            287 CONFIG_FIT=y                                                                                                                                                              
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config            288 CONFIG_FIT_EXTERNAL_OFFSET=0x0                                                                                                                                            
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config            289 CONFIG_FIT_FULL_CHECK=y                                                                                                                                                   
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config            290 # CONFIG_FIT_SIGNATURE is not set                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config            291 # CONFIG_FIT_CIPHER is not set                                                                                                                                            
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config            292 # CONFIG_FIT_VERBOSE is not set                                                                                                                                           
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config            293 # CONFIG_FIT_BEST_MATCH is not set                                                                                                                                        
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config            294 CONFIG_FIT_PRINT=y                                                                                                                                                        
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config            687 # Partition Types                                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config            689 CONFIG_PARTITIONS=y                                                                                                                                                       
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config            690 # CONFIG_MAC_PARTITION is not set                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config            691 CONFIG_DOS_PARTITION=y                                                                                                                                                    
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config            692 # CONFIG_ISO_PARTITION is not set                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config            693 # CONFIG_AMIGA_PARTITION is not set                                                                                                                                       
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config            694 CONFIG_EFI_PARTITION=y                                                                                                                                                    
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config            695 CONFIG_EFI_PARTITION_ENTRIES_NUMBERS=128                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config            696 CONFIG_EFI_PARTITION_ENTRIES_OFF=0                                                                                                                                        
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config            697 CONFIG_PARTITION_UUIDS=y                                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config            698 CONFIG_PARTITION_TYPE_GUID=y                                                                                                                                              
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config            710 # CONFIG_MULTI_DTB_FIT is not set                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config            738 CONFIG_ENV_VARS_UBOOT_RUNTIME_CONFIG=y                                                                                                                                    
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config            999 CONFIG_MMC_HW_PARTITIONING=y                                                                                                                                              
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config           1028 CONFIG_MTD_PARTITIONS=y                                                                                                                                                   
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config           1578 CONFIG_TP_FIRST_UBOOT=y                                                                                                                                                   
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config           1579 # CONFIG_TP_SECOND_UBOOT is not set                                                                                                                                       
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config           1590 CONFIG_TOOLS_FIT=y                                                                                                                                                        
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config           1591 CONFIG_TOOLS_FIT_FULL_CHECK=y                                                                                                                                             
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config           1592 CONFIG_TOOLS_FIT_PRINT=y                                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config           1593 CONFIG_TOOLS_FIT_RSASSA_PSS=y                                                                                                                                             
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config           1594 CONFIG_TOOLS_FIT_SIGNATURE=y                                                                                                                                              
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config           1595 CONFIG_TOOLS_FIT_SIGNATURE_MAX_SIZE=0x10000000                                                                                                                            
+C:\AX80\GPL\selected\temp_data\build\firstuboot.config           1596 CONFIG_TOOLS_FIT_VERBOSE=y                                                                                                                                                
+C:\AX80\GPL\selected\temp_data\build\gather                        33   -p, --partition=FILE 			Partition file                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\gather                        45  r   failed to open partition file. illegal version file. total=%d %d=%[^,],%x,%x,%d,%d,%d,%d,%s     partition table: index=%d error                                      
+C:\AX80\GPL\selected\temp_data\build\gather                        47 partition file %s is not exist, ignore it.                                                                                                                                
+C:\AX80\GPL\selected\temp_data\build\gather                        50  make_flash: gatherFile start. more parameter needed: Partition file, Input Dir, Onput Dir. parse partition file error.        make_flash: parse partition table file d...
+C:\AX80\GPL\selected\temp_data\build\image.mk                      13 .PHONY:image image_uboot image_prep                                                                                                                                       
+C:\AX80\GPL\selected\temp_data\build\image.mk                      21 #partition.conf：分区表，nvrammanager需要                                                                                                                                        
+C:\AX80\GPL\selected\temp_data\build\image.mk                      22 #partitionlist：用于make_up工具                                                                                                                                                
+C:\AX80\GPL\selected\temp_data\build\image.mk                      23 #bl2.img：BL2 bootloader                                                                                                                                                   
+C:\AX80\GPL\selected\temp_data\build\image.mk                      24 #fip.bin：BL31+uboot                                                                                                                                                       
+C:\AX80\GPL\selected\temp_data\build\image.mk                      26 firmware:image image_uboot                                                                                                                                                
+C:\AX80\GPL\selected\temp_data\build\image.mk                      28 image:rootfs userconfigfs image_prep $(HOSTTOOLS_DIR)/make_up                                                                                                             
+C:\AX80\GPL\selected\temp_data\build\image.mk                      30 	[ -n "$(DEBUG_NO_SIGN)" ] && $(BUILD_DIR)/make_up \                                                                                                                      
+C:\AX80\GPL\selected\temp_data\build\image.mk                      31 		-r $(IMAGE_DIR)/root.ubi \                                                                                                                                              
+C:\AX80\GPL\selected\temp_data\build\image.mk                      32 		-P $(IMAGE_DIR)/partition.conf -B 128 \                                                                                                                                 
+C:\AX80\GPL\selected\temp_data\build\image.mk                      36 		-p $(IMAGE_DIR)/partitionlist \                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\image.mk                      38 	|| $(BUILD_DIR)/make_up \                                                                                                                                                
+C:\AX80\GPL\selected\temp_data\build\image.mk                      39 		-r $(IMAGE_DIR)/root.ubi \                                                                                                                                              
+C:\AX80\GPL\selected\temp_data\build\image.mk                      40 		-P $(IMAGE_DIR)/partition.conf -B 128 \                                                                                                                                 
+C:\AX80\GPL\selected\temp_data\build\image.mk                      44 		-p $(IMAGE_DIR)/partitionlist \                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\image.mk                      48 $(HOSTTOOLS_DIR)/make_up $(HOSTTOOLS_DIR)/gather:                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\image.mk                      49 	# cd $(HOSTTOOLS_DIR)/../src && make CONFIG_MKFLASH_NO_ECC=y CONFIG_MKFLASH_NO_JFFS2=y CONFIG_MKFLASH_WITH_PARTITION=y                                                   
+C:\AX80\GPL\selected\temp_data\build\image.mk                      53 	cp $(SDK_LINUX_DIR)/mt7986a-ax6000-snand-rfb-kernel.bin $(IMAGE_DIR)/kernel.bin                                                                                          
+C:\AX80\GPL\selected\temp_data\build\image.mk                      57 	$(SDK_HOST_TOOL_DIR)/ubinize -m 2048 -p 128KiB -E 5 -o $(IMAGE_DIR)/root.ubi $(IMAGE_DIR)/root.cfg ;                                                                     
+C:\AX80\GPL\selected\temp_data\build\image.mk                      63 	echo "support-list $(CONFIG_DIR)/supportlist.bin" > $(IMAGE_DIR)/partitionlist                                                                                           
+C:\AX80\GPL\selected\temp_data\build\image.mk                      64 	echo "soft-version $(IMAGE_DIR)/soft-version" >> $(IMAGE_DIR)/partitionlist                                                                                              
+C:\AX80\GPL\selected\temp_data\build\image.mk                      67 	$(call padFileWithFF,$(SDK_ROOT_DIR)/uboot/bin/bl2.img,$(IMAGE_DIR)/bl2.img,0x20000)                                                                                     
+C:\AX80\GPL\selected\temp_data\build\image.mk                      68 	$(call padFileWithFF,$(SDK_ROOT_DIR)/uboot/bin/fip.bin,$(IMAGE_DIR)/fip.bin,0x20000)                                                                                     
+C:\AX80\GPL\selected\temp_data\build\image.mk                      69 	$(call concatFile,$(IMAGE_DIR)/bl2.img,$(IMAGE_DIR)/fip.bin,$(IMAGE_DIR)/boot.bin)                                                                                       
+C:\AX80\GPL\selected\temp_data\build\iplatform.config              18 CONFIG_KERNEL_OPTIONS=y                                                                                                                                                   
+C:\AX80\GPL\selected\temp_data\build\iplatform.config              19 CONFIG_LINUX_KERNEL_PATH="../sdk/openwrt-21.02/target/linux/linux-5.4.124"                                                                                                
+C:\AX80\GPL\selected\temp_data\build\iplatform.config             419 # Kernel modules                                                                                                                                                          
+C:\AX80\GPL\selected\temp_data\build\iplatform.config             833 # CONFIG_PACKAGE_uboot-envtools is not set                                                                                                                                
+C:\AX80\GPL\selected\temp_data\build\iplatform.config            1038 # CONFIG_proftpd-in-fit is not set                                                                                                                                        
+C:\AX80\GPL\selected\temp_data\build\iplatform.config            1097 #CONFIG_PACKAGE_strongswan-mod-fips-prf=y                                                                                                                                 
+C:\AX80\GPL\selected\temp_data\build\iplatform.config            1105 # CONFIG_PACKAGE_strongswan-mod-kernel-libipsec is not set                                                                                                                
+C:\AX80\GPL\selected\temp_data\build\iplatform.config            1106 #CONFIG_PACKAGE_strongswan-mod-kernel-netlink=y                                                                                                                           
+C:\AX80\GPL\selected\temp_data\build\iplatform.config            1245 CONFIG_PACKAGE_logd_kernel_no_msgid=y                                                                                                                                     
+C:\AX80\GPL\selected\temp_data\build\iplatform.config            1320 # CONFIG_PACKAGE_BRIDGE_BUILD_32BIT_COMPAT_KERNEL_64BIT is not set                                                                                                        
+C:\AX80\GPL\selected\temp_data\build\iplatform.config            2213 CONFIG_NVRAM_KERNEL=y                                                                                                                                                     
+C:\AX80\GPL\selected\temp_data\build\iplatform.config            2263 # CONFIG_PACKAGE_ubootenv is not set                                                                                                                                      
+C:\AX80\GPL\selected\temp_data\build\kernel.config                  3 # Linux/arm64 5.4.124 Kernel Configuration                                                                                                                                
+C:\AX80\GPL\selected\temp_data\build\kernel.config                209 # Kernel Performance Events And Counters                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\kernel.config                212 # end of Kernel Performance Events And Counters                                                                                                                           
+C:\AX80\GPL\selected\temp_data\build\kernel.config                250 CONFIG_KERNEL_MODE_NEON=y                                                                                                                                                 
+C:\AX80\GPL\selected\temp_data\build\kernel.config                296 # Kernel Features                                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\kernel.config                369 # CONFIG_UNMAP_KERNEL_AT_EL0 is not set                                                                                                                                   
+C:\AX80\GPL\selected\temp_data\build\kernel.config                408 # end of Kernel Features                                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\kernel.config                515 # TP-LINK kernel features                                                                                                                                                 
+C:\AX80\GPL\selected\temp_data\build\kernel.config                528 # end of TP-LINK kernel features                                                                                                                                          
+C:\AX80\GPL\selected\temp_data\build\kernel.config                593 CONFIG_ARCH_HAS_STRICT_KERNEL_RWX=y                                                                                                                                       
+C:\AX80\GPL\selected\temp_data\build\kernel.config                594 CONFIG_STRICT_KERNEL_RWX=y                                                                                                                                                
+C:\AX80\GPL\selected\temp_data\build\kernel.config                602 # GCOV-based kernel profiling                                                                                                                                             
+C:\AX80\GPL\selected\temp_data\build\kernel.config                604 # CONFIG_GCOV_KERNEL is not set                                                                                                                                           
+C:\AX80\GPL\selected\temp_data\build\kernel.config                606 # end of GCOV-based kernel profiling                                                                                                                                      
+C:\AX80\GPL\selected\temp_data\build\kernel.config                641 # Partition Types                                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\kernel.config                643 CONFIG_PARTITION_ADVANCED=y                                                                                                                                               
+C:\AX80\GPL\selected\temp_data\build\kernel.config                644 # CONFIG_ACORN_PARTITION is not set                                                                                                                                       
+C:\AX80\GPL\selected\temp_data\build\kernel.config                645 # CONFIG_AIX_PARTITION is not set                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\kernel.config                646 # CONFIG_OSF_PARTITION is not set                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\kernel.config                647 # CONFIG_AMIGA_PARTITION is not set                                                                                                                                       
+C:\AX80\GPL\selected\temp_data\build\kernel.config                648 # CONFIG_ATARI_PARTITION is not set                                                                                                                                       
+C:\AX80\GPL\selected\temp_data\build\kernel.config                649 # CONFIG_MAC_PARTITION is not set                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\kernel.config                650 CONFIG_MSDOS_PARTITION=y                                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\kernel.config                652 # CONFIG_MINIX_SUBPARTITION is not set                                                                                                                                    
+C:\AX80\GPL\selected\temp_data\build\kernel.config                653 # CONFIG_SOLARIS_X86_PARTITION is not set                                                                                                                                 
+C:\AX80\GPL\selected\temp_data\build\kernel.config                655 # CONFIG_LDM_PARTITION is not set                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\kernel.config                656 # CONFIG_SGI_PARTITION is not set                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\kernel.config                657 # CONFIG_ULTRIX_PARTITION is not set                                                                                                                                      
+C:\AX80\GPL\selected\temp_data\build\kernel.config                658 # CONFIG_SUN_PARTITION is not set                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\kernel.config                659 # CONFIG_KARMA_PARTITION is not set                                                                                                                                       
+C:\AX80\GPL\selected\temp_data\build\kernel.config                660 CONFIG_EFI_PARTITION=y                                                                                                                                                    
+C:\AX80\GPL\selected\temp_data\build\kernel.config                661 # CONFIG_SYSV68_PARTITION is not set                                                                                                                                      
+C:\AX80\GPL\selected\temp_data\build\kernel.config                662 # CONFIG_CMDLINE_PARTITION is not set                                                                                                                                     
+C:\AX80\GPL\selected\temp_data\build\kernel.config                663 # end of Partition Types                                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\kernel.config               1442 # Rootfs partition parsers                                                                                                                                                
+C:\AX80\GPL\selected\temp_data\build\kernel.config               1447 # Firmware partition parsers                                                                                                                                              
+C:\AX80\GPL\selected\temp_data\build\kernel.config               1453 CONFIG_MTD_SPLIT_FIT_FW=y                                                                                                                                                 
+C:\AX80\GPL\selected\temp_data\build\kernel.config               1467 # Partition parsers                                                                                                                                                       
+C:\AX80\GPL\selected\temp_data\build\kernel.config               1475 # end of Partition parsers                                                                                                                                                
+C:\AX80\GPL\selected\temp_data\build\kernel.config               1490 # CONFIG_MTD_PARTITIONED_MASTER is not set                                                                                                                                
+C:\AX80\GPL\selected\temp_data\build\kernel.config               3437 # CONFIG_EXFAT_KERNEL_DEBUG is not set                                                                                                                                    
+C:\AX80\GPL\selected\temp_data\build\kernel.config               3996 CONFIG_PARTITION_PERCPU=y                                                                                                                                                 
+C:\AX80\GPL\selected\temp_data\build\kernel.config               4288 # Kernel hardening options                                                                                                                                                
+C:\AX80\GPL\selected\temp_data\build\kernel.config               4298 # end of Kernel hardening options                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\kernel.config               4562 # Kernel hacking                                                                                                                                                          
+C:\AX80\GPL\selected\temp_data\build\kernel.config               4602 CONFIG_DEBUG_KERNEL=y                                                                                                                                                     
+C:\AX80\GPL\selected\temp_data\build\kernel.config               4758 # end of Kernel hacking                                                                                                                                                   
+C:\AX80\GPL\selected\temp_data\build\Makefile                      35 EXT_PREPARE := toolchain_relocate toolchain_mtk_uboot ipf_hosttools                                                                                                       
+C:\AX80\GPL\selected\temp_data\build\Makefile                      40 EXT_PREPARE := toolchain_relocate toolchain_mtk_uboot ipf_hosttools                                                                                                       
+C:\AX80\GPL\selected\temp_data\build\Makefile                     126 toolchain_mtk_uboot:                                                                                                                                                      
+C:\AX80\GPL\selected\temp_data\build\Makefile                     127 	@if [ ! -d $(UBOOT_TOOLCHAIN_ROOT_DIR) ]; then \                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\Makefile                     128 		echo Uncompressing mtk Uboot toolchain, please wait... && \                                                                                                             
+C:\AX80\GPL\selected\temp_data\build\Makefile                     129 		tar -jxf $(TOOLCHAIN_DIR)/$(UBOOT_TOOLCHAIN_PACKAGE) -C $(TOOLCHAIN_DIR) ; \                                                                                            
+C:\AX80\GPL\selected\temp_data\build\Makefile                     162 iplatform_prep: feed.conf toolchain iplatform.config iplatform_package/symlinks sdk.config kernel.config $(EXT_PREPARE)                                                   
+C:\AX80\GPL\selected\temp_data\build\Makefile                     180 #	@install -m 755 $(BUILD_DIR)/hostTools/make_flash_nand/bin/make_up $(CONFIG_DIR)/                                                                                       
+C:\AX80\GPL\selected\temp_data\build\Makefile                     197 		cp -f $(BUILD_DIR)/hostTools/make_flash_nand_ipq/bin/make_up $(CONFIG_DIR);\                                                                                            
+C:\AX80\GPL\selected\temp_data\build\Makefile                     217 	iplatform.config sdk.config kernel.config toolchain_aarch64 hosttools $(EXT_PHONY)                                                                                       
+C:\AX80\GPL\selected\temp_data\build\make_up                      194   -p, --splist=FILE 				extra fill partition list                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\make_up                      195   -P, --partition=FILE 			Partition file                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\make_up                      207   -v, --version                    Display version rootfs fboot output splist partition softver hardver name maxsize bch blocksize oob orderbits debug cloud help versi...
+C:\AX80\GPL\selected\temp_data\build\make_up                      211  %s %s       illegal extra-partition fill list:%s fill %s                                                                                                                 
+C:\AX80\GPL\selected\temp_data\build\make_up                      217  -p, --partition=FILE      Partition file        failed to open partition file. total=%d,flash=%dM flash=2M/4M/8M/16M/32M/128M total=%d out of range                      
+C:\AX80\GPL\selected\temp_data\build\make_up                      218  %d=%[^,],%x,%x,%d,%d,%d,%d,%s      partition table: index=%d error                                                                                                       
+C:\AX80\GPL\selected\temp_data\build\make_up                      219         partition table: index=%d base error                                                                                                                              
+C:\AX80\GPL\selected\temp_data\build\make_up                      220    partition table: index=%d size error                                                                                                                                   
+C:\AX80\GPL\selected\temp_data\build\make_up                      222         partition %d does not have enough space                                                                                                                           
+C:\AX80\GPL\selected\temp_data\build\make_up                      228  makeFlashContent start parse partition file error. check partition table error. Empty mtd part %s                                                                        
+C:\AX80\GPL\selected\temp_data\build\make_up                      529       �     Db            �    �Cb             crtstuff.c __JCR_LIST__ deregister_tm_clones __do_global_dtors_aux completed.6735 __do_global_dtors_aux_fini_arr...
+C:\AX80\GPL\selected\temp_data\build\mt7986a-snand-rfb.dts        247 		partition@0 {                                                                                                                                                           
+C:\AX80\GPL\selected\temp_data\build\mt7986a-snand-rfb.dts        253 		partition@200000 {                                                                                                                                                      
+C:\AX80\GPL\selected\temp_data\build\mt7986a-snand-rfb.dts        258 		partition@300000 {                                                                                                                                                      
+C:\AX80\GPL\selected\temp_data\build\mt7986a-snand-rfb.dts        263 		partition@3500000 {                                                                                                                                                     
+C:\AX80\GPL\selected\temp_data\build\mt7986a-snand-rfb.dts        268 		partition@6700000 {                                                                                                                                                     
+C:\AX80\GPL\selected\temp_data\build\mt7986a-snand-rfb.dts        273 		factory:partition@6f00000 {                                                                                                                                             
+C:\AX80\GPL\selected\temp_data\build\mt7986a-snand-rfb.dts        278 		partition@7300000 {                                                                                                                                                     
+C:\AX80\GPL\selected\temp_data\build\mt7986b-snand-rfb.dts        191 		partition@0 {                                                                                                                                                           
+C:\AX80\GPL\selected\temp_data\build\mt7986b-snand-rfb.dts        197 		partition@200000 {                                                                                                                                                      
+C:\AX80\GPL\selected\temp_data\build\mt7986b-snand-rfb.dts        202 		partition@300000 {                                                                                                                                                      
+C:\AX80\GPL\selected\temp_data\build\mt7986b-snand-rfb.dts        207 		partition@3500000 {                                                                                                                                                     
+C:\AX80\GPL\selected\temp_data\build\mt7986b-snand-rfb.dts        212 		partition@6700000 {                                                                                                                                                     
+C:\AX80\GPL\selected\temp_data\build\mt7986b-snand-rfb.dts        217 		factory:partition@6f00000 {                                                                                                                                             
+C:\AX80\GPL\selected\temp_data\build\partition.conf                 4 2=ubi0,                     0x00300000, 0x03200000, 0,  0,  0,  0,  root.ubi                                                                                              
+C:\AX80\GPL\selected\temp_data\build\partition.conf                20 18=partition-table,         0x00000000, 0x00000000, 1,  0,  0,  3,  partition.conf                                                                                        
+C:\AX80\GPL\selected\temp_data\build\product.mk                    16 kernel_config:sdk_prep                                                                                                                                                    
+C:\AX80\GPL\selected\temp_data\build\product.mk                    17 	@echo "copy kernel.config"                                                                                                                                               
+C:\AX80\GPL\selected\temp_data\build\product.mk                    18 	$(call copyFile,$(CONFIG_DIR)/kernel.config,$(SDK_ROOT_DIR)/target/linux/mediatek/mt7986/config-5.4)                                                                     
+C:\AX80\GPL\selected\temp_data\build\product.mk                    28 kernel:kernel_config                                                                                                                                                      
+C:\AX80\GPL\selected\temp_data\build\product.mk                    31 kernel_menuconfig:kernel_config                                                                                                                                           
+C:\AX80\GPL\selected\temp_data\build\product.mk                    32 	cd $(SDK_ROOT_DIR) && $(MAKE) kernel_menuconfig                                                                                                                          
+C:\AX80\GPL\selected\temp_data\build\product.mk                    33 	cp $(SDK_ROOT_DIR)/target/linux/linux-5.4.124/.config $(CONFIG_DIR)/kernel.config                                                                                        
+C:\AX80\GPL\selected\temp_data\build\product.mk                    35 kernel_clean:                                                                                                                                                             
+C:\AX80\GPL\selected\temp_data\build\product.mk                    61 sdk:sdk_prep sdk_config kernel_config sdk_build boot                                                                                                                      
+C:\AX80\GPL\selected\temp_data\build\product.mk                    74 first_uboot_config:                                                                                                                                                       
+C:\AX80\GPL\selected\temp_data\build\product.mk                    75 	@echo "copy uboot.config"                                                                                                                                                
+C:\AX80\GPL\selected\temp_data\build\product.mk                    76 	$(call copyFile,$(CONFIG_DIR)/firstuboot.config,$(SDK_ROOT_DIR)/uboot/uboot.config)                                                                                      
+C:\AX80\GPL\selected\temp_data\build\product.mk                    79 	$(call copyFile,$(CONFIG_DIR)/atf.config,$(SDK_ROOT_DIR)/uboot/atf.config)                                                                                               
+C:\AX80\GPL\selected\temp_data\build\product.mk                    81 	#mt7986b-rfb 配置位于uboot.config CONFIG_DEFAULT_DEVICE_TREE                                                                                                                 
+C:\AX80\GPL\selected\temp_data\build\product.mk                    83 	$(call copyFile,$(CONFIG_DIR)/mt7986b-rfb.dts,$(SDK_ROOT_DIR)/uboot/uboot/arch/arm/mt7986b-rfb.dts)                                                                      
+C:\AX80\GPL\selected\temp_data\build\product.mk                    85 second_uboot_config:                                                                                                                                                      
+C:\AX80\GPL\selected\temp_data\build\product.mk                    86 	@echo "copy uboot.config"                                                                                                                                                
+C:\AX80\GPL\selected\temp_data\build\product.mk                    87 	$(call copyFile,$(CONFIG_DIR)/seconduboot.config,$(SDK_ROOT_DIR)/uboot/uboot.config)                                                                                     
+C:\AX80\GPL\selected\temp_data\build\product.mk                    90 	$(call copyFile,$(CONFIG_DIR)/atf.config,$(SDK_ROOT_DIR)/uboot/atf.config)                                                                                               
+C:\AX80\GPL\selected\temp_data\build\product.mk                    92 	#mt7986b-rfb 配置位于uboot.config CONFIG_DEFAULT_DEVICE_TREE                                                                                                                 
+C:\AX80\GPL\selected\temp_data\build\product.mk                    94 	$(call copyFile,$(CONFIG_DIR)/mt7986b-rfb.dts,$(SDK_ROOT_DIR)/uboot/uboot/arch/arm/mt7986b-rfb.dts)                                                                      
+C:\AX80\GPL\selected\temp_data\build\product.mk                    97 	# 注意顺序，先编第二个uboot，再编地一个uboot，否则make 第二个uboot时会把bl2,fip等产物清空，导致image制作时报错。                                                                                                
+C:\AX80\GPL\selected\temp_data\build\product.mk                   100 firstboot:first_uboot_config                                                                                                                                              
+C:\AX80\GPL\selected\temp_data\build\product.mk                   102 	cd $(SDK_ROOT_DIR)/uboot && $(MAKE) V=s \                                                                                                                                
+C:\AX80\GPL\selected\temp_data\build\product.mk                   106 	cp $(SDK_ROOT_DIR)/uboot/bin/* $(IMAGE_DIR)/                                                                                                                             
+C:\AX80\GPL\selected\temp_data\build\product.mk                   108 secondboot:second_uboot_config                                                                                                                                            
+C:\AX80\GPL\selected\temp_data\build\product.mk                   110 	cd $(SDK_ROOT_DIR)/uboot && $(MAKE) seconduboot V=s \                                                                                                                    
+C:\AX80\GPL\selected\temp_data\build\product.mk                   114 	cp $(SDK_ROOT_DIR)/uboot/bin/* $(IMAGE_DIR)/                                                                                                                             
+C:\AX80\GPL\selected\temp_data\build\product.mk                   117 boot_menuconfig:uboot_config                                                                                                                                              
+C:\AX80\GPL\selected\temp_data\build\product.mk                   118 	cd $(SDK_ROOT_DIR)/uboot && $(MAKE) menuconfig \                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\product.mk                   121 	cp $(SDK_ROOT_DIR)/uboot/uboot.config $(CONFIG_DIR)/uboot.config                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\product.mk                   122 	cp $(SDK_ROOT_DIR)/uboot/atf.config $(CONFIG_DIR)/atf.config                                                                                                             
+C:\AX80\GPL\selected\temp_data\build\profile.xml                  239 <extern_partition>certificate router-config ap-config portal-back portal-logo auc_data</extern_partition>                                                                 
+C:\AX80\GPL\selected\temp_data\build\Readme.md                     36     └── uboot                                                                                                                                                             
+C:\AX80\GPL\selected\temp_data\build\Readme.md                     95 本目标同时编译boot kernel                                                                                                                                                        
+C:\AX80\GPL\selected\temp_data\build\Readme.md                    116 ### 单独编译kernel                                                                                                                                                            
+C:\AX80\GPL\selected\temp_data\build\Readme.md                    117 编译sdk的时候，会同时编译kernel，该命令用于单独编译kernel                                                                                                                                      
+C:\AX80\GPL\selected\temp_data\build\Readme.md                    119 make PRODUCT_NAME=ax80v1 kernel                                                                                                                                           
+C:\AX80\GPL\selected\temp_data\build\Readme.md                    123 make PRODUCT_NAME=ax80v1 kernel_menuconfig                                                                                                                                
+C:\AX80\GPL\selected\temp_data\build\Readme.md                    136 bl2.img：bl2，由sdk的atf编译生成bl2                                                                                                                                               
+C:\AX80\GPL\selected\temp_data\build\Readme.md                    137 fip.img：bl31+uboot，其中由sdk的atf编译生成bl31；uboot运行在内存中                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\Readme.md                    175 kernel.mk中定义的内核模块，目前尚没法单独编译，可全部删掉重编                                                                                                                                       
+C:\AX80\GPL\selected\temp_data\build\Readme.md                    177 make package/kernel/{clean, compile, install}                                                                                                                             
+C:\AX80\GPL\selected\temp_data\build\Readme.md                    181 make iplatform_package/kernel/{clean, compile, install}                                                                                                                   
+C:\AX80\GPL\selected\temp_data\build\Readme.md                    240 ## uboot烧录                                                                                                                                                                
+C:\AX80\GPL\selected\temp_data\build\Readme.md                    251 tftp 40001000 bl2.img                                                                                                                                                     
+C:\AX80\GPL\selected\temp_data\build\Readme.md                    261 sdk中编译atf配置。atf指的是ARM的底层bootloader，有BL1 BL2 BL31 BL33等各个等级。atf编译的是BL2和BL31。BL31和uboot一起打包生成fip.bin.                                                                       
+C:\AX80\GPL\selected\temp_data\build\Readme.md                    263 ### uboot.config                                                                                                                                                          
+C:\AX80\GPL\selected\temp_data\build\Readme.md                    265 sdk中的uboot                                                                                                                                                                
+C:\AX80\GPL\selected\temp_data\build\Readme.md                    266 引导流程：ROM->BL2(atf.bin)->BL31(fip.bin一部分)->uboot(fip.bin一部分)                                                                                                               
+C:\AX80\GPL\selected\temp_data\build\Readme.md                    269 sdk（本身是openwrt）的编译配置，包括了完整的上层功能配置和一部分kernel配置。我们只需要kernel、某些内核模块和上层模块。                                                                                                    
+C:\AX80\GPL\selected\temp_data\build\Readme.md                    277 ### kernel.config                                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\Readme.md                    278 完整的kernel配置，用于sdk                                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\redefconfig.xml              697 <redistribute>kernel</redistribute>                                                                                                                                       
+C:\AX80\GPL\selected\temp_data\build\root.cfg                       1 [uboot]                                                                                                                                                                   
+C:\AX80\GPL\selected\temp_data\build\root.cfg                       5 image=second-uboot.bin                                                                                                                                                    
+C:\AX80\GPL\selected\temp_data\build\root.cfg                      10 vol_name=uboot                                                                                                                                                            
+C:\AX80\GPL\selected\temp_data\build\root.cfg                      12 [kernel]                                                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\root.cfg                      16 image=kernel.bin                                                                                                                                                          
+C:\AX80\GPL\selected\temp_data\build\root.cfg                      21 vol_name=kernel                                                                                                                                                           
+C:\AX80\GPL\selected\temp_data\build\rootfs.mk                     95 	# fw_printenv工具由uboot生成                                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\rootfs.mk                     99 	# fw_printenv依赖如下文件找到ubootenv分区，TODO                                                                                                                                     
+C:\AX80\GPL\selected\temp_data\build\rootfs.mk                    132 	cp -pf $(CONFIG_DIR)/partition.conf $(IMAGE_DIR)/partition.conf                                                                                                          
+C:\AX80\GPL\selected\temp_data\build\rootfs.mk                    133 	mkdir -p $(IMAGE_ROOTFS_DIR)/etc/partition_config                                                                                                                        
+C:\AX80\GPL\selected\temp_data\build\rootfs.mk                    135 	-p $(CONFIG_DIR)/partition.conf \                                                                                                                                        
+C:\AX80\GPL\selected\temp_data\build\rootfs.mk                    137 	-o $(IMAGE_ROOTFS_DIR)/etc/partition_config/ \                                                                                                                           
+C:\AX80\GPL\selected\temp_data\build\rootfs.mk                    139 	echo $(CFG_VERSION) >> $(IMAGE_ROOTFS_DIR)/etc/partition_config/soft-version                                                                                             
+C:\AX80\GPL\selected\temp_data\build\rootfs.mk                    141 		cp -pf $(IMAGE_DIR)/soft-version $(IMAGE_ROOTFS_DIR)/etc/partition_config/soft-version; \                                                                               
+C:\AX80\GPL\selected\temp_data\build\rootfs.mk                    143 	cp -pf $(IMAGE_ROOTFS_DIR)/etc/partition_config/soft-version $(IMAGE_DIR)/soft-version                                                                                   
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   182 # CONFIG_COLLECT_KERNEL_DEBUG is not set                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   185 # Kernel build options                                                                                                                                                    
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   187 CONFIG_KERNEL_BUILD_USER=""                                                                                                                                               
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   188 CONFIG_KERNEL_BUILD_DOMAIN=""                                                                                                                                             
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   189 CONFIG_KERNEL_PRINTK=y                                                                                                                                                    
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   190 CONFIG_KERNEL_CRASHLOG=y                                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   191 CONFIG_KERNEL_SWAP=y                                                                                                                                                      
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   192 # CONFIG_KERNEL_PROC_STRIPPED is not set                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   193 CONFIG_KERNEL_DEBUG_FS=y                                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   194 # CONFIG_KERNEL_ARM_PMU is not set                                                                                                                                        
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   195 # CONFIG_KERNEL_PERF_EVENTS is not set                                                                                                                                    
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   196 # CONFIG_KERNEL_PROFILING is not set                                                                                                                                      
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   197 # CONFIG_KERNEL_UBSAN is not set                                                                                                                                          
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   198 # CONFIG_KERNEL_KASAN is not set                                                                                                                                          
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   199 # CONFIG_KERNEL_KCOV is not set                                                                                                                                           
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   200 # CONFIG_KERNEL_TASKSTATS is not set                                                                                                                                      
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   201 CONFIG_KERNEL_KALLSYMS=y                                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   202 # CONFIG_KERNEL_FTRACE is not set                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   203 CONFIG_KERNEL_DEBUG_KERNEL=y                                                                                                                                              
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   204 CONFIG_KERNEL_DEBUG_INFO=y                                                                                                                                                
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   205 # CONFIG_KERNEL_DYNAMIC_DEBUG is not set                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   206 # CONFIG_KERNEL_KPROBES is not set                                                                                                                                        
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   207 CONFIG_KERNEL_AIO=y                                                                                                                                                       
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   208 CONFIG_KERNEL_IO_URING=y                                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   209 CONFIG_KERNEL_FHANDLE=y                                                                                                                                                   
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   210 CONFIG_KERNEL_FANOTIFY=y                                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   211 # CONFIG_KERNEL_BLK_DEV_BSG is not set                                                                                                                                    
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   212 # CONFIG_KERNEL_HUGETLB_PAGE is not set                                                                                                                                   
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   213 CONFIG_KERNEL_MAGIC_SYSRQ=y                                                                                                                                               
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   214 # CONFIG_KERNEL_DEBUG_PINCTRL is not set                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   215 # CONFIG_KERNEL_DEBUG_GPIO is not set                                                                                                                                     
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   216 CONFIG_KERNEL_COREDUMP=y                                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   217 CONFIG_KERNEL_ELF_CORE=y                                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   218 # CONFIG_KERNEL_PROVE_LOCKING is not set                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   219 # CONFIG_KERNEL_LOCKUP_DETECTOR is not set                                                                                                                                
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   220 # CONFIG_KERNEL_DETECT_HUNG_TASK is not set                                                                                                                               
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   221 # CONFIG_KERNEL_WQ_WATCHDOG is not set                                                                                                                                    
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   222 # CONFIG_KERNEL_DEBUG_ATOMIC_SLEEP is not set                                                                                                                             
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   223 # CONFIG_KERNEL_DEBUG_VM is not set                                                                                                                                       
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   224 CONFIG_KERNEL_PRINTK_TIME=y                                                                                                                                               
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   225 # CONFIG_KERNEL_SLABINFO is not set                                                                                                                                       
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   226 # CONFIG_KERNEL_PROC_PAGE_MONITOR is not set                                                                                                                              
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   227 # CONFIG_KERNEL_KEXEC is not set                                                                                                                                          
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   230 # CONFIG_KERNEL_DEVTMPFS is not set                                                                                                                                       
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   231 # CONFIG_KERNEL_KEYS is not set                                                                                                                                           
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   232 CONFIG_KERNEL_CGROUPS=y                                                                                                                                                   
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   233 # CONFIG_KERNEL_CGROUP_DEBUG is not set                                                                                                                                   
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   234 CONFIG_KERNEL_FREEZER=y                                                                                                                                                   
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   235 CONFIG_KERNEL_CGROUP_FREEZER=y                                                                                                                                            
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   236 CONFIG_KERNEL_CGROUP_DEVICE=y                                                                                                                                             
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   237 # CONFIG_KERNEL_CGROUP_HUGETLB is not set                                                                                                                                 
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   238 CONFIG_KERNEL_CGROUP_PIDS=y                                                                                                                                               
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   239 CONFIG_KERNEL_CGROUP_RDMA=y                                                                                                                                               
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   240 CONFIG_KERNEL_CGROUP_BPF=y                                                                                                                                                
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   241 CONFIG_KERNEL_CPUSETS=y                                                                                                                                                   
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   242 # CONFIG_KERNEL_PROC_PID_CPUSET is not set                                                                                                                                
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   243 CONFIG_KERNEL_CGROUP_CPUACCT=y                                                                                                                                            
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   244 CONFIG_KERNEL_RESOURCE_COUNTERS=y                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   245 CONFIG_KERNEL_MM_OWNER=y                                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   246 CONFIG_KERNEL_MEMCG=y                                                                                                                                                     
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   247 # CONFIG_KERNEL_MEMCG_SWAP is not set                                                                                                                                     
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   248 CONFIG_KERNEL_MEMCG_KMEM=y                                                                                                                                                
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   249 # CONFIG_KERNEL_CGROUP_PERF is not set                                                                                                                                    
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   250 CONFIG_KERNEL_CGROUP_SCHED=y                                                                                                                                              
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   251 CONFIG_KERNEL_FAIR_GROUP_SCHED=y                                                                                                                                          
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   252 # CONFIG_KERNEL_CFS_BANDWIDTH is not set                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   253 CONFIG_KERNEL_RT_GROUP_SCHED=y                                                                                                                                            
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   254 CONFIG_KERNEL_BLK_CGROUP=y                                                                                                                                                
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   255 # CONFIG_KERNEL_CFQ_GROUP_IOSCHED is not set                                                                                                                              
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   256 # CONFIG_KERNEL_BLK_DEV_THROTTLING is not set                                                                                                                             
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   257 # CONFIG_KERNEL_DEBUG_BLK_CGROUP is not set                                                                                                                               
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   258 CONFIG_KERNEL_NET_CLS_CGROUP=y                                                                                                                                            
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   259 # CONFIG_KERNEL_CGROUP_NET_CLASSID is not set                                                                                                                             
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   260 # CONFIG_KERNEL_CGROUP_NET_PRIO is not set                                                                                                                                
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   261 CONFIG_KERNEL_NAMESPACES=y                                                                                                                                                
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   262 CONFIG_KERNEL_UTS_NS=y                                                                                                                                                    
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   263 CONFIG_KERNEL_IPC_NS=y                                                                                                                                                    
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   264 CONFIG_KERNEL_USER_NS=y                                                                                                                                                   
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   265 CONFIG_KERNEL_PID_NS=y                                                                                                                                                    
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   266 CONFIG_KERNEL_NET_NS=y                                                                                                                                                    
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   267 CONFIG_KERNEL_DEVPTS_MULTIPLE_INSTANCES=y                                                                                                                                 
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   268 CONFIG_KERNEL_POSIX_MQUEUE=y                                                                                                                                              
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   269 CONFIG_KERNEL_SECCOMP_FILTER=y                                                                                                                                            
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   270 CONFIG_KERNEL_SECCOMP=y                                                                                                                                                   
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   271 CONFIG_KERNEL_IP_MROUTE=y                                                                                                                                                 
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   272 CONFIG_KERNEL_IPV6=y                                                                                                                                                      
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   273 CONFIG_KERNEL_IPV6_MULTIPLE_TABLES=y                                                                                                                                      
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   274 CONFIG_KERNEL_IPV6_SUBTREES=y                                                                                                                                             
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   275 CONFIG_KERNEL_IPV6_MROUTE=y                                                                                                                                               
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   276 # CONFIG_KERNEL_IPV6_PIMSM_V2 is not set                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   277 CONFIG_KERNEL_IPV6_SEG6_LWTUNNEL=y                                                                                                                                        
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   278 # CONFIG_KERNEL_LWTUNNEL_BPF is not set                                                                                                                                   
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   279 # CONFIG_KERNEL_IP_PNP is not set                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   285 # CONFIG_KERNEL_FS_POSIX_ACL is not set                                                                                                                                   
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   286 # CONFIG_KERNEL_BTRFS_FS_POSIX_ACL is not set                                                                                                                             
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   287 # CONFIG_KERNEL_EXT4_FS_POSIX_ACL is not set                                                                                                                              
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   288 # CONFIG_KERNEL_F2FS_FS_POSIX_ACL is not set                                                                                                                              
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   289 # CONFIG_KERNEL_JFFS2_FS_POSIX_ACL is not set                                                                                                                             
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   290 # CONFIG_KERNEL_TMPFS_POSIX_ACL is not set                                                                                                                                
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   291 # CONFIG_KERNEL_CIFS_ACL is not set                                                                                                                                       
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   292 # CONFIG_KERNEL_HFS_FS_POSIX_ACL is not set                                                                                                                               
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   293 # CONFIG_KERNEL_HFSPLUS_FS_POSIX_ACL is not set                                                                                                                           
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   294 # CONFIG_KERNEL_NFS_ACL_SUPPORT is not set                                                                                                                                
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   295 # CONFIG_KERNEL_NFS_V3_ACL_SUPPORT is not set                                                                                                                             
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   296 # CONFIG_KERNEL_NFSD_V2_ACL_SUPPORT is not set                                                                                                                            
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   297 # CONFIG_KERNEL_NFSD_V3_ACL_SUPPORT is not set                                                                                                                            
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   298 # CONFIG_KERNEL_REISER_FS_POSIX_ACL is not set                                                                                                                            
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   299 # CONFIG_KERNEL_XFS_POSIX_ACL is not set                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   300 # CONFIG_KERNEL_JFS_POSIX_ACL is not set                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   303 CONFIG_KERNEL_DEVMEM=y                                                                                                                                                    
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   304 # CONFIG_KERNEL_DEVKMEM is not set                                                                                                                                        
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   305 CONFIG_KERNEL_SQUASHFS_FRAGMENT_CACHE_SIZE=3                                                                                                                              
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   306 # CONFIG_KERNEL_SQUASHFS_XATTR is not set                                                                                                                                 
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   307 CONFIG_KERNEL_CC_OPTIMIZE_FOR_PERFORMANCE=y                                                                                                                               
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   308 # CONFIG_KERNEL_CC_OPTIMIZE_FOR_SIZE is not set                                                                                                                           
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   309 # CONFIG_KERNEL_AUDIT is not set                                                                                                                                          
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   310 # CONFIG_KERNEL_SECURITY is not set                                                                                                                                       
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   311 # CONFIG_KERNEL_SECURITY_NETWORK is not set                                                                                                                               
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   312 # CONFIG_KERNEL_SECURITY_SELINUX is not set                                                                                                                               
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   313 # CONFIG_KERNEL_EXT4_FS_SECURITY is not set                                                                                                                               
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   314 # CONFIG_KERNEL_F2FS_FS_SECURITY is not set                                                                                                                               
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   315 # CONFIG_KERNEL_UBIFS_FS_SECURITY is not set                                                                                                                              
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   316 # CONFIG_KERNEL_JFFS2_FS_SECURITY is not set                                                                                                                              
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   317 # end of Kernel build options                                                                                                                                             
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   332 # CONFIG_STRIP_KERNEL_EXPORTS is not set                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   347 # CONFIG_KERNEL_CC_STACKPROTECTOR_NONE is not set                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   348 CONFIG_KERNEL_CC_STACKPROTECTOR_REGULAR=y                                                                                                                                 
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   349 # CONFIG_KERNEL_CC_STACKPROTECTOR_STRONG is not set                                                                                                                       
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   350 CONFIG_KERNEL_STACKPROTECTOR=y                                                                                                                                            
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   351 # CONFIG_KERNEL_STACKPROTECTOR_STRONG is not set                                                                                                                          
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   372 CONFIG_EXTERNAL_KERNEL_TREE="$(TOPDIR)/target/linux/linux-5.4.124"                                                                                                        
+C:\AX80\GPL\selected\temp_data\build\sdk.config                   373 CONFIG_KERNEL_GIT_CLONE_URI=""                                                                                                                                            
+C:\AX80\GPL\selected\temp_data\build\sdk.config                  1910 # Kernel modules                                                                                                                                                          
+C:\AX80\GPL\selected\temp_data\build\sdk.config                  2735 # end of Kernel modules                                                                                                                                                   
+C:\AX80\GPL\selected\temp_data\build\sdk.config                  4952 # CONFIG_PACKAGE_nfs-kernel-server is not set                                                                                                                             
+C:\AX80\GPL\selected\temp_data\build\sdk.config                  5908 # CONFIG_PACKAGE_uboot-envtools is not set                                                                                                                                
+C:\AX80\GPL\selected\temp_data\build\sdk.config                  6465 # CONFIG_PACKAGE_wifitoggle is not set                                                                                                                                    
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config           201 CONFIG_CONFIG_BL2_OFFSET=0x0                                                                                                                                              
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config           202 CONFIG_CONFIG_BL2_SIZE=0x20000                                                                                                                                            
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config           203 CONFIG_CONFIG_FIP_OFFSET=0x20000                                                                                                                                          
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config           204 CONFIG_CONFIG_FIP_SIZE=0x100000                                                                                                                                           
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config           257 # CONFIG_ENV_VARS_UBOOT_CONFIG is not set                                                                                                                                 
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config           287 CONFIG_FIT=y                                                                                                                                                              
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config           288 CONFIG_FIT_EXTERNAL_OFFSET=0x0                                                                                                                                            
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config           289 CONFIG_FIT_FULL_CHECK=y                                                                                                                                                   
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config           290 # CONFIG_FIT_SIGNATURE is not set                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config           291 # CONFIG_FIT_CIPHER is not set                                                                                                                                            
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config           292 # CONFIG_FIT_VERBOSE is not set                                                                                                                                           
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config           293 # CONFIG_FIT_BEST_MATCH is not set                                                                                                                                        
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config           294 CONFIG_FIT_PRINT=y                                                                                                                                                        
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config           687 # Partition Types                                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config           689 CONFIG_PARTITIONS=y                                                                                                                                                       
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config           690 # CONFIG_MAC_PARTITION is not set                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config           691 CONFIG_DOS_PARTITION=y                                                                                                                                                    
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config           692 # CONFIG_ISO_PARTITION is not set                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config           693 # CONFIG_AMIGA_PARTITION is not set                                                                                                                                       
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config           694 CONFIG_EFI_PARTITION=y                                                                                                                                                    
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config           695 CONFIG_EFI_PARTITION_ENTRIES_NUMBERS=128                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config           696 CONFIG_EFI_PARTITION_ENTRIES_OFF=0                                                                                                                                        
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config           697 CONFIG_PARTITION_UUIDS=y                                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config           698 CONFIG_PARTITION_TYPE_GUID=y                                                                                                                                              
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config           710 # CONFIG_MULTI_DTB_FIT is not set                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config           738 CONFIG_ENV_VARS_UBOOT_RUNTIME_CONFIG=y                                                                                                                                    
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config           999 CONFIG_MMC_HW_PARTITIONING=y                                                                                                                                              
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config          1028 CONFIG_MTD_PARTITIONS=y                                                                                                                                                   
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config          1578 # CONFIG_TP_FIRST_UBOOT is not set                                                                                                                                        
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config          1579 CONFIG_TP_SECOND_UBOOT=y                                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config          1590 CONFIG_TOOLS_FIT=y                                                                                                                                                        
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config          1591 CONFIG_TOOLS_FIT_FULL_CHECK=y                                                                                                                                             
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config          1592 CONFIG_TOOLS_FIT_PRINT=y                                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config          1593 CONFIG_TOOLS_FIT_RSASSA_PSS=y                                                                                                                                             
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config          1594 CONFIG_TOOLS_FIT_SIGNATURE=y                                                                                                                                              
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config          1595 CONFIG_TOOLS_FIT_SIGNATURE_MAX_SIZE=0x10000000                                                                                                                            
+C:\AX80\GPL\selected\temp_data\build\seconduboot.config          1596 CONFIG_TOOLS_FIT_VERBOSE=y                                                                                                                                                
+C:\AX80\GPL\selected\temp_data\build\uboot.config                 195 CONFIG_CONFIG_BL2_OFFSET=0x0                                                                                                                                              
+C:\AX80\GPL\selected\temp_data\build\uboot.config                 196 CONFIG_CONFIG_BL2_SIZE=0x20000                                                                                                                                            
+C:\AX80\GPL\selected\temp_data\build\uboot.config                 197 CONFIG_CONFIG_FIP_OFFSET=0x20000                                                                                                                                          
+C:\AX80\GPL\selected\temp_data\build\uboot.config                 198 CONFIG_CONFIG_FIP_SIZE=0x100000                                                                                                                                           
+C:\AX80\GPL\selected\temp_data\build\uboot.config                 251 # CONFIG_ENV_VARS_UBOOT_CONFIG is not set                                                                                                                                 
+C:\AX80\GPL\selected\temp_data\build\uboot.config                 280 CONFIG_FIT=y                                                                                                                                                              
+C:\AX80\GPL\selected\temp_data\build\uboot.config                 281 CONFIG_FIT_EXTERNAL_OFFSET=0x0                                                                                                                                            
+C:\AX80\GPL\selected\temp_data\build\uboot.config                 282 CONFIG_FIT_SHA256=y                                                                                                                                                       
+C:\AX80\GPL\selected\temp_data\build\uboot.config                 283 # CONFIG_FIT_SHA384 is not set                                                                                                                                            
+C:\AX80\GPL\selected\temp_data\build\uboot.config                 284 # CONFIG_FIT_SHA512 is not set                                                                                                                                            
+C:\AX80\GPL\selected\temp_data\build\uboot.config                 285 CONFIG_FIT_FULL_CHECK=y                                                                                                                                                   
+C:\AX80\GPL\selected\temp_data\build\uboot.config                 286 # CONFIG_FIT_SIGNATURE is not set                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\uboot.config                 287 # CONFIG_FIT_CIPHER is not set                                                                                                                                            
+C:\AX80\GPL\selected\temp_data\build\uboot.config                 288 # CONFIG_FIT_VERBOSE is not set                                                                                                                                           
+C:\AX80\GPL\selected\temp_data\build\uboot.config                 289 # CONFIG_FIT_BEST_MATCH is not set                                                                                                                                        
+C:\AX80\GPL\selected\temp_data\build\uboot.config                 290 CONFIG_FIT_PRINT=y                                                                                                                                                        
+C:\AX80\GPL\selected\temp_data\build\uboot.config                 682 # Partition Types                                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\uboot.config                 684 CONFIG_PARTITIONS=y                                                                                                                                                       
+C:\AX80\GPL\selected\temp_data\build\uboot.config                 685 # CONFIG_MAC_PARTITION is not set                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\uboot.config                 686 CONFIG_DOS_PARTITION=y                                                                                                                                                    
+C:\AX80\GPL\selected\temp_data\build\uboot.config                 687 # CONFIG_ISO_PARTITION is not set                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\uboot.config                 688 # CONFIG_AMIGA_PARTITION is not set                                                                                                                                       
+C:\AX80\GPL\selected\temp_data\build\uboot.config                 689 CONFIG_EFI_PARTITION=y                                                                                                                                                    
+C:\AX80\GPL\selected\temp_data\build\uboot.config                 690 CONFIG_EFI_PARTITION_ENTRIES_NUMBERS=128                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\uboot.config                 691 CONFIG_EFI_PARTITION_ENTRIES_OFF=0                                                                                                                                        
+C:\AX80\GPL\selected\temp_data\build\uboot.config                 692 CONFIG_PARTITION_UUIDS=y                                                                                                                                                  
+C:\AX80\GPL\selected\temp_data\build\uboot.config                 693 CONFIG_PARTITION_TYPE_GUID=y                                                                                                                                              
+C:\AX80\GPL\selected\temp_data\build\uboot.config                 706 # CONFIG_MULTI_DTB_FIT is not set                                                                                                                                         
+C:\AX80\GPL\selected\temp_data\build\uboot.config                 734 CONFIG_ENV_VARS_UBOOT_RUNTIME_CONFIG=y                                                                                                                                    
+C:\AX80\GPL\selected\temp_data\build\uboot.config                 982 CONFIG_MMC_HW_PARTITIONING=y                                                                                                                                              
+C:\AX80\GPL\selected\temp_data\build\uboot.config                1011 CONFIG_MTD_PARTITIONS=y                                                                                                                                                   
+C:\AX80\GPL\selected\temp_data\build\userconfig.xml               610 <redistribute>kernel</redistribute>                                                                                                                                       
+
+
+
+
+============================================================
+ALL STOCK FIRMWARE BINARY SCAN
+============================================================
+
+======================================================================
+ax80v1-up-us-ver1-0-3-P1[20220825-rel65245]_nosign_2022-08-25_18.15.16.bin
+======================================================================
+size: 28315914
+
+TARGET STRINGS:
+config-ax80_v1       []
+tp_boot_idx          [904778]
+bootm                [797850, 945414]
+fw-type:Cloud        [20]
+second-uboot         []
+second_uboot         []
+u-boot               [821786, 829098, 829482, 860608, 865554, 865578, 865602, 865618, 866906, 867594, 875922, 935626, 943487, 943557, 4515730]
+uboot                [8474, 139546, 270640, 826186, 904905]
+bl2                  [873893, 873995, 935034, 3066138, 14569137]
+fip.bin              []
+kernel.bin           []
+root.ubi             []
+rootfs               [8818, 139890, 912794, 912810]
+partition            [789259, 796578, 796600, 796769, 796799, 796855, 796991, 797079, 797516, 807726, 812020, 812189, 812384, 812451, 815541, 815602, 816016, 816125, 816175, 816544, 817031, 819085, 841072, 841191, 841368, 841423, 860127, 860274, 860338, 860360, 860389, 860515, 860695, 860901, 860955, 866405, 869232, 869280, 880695, 880789, 881114, 881131, 881176, 881397, 881462, 881603, 881740, 884182, 884279, 884330]
+CloudInfo            []
+upgradeHeader        []
+tphead               []
+fwID                 []
+
+KNOWN MAGIC:
+ELF                  [13214344]
+U-BOOT-LEGACY        [270602]
+FIT/FDT              [935418, 1057034, 4501474]
+UBI                  [4362, 135434, 266506, 397578, 528650, 659722, 790794, 921866, 1052938, 1184010, 1315082, 1446154, 1577226, 1708298, 1839370, 1970442, 2101514, 2232586, 2363658, 2494730, 2625802, 2756874, 2887946, 3019018, 3150090, 3281162, 3412234, 3543306, 3674378, 3805450, 3936522, 4067594, 4198666, 4329738, 4460810, 4591882, 4722954, 4854026, 4985098, 5116170, 5247242, 5378314, 5509386, 5640458, 5771530, 5902602, 6033674, 6164746, 6295818, 6426890]
+SQUASHFS             [4595978]
+
+01 00 AA 55 SIGNATURE:
+[274, 466]
+
+55 AA SIGNATURE:
+[294, 486, 403458, 1059468, 1079804, 1299881, 1366384, 1369478, 1387131, 1460159, 1465759, 1492378, 1537242, 1557811, 1608369, 1631925, 1703082, 1805398, 1907019, 1922517, 1930826, 1948651, 2028163, 2032455, 2064563, 2117578, 2332032, 2344094, 2488758, 2490897, 2555478, 2571330, 2657523, 2774293, 2783626, 3128121, 3135019, 3240792, 3290380, 3345426, 3348110, 3452265, 3465553, 3481015, 3488497, 3505001, 3563206, 3568085, 3632691, 3646034]
+
+ASCII WINDOWS AROUND IMPORTANT STRINGS:
+0x000DCDEA: %d) is not power of 2...ubi%d error: %s: only %d UBI devices may be created.....ubi1....ubi0....tp_boot_idx.....change to second partition......ubi.mtd.new bootarg:%s..mem not enough..make new bootarg error!.........second uboot to boot kernel @%lx........should not go here, ret = %d.......A....h..
+0x00000000: ........|%s....... .fw-type:Cloud................................................................................................................................................................................................
+0x000C89BA: nt to %s... ....not possible....*** Warning - %s, using default environment.....env/common.c....u-boot-env....... ......ubi%d error: %s: read EC is %lld, should be %d..ubi%d error: %s: failed to erase PEB %d, error %d.......ubi%d error: %s: erase counter overflow at PEB %d, EC %llu......ubi%d 
+0x000CA64A: ither in running nor in imported env!...WARNING: '%s' not in imported env, deleting it!.........u-boot,i2c-offset-len...generic_%x......i2c_generic_chip_drv....i2c-gpio,deblock........h1.A............................gpios...sda-gpios.......scl-gpios.......i2c-gpio,delay-us.......i2c-gpio,scl-o
+0x000CA7CA: 8..A............................timeout waiting on slave to release scl.........................u-boot,i2c-transaction-bytes........0...Y.......7.......;...............A..."...w...s...#................A.A.....A.A.....A.A.....A.A.....A.A....x3.A.... /.A.....A.A.....A.A.....A.A.....A.A.....A.A..
+0x000D2160: ve partitions meta-data...Partition size must be a multiple of %d.........spi-nand0:2M(boot),1M(u-boot-env),50M(ubi0),50M(ubi1),8M(userconfig),4M(tp_data)........mtdparts........"%s" partitions still in use, can't delete them.........mtdparts=.......Wrong mtdparts: %s......MTD name too long: %
+0x000D34B2: x%lx.Loading: *..........Retry count exceeded; starting again...T ....../config.fixed-link......u-boot,dm-pre-reloc.....u-boot,dm-pre-proper....u-boot,dm-spl...u-boot,dm-tpl...pciVVVV,DDDD....## Baudrate %d bps not supported........## Baudrate may not be deleted..\.callbacks:callbacks,\.flags:
+0x000D34CA: .Retry count exceeded; starting again...T ....../config.fixed-link......u-boot,dm-pre-reloc.....u-boot,dm-pre-proper....u-boot,dm-spl...u-boot,dm-tpl...pciVVVV,DDDD....## Baudrate %d bps not supported........## Baudrate may not be deleted..\.callbacks:callbacks,\.flags:flags,baudrate:baudrate,
+0x000D34E2: tarting again...T ....../config.fixed-link......u-boot,dm-pre-reloc.....u-boot,dm-pre-proper....u-boot,dm-spl...u-boot,dm-tpl...pciVVVV,DDDD....## Baudrate %d bps not supported........## Baudrate may not be deleted..\.callbacks:callbacks,\.flags:flags,baudrate:baudrate,bootfile:bootfile,ipaddr
+0x000D34F2: T ....../config.fixed-link......u-boot,dm-pre-reloc.....u-boot,dm-pre-proper....u-boot,dm-spl...u-boot,dm-tpl...pciVVVV,DDDD....## Baudrate %d bps not supported........## Baudrate may not be deleted..\.callbacks:callbacks,\.flags:flags,baudrate:baudrate,bootfile:bootfile,ipaddr:ipaddr,gatewayi
+0x000D39FA: .guid:.%s.......xx......%s%c%d...Z......pci,no-autoconfig.......pci_generic_drv.pci_bridge_drv..u-boot,pci-pre-reloc....pci_%x:%x.%x.....8.A.............................j.A.....j.A.... %0*lx..???.....Build before PCI Rev2.0.Network controller......Display controller......Multimedia device.....
+0x000D3CAA: ........  class code =                  0x%.2x (%s).....unknown header..  %s =%*s%#.*lx.........u-boot,skip-auto-config-until-reloc.....................Could not get PHY for %s: addr %d.......%s:%d is connected to %s.  Reconnecting to %s...(null bus)......Failed to allocate PHY device for %s:%
+0x000D5D32: NetBSD..ose.....Enea OSE........plan9...Plan 9..rtems...RTEMS...Trusted Execution Environment...u-boot..U-Boot..vxworks.VxWorks.opensbi.RISC-V OpenSBI..efi.....EFI Firmware....alpha...Alpha...arm.....ARM.....x86.....Intel x86.......ia64....IA64....m68k....M68K....microblaze......MicroBlaze....
+0x000E466A: ...........................................+...............7mt7986-rfb......config.............=u-boot-env..........cpus...............................+........cpu@0..............Vcpu.............arm,cortex-a53.............b............cpu@1..............Vcpu.............arm,cortex-a53........
+0x000E651F: ...................................compatible.interrupt-parent.#address-cells.#size-cells.model.u-boot,mmc-env-partition.device_type.reg.clock-frequency.#clock-cells.u-boot,dm-pre-reloc.phandle.interrupts.arm,cpu-registers-not-fw-configured.clocks.clock-names.#reset-cells.status.#interrupt-cel
+0x000E6565: s-cells.#size-cells.model.u-boot,mmc-env-partition.device_type.reg.clock-frequency.#clock-cells.u-boot,dm-pre-reloc.phandle.interrupts.arm,cpu-registers-not-fw-configured.clocks.clock-names.#reset-cells.status.#interrupt-cells.interrupt-controller.clock-parent.reg-names.gpio-controller.#gpio-c
+0x0044E732: n@0.............boot...............W..... .............%........partition@200000................u-boot-env.............W. ..............partition@300000................ubi0...............W.0... ..........partition@3500000...............ubi1...............W.P... ..........partition@6700000.....
+
+======================================================================
+ax80v1-up-us-ver1-0-3-P1[20221031-rel57736]_nosign_2022-10-31_16.17.31.bin
+======================================================================
+size: 28446986
+
+TARGET STRINGS:
+config-ax80_v1       []
+tp_boot_idx          [904722]
+bootm                [797834, 945350]
+fw-type:Cloud        [20]
+second-uboot         []
+second_uboot         []
+u-boot               [821730, 829042, 829426, 860552, 865498, 865522, 865546, 865562, 866850, 867538, 875866, 935562, 943423, 943493, 4514942]
+uboot                [8474, 139546, 270640, 826130, 904849]
+bl2                  [873837, 873939, 934978, 14585521, 20103870, 27564330]
+fip.bin              []
+kernel.bin           []
+root.ubi             []
+rootfs               [8818, 139890, 912738, 912754]
+partition            [789243, 796562, 796584, 796753, 796783, 796839, 796975, 797063, 797500, 807670, 811964, 812133, 812328, 812395, 815485, 815546, 815960, 816069, 816119, 816488, 816975, 819029, 841016, 841135, 841312, 841367, 860071, 860218, 860282, 860304, 860333, 860459, 860639, 860845, 860899, 866349, 869176, 869224, 880639, 880733, 881058, 881075, 881120, 881341, 881406, 881547, 881684, 884126, 884223, 884274]
+CloudInfo            []
+upgradeHeader        []
+tphead               []
+fwID                 []
+
+KNOWN MAGIC:
+ELF                  [13229912]
+U-BOOT-LEGACY        [270602]
+FIT/FDT              [935354, 1057034, 4500686]
+UBI                  [4362, 135434, 266506, 397578, 528650, 659722, 790794, 921866, 1052938, 1184010, 1315082, 1446154, 1577226, 1708298, 1839370, 1970442, 2101514, 2232586, 2363658, 2494730, 2625802, 2756874, 2887946, 3019018, 3150090, 3281162, 3412234, 3543306, 3674378, 3805450, 3936522, 4067594, 4198666, 4329738, 4460810, 4591882, 4722954, 4854026, 4985098, 5116170, 5247242, 5378314, 5509386, 5640458, 5771530, 5902602, 6033674, 6164746, 6295818, 6426890]
+SQUASHFS             [4595978]
+
+01 00 AA 55 SIGNATURE:
+[274, 466]
+
+55 AA SIGNATURE:
+[294, 486, 403458, 1206913, 1251167, 1457992, 1725858, 1765959, 1770825, 1787023, 1833020, 1907945, 2121441, 2170748, 2269472, 2312136, 2326592, 2434785, 2481122, 2529888, 2649860, 2735297, 2776243, 2782527, 2881502, 2892618, 3014698, 3042657, 3159775, 3185921, 3307136, 3384426, 3417293, 3623762, 3678663, 3800128, 3829642, 3844414, 3877878, 3991393, 4179820, 4289130, 4630473, 4695247, 4701305, 4744982, 4748990, 4950448, 4975723, 4980142]
+
+ASCII WINDOWS AROUND IMPORTANT STRINGS:
+0x000DCDB2: %d) is not power of 2...ubi%d error: %s: only %d UBI devices may be created.....ubi1....ubi0....tp_boot_idx.....change to second partition......ubi.mtd.new bootarg:%s..mem not enough..make new bootarg error!.........second uboot to boot kernel @%lx........should not go here, ret = %d.......A....0..
+0x00000000: .......B..AK%>..k...fw-type:Cloud................................................................................................................................................................................................
+0x000C8982: nt to %s... ....not possible....*** Warning - %s, using default environment.....env/common.c....u-boot-env....... ......ubi%d error: %s: read EC is %lld, should be %d..ubi%d error: %s: failed to erase PEB %d, error %d.......ubi%d error: %s: erase counter overflow at PEB %d, EC %llu......ubi%d 
+0x000CA612: ither in running nor in imported env!...WARNING: '%s' not in imported env, deleting it!.........u-boot,i2c-offset-len...generic_%x......i2c_generic_chip_drv....i2c-gpio,deblock........01.A............................gpios...sda-gpios.......scl-gpios.......i2c-gpio,delay-us.......i2c-gpio,scl-o
+0x000CA792: 8..A............................timeout waiting on slave to release scl.........................u-boot,i2c-transaction-bytes........0...Y.......7.......;...............A..."...w...s...#...............PA.A....XA.A....`A.A....hA.A....pA.A....@3.A.......A....xA.A.....A.A.....A.A.....A.A.....A.A..
+0x000D2128: ve partitions meta-data...Partition size must be a multiple of %d.........spi-nand0:2M(boot),1M(u-boot-env),50M(ubi0),50M(ubi1),8M(userconfig),4M(tp_data)........mtdparts........"%s" partitions still in use, can't delete them.........mtdparts=.......Wrong mtdparts: %s......MTD name too long: %
+0x000D347A: x%lx.Loading: *..........Retry count exceeded; starting again...T ....../config.fixed-link......u-boot,dm-pre-reloc.....u-boot,dm-pre-proper....u-boot,dm-spl...u-boot,dm-tpl...pciVVVV,DDDD....## Baudrate %d bps not supported........## Baudrate may not be deleted..\.callbacks:callbacks,\.flags:
+0x000D3492: .Retry count exceeded; starting again...T ....../config.fixed-link......u-boot,dm-pre-reloc.....u-boot,dm-pre-proper....u-boot,dm-spl...u-boot,dm-tpl...pciVVVV,DDDD....## Baudrate %d bps not supported........## Baudrate may not be deleted..\.callbacks:callbacks,\.flags:flags,baudrate:baudrate,
+0x000D34AA: tarting again...T ....../config.fixed-link......u-boot,dm-pre-reloc.....u-boot,dm-pre-proper....u-boot,dm-spl...u-boot,dm-tpl...pciVVVV,DDDD....## Baudrate %d bps not supported........## Baudrate may not be deleted..\.callbacks:callbacks,\.flags:flags,baudrate:baudrate,bootfile:bootfile,ipaddr
+0x000D34BA: T ....../config.fixed-link......u-boot,dm-pre-reloc.....u-boot,dm-pre-proper....u-boot,dm-spl...u-boot,dm-tpl...pciVVVV,DDDD....## Baudrate %d bps not supported........## Baudrate may not be deleted..\.callbacks:callbacks,\.flags:flags,baudrate:baudrate,bootfile:bootfile,ipaddr:ipaddr,gatewayi
+0x000D39C2: .guid:.%s.......xx......%s%c%d...Z......pci,no-autoconfig.......pci_generic_drv.pci_bridge_drv..u-boot,pci-pre-reloc....pci_%x:%x.%x....H8.A.............................j.A.....j.A.... %0*lx..???.....Build before PCI Rev2.0.Network controller......Display controller......Multimedia device.....
+0x000D3C72: ........  class code =                  0x%.2x (%s).....unknown header..  %s =%*s%#.*lx.........u-boot,skip-auto-config-until-reloc.....................Could not get PHY for %s: addr %d.......%s:%d is connected to %s.  Reconnecting to %s...(null bus)......Failed to allocate PHY device for %s:%
+0x000D5CFA: NetBSD..ose.....Enea OSE........plan9...Plan 9..rtems...RTEMS...Trusted Execution Environment...u-boot..U-Boot..vxworks.VxWorks.opensbi.RISC-V OpenSBI..efi.....EFI Firmware....alpha...Alpha...arm.....ARM.....x86.....Intel x86.......ia64....IA64....m68k....M68K....microblaze......MicroBlaze....
+0x000E462A: ...........................................+...............7mt7986-rfb......config.............=u-boot-env..........cpus...............................+........cpu@0..............Vcpu.............arm,cortex-a53.............b............cpu@1..............Vcpu.............arm,cortex-a53........
+0x000E64DF: ...................................compatible.interrupt-parent.#address-cells.#size-cells.model.u-boot,mmc-env-partition.device_type.reg.clock-frequency.#clock-cells.u-boot,dm-pre-reloc.phandle.interrupts.arm,cpu-registers-not-fw-configured.clocks.clock-names.#reset-cells.status.#interrupt-cel
+0x000E6525: s-cells.#size-cells.model.u-boot,mmc-env-partition.device_type.reg.clock-frequency.#clock-cells.u-boot,dm-pre-reloc.phandle.interrupts.arm,cpu-registers-not-fw-configured.clocks.clock-names.#reset-cells.status.#interrupt-cells.interrupt-controller.clock-parent.reg-names.gpio-controller.#gpio-c
+0x0044E41E: n@0.............boot...............W..... .............%........partition@200000................u-boot-env.............W. ..............partition@300000................ubi0...............W.0... ..........partition@3500000...............ubi1...............W.P... ..........partition@6700000.....
+
+======================================================================
+ax80v1-up-us-ca-ru-ver1-0-5-P1[20221209-rel50909]_nosign_2022-12-09_14.12.46.bin
+======================================================================
+NOT FOUND
+
+======================================================================
+ax80v1-up-us-ca-ru-ver1-1-0-P1[20230728-rel36484]_nosign_2023-07-28_10.14.20.bin
+======================================================================
+size: 33952140
+
+TARGET STRINGS:
+config-ax80_v1       []
+tp_boot_idx          [904860]
+bootm                [797964, 945496]
+fw-type:Cloud        [20]
+second-uboot         []
+second_uboot         []
+u-boot               [821860, 829172, 829556, 860682, 865636, 865660, 865684, 865700, 866988, 867676, 876004, 935708, 943569, 943639, 4516388]
+uboot                [8604, 139676, 270770, 826260, 904987]
+bl2                  [873975, 874077, 935116, 4236156]
+fip.bin              []
+kernel.bin           []
+root.ubi             []
+rootfs               [8948, 140020, 912876, 912892]
+partition            [789373, 796692, 796714, 796883, 796913, 796969, 797105, 797193, 797630, 807800, 812094, 812263, 812458, 812525, 815615, 815676, 816090, 816199, 816249, 816618, 817105, 819159, 841146, 841265, 841442, 841497, 860201, 860348, 860412, 860434, 860463, 860589, 860777, 860983, 861037, 866487, 869314, 869362, 880777, 880871, 881196, 881213, 881258, 881479, 881544, 881685, 881822, 884264, 884361, 884412]
+CloudInfo            []
+upgradeHeader        []
+tphead               []
+fwID                 []
+
+KNOWN MAGIC:
+ELF                  [16308446]
+U-BOOT-LEGACY        [270732]
+FIT/FDT              [935500, 1057164, 4502132]
+UBI                  [4492, 135564, 266636, 397708, 528780, 659852, 790924, 921996, 1053068, 1184140, 1315212, 1446284, 1577356, 1708428, 1839500, 1970572, 2101644, 2232716, 2363788, 2494860, 2625932, 2757004, 2888076, 3019148, 3150220, 3281292, 3412364, 3543436, 3674508, 3805580, 3936652, 4067724, 4198796, 4329868, 4460940, 4592012, 4723084, 4854156, 4985228, 5116300, 5247372, 5378444, 5509516, 5640588, 5771660, 5902732, 6033804, 6164876, 6295948, 6427020]
+SQUASHFS             [4596108]
+
+01 00 AA 55 SIGNATURE:
+[274, 466]
+
+55 AA SIGNATURE:
+[294, 486, 403588, 1234157, 1294919, 1341351, 1540979, 1677639, 1728607, 1731940, 1737836, 1865147, 1904591, 1921144, 2084296, 2121690, 2286044, 2336208, 2343952, 2816041, 2964452, 3134862, 3180803, 3203649, 3254804, 3395486, 3649663, 3759511, 3849291, 3890767, 4044576, 4088584, 4166893, 4168004, 4196690, 4203311, 4422353, 4430683, 4650473, 4727331, 4747442, 4909279, 4969134, 4991772, 5011509, 5103353, 5183037, 5213686, 5278002, 5362790]
+
+ASCII WINDOWS AROUND IMPORTANT STRINGS:
+0x000DCE3C: %d) is not power of 2...ubi%d error: %s: only %d UBI devices may be created.....ubi1....ubi0....tp_boot_idx.....change to second partition......ubi.mtd.new bootarg:%s..mem not enough..make new bootarg error!.........second uboot to boot kernel @%lx........should not go here, ret = %d.......A....0..
+0x00000000: ....+..x.&.^Mzg|0...fw-type:Cloud................................................................................................................................................................................................
+0x000C8A04: nt to %s... ....not possible....*** Warning - %s, using default environment.....env/common.c....u-boot-env....... ......ubi%d error: %s: read EC is %lld, should be %d..ubi%d error: %s: failed to erase PEB %d, error %d.......ubi%d error: %s: erase counter overflow at PEB %d, EC %llu......ubi%d 
+0x000CA694: ither in running nor in imported env!...WARNING: '%s' not in imported env, deleting it!.........u-boot,i2c-offset-len...generic_%x......i2c_generic_chip_drv....i2c-gpio,deblock........81.A............................gpios...sda-gpios.......scl-gpios.......i2c-gpio,delay-us.......i2c-gpio,scl-o
+0x000CA814: 8..A............................timeout waiting on slave to release scl.........................u-boot,i2c-transaction-bytes........0...Y.......7.......;...............A..."...w...s...#...............XA.A....`A.A....hA.A....pA.A....xA.A....H3.A.......A.....A.A.....A.A.....A.A.....A.A.....A.A..
+0x000D21AA: ve partitions meta-data...Partition size must be a multiple of %d.........spi-nand0:2M(boot),1M(u-boot-env),50M(ubi0),50M(ubi1),8M(userconfig),4M(tp_data),8M(mali_data)..mtdparts........"%s" partitions still in use, can't delete them.........mtdparts=.......Wrong mtdparts: %s......MTD name too
+0x000D3504: x%lx.Loading: *..........Retry count exceeded; starting again...T ....../config.fixed-link......u-boot,dm-pre-reloc.....u-boot,dm-pre-proper....u-boot,dm-spl...u-boot,dm-tpl...pciVVVV,DDDD....## Baudrate %d bps not supported........## Baudrate may not be deleted..\.callbacks:callbacks,\.flags:
+0x000D351C: .Retry count exceeded; starting again...T ....../config.fixed-link......u-boot,dm-pre-reloc.....u-boot,dm-pre-proper....u-boot,dm-spl...u-boot,dm-tpl...pciVVVV,DDDD....## Baudrate %d bps not supported........## Baudrate may not be deleted..\.callbacks:callbacks,\.flags:flags,baudrate:baudrate,
+0x000D3534: tarting again...T ....../config.fixed-link......u-boot,dm-pre-reloc.....u-boot,dm-pre-proper....u-boot,dm-spl...u-boot,dm-tpl...pciVVVV,DDDD....## Baudrate %d bps not supported........## Baudrate may not be deleted..\.callbacks:callbacks,\.flags:flags,baudrate:baudrate,bootfile:bootfile,ipaddr
+0x000D3544: T ....../config.fixed-link......u-boot,dm-pre-reloc.....u-boot,dm-pre-proper....u-boot,dm-spl...u-boot,dm-tpl...pciVVVV,DDDD....## Baudrate %d bps not supported........## Baudrate may not be deleted..\.callbacks:callbacks,\.flags:flags,baudrate:baudrate,bootfile:bootfile,ipaddr:ipaddr,gatewayi
+0x000D3A4C: .guid:.%s.......xx......%s%c%d...Z......pci,no-autoconfig.......pci_generic_drv.pci_bridge_drv..u-boot,pci-pre-reloc....pci_%x:%x.%x....P8.A.............................j.A.....j.A.... %0*lx..???.....Build before PCI Rev2.0.Network controller......Display controller......Multimedia device.....
+0x000D3CFC: ........  class code =                  0x%.2x (%s).....unknown header..  %s =%*s%#.*lx.........u-boot,skip-auto-config-until-reloc.....................Could not get PHY for %s: addr %d.......%s:%d is connected to %s.  Reconnecting to %s...(null bus)......Failed to allocate PHY device for %s:%
+0x000D5D84: NetBSD..ose.....Enea OSE........plan9...Plan 9..rtems...RTEMS...Trusted Execution Environment...u-boot..U-Boot..vxworks.VxWorks.opensbi.RISC-V OpenSBI..efi.....EFI Firmware....alpha...Alpha...arm.....ARM.....x86.....Intel x86.......ia64....IA64....m68k....M68K....microblaze......MicroBlaze....
+0x000E46BC: ...........................................+...............7mt7986-rfb......config.............=u-boot-env..........cpus...............................+........cpu@0..............Vcpu.............arm,cortex-a53.............b............cpu@1..............Vcpu.............arm,cortex-a53........
+0x000E6571: ...................................compatible.interrupt-parent.#address-cells.#size-cells.model.u-boot,mmc-env-partition.device_type.reg.clock-frequency.#clock-cells.u-boot,dm-pre-reloc.phandle.interrupts.arm,cpu-registers-not-fw-configured.clocks.clock-names.#reset-cells.status.#interrupt-cel
+0x000E65B7: s-cells.#size-cells.model.u-boot,mmc-env-partition.device_type.reg.clock-frequency.#clock-cells.u-boot,dm-pre-reloc.phandle.interrupts.arm,cpu-registers-not-fw-configured.clocks.clock-names.#reset-cells.status.#interrupt-cells.interrupt-controller.clock-parent.reg-names.gpio-controller.#gpio-c
+0x0044E9C4: n@0.............boot...............W..... .............%........partition@200000................u-boot-env.............W. ..............partition@300000................ubi0...............W.0... ..........partition@3500000...............ubi1...............W.P... ..........partition@6700000.....
+
+======================================================================
+ax80v1-up-ver1-1-1-P1[20231201-rel59250]_nosign_2023-12-01_16.33.28.bin
+======================================================================
+size: 32510348
+
+TARGET STRINGS:
+config-ax80_v1       []
+tp_boot_idx          [904860]
+bootm                [797964, 945496]
+fw-type:Cloud        [20]
+second-uboot         []
+second_uboot         []
+u-boot               [821860, 829172, 829556, 860682, 865636, 865660, 865684, 865700, 866988, 867676, 876004, 935708, 943569, 943639, 4655012]
+uboot                [8604, 139676, 270770, 826260, 904987]
+bl2                  [873975, 874077, 935116, 10853723]
+fip.bin              []
+kernel.bin           []
+root.ubi             []
+rootfs               [8948, 140020, 912876, 912892]
+partition            [789373, 796692, 796714, 796883, 796913, 796969, 797105, 797193, 797630, 807800, 812094, 812263, 812458, 812525, 815615, 815676, 816090, 816199, 816249, 816618, 817105, 819159, 841146, 841265, 841442, 841497, 860201, 860348, 860412, 860434, 860463, 860589, 860777, 860983, 861037, 866487, 869314, 869362, 880777, 880871, 881196, 881213, 881258, 881479, 881544, 881685, 881822, 884264, 884361, 884412]
+CloudInfo            []
+upgradeHeader        []
+tphead               []
+fwID                 []
+
+KNOWN MAGIC:
+ELF                  [15189162]
+U-BOOT-LEGACY        [270732]
+FIT/FDT              [935500, 1057164, 4640756]
+UBI                  [4492, 135564, 266636, 397708, 528780, 659852, 790924, 921996, 1053068, 1184140, 1315212, 1446284, 1577356, 1708428, 1839500, 1970572, 2101644, 2232716, 2363788, 2494860, 2625932, 2757004, 2888076, 3019148, 3150220, 3281292, 3412364, 3543436, 3674508, 3805580, 3936652, 4067724, 4198796, 4329868, 4460940, 4592012, 4723084, 4854156, 4985228, 5116300, 5247372, 5378444, 5509516, 5640588, 5771660, 5902732, 6033804, 6164876, 6295948, 6427020]
+SQUASHFS             [4727180]
+
+01 00 AA 55 SIGNATURE:
+[274, 466]
+
+55 AA SIGNATURE:
+[294, 486, 403588, 1315164, 1376254, 1420039, 1450434, 1510913, 1567276, 1574376, 1588171, 1614722, 1649413, 1774226, 2033639, 2077316, 2082220, 2112150, 2120320, 2181288, 2331122, 2390234, 2421024, 2429418, 2469645, 2472993, 2477420, 2588891, 2681975, 2790564, 2814504, 2820887, 2857820, 2947628, 3112698, 3121744, 3150217, 3197679, 3369383, 3393933, 3447180, 3499590, 3531724, 3562164, 3575217, 3606129, 3623059, 3746948, 3963672, 3971376]
+
+ASCII WINDOWS AROUND IMPORTANT STRINGS:
+0x000DCE3C: %d) is not power of 2...ubi%d error: %s: only %d UBI devices may be created.....ubi1....ubi0....tp_boot_idx.....change to second partition......ubi.mtd.new bootarg:%s..mem not enough..make new bootarg error!.........second uboot to boot kernel @%lx........should not go here, ret = %d.......A....0..
+0x00000000: ....X2w ...Q.\....o.fw-type:Cloud................................................................................................................................................................................................
+0x000C8A04: nt to %s... ....not possible....*** Warning - %s, using default environment.....env/common.c....u-boot-env....... ......ubi%d error: %s: read EC is %lld, should be %d..ubi%d error: %s: failed to erase PEB %d, error %d.......ubi%d error: %s: erase counter overflow at PEB %d, EC %llu......ubi%d 
+0x000CA694: ither in running nor in imported env!...WARNING: '%s' not in imported env, deleting it!.........u-boot,i2c-offset-len...generic_%x......i2c_generic_chip_drv....i2c-gpio,deblock........81.A............................gpios...sda-gpios.......scl-gpios.......i2c-gpio,delay-us.......i2c-gpio,scl-o
+0x000CA814: 8..A............................timeout waiting on slave to release scl.........................u-boot,i2c-transaction-bytes........0...Y.......7.......;...............A..."...w...s...#...............XA.A....`A.A....hA.A....pA.A....xA.A....H3.A.......A.....A.A.....A.A.....A.A.....A.A.....A.A..
+0x000D21AA: ve partitions meta-data...Partition size must be a multiple of %d.........spi-nand0:2M(boot),1M(u-boot-env),50M(ubi0),50M(ubi1),8M(userconfig),4M(tp_data),8M(mali_data)..mtdparts........"%s" partitions still in use, can't delete them.........mtdparts=.......Wrong mtdparts: %s......MTD name too
+0x000D3504: x%lx.Loading: *..........Retry count exceeded; starting again...T ....../config.fixed-link......u-boot,dm-pre-reloc.....u-boot,dm-pre-proper....u-boot,dm-spl...u-boot,dm-tpl...pciVVVV,DDDD....## Baudrate %d bps not supported........## Baudrate may not be deleted..\.callbacks:callbacks,\.flags:
+0x000D351C: .Retry count exceeded; starting again...T ....../config.fixed-link......u-boot,dm-pre-reloc.....u-boot,dm-pre-proper....u-boot,dm-spl...u-boot,dm-tpl...pciVVVV,DDDD....## Baudrate %d bps not supported........## Baudrate may not be deleted..\.callbacks:callbacks,\.flags:flags,baudrate:baudrate,
+0x000D3534: tarting again...T ....../config.fixed-link......u-boot,dm-pre-reloc.....u-boot,dm-pre-proper....u-boot,dm-spl...u-boot,dm-tpl...pciVVVV,DDDD....## Baudrate %d bps not supported........## Baudrate may not be deleted..\.callbacks:callbacks,\.flags:flags,baudrate:baudrate,bootfile:bootfile,ipaddr
+0x000D3544: T ....../config.fixed-link......u-boot,dm-pre-reloc.....u-boot,dm-pre-proper....u-boot,dm-spl...u-boot,dm-tpl...pciVVVV,DDDD....## Baudrate %d bps not supported........## Baudrate may not be deleted..\.callbacks:callbacks,\.flags:flags,baudrate:baudrate,bootfile:bootfile,ipaddr:ipaddr,gatewayi
+0x000D3A4C: .guid:.%s.......xx......%s%c%d...Z......pci,no-autoconfig.......pci_generic_drv.pci_bridge_drv..u-boot,pci-pre-reloc....pci_%x:%x.%x....P8.A.............................j.A.....j.A.... %0*lx..???.....Build before PCI Rev2.0.Network controller......Display controller......Multimedia device.....
+0x000D3CFC: ........  class code =                  0x%.2x (%s).....unknown header..  %s =%*s%#.*lx.........u-boot,skip-auto-config-until-reloc.....................Could not get PHY for %s: addr %d.......%s:%d is connected to %s.  Reconnecting to %s...(null bus)......Failed to allocate PHY device for %s:%
+0x000D5D84: NetBSD..ose.....Enea OSE........plan9...Plan 9..rtems...RTEMS...Trusted Execution Environment...u-boot..U-Boot..vxworks.VxWorks.opensbi.RISC-V OpenSBI..efi.....EFI Firmware....alpha...Alpha...arm.....ARM.....x86.....Intel x86.......ia64....IA64....m68k....M68K....microblaze......MicroBlaze....
+0x000E46BC: ...........................................+...............7mt7986-rfb......config.............=u-boot-env..........cpus...............................+........cpu@0..............Vcpu.............arm,cortex-a53.............b............cpu@1..............Vcpu.............arm,cortex-a53........
+0x000E6571: ...................................compatible.interrupt-parent.#address-cells.#size-cells.model.u-boot,mmc-env-partition.device_type.reg.clock-frequency.#clock-cells.u-boot,dm-pre-reloc.phandle.interrupts.arm,cpu-registers-not-fw-configured.clocks.clock-names.#reset-cells.status.#interrupt-cel
+0x000E65B7: s-cells.#size-cells.model.u-boot,mmc-env-partition.device_type.reg.clock-frequency.#clock-cells.u-boot,dm-pre-reloc.phandle.interrupts.arm,cpu-registers-not-fw-configured.clocks.clock-names.#reset-cells.status.#interrupt-cells.interrupt-controller.clock-parent.reg-names.gpio-controller.#gpio-c
+0x00470744: n@0.............boot...............W..... .............%........partition@200000................u-boot-env.............W. ..............partition@300000................ubi0...............W.0... ..........partition@3500000...............ubi1...............W.P... ..........partition@6700000.....
+
+======================================================================
+ax80v1-up-us-ver1-1-2-P1[20240126-rel68209]_nosign_2024-01-26_18.59.20.bin
+======================================================================
+size: 32510348
+
+TARGET STRINGS:
+config-ax80_v1       []
+tp_boot_idx          [904860]
+bootm                [797964, 945496]
+fw-type:Cloud        [20]
+second-uboot         []
+second_uboot         []
+u-boot               [821860, 829172, 829556, 860682, 865636, 865660, 865684, 865700, 866988, 867676, 876004, 935708, 943569, 943639, 4655012]
+uboot                [8604, 139676, 270770, 826260, 904987]
+bl2                  [873975, 874077, 935116, 10853723]
+fip.bin              []
+kernel.bin           []
+root.ubi             []
+rootfs               [8948, 140020, 912876, 912892]
+partition            [789373, 796692, 796714, 796883, 796913, 796969, 797105, 797193, 797630, 807800, 812094, 812263, 812458, 812525, 815615, 815676, 816090, 816199, 816249, 816618, 817105, 819159, 841146, 841265, 841442, 841497, 860201, 860348, 860412, 860434, 860463, 860589, 860777, 860983, 861037, 866487, 869314, 869362, 880777, 880871, 881196, 881213, 881258, 881479, 881544, 881685, 881822, 884264, 884361, 884412]
+CloudInfo            []
+upgradeHeader        []
+tphead               []
+fwID                 []
+
+KNOWN MAGIC:
+ELF                  [15189162]
+U-BOOT-LEGACY        [270732]
+FIT/FDT              [935500, 1057164, 4640756]
+UBI                  [4492, 135564, 266636, 397708, 528780, 659852, 790924, 921996, 1053068, 1184140, 1315212, 1446284, 1577356, 1708428, 1839500, 1970572, 2101644, 2232716, 2363788, 2494860, 2625932, 2757004, 2888076, 3019148, 3150220, 3281292, 3412364, 3543436, 3674508, 3805580, 3936652, 4067724, 4198796, 4329868, 4460940, 4592012, 4723084, 4854156, 4985228, 5116300, 5247372, 5378444, 5509516, 5640588, 5771660, 5902732, 6033804, 6164876, 6295948, 6427020]
+SQUASHFS             [4727180]
+
+01 00 AA 55 SIGNATURE:
+[274, 466]
+
+55 AA SIGNATURE:
+[294, 486, 403588, 1315164, 1376254, 1420039, 1450434, 1510913, 1567276, 1574376, 1588171, 1614722, 1649413, 1774226, 2033639, 2077316, 2082220, 2112150, 2120320, 2181288, 2331122, 2390234, 2421024, 2429418, 2469645, 2472993, 2477420, 2588891, 2681975, 2790564, 2814504, 2820887, 2857820, 2947628, 3112698, 3121744, 3150217, 3197679, 3369383, 3393933, 3447180, 3499590, 3531724, 3562164, 3575217, 3606129, 3623059, 3746948, 3963672, 3971376]
+
+ASCII WINDOWS AROUND IMPORTANT STRINGS:
+0x000DCE3C: %d) is not power of 2...ubi%d error: %s: only %d UBI devices may be created.....ubi1....ubi0....tp_boot_idx.....change to second partition......ubi.mtd.new bootarg:%s..mem not enough..make new bootarg error!.........second uboot to boot kernel @%lx........should not go here, ret = %d.......A....0..
+0x00000000: ....BD1..D.q4.Ge+8..fw-type:Cloud................................................................................................................................................................................................
+0x000C8A04: nt to %s... ....not possible....*** Warning - %s, using default environment.....env/common.c....u-boot-env....... ......ubi%d error: %s: read EC is %lld, should be %d..ubi%d error: %s: failed to erase PEB %d, error %d.......ubi%d error: %s: erase counter overflow at PEB %d, EC %llu......ubi%d 
+0x000CA694: ither in running nor in imported env!...WARNING: '%s' not in imported env, deleting it!.........u-boot,i2c-offset-len...generic_%x......i2c_generic_chip_drv....i2c-gpio,deblock........81.A............................gpios...sda-gpios.......scl-gpios.......i2c-gpio,delay-us.......i2c-gpio,scl-o
+0x000CA814: 8..A............................timeout waiting on slave to release scl.........................u-boot,i2c-transaction-bytes........0...Y.......7.......;...............A..."...w...s...#...............XA.A....`A.A....hA.A....pA.A....xA.A....H3.A.......A.....A.A.....A.A.....A.A.....A.A.....A.A..
+0x000D21AA: ve partitions meta-data...Partition size must be a multiple of %d.........spi-nand0:2M(boot),1M(u-boot-env),50M(ubi0),50M(ubi1),8M(userconfig),4M(tp_data),8M(mali_data)..mtdparts........"%s" partitions still in use, can't delete them.........mtdparts=.......Wrong mtdparts: %s......MTD name too
+0x000D3504: x%lx.Loading: *..........Retry count exceeded; starting again...T ....../config.fixed-link......u-boot,dm-pre-reloc.....u-boot,dm-pre-proper....u-boot,dm-spl...u-boot,dm-tpl...pciVVVV,DDDD....## Baudrate %d bps not supported........## Baudrate may not be deleted..\.callbacks:callbacks,\.flags:
+0x000D351C: .Retry count exceeded; starting again...T ....../config.fixed-link......u-boot,dm-pre-reloc.....u-boot,dm-pre-proper....u-boot,dm-spl...u-boot,dm-tpl...pciVVVV,DDDD....## Baudrate %d bps not supported........## Baudrate may not be deleted..\.callbacks:callbacks,\.flags:flags,baudrate:baudrate,
+0x000D3534: tarting again...T ....../config.fixed-link......u-boot,dm-pre-reloc.....u-boot,dm-pre-proper....u-boot,dm-spl...u-boot,dm-tpl...pciVVVV,DDDD....## Baudrate %d bps not supported........## Baudrate may not be deleted..\.callbacks:callbacks,\.flags:flags,baudrate:baudrate,bootfile:bootfile,ipaddr
+0x000D3544: T ....../config.fixed-link......u-boot,dm-pre-reloc.....u-boot,dm-pre-proper....u-boot,dm-spl...u-boot,dm-tpl...pciVVVV,DDDD....## Baudrate %d bps not supported........## Baudrate may not be deleted..\.callbacks:callbacks,\.flags:flags,baudrate:baudrate,bootfile:bootfile,ipaddr:ipaddr,gatewayi
+0x000D3A4C: .guid:.%s.......xx......%s%c%d...Z......pci,no-autoconfig.......pci_generic_drv.pci_bridge_drv..u-boot,pci-pre-reloc....pci_%x:%x.%x....P8.A.............................j.A.....j.A.... %0*lx..???.....Build before PCI Rev2.0.Network controller......Display controller......Multimedia device.....
+0x000D3CFC: ........  class code =                  0x%.2x (%s).....unknown header..  %s =%*s%#.*lx.........u-boot,skip-auto-config-until-reloc.....................Could not get PHY for %s: addr %d.......%s:%d is connected to %s.  Reconnecting to %s...(null bus)......Failed to allocate PHY device for %s:%
+0x000D5D84: NetBSD..ose.....Enea OSE........plan9...Plan 9..rtems...RTEMS...Trusted Execution Environment...u-boot..U-Boot..vxworks.VxWorks.opensbi.RISC-V OpenSBI..efi.....EFI Firmware....alpha...Alpha...arm.....ARM.....x86.....Intel x86.......ia64....IA64....m68k....M68K....microblaze......MicroBlaze....
+0x000E46BC: ...........................................+...............7mt7986-rfb......config.............=u-boot-env..........cpus...............................+........cpu@0..............Vcpu.............arm,cortex-a53.............b............cpu@1..............Vcpu.............arm,cortex-a53........
+0x000E6571: ...................................compatible.interrupt-parent.#address-cells.#size-cells.model.u-boot,mmc-env-partition.device_type.reg.clock-frequency.#clock-cells.u-boot,dm-pre-reloc.phandle.interrupts.arm,cpu-registers-not-fw-configured.clocks.clock-names.#reset-cells.status.#interrupt-cel
+0x000E65B7: s-cells.#size-cells.model.u-boot,mmc-env-partition.device_type.reg.clock-frequency.#clock-cells.u-boot,dm-pre-reloc.phandle.interrupts.arm,cpu-registers-not-fw-configured.clocks.clock-names.#reset-cells.status.#interrupt-cells.interrupt-controller.clock-parent.reg-names.gpio-controller.#gpio-c
+0x00470744: n@0.............boot...............W..... .............%........partition@200000................u-boot-env.............W. ..............partition@300000................ubi0...............W.0... ..........partition@3500000...............ubi1...............W.P... ..........partition@6700000.....
+
+======================================================================
+SCAN COMPLETE
+======================================================================
+
+============================================================
+make_up TARGETED STRING/OFFSET SCAN
+============================================================
+size: 161208
+ELF: True
+class: 2
+machine: 62
+Usage: make_flash                    [45224]
+upgradeHeaderMagicNumber             [157429]
+upgradeHeader                        [157429]
+tphead                               [47570]
+fwID                                 [45210, 156856]
+makeFlashContent                     [48239, 48483, 155491]
+makeFlashFileWithPartition           [158785]
+flasherPtnTbl                        [158916]
+CloudInfo                            [47479, 47512, 47552, 156525, 157696]
+partition table                      [47880, 47920, 47960, 48296]
+UBIFS                                [50008]
+MD5                                  [156550, 158654, 158930]
+HMAC                                 []
+ECC                                  []
+_nosign.bin                          [47615]
+
+============================================================
+END INVESTIGATION 5
+============================================================

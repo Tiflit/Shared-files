@@ -1,6 +1,6 @@
 # Age of Mythology: Extended Edition — texture remaster reference
 
-Last reviewed: 2026-09-25
+Last reviewed: 2026-09-30
 
 This directory is the long-term reproducibility and research record for the AoM:EE texture-remaster project. Large source, model, intermediate, and generated-output trees are intentionally kept local.
 
@@ -70,7 +70,15 @@ The 24-bit RGB8 conversion is a compile-only staging operation. The PBRify maste
 
 Staged BTIs are written as UTF-8 without a BOM because the installed compiler previously reported the BOM-prefixed alpha token as an unhandled token. Authoritative BTIs are never rewritten.
 
+Six tiny DeflatedRGBA8 assets require a targeted `nomip` staging workaround: the legacy compiler's generated secondary mip is truncated. The exact exceptions are `textures\\icons\\icon settlementminimap 4x4.tga`, `textures\\ui\\blue.tga`, `textures\\ui\\green.tga`, `textures\\ui\\lightblue.tga`, `textures\\ui\\lightgreen.tga`, and `textures\\ui\\lightred.tga`. Only the staged BTI receives `nomip`; source BTIs and 4x PBRify masters are untouched. The production compiler requires these outputs to report one mip. `lightblue` has one known compiler warning under this workaround (`UNHANDLED token encountered 't'`); that exact warning is allowlisted only for that exact texture.
+
 Do not uppercase the mixed-case Deflated compiler arguments. The documented command is DeflatedRGBA8 / DeflatedRGB8.
+
+## Tiny DeflatedRGBA8 mip workaround
+
+Strict verification of the first full 7,486-DDT compile found six core failures, all caused by truncated tiny secondary DeflatedRGBA8 mips. Controlled `nomip` recompilation produced valid one-mip DDTs for all six and the official TextureExtractor accepted them. The workaround is therefore encoded in `pbrify_compile_v4.ps1` and covered by the extended canary.
+
+The first full verification also found 10 separate legacy TextureExtractor-only failures. Those remain a decoder-compatibility issue and are intentionally kept separate from the core DDT integrity gate.
 
 ## Known compiler exception
 

@@ -90,7 +90,7 @@ The canary covers all five explicit format mappings, Blue Lagoon fallback, the 2
 
 ## Repository cleanup checkpoint
 
-On 2026-09-30 the committed raw test trees and superseded one-off compiler/probe artifacts are being removed from main. Their important conclusions are retained in:
+On 2026-09-30 the committed raw test trees and superseded one-off compiler/probe artifacts were removed from main. Their important conclusions are retained in:
 
 - docs/HISTORICAL_TESTS.md
 - docs/TECHNICAL_REFERENCE.md

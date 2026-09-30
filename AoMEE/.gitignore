@@ -1,14 +1,10 @@
-# Local / regenerable AoMEE data
 Age of Mythology/
 extracted/
-input/production_source/
-input/production_source_png/
+input/
 models/
-processed/PBRify_V4/
-processed/PBRify_V4_no_tiling_attempt/
-processed/DDT_PBRify_V4/
-processed/DDT_PBRify_V4_explicit/
+processed/
 tests/
-
-# Local partial verification artifacts
-*.partial.csv
+reports/materials_xml/
+tools/
+__pycache__/
+*.log

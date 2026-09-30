@@ -287,7 +287,7 @@ foreach ($m in $selected) {
     $warnings = @($attempts | ForEach-Object { $_.Output } | Where-Object { $_ -match 'UNHANDLED token encountered' })
     $unexpectedWarnings = @(
         $warnings | Where-Object {
-            -not ($m.NoMip -and $KnownNoMipWarning.ContainsKey($relative) -and $_ -match [regex]::Escape($KnownNoMipWarning[$relative]))
+            -not ($AllowNoMipWarnings -and $m.NoMip)
         }
     )
 

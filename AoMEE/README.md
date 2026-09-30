@@ -128,7 +128,7 @@ main is the authoritative current project record.
 
 aomee-review-sanitized-2026-09-26 is a compact historical review snapshot from before the final NoMip/core-verifier repair. It is retained as an archival reference, not as the current baseline.
 
-aomee-repo-streamline-pre-ddt is an older pre-DDT cleanup checkpoint. Its raw test/material copies are being removed; its historical purpose is preserved by the current documentation and sanitized review branch.
+aomee-repo-streamline-pre-ddt is an older pre-DDT checkpoint whose branch tip has now been compacted to the sanitized historical review snapshot. Its full historical commit ancestry remains intact; it is not a working baseline.
 
 Raw tests are not part of the long-term repository. Their important outcomes are retained in docs/HISTORICAL_TESTS.md, docs/TECHNICAL_REFERENCE.md, and the current source-lock/current-verification reports.
 

@@ -2,7 +2,7 @@
 
 Reviewed: 2026-09-30
 
-The repository cleanup is now being applied to the committed project record. The goal is to keep Git useful for reproducibility and future analysis without retaining gigabytes of disposable test inputs/outputs.
+The repository cleanup was completed for the current main snapshot on 2026-09-30. The goal is to keep Git useful for reproducibility and future analysis without retaining gigabytes of disposable test inputs/outputs.
 
 ## Remove from Git; keep/regenerate locally
 

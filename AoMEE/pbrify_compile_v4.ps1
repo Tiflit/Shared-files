@@ -575,8 +575,6 @@ foreach ($tga in ($allTga | Sort-Object FullName)) {
             -not ($AllowNoMipWarnings -and $noMipApplied)
         }
     )
-        }
-    )
     $warnings += $unexpectedAttemptWarnings.Count
 
     $success = $false

@@ -115,13 +115,21 @@ Interpretation: a legacy BC1 encoder workload/stability problem, not evidence of
 
 Only this specific texture receives an automatic BC2 fallback. New failures remain hard failures until individually investigated.
 
-## 8. Recovery and legacy usage
+## 8. Tiny DeflatedRGBA8 mip workaround
+
+The first strict verification of the 7,486-file production compile found six core failures: `icon settlementminimap 4x4`, `blue`, `green`, `lightblue`, `lightgreen`, and `lightred`. All are format 10 DeflatedRGBA8 assets with very small dimensions and a generated secondary mip whose zlib stream is truncated. Their first mips are valid.
+
+Controlled compilation with staged `nomip` produced one-mip DDTs that passed the official TextureExtractor for all six. The canonical compiler therefore applies `nomip` only to these exact assets and asserts one mip in immediate output validation. The source BTIs and PBRify masters are never changed. `lightblue` produced the known warning `UNHANDLED token encountered 't'`; this exact warning is allowlisted only for that exact case.
+
+The strict verifier remains unchanged: it continues to reject incomplete generated zlib streams rather than weakening the core integrity gate.
+
+## 9. Recovery and legacy usage
 
 35 exception textures were investigated. 34 were recovered cleanly. special g griffon map.tga is provisional because a complete bundled Gryphon/Griffon family exists in the clean game, including model, animation, material, FX, and sound references, but normal gameplay reachability was not established by the audit.
 
 Black Tortoise has no demonstrated clean-game content reference and is excluded from the production candidate. Its recovery evidence remains archived in the repository reports.
 
-## 9. Material and player-colour research
+## 10. Material and player-colour research
 
 Full XML material snapshot:
 
@@ -137,7 +145,7 @@ Full XML material snapshot:
 
 Player-colour research currently identifies 447 CT4 + noalphatest candidate textures in the latest snapshot. The alpha patterns include both binary and multivalue masks; therefore alpha-bit metadata alone is not sufficient to choose a future texture-family policy.
 
-## 10. Normalization next phase
+## 11. Normalization next phase
 
 Do not apply a global 1024 cap merely because 2,295 outputs exceed that size.
 
@@ -150,7 +158,7 @@ The correct next analysis is role-aware and family-aware:
 5. Treat UI, icons, terrain, shadows, effects, buildings and units according to their actual runtime role.
 6. Measure final DDT size and runtime memory after normalization.
 
-## 11. Verification architecture
+## 12. Verification architecture
 
 The canonical DDT verifier separates two questions:
 
@@ -166,7 +174,7 @@ TextureExtractor is not run when the core DDT container already fails. This avoi
 
 The extractor-generated BTI format is not used as evidence of DDT storage format. Byte 6 of the DDT itself is authoritative.
 
-## 12. Canonical production format distribution expected after the next compile
+## 13. Canonical production format distribution expected after the next compile
 
     DDT 4  / BC1             1
     DDT 8  / BC2            10
@@ -177,7 +185,7 @@ The extractor-generated BTI format is not used as evidence of DDT storage format
 
 Blue Lagoon is included in the DDT 8 count because of its explicit BC2 fallback.
 
-## 13. Reference sources
+## 14. Reference sources
 
 AoM tooling source:
 https://github.com/ptasev/Age-of-Mythology

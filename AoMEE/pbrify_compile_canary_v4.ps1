@@ -1,6 +1,6 @@
 $ErrorActionPreference = 'Stop'
 
-# AoM:EE PBRify V4 - explicit-format compile canary V3
+# AoM:EE PBRify V4 - explicit-format compile canary V4
 # Tests two real samples for every production format and always tests Blue Lagoon.
 # DeflatedRGB8 is staged as a true 24-bit TGA.
 # Authoritative source files are never modified.
@@ -81,8 +81,7 @@ function NormalizeBti([string]$source, [string]$dest, [string]$format, [bool]$No
         $text = $text.Substring(1)
     }
     $text = [regex]::Replace($text, '(\bfmt\s*=\s*)[A-Za-z0-9_]+', { param($m) $m.Groups[1].Value + $format }, [Text.RegularExpressions.RegexOptions]::IgnoreCase)
-    if ($NoMip -and $text -notmatch '(?im)^\s*nomip\s*
-    $null = New-Item -ItemType Directory -Force -Path $dir
+    if ($NoMip -and $text -notmatch '(?im)^\s*nomip\s*$') {
     [IO.File]::WriteAllText($dest, $text, (New-Object System.Text.UTF8Encoding($false)))
 }
 

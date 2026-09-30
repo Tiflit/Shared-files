@@ -45,7 +45,7 @@ main is the authoritative current branch.
 
 aomee-review-sanitized-2026-09-26 is a compact archival review snapshot and should not be treated as current.
 
-aomee-repo-streamline-pre-ddt is a historical pre-DDT branch. It may retain older evidence for provenance, but it should not be used as a working baseline.
+aomee-repo-streamline-pre-ddt is a historical pre-DDT branch whose tip is now the compact sanitized review snapshot. Its older commit ancestry remains useful for provenance, but it should not be used as a working baseline.
 
 ## Source-of-truth order
 

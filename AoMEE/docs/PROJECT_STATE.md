@@ -1,10 +1,10 @@
 # AoM:EE Remaster — authoritative project state
 
-Last reviewed: 2026-09-25
+Last reviewed: 2026-09-30
 
 ## Objective
 
-Remaster the **Age of Mythology: Extended Edition** texture set while preserving the original game's texture population, metadata relationships, and runtime behavior. The current work is at the final DDT compilation/verification stage for the PBRify V4 texture masters. Runtime normalization, in-game validation, and final packaging remain after the DDT build.
+Remaster the **Age of Mythology: Extended Edition** texture set while preserving the original game's texture population, metadata relationships, and runtime behavior. The PBRify V4 masters are complete. The first full explicit compile produced all 7,486 intended production DDTs, but strict verification found six tiny DeflatedRGBA8 secondary-mip core failures and ten separate legacy TextureExtractor-only failures. The six core failures are now addressed by a targeted `nomip` compiler workaround. A fresh production rebuild and final verification are the next steps; runtime normalization, in-game validation, and final packaging remain afterward.
 
 ## Locked source baseline
 
@@ -35,6 +35,10 @@ The legacy TextureCompiler must receive an explicit format. The original BTI-onl
 For `DeflatedRGB8`, the temporary 24-bit TGA removes only the alpha byte from each BGR pixel. The authoritative 32-bit PBRify master is untouched. The temporary BTI is UTF-8 without a BOM and retains the original metadata values.
 
 The installed compiler previously treated `RGB8` as an invalid CLI value; the GUI label `RGB8` corresponds to the compiler argument `DeflatedRGB8`.
+
+## Known tiny-mip workaround
+
+Exactly six tiny DeflatedRGBA8 assets receive `nomip` during production staging because the legacy compiler generates a truncated secondary mip for them. The official TextureExtractor accepted all six controlled one-mip outputs. The canonical compiler asserts `mips=1` for these exceptions. A single known `lightblue` parser warning is allowlisted; other warnings remain failures.
 
 ## Known exception
 

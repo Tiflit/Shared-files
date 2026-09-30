@@ -2,19 +2,25 @@
 
 Last reviewed: 2026-09-30
 
-This directory is the long-term reproducibility and research record for the AoM:EE texture-remaster project. Large source, model, intermediate, and generated-output trees are intentionally kept local.
+This directory is the long-term reproducibility and research record for the AoM:EE texture-remaster project. Git contains workflow definitions, verification code, source-lock evidence, concise research results, and retained tools. Large source, model, intermediate, generated-output, and experimental test trees are kept local.
 
-## Current project state
+## Current verified state
 
 - Source population: 7,487 original DDT textures.
 - Historical extraction: 7,452 normal + 35 recovered exception texture pairs.
 - PBRify V4 master: 7,487 32-bit TGAs, produced with chaiNNer 0.25.1 and the 4x-PBRify_UpscalerV4 model.
-- The PBRify 4x output is a high-resolution working/master representation; it is not the final runtime-resolution policy.
-- Source/extraction integrity is locked and must be preserved.
+- Fresh explicit production compile: 7,486/7,486 DDTs, zero compile failures, zero warning tokens, zero missing/unexpected outputs.
+- Current explicit format distribution: byte 4=1, byte 8=10, byte 9=4,827, byte 10=2,559, byte 11=89.
+- One archive-only Black Tortoise texture is excluded from production. Blue Lagoon is the only automatic BC1→BC2 fallback.
+- The fresh strict core DDT verification passes 7,486/7,486 with zero core failures. The official TextureExtractor verification is running separately.
+- The six tiny DeflatedRGBA8 assets now use a targeted staged nomip workaround; authoritative BTIs and PBRify masters remain untouched.
+- The explicit format canary is validated at 16/16.
+
+The next runtime gate is the official extractor result. After that, use a disposable clean-game runtime copy for in-game validation before any resolution normalization or release packaging.
 
 ## Protected local data
 
-These directories/files are deliberately outside Git history:
+These are intentionally outside Git history:
 
     Age of Mythology/
     extracted/
@@ -26,6 +32,7 @@ These directories/files are deliberately outside Git history:
     processed/DDT_PBRify_V4/
     processed/DDT_PBRify_V4_explicit/
     tests/
+    reports/materials_xml/
 
 The clean game and extracted trees are source-locked. Never modify them during the remaster workflow.
 
@@ -37,11 +44,10 @@ The clean game and extracted trees are source-locked. Never modify them during t
 4. Stage source TGAs and convert them to PNG for the AI workflow.
 5. Run the canonical PBRify V4 chaiNNer workflow.
 6. Verify the 4x output dimensions and alpha replication.
-7. Run verify_texture_compiler_formats.py when validating the installed compiler/toolchain.
-8. Run the explicit compiler canary before a full DDT compile.
-9. Run the explicit production DDT compiler.
-10. Run the DDT core verifier first without the external decoder, then run it again with the official decoder.
-11. Test the resulting DDT set in-game before any normalization or release packaging.
+7. Run the explicit compiler canary.
+8. Run the explicit production DDT compiler.
+9. Run the DDT core verifier first without the external decoder, then run it again with the official decoder.
+10. Test the resulting DDT set in-game before any normalization or release packaging.
 
 Recommended commands from the project root:
 
@@ -52,11 +58,9 @@ Recommended commands from the project root:
     python .\verify_pbrify_ddt_full_v5.py --skip-extractor
     python .\verify_pbrify_ddt_full_v5.py
 
-The exact source/output paths above assume the default local project layout. Keep the authoritative local trees outside Git.
-
 ## Canonical compiler rules
 
-The installed legacy TextureCompiler must be given an explicit format. Relying on BTI inference is not acceptable because the executable silently selected DDT format 4 for the Deflated formats.
+The installed legacy TextureCompiler must be given an explicit format. Relying on BTI inference is not acceptable because the executable silently selected the wrong DDT format for the Deflated formats.
 
 | Original BTI format | Compiler argument | Compiler input | DDT format byte |
 | --- | --- | --- | --- |
@@ -66,89 +70,67 @@ The installed legacy TextureCompiler must be given an explicit format. Relying o
 | DeflatedRGBA8 | -c DeflatedRGBA8 | 32-bit TGA | 10 |
 | DeflatedRGB8 | -c DeflatedRGB8 | temporary true 24-bit TGA | 11 |
 
-The 24-bit RGB8 conversion is a compile-only staging operation. The PBRify master remains 32-bit and is never changed.
+For RGB8, the 24-bit conversion is compile-only staging. The PBRify master remains 32-bit and is never changed.
 
-Staged BTIs are written as UTF-8 without a BOM because the installed compiler previously reported the BOM-prefixed alpha token as an unhandled token. Authoritative BTIs are never rewritten.
+Staged BTIs are written as UTF-8 without a BOM. Authoritative BTIs are never rewritten.
 
-Six tiny DeflatedRGBA8 assets require a targeted `nomip` staging workaround: the legacy compiler's generated secondary mip is truncated. The exact exceptions are `textures\\icons\\icon settlementminimap 4x4.tga`, `textures\\ui\\blue.tga`, `textures\\ui\\green.tga`, `textures\\ui\\lightblue.tga`, `textures\\ui\\lightgreen.tga`, and `textures\\ui\\lightred.tga`. Only the staged BTI receives `nomip`; source BTIs and 4x PBRify masters are untouched. The production compiler requires these outputs to report one mip. `lightblue` has one known compiler warning under this workaround (`UNHANDLED token encountered 't'`); that exact warning is allowlisted only for that exact texture.
+Six tiny DeflatedRGBA8 assets require targeted nomip staging because the legacy compiler generated truncated secondary mips for them. The exact exceptions are:
 
-Do not uppercase the mixed-case Deflated compiler arguments. The documented command is DeflatedRGBA8 / DeflatedRGB8.
+    textures\icons\icon settlementminimap 4x4.tga
+    textures\ui\blue.tga
+    textures\ui\green.tga
+    textures\ui\lightblue.tga
+    textures\ui\lightgreen.tga
+    textures\ui\lightred.tga
 
-## Tiny DeflatedRGBA8 mip workaround
+Only the staged BTI receives nomip. The canonical compiler asserts one mip for these six outputs. Other compiler warnings remain hard failures.
 
-Strict verification of the first full 7,486-DDT compile found six core failures, all caused by truncated tiny secondary DeflatedRGBA8 mips. Controlled `nomip` recompilation produced valid one-mip DDTs for all six and the official TextureExtractor accepted them. The workaround is therefore encoded in `pbrify_compile_v4.ps1` and covered by the extended canary.
+## DDT verification architecture
 
-The first full verification also found 10 separate legacy TextureExtractor-only failures. Those remain a decoder-compatibility issue and are intentionally kept separate from the core DDT integrity gate.
+The strict verifier separates two questions:
 
-## Known compiler exception
+CORE DDT INTEGRITY
+    Header, dimensions, intended format, alpha, properties,
+    entry bounds, compressed block sizes, zlib payload integrity,
+    hashes and source relationships.
 
-textures\ui\ui map blue lagoon.tga is the only currently allowlisted automatic fallback.
+OFFICIAL DECODER
+    Whether the legacy TextureExtractor can decode the already-valid DDT.
 
-Its PBRify result is 1024×1024 and the legacy BC1 encoder is unstable in this size/workload region. Repeated diagnostics showed successful BC1 at several smaller dimensions and failure at larger tested dimensions; BC2 consistently succeeded for the Blue Lagoon fallback.
-
-Do not add automatic format fallbacks for new textures. A new compile failure must first be reproduced and investigated.
+The core verifier remains the authoritative integrity gate. A legacy extractor crash does not by itself prove that a DDT container is malformed. Controlled BC2 decoder findings are summarized in docs/HISTORICAL_TESTS.md.
 
 ## Source and recovery baseline
-
-The canonical source-lock evidence is under reports/extraction_integrity_gate_v7/.
-
-Recorded baseline:
 
 - 7,487 clean DDTs.
 - 7,487 logical extracted TGAs.
 - 7,487 logical extracted BTIs.
 - 7,452 normal textures.
 - 35 recovered exceptions.
-- Clean DDT inventory reconciles with historical inventory.
-- TGA-to-BTI pairing passes.
-- TGA structural validation passes.
-
-Recovered exceptions are retained as provenance. 34 are cleanly recovered; special g griffon map.tga is explicitly provisional.
-
-Black Tortoise is archive-only and excluded from production because the usage audit did not demonstrate a clean-game content reference.
-
-## Material research snapshot
-
-The full material XML snapshot is retained because future normalization and texture-family analysis depends on the semantic relationships in the materials.
-
-Current snapshot facts:
-
-- 20,842 XML files.
-- 20,199 materials with a texture field.
-- 5,490 materials with ColorTransform4.
-- 19 with PixelXForm.
-- 1,304 unique texture names.
-- 80 materials with secondary_texture.
-- 3 unique secondary textures.
-
-The old weak mtrl_material_index report is not authoritative. Future material indexes should be rebuilt from the XML snapshot with a robust parser.
+- 34 recovered exceptions are clean; special g griffon map.tga remains provisional.
+- Black Tortoise is archive-only and excluded from production.
 
 ## Normalization status
 
-Normalization is deliberately not locked yet.
+Normalization is deliberately not locked.
 
-Useful current findings:
+The 4x PBRify master is retained so normalization can be role-aware and family-aware rather than forcing a global resolution cap. Current size snapshot:
 
-- 2,295 PBRify outputs have a maximum dimension of at least 1024.
-- 202 reach at least 2048.
-- 7 reach at least 4096.
+- 2,295 outputs have max dimension >= 1024.
+- 202 reach >= 2048.
+- 7 reach >= 4096.
 - 1,754 are exactly 1024×1024.
 
-The previous normalization audit had an invalid category join and must not be used to make a global resolution or compression decision. The next normalization phase should join accurate TGA classification, material XML semantics, texture families, and role before choosing any downscaling policy.
+The next normalization phase must join accurate TGA classification, full material XML semantics, texture families and runtime role before a final resolution/compression policy is chosen.
 
-## Repository contents worth preserving
+## Repository and branch policy
 
-- Source-lock scripts and v7 baseline reports.
-- Master texture manifest, TGA inventory, classification, and BTI metadata snapshots.
-- PBRify V4 workflow definitions.
-- PBRify SHA-256 manifest and production QA report.
-- The canonical explicit compiler, compiler canary, and DDT verifier.
-- Recovery/cut-content provenance reports.
-- Full material XML semantic snapshot.
-- A compact technical reference documenting discovered format semantics and failure modes.
-- The retained AoM File Converter/Texture tools needed by the workflow.
+main is the authoritative current project record.
 
-Historical one-off diagnostics and superseded script revisions are intentionally removed. Their important conclusions are summarized in docs/TECHNICAL_REFERENCE.md.
+aomee-review-sanitized-2026-09-26 is a compact historical review snapshot from before the final NoMip/core-verifier repair. It is retained as an archival reference, not as the current baseline.
+
+aomee-repo-streamline-pre-ddt is an older pre-DDT cleanup checkpoint. Its raw test/material copies are being removed; its historical purpose is preserved by the current documentation and sanitized review branch.
+
+Raw tests are not part of the long-term repository. Their important outcomes are retained in docs/HISTORICAL_TESTS.md, docs/TECHNICAL_REFERENCE.md, and the current source-lock/current-verification reports.
 
 ## External references
 
@@ -161,8 +143,4 @@ Historical one-off diagnostics and superseded script revisions are intentionally
 - chaiNNer: https://github.com/chaiNNer-org/chaiNNer
 - chaiNNer releases: https://github.com/chaiNNer-org/chaiNNer/releases
 
-The exact PBRify model file is intentionally not committed. When its source is finalized, record its provenance and SHA-256 in a future project note.
-
-## Reproducibility rule
-
-Git should contain enough information to reconstruct the workflow and understand every intentional exception, but not gigabytes of source/output files that can be regenerated locally. Every future pipeline change should preserve source-lock evidence and add a concise note explaining what changed and why.
+The exact PBRify model file is intentionally not committed. Its provenance and SHA-256 should be recorded when the model source is finalized.

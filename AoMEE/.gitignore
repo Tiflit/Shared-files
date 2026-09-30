@@ -8,7 +8,9 @@ processed/PBRify_V4/
 processed/PBRify_V4_no_tiling_attempt/
 processed/DDT_PBRify_V4/
 processed/DDT_PBRify_V4_explicit/
+reports/materials_xml/
 tests/
+tools/AoM Model Editor 1.2.1/
 
 # Local partial verification artifacts
 *.partial.csv

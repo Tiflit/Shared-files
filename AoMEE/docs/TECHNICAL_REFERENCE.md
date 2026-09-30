@@ -1,5 +1,7 @@
 # AoM:EE technical reference
 
+Last reviewed: 2026-09-30
+
 ## 1. Locked source baseline
 
 The v7 source gate is the canonical source-integrity record.
@@ -12,7 +14,7 @@ Do not modify Age of Mythology/ or extracted/ during development.
 
 The chosen AI master is 4x-PBRify_UpscalerV4.pth through chaiNNer 0.25.1.
 
-The master is deliberately kept at 4x resolution even though the final runtime resolution is not yet decided. This lets later stages normalize large, uneven, or family-inconsistent assets without re-running AI inference.
+The master is deliberately kept at 4x resolution even though the final runtime resolution is not yet decided. This lets later stages normalize large, uneven or family-inconsistent assets without re-running AI inference.
 
 Alpha is separated before AI processing and restored with exact nearest-neighbour 4x replication.
 
@@ -54,52 +56,52 @@ Each entry stores an offset and size. For compressed block formats, the expected
 
 For DeflatedRGBA8 and DeflatedRGB8, the payload is zlib-compressed raw RGBA8/RGB8 data. Expected raw byte counts are width×height×4 and width×height×3 respectively.
 
-## 4. Legacy compiler findings
+## 4. Canonical explicit compiler mapping
 
-The first full compile relied on BTI metadata alone. That approach is rejected.
+| Source BTI | Compiler argument | Compile input | DDT byte 6 |
+| --- | --- | --- | ---: |
+| BC1 | -c BC1 | 32-bit TGA | 4 |
+| BC2 | -c BC2 | 32-bit TGA | 8 |
+| BC3 | -c BC3 | 32-bit TGA | 9 |
+| DeflatedRGBA8 | -c DeflatedRGBA8 | 32-bit TGA | 10 |
+| DeflatedRGB8 | -c DeflatedRGB8 | temporary true 24-bit TGA | 11 |
 
-Observed behavior:
+The GUI label RGB8 maps to CLI DeflatedRGB8.
 
-- BC1/BC2/BC3 metadata paths can produce their expected formats.
-- DeflatedRGBA8 metadata-only compilation silently produced DDT format 4 instead of 10.
-- DeflatedRGB8 metadata-only compilation silently produced DDT format 4 instead of 11.
-- Explicit -c DeflatedRGBA8 on a 32-bit TGA produced format 10.
-- Explicit -c DeflatedRGB8 on a 32-bit TGA still produced format 10.
-- Explicit -c DeflatedRGB8 on a real 24-bit TGA produced format 11.
-- Passing RGB8 to the CLI is not the correct command; the GUI's RGB8 display label maps to DeflatedRGB8.
+Never rely on BTI inference for the Deflated formats: metadata-only compilation silently selected the wrong DDT format.
 
-The production compiler therefore controls both explicit format and input bit depth.
+## 5. BTI and staging hygiene
 
-## 5. BTI BOM problem
+The legacy compiler emitted an unhandled-token warning when staged BTI files were BOM-prefixed. Staged BTIs are therefore written as UTF-8 without a BOM.
 
-The legacy compiler emitted warnings for the BOM-prefixed token alpha in staged BTIs.
+For DeflatedRGB8, only a temporary 24-bit TGA is created. The authoritative 32-bit PBRify master is never changed in place.
 
-Authoritative BTI bytes are preserved. Staged BTIs are decoded as UTF-8, have the BOM removed, and are written back as UTF-8 without a BOM.
+## 6. Tiny DeflatedRGBA8 NoMip workaround
 
-This is a staging hygiene change, not an alteration to the historical source metadata.
+The first strict verification of the original full compile found six core failures. All six were tiny format-10 DeflatedRGBA8 textures whose generated secondary mip entry contained a truncated zlib stream.
 
-## 6. RGB8 staging
+The exact exceptions are:
 
-PBRify masters remain 32-bit.
+    textures\icons\icon settlementminimap 4x4.tga
+    textures\ui\blue.tga
+    textures\ui\green.tga
+    textures\ui\lightblue.tga
+    textures\ui\lightgreen.tga
+    textures\ui\lightred.tga
 
-For an original DeflatedRGB8 texture only:
+Controlled recompilation with staged nomip produced one-mip DDTs that the official TextureExtractor accepted.
 
-    32-bit PBRify TGA
-            |
-            v
-    temporary true 24-bit TGA
-            |
-            v
-    -c DeflatedRGB8
-            |
-            v
-    DDT format 11
+The canonical production compiler now:
+- adds nomip only to those six staged BTIs;
+- checks that those outputs report one mip;
+- leaves authoritative BTIs and PBRify masters untouched;
+- keeps the strict verifier unchanged.
 
-The 24-bit conversion copies BGR bytes and removes only alpha. It is performed only on a temporary compile input.
+Controlled NoMip runs emitted legacy UNHANDLED token encountered warnings on some assets. Warning allowance is asset-scoped and does not weaken unrelated compiler-error handling.
 
-## 7. Blue Lagoon failure
+## 7. Blue Lagoon fallback
 
-Blue Lagoon is the single allowlisted BC1 fallback.
+textures\ui\ui map blue lagoon.tga is the single allowlisted automatic fallback.
 
 Confirmed observations:
 
@@ -107,27 +109,27 @@ Confirmed observations:
 - PBRify output: 1024×1024.
 - BC1 output at 1024×1024 fails in the legacy compiler.
 - BC2 at 1024×1024 succeeds.
-- Several smaller BC1 dimensions succeeded.
+- Several smaller BC1 dimensions succeed.
 - 832×832 was intermittently unstable in repeat tests.
 - Content/alpha mutation tests did not account for the failure.
 
-Interpretation: a legacy BC1 encoder workload/stability problem, not evidence of damaged source pixels.
+Interpretation: a legacy BC1 encoder workload/stability issue, not evidence of damaged source pixels.
 
-Only this specific texture receives an automatic BC2 fallback. New failures remain hard failures until individually investigated.
+Only this specific texture receives automatic BC2 fallback. New failures remain hard failures until individually investigated.
 
-## 8. Tiny DeflatedRGBA8 mip workaround
+## 8. Legacy TextureExtractor compatibility
 
-The first strict verification of the 7,486-file production compile found six core failures: `icon settlementminimap 4x4`, `blue`, `green`, `lightblue`, `lightgreen`, and `lightred`. All are format 10 DeflatedRGBA8 assets with very small dimensions and a generated secondary mip whose zlib stream is truncated. Their first mips are valid.
+Controlled tests reproduced crashes in the installed legacy TextureExtractor on structurally valid BC2 DDTs. The failure was reproduced with real AoM-derived data, deterministic synthetic content, solid-color controls and manually assembled valid files.
 
-Controlled compilation with staged `nomip` produced one-mip DDTs that passed the official TextureExtractor for all six. The canonical compiler therefore applies `nomip` only to these exact assets and asserts one mip in immediate output validation. The source BTIs and PBRify masters are never changed. Controlled NoMip testing observed `UNHANDLED token encountered 'E'` for `icon settlementminimap 4x4` and `UNHANDLED token encountered 't'` for `lightblue`. Each exact warning is allowlisted only for that exact case. The underlying legacy-token cause remains unestablished.
+The experiments ruled out a simple malformed-payload explanation, a simple content explanation, a simple width/height multiple-of-four rule and a single-mip-only explanation. The exact legacy trigger remains unresolved.
 
-The strict verifier remains unchanged: it continues to reject incomplete generated zlib streams rather than weakening the core integrity gate.
+The project therefore treats TextureExtractor as a secondary decoder-compatibility test. See docs/HISTORICAL_TESTS.md.
 
-## 9. Recovery and legacy usage
+## 9. Recovery and source exceptions
 
-35 exception textures were investigated. 34 were recovered cleanly. special g griffon map.tga is provisional because a complete bundled Gryphon/Griffon family exists in the clean game, including model, animation, material, FX, and sound references, but normal gameplay reachability was not established by the audit.
+35 exception textures were investigated. 34 were recovered cleanly. special g griffon map.tga is provisional because a complete bundled Gryphon/Griffon family exists in the clean game, but normal gameplay reachability was not established by the audit.
 
-Black Tortoise has no demonstrated clean-game content reference and is excluded from the production candidate. Its recovery evidence remains archived in the repository reports.
+Black Tortoise has no demonstrated clean-game content reference and is excluded from production.
 
 ## 10. Material and player-colour research
 
@@ -138,29 +140,27 @@ Full XML material snapshot:
 - 5,490 with ColorTransform4.
 - 19 with PixelXForm.
 - 1,304 unique texture names.
-- 2,829 candidate texture/material matches.
-- 518 unique textures used with ColorTransform4.
 - 80 materials with secondary_texture.
 - 3 unique secondary textures.
 
-Player-colour research currently identifies 447 CT4 + noalphatest candidate textures in the latest snapshot. The alpha patterns include both binary and multivalue masks; therefore alpha-bit metadata alone is not sufficient to choose a future texture-family policy.
+Player-colour/CT4 research remains a future normalization input. Do not infer a global runtime policy from alpha bits alone.
 
 ## 11. Normalization next phase
 
-Do not apply a global 1024 cap merely because 2,295 outputs exceed that size.
+Do not apply a global 1024 cap merely because many PBRify outputs exceed that size.
 
 The correct next analysis is role-aware and family-aware:
 
-1. Join accurate TGA classification to the 2,295 large outputs.
+1. Join accurate TGA classification to the large-output population.
 2. Join those textures to full material XML usage.
 3. Identify family/variant relationships and deliberate asymmetries.
 4. Review the seven >=4096 outputs individually.
-5. Treat UI, icons, terrain, shadows, effects, buildings and units according to their actual runtime role.
+5. Treat UI, icons, terrain, shadows, effects, buildings and units according to actual runtime role.
 6. Measure final DDT size and runtime memory after normalization.
 
 ## 12. Verification architecture
 
-The canonical DDT verifier separates two questions:
+The canonical DDT verifier separates:
 
 CORE DDT INTEGRITY
     Header, dimensions, intended format, alpha, properties,
@@ -170,11 +170,11 @@ CORE DDT INTEGRITY
 OFFICIAL DECODER
     Whether TextureExtractor can decode the already-valid DDT.
 
-TextureExtractor is not run when the core DDT container already fails. This avoids wasting time and avoids conflating container-format mistakes with decoder limitations.
+The latest core-only gate passes all 7,486 production DDTs. The official extractor is a separate ongoing test and must not be used to infer DDT storage format.
 
-The extractor-generated BTI format is not used as evidence of DDT storage format. Byte 6 of the DDT itself is authoritative.
+DDT byte 6 is authoritative for stored format.
 
-## 13. Canonical production format distribution expected after the next compile
+## 13. Current production distribution
 
     DDT 4  / BC1             1
     DDT 8  / BC2            10
@@ -185,28 +185,8 @@ The extractor-generated BTI format is not used as evidence of DDT storage format
 
 Blue Lagoon is included in the DDT 8 count because of its explicit BC2 fallback.
 
-## 14. Reference sources
+## 14. Historical test retention
 
-AoM tooling source:
-https://github.com/ptasev/Age-of-Mythology
+Raw experimental test trees are intentionally removed from Git after their conclusions are captured. The retained historical record is docs/HISTORICAL_TESTS.md, together with the current source-lock and verification reports.
 
-DDT file implementation:
-https://github.com/ptasev/Age-of-Mythology/blob/master/src/AoMEngineLibrary/Graphics/Ddt/DdtFile.cs
-
-Image-to-DDT encoding implementation:
-https://github.com/ptasev/Age-of-Mythology/blob/master/src/AoMEngineLibrary.Graphics.Converters/Graphics/Ddt/ImageDdtConverter.cs
-
-BTI implementation:
-https://github.com/ptasev/Age-of-Mythology/blob/master/src/AoMEngineLibrary/Graphics/BtiFile.cs
-
-DDT converter UI/CLI mapping:
-https://github.com/ptasev/Age-of-Mythology/blob/master/src/AoMDdtConverter/Form1.cs
-
-AoM:EE texture-converter reference:
-https://steamcommunity.com/workshop/discussions/18446744073709551615/558755529558828765/?appid=266840
-
-chaiNNer:
-https://github.com/chaiNNer-org/chaiNNer
-
-chaiNNer releases:
-https://github.com/chaiNNer-org/chaiNNer/releases
+No historical raw test result should be treated as a current runtime-release gate unless it is explicitly described as such in the current project state.

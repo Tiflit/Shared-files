@@ -4,107 +4,122 @@ Last reviewed: 2026-09-30
 
 ## Objective
 
-Remaster the **Age of Mythology: Extended Edition** texture set while preserving the original game's texture population, metadata relationships, and runtime behavior. The PBRify V4 masters are complete. The first full explicit compile produced all 7,486 intended production DDTs, but strict verification found six tiny DeflatedRGBA8 secondary-mip core failures and ten separate legacy TextureExtractor-only failures. The six core failures are now addressed by a targeted `nomip` compiler workaround. A fresh production rebuild and final verification are the next steps; runtime normalization, in-game validation, and final packaging remain afterward.
+Remaster the Age of Mythology: Extended Edition texture set while preserving the original texture population, metadata relationships and runtime behavior. The 4x PBRify V4 masters are complete. The explicit DDT compiler is now producing the full intended production set and the strict core verifier passes.
 
 ## Locked source baseline
 
-- 7,487 original DDT textures are the authoritative population.
+- 7,487 original DDT textures are authoritative.
 - 7,487 logical TGA/BTI pairs exist in the locked extraction: 7,452 normal + 35 recovered exceptions.
-- The clean game copy and `extracted/` tree are protected local reference data.
-- Black Tortoise is archive-only and excluded from the production set.
+- The clean game copy and extracted/ tree are protected local reference data.
+- Black Tortoise is archive-only and excluded from production.
+- special g griffon map.tga remains a provisional recovered exception.
 
 ## PBRify baseline
 
-- Canonical workflow: chaiNNer 0.25.1 + `4x-PBRify_UpscalerV4.pth`.
+- Canonical workflow: chaiNNer 0.25.1 + 4x-PBRify_UpscalerV4.pth.
 - 7,487 PBRify V4 masters exist locally as 32-bit TGAs.
 - PBRify masters are never modified for compiler staging.
-- The 4x master is intentionally retained because runtime resolution/normalization has not yet been finalized.
+- The 4x master is retained because runtime normalization has not yet been finalized.
 
-## Canonical DDT compilation
+## Current DDT build checkpoint
 
-The legacy TextureCompiler must receive an explicit format. The original BTI-only path is rejected for Deflated formats.
+Fresh explicit production compile on 2026-09-30:
 
-| Source BTI | Compiler argument | Compile input | DDT byte 6 |
-| --- | --- | --- | ---: |
-| BC1 | `-c BC1` | 32-bit TGA | 4 |
-| BC2 | `-c BC2` | 32-bit TGA | 8 |
-| BC3 | `-c BC3` | 32-bit TGA | 9 |
-| DeflatedRGBA8 | `-c DeflatedRGBA8` | 32-bit TGA | 10 |
-| DeflatedRGB8 | `-c DeflatedRGB8` | temporary true 24-bit TGA | 11 |
+    Expected textures : 7486
+    Compiled          : 7486
+    DDTs present      : 7486
+    Fallbacks         : 1
+    Failures          : 0
+    Warning tokens    : 0
+    Missing DDTs      : 0
+    Unexpected DDTs   : 0
 
-For `DeflatedRGB8`, the temporary 24-bit TGA removes only the alpha byte from each BGR pixel. The authoritative 32-bit PBRify master is untouched. The temporary BTI is UTF-8 without a BOM and retains the original metadata values.
+Format distribution:
 
-The installed compiler previously treated `RGB8` as an invalid CLI value; the GUI label `RGB8` corresponds to the compiler argument `DeflatedRGB8`.
+    byte 4  = 1
+    byte 8  = 10
+    byte 9  = 4827
+    byte 10 = 2559
+    byte 11 = 89
+
+The one fallback is Blue Lagoon BC1→BC2. The one omitted source asset is the archive-only Black Tortoise texture.
 
 ## Known tiny-mip workaround
 
-Exactly six tiny DeflatedRGBA8 assets receive `nomip` during production staging because the legacy compiler generates a truncated secondary mip for them. The official TextureExtractor accepted all six controlled one-mip outputs. The canonical compiler asserts `mips=1` for these exceptions. The controlled NoMip tests observed `UNHANDLED token encountered 'E'` for `icon settlementminimap 4x4` and `UNHANDLED token encountered 't'` for `lightblue`. Each exact warning is allowlisted only for its exact texture; other warnings remain failures. The token-level cause is not yet established.
+Exactly six tiny DeflatedRGBA8 assets receive nomip during production staging because the legacy compiler otherwise generates a truncated secondary mip. The six paths are documented in README.md and TECHNICAL_REFERENCE.md.
 
-## Known exception
+The workaround affects only staged BTIs. Authoritative BTIs and 4x PBRify masters are untouched. The strict verifier is intentionally unchanged.
 
-`textures\ui\ui map blue lagoon.tga` is the only automatic fallback:
+## Verification checkpoint
 
-`BC1 -> BC2`
+The latest core-only verification is:
 
-This is an explicit, allowlisted workaround for the legacy BC1 encoder's instability on the 1024x1024 PBRify result. New compiler failures must remain hard failures until individually investigated.
+    Expected DDTs : 7486
+    Final rows    : 7486
+    PASS          : 7486
+    FAIL          : 0
+    CORE FAIL     : 0
+    EXTRACTOR SKIP: 7486
 
-## Canary gate
+This establishes a clean current DDT container/format/payload baseline. The official TextureExtractor run is the next independent decoder checkpoint and is currently in progress.
 
-The corrected explicit-format canary has already passed 10/10 against real production samples:
+## Canary checkpoint
 
-- BC1 -> 4
-- BC2 -> 8
-- BC3 -> 9
-- DeflatedRGBA8 -> 10
-- DeflatedRGB8 -> 11 with 24-bit compiler input
-- Blue Lagoon fallback -> 8
+The explicit compiler canary is now validated at 16/16 PASS.
 
-The canary must pass again after repository synchronization before the full build.
+The canary covers all five explicit format mappings, Blue Lagoon fallback, the 24-bit RGB8 staging path, and all six NoMip exceptions.
 
-## Expected production result
+## Expected production distribution
 
-The authoritative source-format population is expected to compile to 7,486 production DDTs:
+    DDT 4  / BC1             1
+    DDT 8  / BC2            10
+    DDT 9  / BC3          4827
+    DDT 10 / DeflatedRGBA8 2559
+    DDT 11 / DeflatedRGB8    89
+    TOTAL                  7486
 
-```text
-DDT 4  / BC1             1
-DDT 8  / BC2            10
-DDT 9  / BC3          4827
-DDT 10 / DeflatedRGBA8 2559
-DDT 11 / DeflatedRGB8    89
-TOTAL                  7486
-```
+## What remains
 
-The missing 1 of 7,487 is the archive-only Black Tortoise asset.
-
-## Verification gate
-
-Run the core verifier before the official extractor:
-
-```powershell
-python .\verify_pbrify_ddt_full_v5.py --skip-extractor
-```
-
-Only after the core container/format/payload checks pass:
-
-```powershell
-python .\verify_pbrify_ddt_full_v5.py
-```
-
-The DDT's byte 6 is authoritative for stored format. The extractor is a separate decoder test and must not be used to infer the DDT format.
-
-## What remains after the DDT build
-
-1. Verify all 7,486 production DDTs structurally.
-2. Verify all 7,486 with the official extractor.
-3. Replace/test the DDT set against the clean game in a disposable runtime copy.
+1. Complete the official TextureExtractor verification.
+2. Copy the resulting DDT set into a disposable clean-game runtime test environment.
+3. Validate startup, menus, representative maps, units, UI, effects, shadows and recovered/provisional assets in-game.
 4. Perform role-aware/family-aware normalization; do not impose a global 1024 cap.
 5. Review the seven >=4096 PBRify outputs individually.
-6. Validate player-colour/CT4/noalphatest behavior where relevant.
-7. Test the remaster in-game.
-8. Package the final release only after runtime validation.
+6. Validate CT4/player-colour/noalphatest families after any normalization.
+7. Package only after runtime validation and reproducibility checks.
 
-## Repository rule
+## Repository cleanup checkpoint
 
-Git is the reproducibility and research record, not the storage location for the multi-gigabyte working trees. Keep clean game data, extracted trees, models, PBRify image masters, generated DDTs, staging and tests local. Keep source-lock evidence, manifests, workflow definitions, canonical tools, verification code, material semantics, and concise research conclusions in Git.
+On 2026-09-30 the committed raw test trees and superseded one-off compiler/probe artifacts are being removed from main. Their important conclusions are retained in:
 
-Historical experiments may be removed once their conclusions are captured in `TECHNICAL_REFERENCE.md`. Do not retain obsolete compiler/verifier generations merely because they have a lower version number.
+- docs/HISTORICAL_TESTS.md
+- docs/TECHNICAL_REFERENCE.md
+- reports/extraction_integrity_gate_v7/
+- reports/ddt_full_verification_v5/
+- current PBRify SHA/QA records.
+
+Large local source/output/material trees remain local and ignored.
+
+## Fresh-conversation handoff
+
+Authoritative branch: main.
+
+Current local authoritative production output:
+
+    processed\DDT_PBRify_V4_explicit\
+
+Current production compile manifest/log:
+
+    processed\PBRify_V4_explicit_compile_manifest.csv
+    processed\PBRify_V4_explicit_compile.log
+
+Current core verification report:
+
+    reports\ddt_full_verification_v5\ddt_full_verification_v5.csv
+    reports\ddt_full_verification_v5\ddt_full_verification_v5_summary.txt
+
+Next command after the extractor finishes:
+
+    python .\verify_pbrify_ddt_full_v5.py
+
+Do not begin resolution normalization or performance work until the DDT set passes the decoder/runtime gates.

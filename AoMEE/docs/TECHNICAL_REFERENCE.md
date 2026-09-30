@@ -119,7 +119,7 @@ Only this specific texture receives an automatic BC2 fallback. New failures rema
 
 The first strict verification of the 7,486-file production compile found six core failures: `icon settlementminimap 4x4`, `blue`, `green`, `lightblue`, `lightgreen`, and `lightred`. All are format 10 DeflatedRGBA8 assets with very small dimensions and a generated secondary mip whose zlib stream is truncated. Their first mips are valid.
 
-Controlled compilation with staged `nomip` produced one-mip DDTs that passed the official TextureExtractor for all six. The canonical compiler therefore applies `nomip` only to these exact assets and asserts one mip in immediate output validation. The source BTIs and PBRify masters are never changed. `lightblue` produced the known warning `UNHANDLED token encountered 't'`; this exact warning is allowlisted only for that exact case.
+Controlled compilation with staged `nomip` produced one-mip DDTs that passed the official TextureExtractor for all six. The canonical compiler therefore applies `nomip` only to these exact assets and asserts one mip in immediate output validation. The source BTIs and PBRify masters are never changed. Controlled NoMip testing observed `UNHANDLED token encountered 'E'` for `icon settlementminimap 4x4` and `UNHANDLED token encountered 't'` for `lightblue`. Each exact warning is allowlisted only for that exact case. The underlying legacy-token cause remains unestablished.
 
 The strict verifier remains unchanged: it continues to reject incomplete generated zlib streams rather than weakening the core integrity gate.
 

@@ -182,6 +182,7 @@ function Write-StagedBTI {
     }
 
     $dir = Split-Path -Parent $Destination
+    $null = New-Item -ItemType Directory -Force -Path $dir
 
     [IO.File]::WriteAllText(
         $Destination,

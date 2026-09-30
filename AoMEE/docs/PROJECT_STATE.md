@@ -38,7 +38,7 @@ The installed compiler previously treated `RGB8` as an invalid CLI value; the GU
 
 ## Known tiny-mip workaround
 
-Exactly six tiny DeflatedRGBA8 assets receive `nomip` during production staging because the legacy compiler generates a truncated secondary mip for them. The official TextureExtractor accepted all six controlled one-mip outputs. The canonical compiler asserts `mips=1` for these exceptions. A single known `lightblue` parser warning is allowlisted; other warnings remain failures.
+Exactly six tiny DeflatedRGBA8 assets receive `nomip` during production staging because the legacy compiler generates a truncated secondary mip for them. The official TextureExtractor accepted all six controlled one-mip outputs. The canonical compiler asserts `mips=1` for these exceptions. The controlled NoMip tests observed `UNHANDLED token encountered 'E'` for `icon settlementminimap 4x4` and `UNHANDLED token encountered 't'` for `lightblue`. Each exact warning is allowlisted only for its exact texture; other warnings remain failures. The token-level cause is not yet established.
 
 ## Known exception
 

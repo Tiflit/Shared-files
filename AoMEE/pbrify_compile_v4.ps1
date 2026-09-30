@@ -564,8 +564,6 @@ foreach ($tga in ($allTga | Sort-Object FullName)) {
     $ddtDir = Split-Path -Parent $ddtPath
     $null = New-Item -ItemType Directory -Force -Path $ddtDir
 
-    Write-Host "[$index/$ExpectedTotal] Compiling: $relative -> $cliFormat (input $compileBits-bit)"
-
     $mipNote = if ($noMipApplied) { " [NOMIP: $($KnownNoMipAssets[$relative])]" } else { "" }
 
     Write-Host "[$index/$ExpectedTotal] Compiling: $relative -> $cliFormat (input $compileBits-bit)$mipNote"
@@ -577,11 +575,9 @@ foreach ($tga in ($allTga | Sort-Object FullName)) {
     $unexpectedAttemptWarnings = @(
         $attemptWarnings |
         Where-Object {
-            -not (
-                $noMipApplied -and
-                $KnownNoMipWarning.ContainsKey($relative) -and
-                $_ -match [regex]::Escape($KnownNoMipWarning[$relative])
-            )
+            -not ($AllowNoMipWarnings -and $noMipApplied)
+        }
+    )
         }
     )
     $warnings += $unexpectedAttemptWarnings.Count

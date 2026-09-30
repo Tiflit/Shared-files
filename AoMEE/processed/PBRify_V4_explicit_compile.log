@@ -1,5 +1,5 @@
 ﻿=== AoM:EE PBRify V4 full explicit compile V4 ===
-Started: 2026-09-26T12:16:23.2895433-04:00
+Started: 2026-09-30T14:29:15.3534151-04:00
 Expected compilation count: 7486
 Explicit formats: BC1, BC2, BC3, DeflatedRGBA8, DeflatedRGB8
 DeflatedRGB8 input staging: true 24-bit TGA
@@ -4398,6 +4398,7 @@ Processed: 1
 [textures\building n settlement03 shadow.tga]
 Running Texture Compiler...
 Processed: 1
+1 texture(s) processed!
 
 [textures\building n settlementage1 shadow.tga]
 Running Texture Compiler...
@@ -37436,7 +37437,7 @@ Processed: 1
 1 texture(s) processed!
 
 
-Finished: 2026-09-26T12:41:05.5040420-04:00
+Finished: 2026-09-30T14:54:04.8983303-04:00
 Compiled: 7486
 Excluded: 1
 Fallbacks: 1

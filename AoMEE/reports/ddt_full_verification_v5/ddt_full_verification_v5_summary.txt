@@ -3,10 +3,10 @@ AoM:EE FULL DDT VERIFICATION V4
 
 Expected production DDTs: 7486
 Final report rows:        7486
-OVERALL PASS:             7471
-OVERALL FAIL:             15
+OVERALL PASS:             7470
+OVERALL FAIL:             16
 CORE DDT FAIL:            6
-EXTRACTOR FAIL:           9
+EXTRACTOR FAIL:           10
 EXTRACTOR SKIPPED:        6
 
 CORE GATES

@@ -1,0 +1,231 @@
+﻿============================================================
+AoM:EE COMPLETE GAME INVENTORY
+============================================================
+
+Game root:
+D:\AI_upscaling\AoMEE\Age of Mythology
+
+Inventory generated:
+2026-10-01T11:38:15.9625140-04:00
+
+TOTALS
+------
+Files           : 80941
+Directories     : 266
+Total data      : 2.48 GB
+
+BY TYPE
+-------
+.mp3           13,872 files        960.12 MB
+.brg           10,560 files        397.53 MB
+.bik                6 files        237.20 MB
+.grn            1,841 files        235.10 MB
+.wav            2,000 files        230.44 MB
+.ddt            7,487 files        218.41 MB
+.xml            8,060 files         74.76 MB
+.pdf                6 files         66.38 MB
+.txt            9,923 files         25.22 MB
+.dll               20 files         22.81 MB
+.scn               73 files         15.42 MB
+.bmp                4 files         13.57 MB
+.scx               49 files         11.18 MB
+.exe                6 files         10.69 MB
+.xs               284 files          7.68 MB
+.mtrl          20,842 files          4.63 MB
+.dat                3 files          3.31 MB
+.rtf               15 files          2.80 MB
+.dcl            4,061 files          1.74 MB
+.tga               10 files        940.33 KB
+.prt            1,372 files        834.58 KB
+.png                2 files        829.79 KB
+.btx                5 files        774.72 KB
+.pso              126 files        538.04 KB
+.crt                1 files        244.73 KB
+.pem                1 files        212.17 KB
+.msk               25 files        200.00 KB
+.vso               62 files        127.77 KB
+.asi                1 files        123.00 KB
+.xmb               78 files         61.40 KB
+.cfg               10 files         60.62 KB
+.cpn                3 files         45.93 KB
+.con                3 files         35.51 KB
+.lng               22 files         27.78 KB
+.cpx                2 files         20.88 KB
+.docx               1 files         20.01 KB
+.ini               11 files         15.26 KB
+.lgt               52 files         10.33 KB
+.crx                1 files          9.81 KB
+.dso                2 files          7.75 KB
+.hso                2 files          6.98 KB
+.set                9 files          5.57 KB
+.spr                6 files          1.39 KB
+.cub                4 files            700 B
+.vdf                1 files            540 B
+.pfx                2 files            224 B
+.bti                8 files            188 B
+.html               1 files            166 B
+.aom                6 files            141 B
+
+DDT
+---
+DDT files       : 7487
+Valid headers   : 7487
+Invalid headers : 0
+
+DDT FORMAT DISTRIBUTION
+BC3                     4,697
+RgbaDeflated            2,559
+Dxt1                      127
+RgbDeflated                89
+BC2                        10
+Dxt1Alpha                   4
+Unknown(3)                  1
+
+DDT RESOLUTION DISTRIBUTION
+64x64                   2,468
+256x256                 1,754
+32x32                   1,170
+128x128                   695
+16x16                     194
+256x128                   140
+128x64                    110
+64x32                     107
+256x32                    105
+8x8                        71
+32x16                      63
+32x64                      60
+512x64                     60
+512x128                    52
+128x32                     49
+64x128                     44
+512x256                    34
+64x16                      33
+640x256                    30
+256x64                     28
+16x32                      21
+256x16                     21
+128x16                     18
+128x256                    13
+64x8                       13
+4x4                        13
+481x360                    12
+512x32                     11
+8x16                       10
+32x128                      9
+
+TGA
+---
+TGA files       : 10
+
+TGA RESOLUTION DISTRIBUTION
+32x32                       3
+128x128                     3
+256x256                     3
+64x64                       1
+
+XML
+---
+XML files       : 8060
+Parse OK        : 8058
+Parse errors    : 2
+
+MOST COMMON XML ELEMENTS
+unittype                             310,300
+flag                                 188,763
+region                                45,539
+effect                                45,227
+target                                28,511
+armor                                 25,166
+dbid                                  24,787
+displaynameid                         24,326
+cost                                  17,620
+Rate                                  17,379
+timezone                              17,022
+icon                                  16,907
+rollovertextid                        16,401
+movementtype                          15,496
+los                                   15,415
+obstructionradiusx                    15,018
+obstructionradiusz                    14,980
+bountyfactor                          14,939
+maxvelocity                           12,325
+name                                  10,789
+DamageBonus                           10,151
+abbrev                                 9,962
+description                            9,962
+timezoneinfo                           9,962
+tech                                   9,673
+initialhitpoints                       9,670
+maxhitpoints                           9,651
+status                                 9,162
+portraiticon                           9,014
+param                                  8,908
+
+MOST COMMON XML ATTRIBUTES
+region.geoid                          45,539
+effect.type                           45,227
+target.type                           28,511
+effect.subtype                        28,511
+effect.amount                         28,511
+effect.relativity                     28,511
+armor.damagetype                      25,160
+armor.percentflag                     25,160
+cost.resourcetype                     17,620
+Rate.name                             17,377
+Rate.type                             17,374
+Rate.value1                           17,360
+timezone.tzid                         17,022
+bountyfactor.resourcetype             14,939
+DamageBonus.value1                    10,151
+DamageBonus.type                      10,151
+DamageBonus.name                      10,151
+timezoneinfo.tzid                      9,962
+tech.row                               9,177
+tech.column                            9,177
+tech.page                              9,177
+MaximumRange.name                      8,860
+MaximumRange.value1                    8,860
+Damage.name                            8,570
+Damage.value1                          8,569
+Damage.type                            8,569
+bounty.resourcetype                    8,192
+effect.action                          8,170
+buttonpos.row                          7,329
+buttonpos.column                       7,329
+
+LARGEST FILES
+  1. avi\credits.bik                                                                         83.19 MB
+  2. avi\introcg.bik                                                                         52.20 MB
+  3. avi\xcredits.bik                                                                        47.98 MB
+  4. docs\AOMGold_Manual_OEM_EN.pdf                                                          33.55 MB
+  5. avi\xintrocg.bik                                                                        20.87 MB
+  6. avi\outtakes.bik                                                                        18.77 MB
+  7. twitchdll\libmfxsw32.dll                                                                15.45 MB
+  8. avi\aomlogo.bik                                                                         14.19 MB
+  9. docs\AOMGold_InGamePDF_EN.pdf                                                           11.31 MB
+ 10. AoMX.exe                                                                                 8.72 MB
+ 11. docs\AOMGold_QRC_Titans_EN.pdf                                                           7.29 MB
+ 12. loadingx1080.bmp                                                                         5.93 MB
+ 13. docs\AOMGold_QRC_Norse_EN.pdf                                                            5.58 MB
+ 14. docs\AOMGold_QRC_Egyptian_EN.pdf                                                         5.14 MB
+ 15. loadingx900.bmp                                                                          4.12 MB
+ 16. docs\AOMGold_QRC_Greek_EN.pdf                                                            3.51 MB
+ 17. sound\music\quiet\chocolate outline (mellow mix).mp3                                     3.15 MB
+ 18. sound\music\standard\chocolate outline.mp3                                               3.15 MB
+ 19. sound\music\standard\never mind the slacks and bashers.mp3                               3.11 MB
+ 20. sound\music\quiet\never mind the slacks and bashers (mellow mix).mp3                     3.11 MB
+
+REPORT FILES
+------------
+files.csv             = complete file inventory
+directories.csv       = complete directory inventory
+extension_summary.csv = counts and total size by extension
+directory_summary.csv = counts and size by directory
+ddt_inventory.csv     = parsed DDT headers
+tga_inventory.csv     = parsed TGA dimensions
+xml_inventory.csv     = XML roots/schema per file
+xml_elements.csv      = all XML element names
+xml_attributes.csv    = all XML attributes
+relevant_files.csv    = terrain/UI/material/model/etc.
+largest_files.csv     = 500 largest files
+SUMMARY.txt           = this report
